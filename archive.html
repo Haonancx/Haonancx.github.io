@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="well">
+{%for post in site.posts %}
+{% unless post.next %}
+<h2 class="category" title="收起年度列表">{{ post.date | date: '%Y' }}</h2>
+<ul class="submenu">
+{% else %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+
+{% if year != nyear %}
+</ul>
+<h2 class="category" title="收起年度列表">{{ post.date | date: '%Y' }}</h2>
+<ul>
+{% endif %}
+{% endunless %}
+<li>
+<h3><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+<span>{{ post.date | date: "%m/%d" }}</span>
+</li>
+{% endfor %}
+</ul>
+</div>

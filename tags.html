@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="well">
+<div class="tags">
+<p class="category">标签云</p>
+{% for tag in site.tags %}
+<span class="octicon octicon-tag" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</span>
+{% endfor %}
+</div>
+{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign category = categories | split:',' | sort %}
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+{% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
+<h2 class="category" id="{{ word }}">{{ word }}</h2>
+<ul>
+{% for post in site.categories[word] %}{% if post.title != null %}
+<li><h3><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3><span>{{ post.date | date: "%m/%d/%Y" }}</span></li>
+{% endif %}{% endfor %}
+</ul>
+{% endunless %}{% endfor %}
+</div>

@@ -1,0 +1,65 @@
+<header class="header">
+    <div class="header-container">
+        <div class="MainIndex"><a href="http://fsux.me/#">FSUX</a></div>
+        <a href="javascript:;" class="navbar-toggle">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    </div>
+
+            <div class="nav"> 
+            <div class="tool">     
+           {% if page.path == "archive.html" %}
+            <span class="title">
+                <li>
+                    <a href="/archive.html#"><span class="iconfont icon-archive"></span><div>年度</div></a>
+                </li>
+            </span> {% else %}
+            <li>
+                <a href="/archive.html"><span class="iconfont icon-archive"></span><div>年度</div></a>
+            </li>
+            {% endif %} {% if page.path == "tags.html" %}
+            <span class="title">
+                <li>
+                    <a href="/tags.html#"><span class="iconfont icon-tags"></span><div>标签</div></a>
+                </li>
+            </span> {% else %}
+            <li>
+                <a href="/tags.html"><span class="iconfont icon-tags"></span><div>标签</div></a>
+            </li>
+            {% endif %} {% if page.path == "OpenS.html" %}
+            <span class="title">
+                <li>
+                    <a href="/OpenS.html#"><span class="iconfont icon-github"></span><div>开源</div></a>
+                </li>
+            </span> {% else %}
+            <li>
+                <a href="/OpenS.html"><span class="iconfont icon-github"></span><div>开源</div></a>
+            </li>
+            {% endif %}
+                <li>
+                    <a class="SearchBox" id="cb-search-btn"><span class="iconfont icon-search"></span><div>搜索</div></a>
+                </li>
+                <li>
+                    <a class="eye-pro"><span class="iconfont icon-eye"></span><div>护眼模式</div></a>
+                </li>
+                 <li>
+                    <a href="mailto:fsux@outlook.com" ><span class="iconfont icon-mail"></span><div>联系</div></a>
+                </li>
+
+                 </div>
+                 <div class="closeTool">取消</div>
+        </div>
+    <div class="nav-bg"></div>
+
+    <div class="cb-search-tool">
+        <div class="searchToolBox">
+            <div class="searchInput">
+                <input type="text" id="cb-search-content" placeholder=" 文章标题 标签 ">
+                <span id="cb-close-btn" title="关闭"></span>
+            </div>
+        </div>
+    </div>
+    <div class="notice-banner"><span></span></div>
+</header>
