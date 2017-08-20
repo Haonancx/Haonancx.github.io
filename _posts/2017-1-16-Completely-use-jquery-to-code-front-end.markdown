@@ -9,9 +9,6 @@ tags: 浅谈前端 Jquery
 
 ![jq-1](http://i.imgur.com/x0MrkuJ.jpg)
 
-编写中...
-
-
 ### 双向数据绑定
 
 ### 自定义指令
@@ -19,3 +16,6 @@ tags: 浅谈前端 Jquery
 ### 过滤器
 
 ### 路由
+
+
+编写中...
