@@ -345,7 +345,7 @@ blockquote:before {
     font-size: 17px;
     display: inline-block;
     letter-spacing: 0.2px;
-    color:#222;
+    color: #222;
 }
 
 .well ul li p {
@@ -416,16 +416,16 @@ blockquote:before {
 }
 
 .closeTool {
-    height: 50px;
+    height: 55px;
     width: 100%;
     text-align: center;
-    line-height: 50px;
+    line-height: 55px;
     cursor: pointer;
     position: relative;
     background-color: #fff;
 }
 
-#cb-close-btn:before{
+#cb-close-btn:before {
     content: '';
     position: absolute;
     top: 22px;
@@ -437,7 +437,7 @@ blockquote:before {
     transform: rotate(-45deg);
 }
 
-#cb-close-btn:after{
+#cb-close-btn:after {
     content: '';
     position: absolute;
     top: 22px;
@@ -506,22 +506,33 @@ blockquote:before {
 
 @font-face {
     font-family: "iconfont";
-  src: url('../css/iconfont.eot?t=1503208328857'); /* IE9*/
-  src: url('../css/iconfont.eot?t=1503208328857#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../css/iconfont.woff?t=1503208328857') format('woff'), /* chrome, firefox */
-  url('../css/iconfont.ttf?t=1503208328857') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../css/iconfont.svg?t=1503208328857#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('../css/iconfont.eot?t=1503208328857');
+    /* IE9*/
+    src: url('../css/iconfont.eot?t=1503208328857#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../css/iconfont.woff?t=1503208328857') format('woff'), /* chrome, firefox */
+    url('../css/iconfont.ttf?t=1503208328857') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../css/iconfont.svg?t=1503208328857#iconfont') format('svg');
+    /* iOS 4.1- */
 }
 
 .iconfont {
     font-family: "iconfont" !important;
-    font-size: 1.5em;
+    font-size: 2em;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     padding: 18px 17px;
     border-radius: 13px;
     display: inline-block;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-archive,
+.icon-tags,
+.icon-github,
+.icon-search,
+.icon-eye,
+.icon-mail {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 .icon-mail:before {
@@ -550,6 +561,7 @@ blockquote:before {
 
 .icon-date,
 .icon-tags-item {
+    font-size: 1.5em;
     padding: 0;
 }
 
