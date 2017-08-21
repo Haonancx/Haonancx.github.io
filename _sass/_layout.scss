@@ -617,6 +617,8 @@ blockquote:before {
 
 .articlesBox {
     padding: 0;
+    height: 199px;
+    position: relative;
 }
 
 .paginateBox ul {
@@ -628,7 +630,16 @@ blockquote:before {
 .paginateBox ul li {
     margin: 20px 0;
     width: 100%;
+    position: absolute;
     text-align: center;
+}
+
+.paginateBox ul li:nth-child(1) {
+    top: 0;
+}
+
+.paginateBox ul li:nth-child(2) {
+    bottom: 0;
 }
 
 .paginateBox ul li a {
