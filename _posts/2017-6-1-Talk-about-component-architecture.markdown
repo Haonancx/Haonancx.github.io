@@ -7,7 +7,7 @@ tags: 随笔 架构 浅谈前端
 ---
 #### 有时候计划总是赶不上变化。
 
-![mid-year-summary](http://i.imgur.com/KOIsLV1.jpg)
+![architecture](http://i.imgur.com/R9MYp5x.jpg)
 
 在项目趋于稳定迭代的情况下，上周与团队分享了我的架构设计，反响很好，梳理自己的知识结构总是好的。
 
