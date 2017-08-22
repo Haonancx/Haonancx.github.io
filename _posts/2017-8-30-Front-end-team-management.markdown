@@ -8,3 +8,5 @@ tags: 随笔 团队管理
 #### 做技术和做管理这两种角色有什么不一样。
 
 ![MG-bg](http://i.imgur.com/AVH8aOP.jpg)
+
+编写中...
