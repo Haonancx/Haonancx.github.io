@@ -5,10 +5,11 @@ date:   2016-7-28 2:21:05
 categories: 随笔 规范 架构
 tags: 随笔 规范 架构
 ---
-#### 不以规矩,不能成方圆。
+#### 不以规矩，不能成方圆。
 
 
-![style-1](http://i.imgur.com/6XfDOq8.jpg)
+![style-1](http://i.imgur.com/reIkHL9.jpg)
+
 
 每一种事物都有它被发明时，都会有其用处和目的，每一个事物都是自己擅长和适合的领域；
 
