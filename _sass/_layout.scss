@@ -11,7 +11,13 @@ ol,
 li {
     list-style: none;
 }
-
+p em {
+    
+    font-style: inherit;
+    background: #efefef;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
 .header {
     background: #333;
     position: fixed;
