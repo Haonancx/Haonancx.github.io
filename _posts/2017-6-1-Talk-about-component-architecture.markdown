@@ -53,6 +53,10 @@ tags: 随笔 架构 浅谈前端
 
 这两种方式可以相辅相成，相互应用，其中怎么去使用，需要根据业务所设计的架构去权衡。
 
+
+![M-bg](http://i.imgur.com/OImjf8Q.jpg)
+
+
 ### 为什么组件化
 
 
@@ -90,7 +94,44 @@ tags: 随笔 架构 浅谈前端
 
 局部组件化面临的是在架构方面生命周期和非生命周期权重的理解去拆分，如果生命周期比非生命周期的权重大时，则推荐局部组件化的方式。
 
-举个例子，我们如何把一个业务界面切割成组件。
+#### HTML 片段化
+
+举个简单例子，我们如何把一个业务界面切割成组件。
+
+和上面提到的一样，你新接手的项目，如果在多个页面中存在一个公共的部分:导航（这里指视图），就可以进行复用。
+
+{% highlight ruby %}
+
+    -- main.html
+    
+    <div>
+    
+     <public-header></public-header>
+     <public-footer></public-footer>
+    
+    </div>
+    
+    -- header
+    
+    <div>
+     
+    <p>Hello，I'M header</p>
+    
+    </div>
+    
+    -- header
+    
+    <div>
+     
+    <p>Hello，I'M footer</p>
+    
+    </div>
+
+
+{% endhighlight %}
+
+
+
 
 #### 业务认知
 
