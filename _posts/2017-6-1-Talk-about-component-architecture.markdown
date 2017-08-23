@@ -105,28 +105,17 @@ tags: 随笔 架构 浅谈前端
     -- main.html
     
     <div>
-    
      <public-header></public-header>
      <public-footer></public-footer>
-    
     </div>
     
     -- header
     
-    <div>
-     
-    <p>Hello，I'M header</p>
-    
-    </div>
+    <div><p>Hello，I'M header</p></div>
     
     -- header
     
-    <div>
-     
-    <p>Hello，I'M footer</p>
-    
-    </div>
-
+    <div><p>Hello，I'M footer</p></div>
 
 {% endhighlight %}
 
