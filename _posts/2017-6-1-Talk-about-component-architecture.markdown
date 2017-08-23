@@ -104,10 +104,10 @@ tags: 随笔 架构 浅谈前端
      <public-footer></public-footer>
     </div>
     
-    --- header
+    --- header.html
     <div><p>Hello，I'M header</p></div>
     
-    --- footer
+    --- footer.html
     <div><p>Hello，I'M footer</p></div>
 
 {% endhighlight %}
