@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "企业级应用之运维监控"
+title:  "企业级应用之自动化"
 date:   2015-05-27 19:13:12
 categories: 浅谈前端 架构 企业级应用
 tags: 浅谈前端 架构 企业级应用
