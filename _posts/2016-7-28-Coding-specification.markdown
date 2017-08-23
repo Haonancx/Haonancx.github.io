@@ -68,9 +68,7 @@ tags: 随笔 规范 架构
 
 ### 命名规范
 
-#### HTML 与 CSS 命名
-
-**常用的CSS命名规则**　　
+#### HTML 与 CSS 命名　
 
 头：header　　
 
@@ -84,7 +82,7 @@ tags: 随笔 规范 架构
 
 栏目：column　　
 
-页面外围控制整体佈局宽度：wrapper　　
+页面外围控制整体布局宽度：wrapper　　
 
 左右中：left right center　　
 
@@ -162,12 +160,6 @@ tags: 随笔 规范 架构
 /* End Header */
 
 #### JS命名
-
-### 静态资源管理
-
-#### 主流项目的目录结构
-
-![components](http://i.imgur.com/k8mqtpL.jpg)
 
 ### 帮助文档
 
