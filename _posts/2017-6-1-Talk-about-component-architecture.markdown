@@ -98,24 +98,19 @@ tags: 随笔 架构 浅谈前端
 
 {% highlight ruby %}
 
-    -- main.html
-    
+    --- main.html
     <div>
      <public-header></public-header>
      <public-footer></public-footer>
     </div>
     
-    -- header
-    
+    --- header
     <div><p>Hello，I'M header</p></div>
     
-    -- header
-    
+    --- footer
     <div><p>Hello，I'M footer</p></div>
 
 {% endhighlight %}
-
-
 
 
 #### 业务认知
