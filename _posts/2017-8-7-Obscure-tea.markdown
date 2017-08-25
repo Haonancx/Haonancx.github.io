@@ -7,7 +7,7 @@ tags: 随笔 旅行
 ---
 #### 久在樊笼里 , 复得返自然。
 
-![obscure-bg](http://i.imgur.com/NmPReG7.jpg)
+![obscure-bg](http://i.imgur.com/uu6eUsC.jpg)
 
 窗外的雨，落落又停停，
 
@@ -37,7 +37,7 @@ tags: 随笔 旅行
 
 梦回到大山深处，
 
-![tea-bg](http://i.imgur.com/5gkZnEO.jpg)
+![tea-bg](http://i.imgur.com/znMr7mJ.jpg)
 
 恍惚以为自己就是山上的一块石头或者溪边的一棵树，
 
@@ -51,7 +51,7 @@ tags: 随笔 旅行
 
 “ 如果你不能去，真是可惜的。” 
 
-![tea-two](http://i.imgur.com/dUkEcpf.jpg)
+![night-bg](http://i.imgur.com/s2O1iBo.jpg)
 
 年轻时最喜欢夜晚搭火车，看每个路过的村庄的微弱灯火。”
 
