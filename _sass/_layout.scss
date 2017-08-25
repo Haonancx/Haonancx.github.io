@@ -86,8 +86,10 @@ p em {
     text-align: center;
     z-index: 999999;
     left: 50%;
+    height: 280px;
     margin: 0 0 0 -50%;
     background: rgba(255,255,255,0.95);
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
 .nav-bg {
