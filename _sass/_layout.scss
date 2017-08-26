@@ -618,7 +618,9 @@ blockquote:before {
     text-align: center;
     width: 100%;
 }
-
+.paginateBox ul li:nth-child(2) {
+    border-top: none;
+}
 .articlesBox {
     padding: 0;
     margin: 2em 0;
@@ -662,7 +664,6 @@ blockquote:before {
 .paginateBox ul li>a:focus {
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .paginateBox ul li>a:hover>span,
