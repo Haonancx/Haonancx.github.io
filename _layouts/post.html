@@ -23,7 +23,7 @@ layout: default
             </li>
             <li>
                 {% if page.next.url %}
-                <a class="next-post" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top">下一篇<br/><span>{{page.next.title}}</span></a> {% endif %}
+                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top">下一篇<br/><span>{{page.next.title}}</span></a> {% endif %}
             </li>
         </ul>
     </div>
