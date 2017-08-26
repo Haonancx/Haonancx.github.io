@@ -621,30 +621,19 @@ blockquote:before {
 
 .articlesBox {
     padding: 0;
-    height: 219px;
-    position: relative;
     margin: 2.5em 0;
 }
 
 .paginateBox ul {
     padding: 0;
-    display: inline-block;
     width: 100%;
 }
 
 .paginateBox ul li {
     margin: 0;
     width: 100%;
-    position: absolute;
+    display: inline-block;
     text-align: center;
-}
-
-.paginateBox ul li:nth-child(1) {
-    top: 0;
-}
-
-.paginateBox ul li:nth-child(2) {
-    bottom: 0;
 }
 
 .paginateBox ul li a {
