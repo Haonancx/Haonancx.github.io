@@ -738,12 +738,12 @@ blockquote:before {
 .gotop:before {
     content: '';
     position: absolute;
-    left: 12px;
+    left: 14px;
     top: 17px;
     height: 0;
     width: 0;
     display: block;
-    border: 11px transparent solid;
+    border: 9px transparent solid;
     border-top-width: 0;
     border-bottom-color: #555;
 }
