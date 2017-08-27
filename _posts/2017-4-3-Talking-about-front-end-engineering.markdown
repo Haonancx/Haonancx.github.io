@@ -7,6 +7,6 @@ tags: 浅谈前端 深入浅出 工程化
 ---
 #### 前端开发 20% 是技术问题，80% 是工程问题；而如今的工程师更喜欢谈论技术问题,而忽视工程问题。
 
-![EG-BG](http://i.imgur.com/bjwrkAy.jpg)
+![EG-BG](http://i.imgur.com/a4xu3wR.jpg)
 
 编写中...
