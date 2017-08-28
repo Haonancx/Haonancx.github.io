@@ -21,7 +21,7 @@ p em {
 .header-container {
     max-width: 800px;
     margin: 0 auto;
-    height: 45px;
+    height: 100px;
     position: relative;
 }
 
@@ -310,6 +310,26 @@ blockquote:before {
     border-radius: 13px;
     display: inline-block;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+    content: "\e70a";
+}
+
+.icon-tags:before {
+    content: "\e706";
+}
+
+.icon-archive:before {
+    content: "\e6de";
+}
+
+.icon-github:before {
+    content: "\e600";
+}
+
+.icon-search:before {
+    content: "\e741";
 }
 
 .icon-date:before {

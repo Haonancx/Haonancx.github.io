@@ -11,7 +11,6 @@ FSUX-BlogTheme is a theme for me. Here is [my blog](http://fsux.me) which use th
 - 添加了对标签的全套支持（原主题不支持 Tags ）
 - 年度文章分类,通知动画系统
 - 去掉引起挂起的 Web Font
-- 添加基于 Web Sessionstorage 的护眼模式
 - SEO 优化，文章内容引用版权声明
 - 大量 CSS 优化：包括适合中文阅读的字号重改进，移动端交互优化
 - 实时搜索功能
