@@ -312,7 +312,7 @@ font-family: "iconfont";
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before,.icon-tags:before,.icon-archive:before,.icon-github:before {
+.icon-mail,.icon-tags,.icon-archive,.icon-github{
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
 }
