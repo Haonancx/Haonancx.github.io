@@ -29,7 +29,7 @@ p em {
 
 .MainIndex {
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
     width: 85px;
     float: left;
@@ -771,8 +771,9 @@ blockquote:before {
         margin-top: 40px;
     }
     .page-content {
-            width: 95%;
-        padding: 10px 0;
+    width: 95%;
+    padding: 0;
+    margin-top: 20px;
 
     }
 }
