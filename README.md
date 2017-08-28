@@ -4,8 +4,7 @@
 
 FSUX-BlogTheme is a theme for me. Here is [my blog](http://fsux.me) which use this theme.
 
-
-![About-me](http://i.imgur.com/k9HUpfB.jpg)
+![About-me](http://i.imgur.com/NyKhRiw.jpg)
 
 - 添加了对标签的全套支持（原主题不支持 Tags ）
 - 年度文章分类，去掉引起挂起的 Web Font

@@ -8,7 +8,6 @@ description: "关人潮,FSUX,关人潮的个人博客,前端工程师,前端架�
 baseurl: "" # the subpath of your site, e.g. /blog/
 keyword: "关人潮,关人潮的技术博客,前端架构,架构,FSUX,FSUX Blog,博客,个人网站,互联网,前端,设计,数据可视化,机器学习,大数据"
 url: "https://fsux.me" # the base hostname & protocol for your site
-github_username: haonancx
 pygments: true
 # Outputting
 
