@@ -1,34 +1,29 @@
 <header class="header">
     <div class="header-container">
         <div class="MainIndex"><a href="http://fsux.me/#">FSUX</a></div>
-        <a href="javascript:;" class="navbar-toggle">
-            <span class="sr-only"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-    </div>
-    <div class="nav">
-        {% if page.path == "archive.html" %}
-        <span class="title">
+        <div class="nav">
+            {% if page.path == "archive.html" %}
+            <span class="title">
                 <li>
                     <a href="/archive.html#">年度</a>
         </li>
         </span> {% else %}
-        <li>
-            <a href="/archive.html">年度</a>
-        </li>
-        {% endif %} {% if page.path == "tags.html" %}
-        <span class="title">
+            <li>
+                <a href="/archive.html">年度</a>
+            </li>
+            {% endif %} {% if page.path == "tags.html" %}
+            <span class="title">
                 <li>
                     <a href="/tags.html#">标签</a>
         </li>
         </span> {% else %}
-        <li>
-            <a href="/tags.html">标签</a>
-        </li>
-        {% endif %}
-        <li>
-            <a href="mailto:fsux@outlook.com">联系</a>
-        </li>
+            <li>
+                <a href="/tags.html">标签</a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="mailto:fsux@outlook.com">联系</a>
+            </li>
+        </div>
     </div>
 </header>

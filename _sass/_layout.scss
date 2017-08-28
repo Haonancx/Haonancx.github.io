@@ -50,23 +50,19 @@ p em {
 }
 
 .nav {
-    width: 100%;
+    float: right;
 }
 
 .nav li {
-    margin: 4px 0;
-    line-height: 20px;
-    position: relative;
     float: left;
-    padding: 0;
-    width: 33.3333%;
+    padding: 0px 5px;
 }
 
 .nav li a {
     position: relative;
     display: inline-block;
     font-family: inherit;
-    color: #777;
+    color: #666;
     transition: all 0.5s ease;
     cursor: pointer;
 }
