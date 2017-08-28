@@ -107,7 +107,7 @@ pre {
 .page-content{
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin:0 auto;
+    margin:50px auto 0;
     height: 100%;
     min-height: 100%;
     padding: 20px 50px;
