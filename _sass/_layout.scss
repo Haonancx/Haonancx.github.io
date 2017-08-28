@@ -54,10 +54,13 @@ p em {
 .nav p{
     margin: 0 0 10px 0;
     text-align: right;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 700;
 }
 .nav li {
     float: right;
-    padding: 0 0 0 7px;
+    padding: 0 0 0 10px;
 }
 
 .nav li a {
@@ -69,6 +72,9 @@ p em {
     cursor: pointer;
 }
 
+.nav li a span:hover{
+    color: #000;
+}
 .post-meta {
     font-size: 11px;
     margin: 3em 0;
