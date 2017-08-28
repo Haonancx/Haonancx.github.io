@@ -35,6 +35,8 @@ p em {
     letter-spacing: 1px;
     width: 85px;
     float: left;
+    height: 45px;
+    line-height: 45px;
     position: relative;
 }
 
@@ -601,6 +603,7 @@ blockquote:before {
 
 .paginateBox {
     padding: 5px 0 40px;
+    position: relative;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -673,11 +676,11 @@ blockquote:before {
 }
 
 .pageBtn-pre {
-    left: 20px;
+    left: 0;
 }
 
 .pageBtn-next {
-    right: 20px;
+    right: 0;
 }
 
 .awardBtn {
@@ -772,7 +775,7 @@ blockquote:before {
         margin: 0 auto;
     }
     .page-content {
-        width: 100%;
+        width: 95%;
         padding: 0;
         margin-top: 20px;
     }
