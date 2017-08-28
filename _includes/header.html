@@ -2,32 +2,32 @@
     <div class="header-container">
         <div class="MainIndex"><a href="http://fsux.me/#">FSUX</a></div>
         <div class="nav">
-        <p>Life Designer</p>
-            {% if page.path == "archive.html" %}
-            <span class="title">
-                <li>
-                    <a href="/archive.html#"><span class="iconfont icon-archive"></span></a>
-        </li>
-        </span> {% else %}
-            <li>
-                <a href="/archive.html"><span class="iconfont icon-archive"></span></a>
-            </li>
-            {% endif %} {% if page.path == "tags.html" %}
-            <span class="title">
-                <li>
-                    <a href="/tags.html#"><span class="iconfont icon-tags"></span></a>
-        </li>
-        </span> {% else %}
-            <li>
-                <a href="/tags.html"><span class="iconfont icon-tags"></span></a>
-            </li>
-            {% endif %}
+            <p>Life Designer</p>
             <li>
                 <a href="mailto:fsux@outlook.com"><span class="iconfont icon-mail"></span></a>
             </li>
             <li>
                 <a href="https://github.com/Haonancx"><span class="iconfont icon-github"></span></a>
             </li>
+            {% if page.path == "tags.html" %}
+            <span class="title">
+                <li>
+                    <a href="/tags.html#"><span class="iconfont icon-tags"></span></a>
+            </li>
+            </span> {% else %}
+            <li>
+                <a href="/tags.html"><span class="iconfont icon-tags"></span></a>
+            </li>
+            {% endif %} {% if page.path == "archive.html" %}
+            <span class="title">
+                <li>
+                    <a href="/archive.html#"><span class="iconfont icon-archive"></span></a>
+            </li>
+            </span> {% else %}
+            <li>
+                <a href="/archive.html"><span class="iconfont icon-archive"></span></a>
+            </li>
+            {% endif %}
         </div>
     </div>
 </header>
