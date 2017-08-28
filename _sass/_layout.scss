@@ -185,17 +185,6 @@ p em {
     list-style: inside;
 }
 
-.post-content ul li:before {
-    content: "";
-    height: 8px;
-    width: 8px;
-    border-radius: 100%;
-    display: inline-block;
-    position: absolute;
-    background: #24d9ec;
-    margin: 12px 0 0 -16px;
-}
-
 .post-list {
     list-style: none;
     display: inline-block;
@@ -497,6 +486,6 @@ blockquote:before {
     .page-content {
         width: 95%;
         padding: 0;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
