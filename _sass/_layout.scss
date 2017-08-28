@@ -48,6 +48,7 @@ p em {
 .MainIndex a:hover {
     border: 0;
 }
+
 .nav {
     width: 100%;
 }
@@ -69,6 +70,7 @@ p em {
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
 .post-meta {
     font-size: 11px;
     margin: 3em 0;
@@ -305,52 +307,13 @@ blockquote:before {
 
 .iconfont {
     font-family: "iconfont" !important;
-    font-size: 2em;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-    padding: 19px 12px;
+    font-size: 1.3em;
+    padding: 0;
     border-radius: 13px;
     display: inline-block;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-archive,
-.icon-tags,
-.icon-github,
-.icon-search,
-.icon-eye,
-.icon-mail {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-
-.icon-mail:before {
-    content: "\e70a";
-}
-
-.icon-tags:before {
-    content: "\e706";
-}
-
-.icon-archive:before {
-    content: "\e6de";
-}
-
-.icon-github:before {
-    content: "\e600";
-}
-
-.icon-search:before {
-    content: "\e741";
-}
-
-.icon-eye:before {
-    content: "\e785";
-}
-
-.icon-date,
-.icon-tags-item {
-    font-size: 1.3em;
-    padding: 0;
 }
 
 .icon-date:before {
@@ -360,10 +323,6 @@ blockquote:before {
 
 .icon-tags-item:before {
     content: "\e6a7";
-}
-
-.icon-eyes-active {
-    color: #ffc700;
 }
 
 .well ul li span {
@@ -402,7 +361,6 @@ blockquote:before {
     text-align: center;
     width: 100%;
     margin: 2em 0;
-
 }
 
 .articlesBox {
