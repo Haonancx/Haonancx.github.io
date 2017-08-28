@@ -156,6 +156,8 @@ p em {
     min-height: 100%;
     margin: 0 auto;
     padding: 60px 0 20px 0;
+    background:#fff;
+    box-shadow: 0px 10px 20px 0px rgba(236, 236, 236, 0.86);
 }
 
 .post-meta {
@@ -769,6 +771,8 @@ blockquote:before {
         margin-top: 40px;
     }
     .page-content {
+            width: 95%;
         padding: 10px 0;
+
     }
 }
