@@ -19,7 +19,6 @@ p em {
     height: 45px;
     z-index: 999;
     padding: 50px 0 0 0;
-
 }
 
 .header-container {
@@ -31,7 +30,7 @@ p em {
 
 .MainIndex {
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
     width: 85px;
     float: left;
@@ -755,6 +754,9 @@ blockquote:before {
 }
 
 @media screen and (max-width:800px) {
+    .header {
+        width: 88%;
+    }
     .paginateBox li>a,
     .paginateBoxli>span {
         font-size: 14px;
@@ -764,8 +766,8 @@ blockquote:before {
         margin-top: 40px;
     }
     .wrapper {
-    width: 90%;
-    margin: 0 auto;
+        width: 88%;
+        margin: 0 auto;
     }
     .page-content {
         width: 100%;
