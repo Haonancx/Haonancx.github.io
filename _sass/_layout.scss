@@ -6,12 +6,14 @@ ol,
 li {
     list-style: none;
 }
+
 p em {
-    
+
     font-style: inherit;
     background: #efefef;
     padding: 3px;
 }
+
 .header {
     width: 100%;
     height: 45px;
@@ -26,9 +28,9 @@ p em {
 }
 
 .MainIndex {
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 1px;
     width: 85px;
     float: left;
     position: relative;
@@ -77,7 +79,7 @@ p em {
     z-index: 999999;
     left: 50%;
     margin: 0 0 0 -50%;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .nav-bg {
@@ -608,6 +610,7 @@ blockquote:before {
     text-align: center;
     width: 100%;
 }
+
 .articlesBox {
     padding: 0;
     margin: 2em 0;
@@ -697,8 +700,8 @@ blockquote:before {
     color: #ff8140;
     font-weight: 700;
     border-radius: 55px;
-    background: #fff;    
-    box-shadow: 0px 1px 2px 1px rgba(181,181,181,0.2);
+    background: #fff;
+    box-shadow: 0px 1px 2px 1px rgba(181, 181, 181, 0.2);
 }
 
 .awardBtn span:hover {
@@ -764,5 +767,8 @@ blockquote:before {
     }
     .post-list li {
         margin-top: 40px;
+    }
+    .page-content {
+        padding: 10px 0;
     }
 }
