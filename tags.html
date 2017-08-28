@@ -5,7 +5,7 @@ layout: default
 <div class="tags">
 <p class="category">标签云</p>
 {% for tag in site.tags %}
-<span class="octicon octicon-tag" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</span>
+<span class="octicon octicon-tag" rel="{{ tag[1].size }}">{{ tag[0] }}</span>
 {% endfor %}
 </div>
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
