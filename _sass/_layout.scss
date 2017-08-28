@@ -13,12 +13,7 @@ p em {
     padding: 3px;
 }
 .header {
-    background: #333;
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 45px;
     z-index: 999;
 }
@@ -41,7 +36,7 @@ p em {
 
 .MainIndex a {
     font-family: 'Microsoft YaHei', 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', SimSun;
-    color: #fff;
+    color: #000;
     display: inline-block;
     line-height: 45px;
     width: 85px;
