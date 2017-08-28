@@ -19,6 +19,7 @@ p em {
     height: 45px;
     z-index: 999;
     padding: 50px 0 0 0;
+    margin: 0 auto;
 }
 
 .header-container {
@@ -603,11 +604,12 @@ blockquote:before {
     display: inline-block;
     text-align: center;
     width: 100%;
+    margin: 2em 0;
+
 }
 
 .articlesBox {
     padding: 0;
-    margin: 2em 0;
 }
 
 .paginateBox ul {
