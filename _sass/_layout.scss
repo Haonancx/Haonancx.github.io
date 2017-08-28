@@ -52,12 +52,12 @@ p em {
     float: right;
 }
 .nav p{
-    margin:0;
-    text-align:center;
+    margin: 0;
+    text-align: right;
 }
 .nav li {
     float: left;
-    padding: 0px 5px;
+    padding: 0px 7px;
 }
 
 .nav li a {
@@ -310,6 +310,11 @@ font-family: "iconfont";
     border-radius: 13px;
     display: inline-block;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before,.icon-tags:before,.icon-archive:before,.icon-github:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
 }
 
 .icon-mail:before {
