@@ -761,10 +761,12 @@ blockquote:before {
     .post-list li {
         margin-top: 40px;
     }
+    .wrapper {
+        width: 92%;
+    }
     .page-content {
-    width: 95%;
-    padding: 0;
-    margin-top: 20px;
-
+        width: 95%;
+        padding: 0;
+        margin-top: 20px;
     }
 }
