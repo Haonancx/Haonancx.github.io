@@ -15,18 +15,6 @@ layout: default
         <span><a class="host-tag" href="{{ site.baseurl }}/tags.html#{{ tag }}">{{ tag }}</a> 
         </span> {% endfor %}
     </div>
-    <div class="paginateBox articlesBox">
-        <ul>
-            <li>
-                {% if page.previous.url %}
-                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top">上一篇<br/><span>{{page.previous.title}}</span></a>{% endif %}
-            </li>
-            <li>
-                {% if page.next.url %}
-                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top">下一篇<br/><span>{{page.next.title}}</span></a> {% endif %}
-            </li>
-        </ul>
-    </div>
     <div class="awardBtn"><span>赏</span></div>
     <div class="awardContent">
         <img src="/images/wPay.jpg" alt="">

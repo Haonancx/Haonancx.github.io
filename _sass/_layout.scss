@@ -52,7 +52,7 @@ p em {
     float: right;
 }
 .nav p{
-    margin: 0 0 10px 0;
+    margin: 0;
     text-align: right;
     line-height: 45px;
     font-size: 14px;
@@ -182,7 +182,7 @@ p em {
 .post-content ul li {
     position: relative;
     padding: 10px 0;
-    list-style-type: none;
+    list-style: inside;
 }
 
 .post-content ul li:before {
@@ -276,7 +276,6 @@ blockquote:before {
     padding: 50px 0 10px;
 }
 
-
 .line {
     border-bottom: 1px dashed #eee;
 }
@@ -299,7 +298,7 @@ blockquote:before {
 }
 
 @font-face {
-font-family: "iconfont";
+  font-family: "iconfont";
   src: url('../css/iconfont.eot?t=1503913312401'); /* IE9*/
   src: url('../css/iconfont.eot?t=1503913312401#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('../css/iconfont.woff?t=1503913312401') format('woff'), /* chrome, firefox */
@@ -384,55 +383,6 @@ font-family: "iconfont";
     text-align: center;
     width: 100%;
     margin: 2em 0;
-}
-
-.articlesBox {
-    padding: 0;
-}
-
-.paginateBox ul {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.paginateBox ul li {
-    margin: 0;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.paginateBox ul li a {
-    display: inline-block;
-    padding: 20px 25px;
-    border: 1px solid #f5f5f5;
-    font-weight: 800;
-    width: calc(100% - 50px);
-    width: -moz-calc(100% - 50px);
-    width: -webkit-calc(100% - 50px);
-    letter-spacing: 1px;
-    transition: all 0.5s ease;
-    font-size: 17px;
-}
-
-.paginateBox ul li span {
-    color: #aaa;
-    font-weight: 400;
-    letter-spacing: .5px;
-    font-size: 14px;
-    transition: all 0.5s ease;
-}
-
-.paginateBox ul li>a:hover,
-.paginateBox ul li>a:focus {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.paginateBox ul li>a:hover>span,
-.paginateBox ul li>a:focus>span {
-    color: #fff;
 }
 
 .pageBtn {
@@ -536,11 +486,6 @@ font-family: "iconfont";
 @media screen and (max-width:800px) {
     .header {
         width: 88%;
-    }
-    .paginateBox li>a,
-    .paginateBoxli>span {
-        font-size: 14px;
-        padding: 15px 25px;
     }
     .post-list li {
         margin-top: 40px;
