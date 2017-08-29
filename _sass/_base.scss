@@ -1,7 +1,14 @@
 /**
  * Reset some basic elements
  */
-body{
+
+/* Basic styling*/
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
     margin:  0;
     padding: 0;
     background-color: #f7f7f7;
@@ -19,22 +26,15 @@ ol li{
 ol,li {
     list-style: none;
 }
+p{margin: 30px 0;letter-spacing: 0.5px;}
 p em {
     font-style: inherit;
     background: #efefef;
     padding: 3px;
 }
 
-p{margin: 30px 0;letter-spacing: 0.5px;}
 p strong{font-size: 1rem;color:#1f1f1f;}
-/* Basic styling*/
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    color: $text-color;
-    -webkit-text-size-adjust: 100%;
-}
+
 
 /* Images*/
 img {
