@@ -1,4 +1,3 @@
-
 .header {
     width: 100%;
     z-index: 999;
@@ -40,13 +39,15 @@
 .nav {
     float: right;
 }
-.nav p{
+
+.nav p {
     margin: 0;
     text-align: right;
     line-height: 45px;
     font-size: 14px;
     font-weight: 700;
 }
+
 .nav li {
     float: right;
     padding: 0 0 0 10px;
@@ -59,9 +60,10 @@
     cursor: pointer;
 }
 
-.nav li a span:hover{
+.nav li a span:hover {
     color: #000;
 }
+
 .post-meta {
     font-size: 11px;
     margin: 3em 0;
@@ -85,11 +87,13 @@
     letter-spacing: 0.2px;
     margin: 10px auto;
 }
+
 .artcle-title {
     font-size: 1.4rem;
     font-weight: 700;
     color: #1f1f1f;
 }
+
 .post-content {
     margin: 30px auto;
     padding: 0 0 30px;
@@ -230,6 +234,7 @@ blockquote:before {
     padding: 1px 0;
     position: relative;
 }
+
 .well ul li span {
     font-size: 14px;
     position: absolute;
@@ -238,6 +243,7 @@ blockquote:before {
     line-height: 60px;
     top: 0;
 }
+
 .well ul li h3 a {
     font-size: 17px;
     display: inline-block;
@@ -281,12 +287,14 @@ blockquote:before {
 }
 
 @font-face {
-  font-family: "iconfont";
-  src: url('../css/iconfont.eot?t=1503913312401'); /* IE9*/
-  src: url('../css/iconfont.eot?t=1503913312401#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../css/iconfont.woff?t=1503913312401') format('woff'), /* chrome, firefox */
-  url('../css/iconfont.ttf?t=1503913312401') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../css/iconfont.svg?t=1503913312401#iconfont') format('svg'); /* iOS 4.1- */
+    font-family: "iconfont";
+    src: url('../css/iconfont.eot?t=1503913312401');
+    /* IE9*/
+    src: url('../css/iconfont.eot?t=1503913312401#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../css/iconfont.woff?t=1503913312401') format('woff'), /* chrome, firefox */
+    url('../css/iconfont.ttf?t=1503913312401') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../css/iconfont.svg?t=1503913312401#iconfont') format('svg');
+    /* iOS 4.1- */
 }
 
 .iconfont {
@@ -300,7 +308,10 @@ blockquote:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail,.icon-tags,.icon-archive,.icon-github{
+.icon-mail,
+.icon-tags,
+.icon-archive,
+.icon-github {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
 }
@@ -330,8 +341,6 @@ blockquote:before {
     content: "\e6a7";
 }
 
-
-
 .octicon-tag {
     display: inline-block !important;
     margin: 15px 5px 0 0 !important;
@@ -358,7 +367,7 @@ blockquote:before {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 .pageBtn {
@@ -369,6 +378,7 @@ blockquote:before {
     color: #888;
     transition: all 0.3s ease;
 }
+
 .pageBtn-pre {
     left: 0;
 }
@@ -376,6 +386,7 @@ blockquote:before {
 .pageBtn-next {
     right: 0;
 }
+
 .pageBtn:hover,
 .pageBtn:focus {
     color: #1F1F1F;
@@ -386,11 +397,13 @@ blockquote:before {
     text-align: center;
     padding: 3em 0;
 }
+
 .awardContent {
     position: relative;
     display: none;
     text-align: center;
 }
+
 .awardBtn span {
     height: 55px;
     display: inline-block;
@@ -410,8 +423,6 @@ blockquote:before {
     background: #ff8140;
     color: #fff;
 }
-
-
 
 .gotopBox {
     height: 45px;
@@ -442,22 +453,16 @@ blockquote:before {
 .footer {
     font-size: 12px;
     margin: 0 auto;
-    padding: 5em 0 1em 0;
+    padding: 5em 0 2em 0;
     text-align: center;
     letter-spacing: 1px;
     color: #bbb;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:800px) {
     body {
-        font-size: 17px;
-    }
-    .post-link h4 {
         font-size: 16px;
     }
-}
-
-@media screen and (max-width:800px) {
     .header {
         width: 88%;
     }
