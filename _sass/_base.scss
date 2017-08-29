@@ -8,10 +8,10 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: $text-color;
-    -webkit-text-size-adjust: 100%;
     margin:  0;
     padding: 0;
     background-color: #f7f7f7;
+    -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6,
@@ -26,14 +26,20 @@ ol li{
 ol,li {
     list-style: none;
 }
-p{margin: 30px 0;letter-spacing: 0.5px;}
+p {
+    margin: 30px 0;
+    letter-spacing: 0.5px;
+}
 p em {
     font-style: inherit;
     background: #efefef;
     padding: 3px;
 }
 
-p strong{font-size: 1rem;color:#1f1f1f;}
+p strong {
+    font-size: 1rem;
+    color:#1f1f1f;
+}
 
 
 /* Images*/
@@ -78,6 +84,7 @@ blockquote {
     padding-left: $spacing-unit;
     letter-spacing: 0.2px;
     position:relative;
+    color:#999;
 
     > :last-child {
         margin-bottom: 0;

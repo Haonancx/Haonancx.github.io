@@ -191,7 +191,7 @@
 .post-list li {
     position: relative;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     border-bottom: 1px solid #f9f9f9;
 }
@@ -221,7 +221,7 @@ blockquote:before {
     width: 4px;
     top: 10px;
     bottom: 5px;
-    left: -15px;
+    left: -5px;
 }
 
 .well ul {
@@ -375,7 +375,7 @@ blockquote:before {
     padding: 10px;
     font-weight: 700;
     font-size: 15px;
-    color: #565656;
+    color: #666;
     transition: all 0.3s ease;
 }
 
@@ -460,13 +460,7 @@ blockquote:before {
 }
 
 @media screen and (max-width:800px) {
-    .header {
-        width: 88%;
-    }
-    .post-list li {
-        margin-top: 40px;
-    }
-    .wrapper {
+    .header,.wrapper{
         width: 88%;
         margin: 0 auto;
     }
