@@ -16,6 +16,15 @@ dl, dd, ol, ul, figure {
 ol li{
     line-height: 35px;
 }
+ol,li {
+    list-style: none;
+}
+p em {
+    font-style: inherit;
+    background: #efefef;
+    padding: 3px;
+}
+
 p{margin: 30px 0;letter-spacing: 0.5px;}
 p strong{font-size: 1rem;color:#1f1f1f;}
 /* Basic styling*/
