@@ -15,7 +15,6 @@
     font-size: 25px;
     text-align: left;
     letter-spacing: 1px;
-    width: 85px;
     float: left;
     height: 45px;
     line-height: 45px;
@@ -27,7 +26,6 @@
     color: #000;
     display: inline-block;
     line-height: 45px;
-    width: 85px;
     font-weight: 800;
 }
 
@@ -192,10 +190,8 @@
     padding: 0;
     margin-top: 40px;
     width: 100%;
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f5f5f5;
 }
-
-
 
 .post-link {
     display: block;
@@ -361,7 +357,7 @@ blockquote:before {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .pageBtn {
