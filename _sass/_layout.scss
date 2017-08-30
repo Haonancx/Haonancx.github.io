@@ -185,7 +185,7 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 0;
-    padding: 0 0 30px 0;
+    padding: 0 0 20px 0;
 }
 
 .post-list li {
@@ -372,10 +372,10 @@ blockquote:before {
 
 .pageBtn {
     position: absolute;
-    padding: 10px;
+    padding: 0;
     font-weight: 700;
     font-size: 15px;
-    color: #666;
+    color: #777;
     transition: all 0.3s ease;
 }
 
