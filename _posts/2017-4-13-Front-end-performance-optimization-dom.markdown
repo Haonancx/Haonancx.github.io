@@ -98,5 +98,99 @@ HTML 结构优化是对 DOM 结构最直截了当和最高效的方式，可以�
 有以下几种做法：
 
 1.Display 的值会影响布局，从而影响页面元素位置变化，所以会更改渲染树的结构，即使我们知道 display:none 的时候，DOM 树中虽然能看见它，但其实渲染树中已经不存在了。
+ 
+如果动态改变样式，则使用 cssText。
+
+{% highlight ruby %}
 
 
+    <style type="text/css">
+
+     .red { 
+           color:red; 
+           width:40px;
+           height:50px;
+          }
+
+     </style>
+
+     <script type="text/javascript">
+
+     $(document).ready(function () {
+
+     var el = $('id');
+     el.css('width', '100px');
+     el.css('height', '100px');
+
+     //两次回流 + 一次重绘
+
+     el.addClass('changeStyle');
+
+     // 一次回流
+
+     });
+     </script>
+
+{% endhighlight %}
+
+
+2.使用 DocumentFragment 进行缓存操作,引发一次回流和重绘。（兼容IE9+及主流浏览器）
+
+例如创建一个文档碎片，这里相当于一个容器，把动态创建的元素先放到容器中,最后再一起添加到页面中，这样只引发一次回流。
+
+
+
+{% highlight ruby %}
+
+    // Create the fragment
+    var fragment = document.createDocumentFragment();
+    
+    //add DOM to fragment 
+    
+    for(var i = 0; i < 10; i++) {
+    var spanNode = document.createElement("span");
+    spanNode.innerHTML = "number:" + i;
+    fragment.appendChild(spanNode);
+    }
+    
+    //add this DOM to body
+    document.body.appendChild(spanNode);
+
+{% endhighlight %}
+
+
+3.使用 cloneNode (true or false) 和 replaceChild 技术，引发一次回流和重绘。
+
+如果需要对一个元素进行复杂的操作（删减、添加子节点），那么我们应当先将元素从页面中移除，然后再对其进行操作，或者将其复制一个，在内存中进行操作后再替换原来的节点。
+
+
+{% highlight ruby %}
+
+      //cloneNode克隆节点
+
+      var Box = document.getElementById("box");
+      var Li = document.createElement("li");
+          Li.innerHTML = "hello";
+
+     for(var i= 0; i<100; i++){
+
+     var CreateLi = Li.cloneNode(true);
+         Box.appendChild(CreateLi);
+     }
+
+
+{% endhighlight %}
+
+
+
+4.不要对元素进行 JS 动画流操作，尽量使用 CSS 动画属性，以减少回流的 Render Tree 的规模。
+
+
+
+{% highlight ruby %}
+
+    //不提倡一下做法
+    $(".divOne").animate({top:100});
+    $(".DivTwo").animate({bottom:100});
+
+{% endhighlight %}
