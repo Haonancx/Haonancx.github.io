@@ -96,12 +96,14 @@ blockquote ol li{
 /* Code formatting */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background: #f8f8f8;
-    font-family: "Microsoft Yahei";
     position: relative;
+    margin: 1em 0;
+    overflow: auto;
+    font-family: Menlo, Monaco, Consolas, "Andale Mono", "lucida console", "Courier New", monospace;
+    font-size: 14px;
+    word-wrap: break-word;
+    background: #ebeef5;
+    border-radius: 4px;
 }
 
 code {
