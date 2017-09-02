@@ -135,7 +135,9 @@ pre {
 
     @include media-query($on-laptop) {
         max-width: $content-width;
-        padding: 0 20px;
+        padding: 35px 0 0;
+        width: 95%;
+        margin-top: 20px;
     }
 }
 
