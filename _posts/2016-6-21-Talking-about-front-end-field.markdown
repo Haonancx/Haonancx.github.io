@@ -1,4 +1,4 @@
----
+8---
 layout: post
 title:  "浅谈前端技术领域"
 date:   2016-6-21 23:16:15
@@ -7,7 +7,7 @@ tags: 随笔 浅谈前端
 ---
 #### 在技术中求胜人,不如在技术中求胜己。
 
-![FE-1](http://i.imgur.com/4h02lKF.jpg)
+![fe-bg](https://i.imgur.com/ppgSvTP.jpg)
 
 ### "虚假繁荣"
 
