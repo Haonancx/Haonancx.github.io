@@ -9,8 +9,6 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 2;
 
-$spacing-unit:     20px;
-
 $text-color:       #565656;
 $background-color: #fdfdfd;
 $brand-color:      #222;
@@ -21,10 +19,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 $blue-color:	   #515865;
 
 // Width of the content area
-$content-width:    800px;
 
 $on-palm:          600px;
-$on-laptop:        900px;
+$on-laptop:        840px;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
