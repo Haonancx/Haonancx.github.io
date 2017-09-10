@@ -2,8 +2,8 @@
 layout: post
 title:  "软件架构之道"
 date:   2016-4-28 12:16:10
-categories: 架构 
-tags: 架构
+categories: 软件工程 架构 
+tags: 软件工程 架构
 ---
 #### 架构上很多东西都是相通的，架构与个人的修行之路随行。
 

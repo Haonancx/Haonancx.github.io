@@ -9,6 +9,7 @@ tags: 随笔 架构 浅谈前端
 
 ![PIC-BG](https://i.imgur.com/nFknNXq.jpg)
 
+### 图片认知
 
 ### 图片分类
 
