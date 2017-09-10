@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "前端工程化漫谈"
+title:  "前端工程化之认知篇"
 date:   2017-4-3 12:16:10
 categories: 浅谈前端 深入浅出 工程化 
 tags: 浅谈前端 深入浅出 工程化
