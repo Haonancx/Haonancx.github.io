@@ -7,7 +7,7 @@ tags: 随笔 机器学习 大数据
 ---
 #### 机器学习是智能应用的关键部分，但是你也许不需要一开始就使用。
 
-![ML-BG](http://i.imgur.com/HOtDH40.jpg)
+![ML-BG](https://i.imgur.com/5RlNy89.jpg)
 
 ### 含义
 
