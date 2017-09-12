@@ -6,7 +6,7 @@ categories: 随笔 人生
 tags: 随笔 人生
 ---
 
-#### 苦味一直在，回甘从来没变，变的却是我们。
+#### 苦味一直在，变的是我们。
 
 ![BG](https://i.imgur.com/EW3zcJj.jpg)
 
