@@ -288,7 +288,7 @@ blockquote:before {
     max-width: 1004px;
     width: 94%;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 4em;
 }
 
 .motto span {
@@ -300,36 +300,11 @@ blockquote:before {
     position: relative;
 }
 
-.columns-one {
-    width: 100%;
-}
-
-.columns-two {
-    width: 50%;
-    float: left;
-}
-
-.columns-two img {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
-
-.columns-three {
-    width: 33.333%;
-    float: left;
-}
-
-.columns-three img {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
-
 .p_title p {
-    font-weight: 400;
     color: #101010;
     font-size: 24px;
-    margin: 0;
 }
+
 /* travel */
 
 @font-face {
