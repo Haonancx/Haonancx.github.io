@@ -155,7 +155,8 @@
     padding: 0 10px;
 }
 
-.post-date,.location{
+.post-date,
+.location {
     color: #bbb;
     font-size: 13px;
     letter-spacing: 0.3px;
@@ -282,6 +283,7 @@ blockquote:before {
     padding: 30px 0 10px;
 }
 
+
 /* travel */
 
 .travel-description {
@@ -289,6 +291,12 @@ blockquote:before {
     width: 94%;
     margin: 0 auto;
     padding-bottom: 4em;
+}
+
+.columns {
+    width: 100%;
+    position: relative;
+    padding-bottom: 2em
 }
 
 .motto span {
@@ -300,10 +308,15 @@ blockquote:before {
     position: relative;
 }
 
+.title p {
+    margin: 5px 0;
+}
+
 .p_title p {
     color: #101010;
     font-size: 24px;
 }
+
 
 /* travel */
 
