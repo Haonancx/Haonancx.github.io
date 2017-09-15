@@ -7,7 +7,7 @@ tags: 随笔 架构 浅谈前端
 ---
 #### 前端性能优化，不止于前端。
 
-![PIC-BG](https://i.imgur.com/nFknNXq.jpg)
+![PIC-BG](https://i.imgur.com/6qiorgK.jpg)
 
 ### 图片认知
 
