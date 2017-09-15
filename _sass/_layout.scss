@@ -155,9 +155,9 @@
     padding: 0 10px;
 }
 
-.post-date {
+.post-date,.location{
     color: #bbb;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.3px;
 }
 
@@ -282,14 +282,13 @@ blockquote:before {
     padding: 30px 0 10px;
 }
 
-
-
 /* travel */
 
 .travel-description {
     max-width: 1004px;
     width: 94%;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .motto span {
@@ -325,7 +324,12 @@ blockquote:before {
     padding-left: 0.5rem;
 }
 
-
+.p_title p {
+    font-weight: 400;
+    color: #101010;
+    font-size: 24px;
+    margin: 0;
+}
 /* travel */
 
 @font-face {
