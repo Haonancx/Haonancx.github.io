@@ -1,4 +1,10 @@
 ﻿  $(function() {
+    var arr;
+    $.getJSON("/scripts/travel.json").done(function(data) {
+      arr = data;
+
+    });
+    console.log(arr)
     var url = document.location.href;
 
     function addLink(msg) {
@@ -37,12 +43,7 @@
         },
         100)
     });
-    var arr;
-    $.getJSON("/scripts/travel.json").done(function(data) {
-      arr = data;
 
-    });
-    console.log(arr)
     $(window).scroll(function() {
       $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
     });
