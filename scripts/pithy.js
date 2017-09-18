@@ -32,12 +32,12 @@
     }
     document.body.oncopy = addLink;
     $(".gotopBox").click(function() {
-        jQuery("html,body").animate({
-            scrollTop: 0
-          },
-          100)
-      }),
-      var arr;
+      jQuery("html,body").animate({
+          scrollTop: 0
+        },
+        100)
+    });
+    var arr;
     $.getJSON("/scripts/travel.json").done(function(data) {
       arr = data;
 
