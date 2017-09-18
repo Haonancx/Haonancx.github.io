@@ -1,9 +1,14 @@
 ﻿  $(function() {
     var arr;
-    $.getJSON("/scripts/travel.json").done(function(data) {
-      arr = data;
+    // $.getJSON("/scripts/travel.json").done(function(data) {
+    //   arr = data;
 
+    // });
+
+    $.getJSON("/scripts/travel.json", "", function(data) {
+      arr = data;
     });
+
     console.log(arr)
     var url = document.location.href;
 
