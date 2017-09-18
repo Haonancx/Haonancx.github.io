@@ -41,12 +41,14 @@
         },
         100)
     }),
-
-    $.ajax({
+$(function(){ 
+        $.ajax({
         url:"scripts/travel.json",
         success:function(result){
         console.log(result)
     }});
+}) 
+
     $(window).scroll(function() {
         $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
     });
