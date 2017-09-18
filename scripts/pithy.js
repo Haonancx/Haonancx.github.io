@@ -7,6 +7,7 @@
 
     $.getJSON("/scripts/travel.json", "", function(data) {
       arr = data;
+      alert("1111")
     });
 
     console.log(arr)
