@@ -1,20 +1,9 @@
-﻿      var arr;
+﻿      var arr = 0;
       $(function() {
-
-
-        $.ajax({
-          url: "/scripts/travel.json", //json文件位置
-          type: "GET", //请求方式为get
-          dataType: "json", //返回数据格式为json
-          success: function(data) { //请求成功完成后要执行的方法 
-            //each循环 使用$.each方法遍历返回的数据date
-            arr = data;
-            // $.each(data.first, function(i, item) {
-            //   var str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
-            //   document.write(str);
-            // })
-          }
+        $.getJSON("/scripts/travel.json").done(function(data) {
+          arr = data;
         })
+
 
         console.log(arr)
         var url = document.location.href;
