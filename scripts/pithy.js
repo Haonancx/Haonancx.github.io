@@ -41,7 +41,7 @@
           $.ajax({
               url: "scripts/travel.json",
               success: function(result) {
-                  console.log(result)
+      console.log("result")
               }
           });
 
