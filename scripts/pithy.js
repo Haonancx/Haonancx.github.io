@@ -37,12 +37,12 @@
           },
           100)
       }),
+      var arr;
+    $.getJSON("/scripts/travel.json").done(function(data) {
+      arr = data;
 
-      $.getJSON("/scripts/travel.json").done(function(data) {
-        console.log(data)
-
-      });
-
+    });
+    console.log(arr)
     $(window).scroll(function() {
       $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
     });
