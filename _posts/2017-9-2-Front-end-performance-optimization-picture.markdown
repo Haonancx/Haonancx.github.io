@@ -101,13 +101,15 @@ png8 类型的图片，都最多只能展示256种颜色，所以 png8 格式更
 
 离散余弦变换算法，是从图片的顶部开始，逐行清晰的加载，以至整张图片完整的显示。
 
+![Discrete-cosine-bg](https://i.imgur.com/6xp3eJO.jpg)
+
 ### 流行做法
+
+#### CSS3
 
 #### CSS Sprites
 
 #### iconfont
-
-#### CSS3
 
 ### 前瞻性做法
 
