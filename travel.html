@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
   <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
 </head>
-<body ng-app="myApp">
+<body>
 <div class="page-content">
 <header class="header">
     <div class="header-container">
@@ -99,6 +99,14 @@
             <p class="location">Sanya, HaiNan</p>
         </div>
     </div>
+
+
+<h2 ng-bind="travelObj"></h2>
+<ul ng-repeat="items in travelObj">
+    <li>{{items.location}}</li>
+</ul>
+
+
 </div>
 </div>
   <script>
