@@ -110,20 +110,27 @@
 </div>
 </div>
   <script>
-$(function(){
-      var travelMsgList;
+
+      var app = angular.module('myApp', []);
+      app.controller("travelCtrl", function($scope) {
       $.ajax({
           url: "scripts/travel.json",
           type: "GET", 
           dataType: "json", 
           success: function(data) {
-              travelMsgList = data;
+              $scope.travelObj = data;
           }
-      })
+      });
+        $(".gotopBox").click(function() {
+    jQuery("html,body").animate({
+            scrollTop: 0
+        },
+        100)
+  }),
+  $(window).scroll(function() {
+    $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
   });
-      var app = angular.module('myApp', []);
-      app.controller("travelCtrl", function($scope) {
-          $scope.travelObj = travelMsgList;
+
       });
 
   </script>
