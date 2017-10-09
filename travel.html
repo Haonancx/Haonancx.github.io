@@ -64,3 +64,10 @@ layout: default
     </div>
 
 </div>
+  <script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
+  <script>
+            var app = angular.module('myApp', []);
+      app.controller("travelCtrl", function($scope) {
+          $scope.travelObj = travelMsgList;
+      })
+  </script>

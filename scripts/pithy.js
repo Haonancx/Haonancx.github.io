@@ -41,10 +41,6 @@
               travelMsgList = data;
           }
       })
-      var app = angular.module('myApp', []);
-      app.controller("travelCtrl", function($scope) {
-          $scope.travelObj = travelMsgList;
-      })
 
       $(".gotopBox").click(function() {
               jQuery("html,body").animate({
