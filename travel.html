@@ -45,7 +45,7 @@
         <p class="motto">灵魂和身体，总有一个要在路上。<span class="iconfont icon-photo"></span></p>
     </div>
 
-    <div class="row" ng-repeat="items in travelObj">
+    <div class="row" ng-repeat="items in travelObj | orderBy:index">
         <div class="columns">
             <img class="img-one" ng-src="{{items.imgUrl}}" alt="{{items.title}}">
         </div>
@@ -55,18 +55,15 @@
             <p class="location">{{items.location}}</p>
         </div>
     </div>
+</div>
+</div>
 
-<ul>
-    <li ng-repeat="items in travelObj">{{items.location}}</li>
-</ul>
-</div>
-</div>
   <div class="gotopBox" title="返回顶部"><div class="gotop"></div></div>
   <footer class="footer">
   <span>Written by FSUX, all right reserved.</span>
 </footer>
-  <script>
 
+  <script>
   var app = angular.module('myApp', []);
   app.controller("travelCtrl", function($scope) {
     var travelMagList;
