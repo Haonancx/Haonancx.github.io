@@ -110,8 +110,7 @@
 </div>
 </div>
   <script>
-          var travelMsgList;
-
+      var travelMsgList;
       $.ajax({
           url: "scripts/travel.json", //json文件位置
           type: "GET", //请求方式为get
@@ -120,7 +119,7 @@
               travelMsgList = data;
           }
       })
-            var app = angular.module('myApp', []);
+      var app = angular.module('myApp', []);
       app.controller("travelCtrl", function($scope) {
           $scope.travelObj = travelMsgList;
       })
