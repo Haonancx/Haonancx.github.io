@@ -113,15 +113,17 @@
 
   var app = angular.module('myApp', []);
   app.controller("travelCtrl", function($scope) {
+    var travelMagList;
   $.ajax({
       url: "scripts/travel.json",
       type: "GET", 
       dataType: "json", 
+      async :false,
       success: function(data) {
           $scope.travelObj = data.travelMsg;
       }
   });
-  console.log($scope.travelObj)
+  
     $(".gotopBox").click(function() {
     jQuery("html,body").animate({
               scrollTop: 0
