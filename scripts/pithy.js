@@ -31,16 +31,7 @@
               0)
       }
       document.body.oncopy = addLink;
-      var travelMsgList;
 
-      $.ajax({
-          url: "scripts/travel.json", //json文件位置
-          type: "GET", //请求方式为get
-          dataType: "json", //返回数据格式为json
-          success: function(data) { //请求成功完成后要执行的方法 
-              travelMsgList = data;
-          }
-      })
 
       $(".gotopBox").click(function() {
               jQuery("html,body").animate({
