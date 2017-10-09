@@ -16,31 +16,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/fsux.jpg">
   <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
-  <script>
-
-  var app = angular.module('myApp', []);
-  app.controller("travelCtrl", function($scope) {
-  $.ajax({
-      url: "scripts/travel.json",
-      type: "GET", 
-      dataType: "json", 
-      success: function(data) {
-          $scope.travelObj = data.travelMsg;
-      }
-  });
-    $(".gotopBox").click(function() {
-    jQuery("html,body").animate({
-              scrollTop: 0
-          },
-          100)
-    }),
-    $(window).scroll(function() {
-      $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
-    });
-
-  });
-
-  </script>
 </head>
 <body>
 <div class="page-content">
@@ -128,13 +103,36 @@
 <ul>
     <li ng-repeat="items in travelObj">{{items.location}}</li>
 </ul>
-
-
 </div>
 </div>
   <div class="gotopBox" title="返回顶部"><div class="gotop"></div></div>
   <footer class="footer">
   <span>Written by FSUX, all right reserved.</span>
 </footer>
+  <script>
+
+  var app = angular.module('myApp', []);
+  app.controller("travelCtrl", function($scope) {
+  $.ajax({
+      url: "scripts/travel.json",
+      type: "GET", 
+      dataType: "json", 
+      success: function(data) {
+          $scope.travelObj = data.travelMsg;
+      }
+  });
+    $(".gotopBox").click(function() {
+    jQuery("html,body").animate({
+              scrollTop: 0
+          },
+          100)
+    }),
+    $(window).scroll(function() {
+      $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
+    });
+
+  });
+
+  </script>
   </body>
   </html>
