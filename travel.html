@@ -8,7 +8,7 @@
   <meta name="keywords" content="关人潮,关人潮的技术博客,前端架构,架构,FSUX,FSUX Blog,博客,个人网站,互联网,前端,设计,数据可视化,机器学习,大数据">
   <title>关人潮的博客 | FSUX Blog</title>
   <meta name="author" content="关人潮,fsux">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/travel.css">
   <link rel="canonical" href="https://fsux.me/travel.html">
   <link rel="alternate" type="application/atom+xml" title="Life Designer | FSUX" href="https://fsux.me/feed.xml">
   <link rel="short icon" href="/images/fsux.jpg">
@@ -17,8 +17,27 @@
   <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
 </head>
-<body>
-
+<body ng-app="myApp">
+<header class="header">
+    <div class="header-container">
+        <div class="MainIndex"><a href="http://fsux.me/#">FSUX</a></div>
+        <div class="nav">
+            <p>Life Designer</p>
+            <li>
+                <a href="mailto:fsux@outlook.com" title="联系"><span class="iconfont icon-mail"></span></a>
+            </li>
+            <li>
+                <a href="/tags.html#" title="标签"><span class="iconfont icon-tags"></span></a>
+            </li>
+            <li>
+                <a href="/archive.html#" title="年度"><span class="iconfont icon-archive"></span></a>
+            </li>
+            <li>
+                <a href="/travel.html#" title="旅行"><span class="iconfont icon-travel"></span></a>
+            </li>
+        </div>
+    </div>
+</header>
 <div class="well" ng-controller="travelCtrl">
     <div class="travel-description">
         <p class="category">Photos</p>
