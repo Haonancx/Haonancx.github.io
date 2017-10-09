@@ -55,7 +55,6 @@
             <p class="location">{{items.location}}</p>
         </div>
     </div>
-
 </div>
 </div>
 
@@ -71,14 +70,12 @@
   $.ajax({
       url: "scripts/travel.json",
       type: "GET", 
-      dataType: "json", 
+      dataType: "json"
       success: function(data) {
          window.sessionStorage.setItem("travelMsg", JSON.stringify(data));
-
       }
   });
-    $scope.travelObj = JSON.parse(window.sessionStorage.getItem("travelMsg"));
-
+  $scope.travelObj = JSON.parse(window.sessionStorage.getItem("travelMsg"));
     $(".gotopBox").click(function() {
     jQuery("html,body").animate({
               scrollTop: 0
