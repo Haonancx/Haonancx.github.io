@@ -1,93 +1,65 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
-  <meta name="description" content="关人潮,FSUX,关人潮的个人博客,前端工程师,前端架构,数据可视化,大数据工程师,机器学习,这里是@关人潮一名前端架构士的个人博客">
-  <meta name="keywords" content="关人潮,关人潮的技术博客,前端架构,架构,FSUX,FSUX Blog,博客,个人网站,互联网,前端,设计,数据可视化,机器学习,大数据">
-  <title>关人潮的博客 | FSUX Blog</title>
-  <meta name="author" content="关人潮,fsux">
-  <link rel="stylesheet" href="/css/travel.css">
-  <link rel="canonical" href="https://fsux.me/travel.html">
-  <link rel="alternate" type="application/atom+xml" title="Life Designer | FSUX" href="https://fsux.me/feed.xml">
-  <link rel="short icon" href="/images/fsux.jpg">
-  <link rel="apple-touch-icon" href="/images/fsux.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/fsux.jpg">
-  <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
-</head>
-<body>
-<div class="page-content">
-<header class="header">
-    <div class="header-container">
-        <div class="MainIndex"><a href="http://fsux.me/#">FSUX</a></div>
-        <div class="nav">
-            <p>Life Designer</p>
-            <li>
-                <a href="mailto:fsux@outlook.com" title="联系"><span class="iconfont icon-mail"></span></a>
-            </li>
-            <li>
-                <a href="/tags.html#" title="标签"><span class="iconfont icon-tags"></span></a>
-            </li>
-            <li>
-                <a href="/archive.html#" title="年度"><span class="iconfont icon-archive"></span></a>
-            </li>
-            <li>
-                <a href="/travel.html#" title="旅行"><span class="iconfont icon-travel"></span></a>
-            </li>
-        </div>
-    </div>
-</header>
-<div class="well" ng-controller="travelCtrl">
+---
+layout: default
+---
+
+<div class="well">
     <div class="travel-description">
         <p class="category">Photos</p>
         <p class="motto">灵魂和身体，总有一个要在路上。<span class="iconfont icon-photo"></span></p>
     </div>
 
-    <div class="row" ng-repeat="items in travelObj | orderBy:index">
+    <div class="row">
         <div class="columns">
-            <img class="img-one" ng-src="{{items.imgUrl}}" alt="{{items.title}}">
+            <img class="img-one" src="travel-img/2017-10-2-zhejiang-where-sea.jpg" alt="未名之城">
         </div>
         <div class="title">
-            <h4 class="post-date">{{items.postDate}}<</h4>
-            <h3 class="p_title"><p>{{items.title}}</p></h3>
-            <p class="location">{{items.location}}</p>
+            <h4 class="post-date">October 2, 2017</h4>
+            <h3 class="p_title"><p>未名之城</p></h3>
+            <p class="location">One person travels</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns">
+            <img class="img-one" src="travel-img/2016-11-18-hainan-lingshui-sea.jpg" alt="假日时光">
+        </div>
+        <div class="title">
+            <h4 class="post-date">November 18, 2016</h4>
+            <h3 class="p_title"><p>Seaside holiday</p></h3>
+            <p class="location">Bound Island</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns">
+            <img class="img-one" src="travel-img/2015-10-7-shandong-weihai-Dancer.JPG" alt="海上托马斯">
+        </div>
+        <div class="title">
+            <h4 class="post-date">October 7, 2015</h4>
+            <h3 class="p_title"><p>海上托马斯</p></h3>
+            <p class="location">Weihai, Shandong</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns">
+            <img class="img-one" src="travel-img/2015-9-18-Deerback.JPG" alt="余霞散成绮">
+        </div>
+        <div class="title">
+            <h4 class="post-date">September 18, 2015</h4>
+            <h3 class="p_title"><p>余霞散成绮</p></h3>
+            <p class="location">Deerback</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns">
+            <img class="img-one" src="travel-img/2015-8-5-hainan-sanya-Sunset.JPG" alt="落日余晖">
+        </div>
+        <div class="title">
+            <h4 class="post-date">August 5, 2015</h4>
+            <h3 class="p_title"><p>落日余晖</p></h3>
+            <p class="location">Sanya, HaiNan</p>
         </div>
     </div>
 </div>
-</div>
-
-  <div class="gotopBox" title="返回顶部"><div class="gotop"></div></div>
-  <footer class="footer">
-  <span>Written by FSUX, all right reserved.</span>
-</footer>
-
-  <script>
-  var app = angular.module('myApp', []);
-  app.controller("travelCtrl", function($scope) {
-    var travelMagList;
-  $.ajax({
-      url: "scripts/travel.json",
-      type: "GET", 
-      dataType: "json"
-      success: function(data) {
-         window.sessionStorage.setItem("travelMsg", JSON.stringify(data));
-      }
-  });
-  $scope.travelObj = JSON.parse(window.sessionStorage.getItem("travelMsg"));
-    $(".gotopBox").click(function() {
-    jQuery("html,body").animate({
-              scrollTop: 0
-          },
-          100)
-    }),
-    $(window).scroll(function() {
-      $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
-    });
-
-  });
-
-  </script>
-  </body>
-  </html>
