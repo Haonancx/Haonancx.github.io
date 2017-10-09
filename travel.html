@@ -110,19 +110,26 @@
 </div>
 </div>
   <script>
+$(function(){
       var travelMsgList;
       $.ajax({
-          url: "scripts/travel.json", //json文件位置
-          type: "GET", //请求方式为get
-          dataType: "json", //返回数据格式为json
-          success: function(data) { //请求成功完成后要执行的方法 
+          url: "scripts/travel.json",
+          type: "GET", 
+          dataType: "json", 
+          success: function(data) {
               travelMsgList = data;
           }
       })
+  });
       var app = angular.module('myApp', []);
       app.controller("travelCtrl", function($scope) {
           $scope.travelObj = travelMsgList;
-      })
+      });
+
   </script>
+  <div class="gotopBox" title="返回顶部"><div class="gotop"></div></div>
+  <footer class="footer">
+  <span>Written by FSUX, all right reserved.</span>
+</footer>
   </body>
   </html>
