@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="well">
+<div class="well" ng-controller="myCtrl">
     <div class="travel-description">
         <p class="category">Photos</p>
         <p class="motto">灵魂和身体，总有一个要在路上。<span class="iconfont icon-photo"></span></p>
@@ -62,5 +62,13 @@ layout: default
             <p class="location">Sanya, HaiNan</p>
         </div>
     </div>
-    
+
 </div>
+
+<script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
+ <script type="text/javascript">
+        var app = angular.module('myApp',[]);
+        app.controller("myCtrl",function($scope) {
+            $scope.names = [ 'Norway','Sweden','Denmark','Germany'];
+        })
+</script>
