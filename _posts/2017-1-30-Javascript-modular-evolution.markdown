@@ -7,7 +7,7 @@ tags: 浅谈前端 设计模式 JS
 ---
 #### 从刀耕火种，模块化编程，再到如今的组件化架构，Javascript 是如何演变的。
 
-![JM-BG](http://i.imgur.com/MT1f9WF.jpg)
+![JM-BG](https://i.imgur.com/9WhXc4Y.jpg)
 
 细细整理了过去接触过的那些前端技术，发现前端演进是段特别有意思的历史。
 
