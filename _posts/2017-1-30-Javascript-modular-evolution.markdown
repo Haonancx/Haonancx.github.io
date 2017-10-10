@@ -162,7 +162,99 @@ tags: 浅谈前端 设计模式 JS
 
 ### 单枪匹马
 
+##### LAB.js 的解决方案：动态并行加载脚本文件 以及 管理加载脚本文件的执行顺序。
+
+LABjs 里的动态加载脚本文件，是指页面的 JS 脚本执行时，通过多种方法去加载外部的 JS（主要区别于 html 页面里，通过 script 标签静态加载的脚本）
+
+LABjs 里主要使用了三种技巧，分别为 Script Element、XHR Injection 以及 Cache Trick
+
+
+#### Script Element（LABjs默认的加载方式） 
+
+最常见的脚本动态加载方式优点：
+
+- 实现简单
+- 可跨域 
+- 不会阻塞其他资源的加载等
+
+缺点：
+
+- Opera/Firefox（老版本）下：脚本执行的顺序与节点被插入页面的顺序一致
+- IE/Safari/Chrome下：执行顺序无法得到保证
+
+
+#### XHR Injection
+
+通过 ajax 请求加载脚本文件，然后再通过以下方式执行：
+
+- eval：常见方式
+- XHR injection：创建一个script元素，并将请加载的脚本文件的内容注入
+- 主要限制：无法跨域
+
+#### Cache Trick
+
+当你将 script 元素的 type 属性设置为浏览器不认识的值，比如"text/cache"、"text/casper"、"text/hellworld"等，不同浏览器的行为如下：
+
+IE/Safari/Chrome(老版本)里：脚本照常加载，但不会执行，假设浏览器没有禁用缓存，加载后的脚本会被浏览器缓存起来，当需要用到的时候，只需要重新创建个 script 标签，将 type 设为正确的值，src 指向之前请求的文件 url 即可（相当于从缓存里读文件）
+
+Opera/Firefox：不加载
+
+强依赖于浏览器的特性实现，有可能随着浏览器特性实现的改变而失效，不推荐使用。
+新版本的 chrome 浏览器，将script元素的type设置为非"text/javascript"，不会再对脚本文件进行加载。
+
+
+
+** 实例一**
+
+{% highlight ruby %}
+
+
+    $LAB.script("script1.js")
+    .script("script2.js")
+    .script("script3.js")
+    .wait(function(){// 等待所有script加载完再执行这个代码块
+    script1Func();
+    script2Func();
+    script3Func();
+    });
+
+{% endhighlight %}
+
+**实例二**
+
+{% highlight ruby %}
+
+    $LAB.script({ src:"script1.js", type:"text/javascript"})
+    .script("script2.js")
+    .script("script3.js")
+    .wait(function(){// 等待所有script加载完再执行这个代码块
+    script1Func();
+    script2Func();
+    script3Func();}
+    );
+
+{% endhighlight %}
+
+这种方案适合当执行顺序不重要时，采用先到先得的方式加载静态资源脚本。
+
 ### 短兵相接
+
+##### YUI3的轻量级核心和模块化架构，使其可扩展，快速，健壮。
+
+{% highlight ruby %}
+
+    // YUI - 编写模块
+    YUI.add('dom', function(X) {
+      Y.DOM = { ... }
+    })
+    
+    // YUI - 使用模块
+    YUI().use('dom', function(X) {
+      Y.DOM.doSomeThing();
+      // use some methods DOM attach to X
+    })
+
+{% endhighlight %}
 
 ### 各守城池
 
