@@ -204,7 +204,7 @@ Opera/Firefox：不加载
 
 
 
-** 实例一**
+**实例一**
 
 {% highlight ruby %}
 
@@ -244,21 +244,41 @@ Opera/Firefox：不加载
 {% highlight ruby %}
 
     // YUI - 编写模块
-    YUI.add('dom', function(X) {
+    YUI.add('dom', function(Y) {
       Y.DOM = { ... }
     })
     
     // YUI - 使用模块
-    YUI().use('dom', function(X) {
+    YUI().use('dom', function(Y) {
       Y.DOM.doSomeThing();
-      // use some methods DOM attach to X
+      // use some methods DOM attach to Y
     })
 
 {% endhighlight %}
 
-### 各守城池
+
+#### 动态按需加载
+
+YUI3 种子中的 Get、Loader 模块是动态按需加载的基础,YUI3 通过良好的结构组织，可以根据程序引入的所需模块名称自动计算依赖模块，实现按需加载；
+
+
+YUI3动态加载的优势：
+- 将 js 文件写入 script 标签，每一个标签都会占用一个http 请求(即使是304.)，而动态加载的文件缓存后则不必发起真实的 http 请求。提高了框架的性能。
+- 动态加载可以避免开发人员额外关注js文件之间的依赖和排序及重复问题,引入的时候只需要引入需要模块的名称即可，依赖关系不需要花费精力处理。
+- 动态加载利于页面代码语义化，只需要关心 ‘需要什么’。
+ 
+#### 细粒度化设计
+
+YUI3 对每个模块都进行了更细粒度的划分。
+比如，DOM 模块，划分为了 base,screen,style,selector-css2,selector-css3,selector-native 等几个小模块，对于我们控制页面的载入的数据量有很大帮助。
+
+#### 太多 http 请求？
+
+如果模块化带来的更小粒度更大规模的 js 文件使得页面加载速度更慢，那么它所有的优势将不再具有吸引力，YUI 为了降低 http 请求数；如果，他们引入了 combo 的思想，使用服务器端技术，收到包含多个 js 文件请求的 url 之后，合并这些文件为一个大文件返回。
 
 ### 枪林弹雨
+
+### 各守城池
 
 ### 并肩作战
 
