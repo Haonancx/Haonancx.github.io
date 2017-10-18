@@ -139,7 +139,7 @@ CSS3 通过提供相同的视觉效果而成为图片的“替代品”，换句
 - ctrl + 滚轮缩放十分平滑，无锯齿。
 - 用 SCSS 写 CSS 的话，尺寸计算其实很方便。
 
-[500+ Free Pure CSS Icons](https://www.designzzz.com/free-pure-css-icons/ "500+ Free Pure CSS Icons")
+示例：[500+ Free Pure CSS Icons](https://www.designzzz.com/free-pure-css-icons/ "500+ Free Pure CSS Icons")
 
 #### CSS Sprites
 
