@@ -220,13 +220,32 @@ Iconfont 指用字体文件取代图片文件，来展示图标、特殊字体�
 
 - 加载文件体积小。
 - 减少 http 请求。
-- 可以直接通过 css 的font-size，color 修改它的大小和颜色，对于需要缩放多个尺寸的图标，是个很好的解决方案。
+- 可以直接通过 css 的 font-size，color 修改它的大小和颜色，对于需要缩放多个尺寸的图标，是个很好的解决方案。
 - 支持一些 css3 对文字的效果，例如：阴影、旋转、透明度。
 - 兼容低版本浏览器。
 
 ### 前瞻性做法
 
+#### 响应式动态图片加载（SDK）
 
+- 我们需要一个默认图片
+- 屏幕分辨率的信息返回给服务器
+- 使用服务器返回的更优质的图片资源
+
+
+##### 根据不同的分辨率加载不同资源的图片（部分浏览器现已支持）
+
+{% highlight ruby %}
+
+    .html 文件
+    
+    <picture>
+      <source src="/path/to/medium-image.png" media="(min-width: 600px)">
+      <source src="/path/to/large-image.png" media="(min-width: 800px)">
+      <img src="/path/to/mobile-image.png" alt="image description">
+    </picture >
+
+{% endhighlight %}
 
 ### 系列文章
 
