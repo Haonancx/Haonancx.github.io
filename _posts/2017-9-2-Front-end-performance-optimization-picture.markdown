@@ -160,9 +160,71 @@ CSS Sprites 其实就是把网页中一些背景图片整合到一张图片文�
 
 #### iconfont
 
+Iconfont 指用字体文件取代图片文件，来展示图标、特殊字体等元素的一种方法。
+
+示例：[iconFont](http://iconfont.cn/ "iconFont")
+
+##### 这里以 iconfont的使用 为例
+
+
+#### font-face 字体声明：　　　
+
+
+{% highlight ruby %}
+     .css 文件
+
+     @font-face {font-family: "iconfont";
+       src: url('iconfont.eot'); /* IE9*/
+       src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('iconfont.woff') format('woff'), /* chrome, firefox */
+       url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+       url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+     }
+
+{% endhighlight %}
+
+我们可以看到，不同的浏览器调用不同的字体文件。
+
+ 
+
+#### 定义一下Iconfont 的样式：
+
+
+我们可以通过字体的大小font-size和自体颜色color改变图标的大小和颜色。
+
+{% highlight ruby %}
+
+      .css 文件
+     .iconfont {
+       font-family:"iconfont" !important;
+       font-size:16px;
+       color:#f00;//红色
+     }
+ 
+{% endhighlight %}
+
+
+挑选图标对应的字体编码，应用于页面中：
+
+{% highlight ruby %}
+
+    .html 文件
+    
+    <i class="icon iconfont">&#xe60e;</i>
+
+{% endhighlight %}
+
+**优点：**
+
+- 加载文件体积小。
+- 减少 http 请求。
+- 可以直接通过 css 的font-size，color 修改它的大小和颜色，对于需要缩放多个尺寸的图标，是个很好的解决方案。
+- 支持一些 css3 对文字的效果，例如：阴影、旋转、透明度。
+- 兼容低版本浏览器。
+
 ### 前瞻性做法
 
-编写中...
+
 
 ### 系列文章
 
@@ -170,7 +232,7 @@ CSS Sprites 其实就是把网页中一些背景图片整合到一张图片文�
 先占个坑，后续写完。
 
 - [前端性能优化之 DOM 篇](http://fsux.me/%E9%9A%8F%E7%AC%94/%E6%9E%B6%E6%9E%84/%E6%B5%85%E8%B0%88%E5%89%8D%E7%AB%AF/2017/04/13/Front-end-performance-optimization-dom.html)   (完)
-- 前端性能优化之图片篇
+- [前端性能优化之图片篇](http://fsux.me/%E9%9A%8F%E7%AC%94/%E6%9E%B6%E6%9E%84/%E6%B5%85%E8%B0%88%E5%89%8D%E7%AB%AF/2017/09/02/Front-end-performance-optimization-picture.html "前端性能优化之图片篇")（完）
 - 前端性能优化之视频篇
 - 前端性能优化之资源篇
 - 前端性能优化之存储篇
