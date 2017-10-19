@@ -7,7 +7,7 @@ tags: 软件工程 架构
 ---
 #### 架构上很多东西都是相通的，架构与个人的修行之路随行。
 
-![Software-architecture](https://i.imgur.com/cmwyZ0S.jpg)
+![Software-architecture](https://i.imgur.com/k49uw2h.jpg)
 
 ### 软件架构认知
 
