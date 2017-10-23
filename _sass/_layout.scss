@@ -344,13 +344,15 @@ blockquote:before {
 
 .icon-mail,
 .icon-tags,
-.icon-archive,
-.icon-travel {
+.icon-archive 
+{
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     color: #5f5f5f;
 }
-
+.icon-travel {
+    color: #5f5f5f;
+}
 .icon-mail:before {
     content: "\e70a";
 }
