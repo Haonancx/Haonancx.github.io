@@ -2,8 +2,8 @@
 layout: post
 title:  "数据清洗漫谈"
 date:   2016-5-27 23:16:15
-categories: 大数据
-tags: 大数据
+categories: 大数据 数据挖掘
+tags: 大数据 数据挖掘
 ---
 #### 在大数据年代,数据清洗越来越重要,也越来越复杂。
 
