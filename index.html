@@ -1,3 +1,28 @@
 ---
-layout: home
+layout: default
 ---
+
+<div class="home">
+    <ul class="post-list">
+        {% for post in paginator.posts %}
+        <li class="col-md-4">
+            <p class="post-link">
+                <a class="artcle-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <div class="content">
+                    {{ post.excerpt }}
+                </div>
+                <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- Page -->
+{% if paginator.total_pages > 1 %}
+<div class="paginateBox">
+    {% if paginator.previous_page %}
+    <a class="pageBtn previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a> {% endif %} {% if paginator.next_page %}
+    <a class="pageBtn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a> {% endif %}
+</div>
+{% endif %}
+
