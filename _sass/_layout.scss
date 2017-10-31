@@ -503,12 +503,12 @@ blockquote:before {
 }
 
 .error-404 a {
-    border: 2px solid;
+    border: 2px solid #222;
     padding: 15px;
 }
 
 .error-404 a:hover {
-    border: 2px solid;
+    border: 2px solid #222;
     background: #222;
     color: #fff;
     transition: all 0.5s ease;
