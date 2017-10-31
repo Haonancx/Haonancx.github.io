@@ -7,13 +7,12 @@ email: fsux@outlook.com
 description: "关人潮,FSUX,关人潮的个人博客,前端工程师,前端架构,数据可视化,大数据工程师,机器学习,这里是@关人潮一名前端架构士的个人博客"
 baseurl: "" # the subpath of your site, e.g. /blog/
 keyword: "关人潮,关人潮的技术博客,前端架构,架构,FSUX,FSUX Blog,博客,个人网站,互联网,前端,设计,数据可视化,机器学习,大数据"
-#url: "https://fsux.me" # the base hostname & protocol for your site
-baseurl: '/'
+url: "https://fsux.me" # the base hostname & protocol for your site
 pygments: true
 # Outputting
 
 paginate: 5
-paginate_path: /blog/page:num
+paginate_path: /page/:num
 
 # Build settings
 markdown: redcarpet
