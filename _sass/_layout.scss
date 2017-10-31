@@ -284,7 +284,6 @@ blockquote:before {
 }
 
 
-
 /* travel */
 
 .travel-description {
@@ -303,11 +302,11 @@ blockquote:before {
 
 .row {
     width: 100%;
-    margin: 2em 0;
+    margin:2em 0;
     position: relative;
 }
 
-.img-one {
+.img-one{
     width: 100%;
 }
 
@@ -319,7 +318,6 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
-
 
 /* travel */
 
@@ -346,16 +344,15 @@ blockquote:before {
 
 .icon-mail,
 .icon-tags,
-.icon-archive {
+.icon-archive 
+{
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     color: #5f5f5f;
 }
-
 .icon-travel {
     color: #5f5f5f;
 }
-
 .icon-mail:before {
     content: "\e70a";
 }
@@ -486,7 +483,6 @@ blockquote:before {
     color: #bbb;
 }
 
-
 .error-404 {
     text-align: center;
     letter-spacing: 5px
@@ -511,7 +507,6 @@ blockquote:before {
     color: #fff;
     transition: all 0.5s ease
 }
-
 
 @media screen and (max-width:1000px) {
     .header,
