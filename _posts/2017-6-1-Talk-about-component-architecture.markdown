@@ -5,7 +5,7 @@ date:   2017-6-1 23:16:15
 categories: 随笔 架构 浅谈前端
 tags: 随笔 架构 浅谈前端
 ---
-#### 有时候计划总是赶不上变化。
+#### 架构之大，分而治之。
 
 ![architecture](http://i.imgur.com/R9MYp5x.jpg)
 
