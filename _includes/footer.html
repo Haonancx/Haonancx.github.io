@@ -1,4 +1,4 @@
-<div class="gotopBox" title="返回顶部"><div class="gotop"></div></div>
+<div id="gotopBox" title="返回顶部"><div class="gotop"></div></div>
 <footer class="footer">
   <span>Written by FSUX, all right reserved.</span>
 </footer>
@@ -36,14 +36,14 @@
     0)
   }
   document.body.oncopy = addLink;
-  $(".gotopBox").click(function() {
+  $("#gotopBox").click(function() {
     jQuery("html,body").animate({
             scrollTop: 0
         },
         100)
   }),
   $(window).scroll(function() {
-    $(this).scrollTop() > 300 ? $(".gotopBox").css("opacity", "1") : $(".gotopBox").css("opacity", "0")
+    $(this).scrollTop() > 300 ? $("#gotopBox").css("opacity", "1") : $("#gotopBox").css("opacity", "0")
   });
           
   var _hmt = _hmt || [];
