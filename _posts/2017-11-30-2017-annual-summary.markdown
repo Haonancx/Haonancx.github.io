@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2017 年度总结"
-date:   2017-11-31 01:36:42
+date:   2017-11-30 01:36:42
 categories: 随笔 旅行 年度总结
 tags: 随笔 旅行 年度总结
 ---
@@ -84,7 +84,6 @@ tags: 随笔 旅行 年度总结
 
 适合群众：大数据工程师，数据分析师，前端工程师等。
 
-![travel](http://i.imgur.com/Aezezin.jpg)
 
 #### 工作
 
