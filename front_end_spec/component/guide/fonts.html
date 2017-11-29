@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../image/code.png">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+</head>
+
+<body class="body">
+    <h1 class="site-h1">字体</h1>
+    <div class="yh-body">
+        <blockquote class="layui-elem-quote">
+            字体是界面设计中最重要的基本构成之一，用户通过文本来消化内容和完成工作，优雅的字体将大大提升用户的阅读体验及工作效率。YHUI Design 的字体方案，在满足不同终端始终保持良好的阅读体验的同时，使页面的视觉层次更加清晰
+        </blockquote>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>字体家族</legend>
+        </fieldset>
+        <div class="site-text">
+            <p>字体家族 css 代码如下：</p>
+        </div>
+        <pre class="layui-code">
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+             SimSun, sans-serif;
+        </pre>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>字号</legend>
+        </fieldset>
+        <div class="site-text">
+            <p>YHUI Design 使用不同的字号和字重来传递视觉的信息层次。默认字体为 12px，展示型页面可以设置为 14px，其他字体字号相应升级。</p>
+        </div>
+        <div class="fontSize">
+            <p class="display3"><i>display3</i> 32px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="display2"><i>display2</i> 24px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="display1"><i>display1</i> 20px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="Headline"><i>Headline</i> 16px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="Title"><i>Title</i> 14px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="body2"><i>body2</i> 13px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="body1"><i>body1</i> 12px Regular 我是字体 ABCDEFGH 0123456789</p>
+            <p class="caption"><i>caption</i> 12px Regular 我是字体 ABCDEFGH 0123456789</p>
+        </div>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>行高</legend>
+        </fieldset>
+        <div class="site-text">
+            <p>行高会影响阅读的体验，西文的基本行高通常是字号的 1.2em 上下，而中文因为字符密实且高度一致，所以一般行高需要更大，1.5em 至 1.8em 之间是一个比较好的视觉阅读效果，YHUI Design 规定默认文案字体行高为 1.5em，展示型页面可根据实际情况调整行高。</p>
+        </div>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>行高公式</legend>
+        </fieldset>
+        <div class="site-text">
+            <p>字体行高绝对值为『字号 x 1.5倍』。例如：12 号字体的行高为 18px，14 号字体的行高为 21px。</p>
+        </div>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>字体颜色</legend>
+        </fieldset>
+        <div class="site-text">
+            <p>文本颜色如果和背景颜色太接近就会很难以阅读，这对于深色背景和浅色背景同样适用。</p>
+        </div>
+        <div class="text-img">
+            <p><img src="../../image/font-color.png" alt=""></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../frame/layui/layui.js"></script>
+    <script type="text/javascript">
+    layui.use(['layer', 'element'], function() {
+        var layer = layui.layer,
+            element = layui.element();
+
+        // you code ...
+    });
+    </script>
+</body>
+
+</html>
