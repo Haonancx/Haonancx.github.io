@@ -31,7 +31,7 @@
 
 .logo {
     position: absolute;
-    left: 0;
+    left: 40px;
     font-size: 25px;
     line-height: 60px;
     font-weight: bold;
@@ -43,14 +43,10 @@
 
 .header .layui-nav {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 0;
     padding: 0;
     background: none;
-}
-
-.header .layui-nav .layui-nav-item {
-    margin: 0 25px;
 }
 
 .header .layui-nav .layui-nav-item[mobile] {
@@ -111,10 +107,6 @@
     border-bottom: none;
     position: fixed;
         background-color: rgba(6, 8, 16, 0.3)!important;
-}
-
-.header-demo .logo {
-    left: 40px;
 }
 
 .header-demo .layui-nav {
