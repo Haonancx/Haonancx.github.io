@@ -29,15 +29,6 @@
     padding: 20px 0 10px 20px;
 }
 
-
-/* å¤´éƒ¨ */
-
-.header {
-    height: 59px;
-    border-bottom: 1px solid #404553;
-    background-color: #393D49;
-}
-
 .logo {
     position: absolute;
     left: 0;
@@ -172,7 +163,7 @@
     background-color: #0094ff;
     height: 3px;
 }
-/* åº•éƒ¨ */
+
 
 .footer {
     padding: 30px 0;
@@ -194,7 +185,6 @@ body .layui-layout-admin .footer-demo {
 }
 
 
-/* é¦–é¡µbanneréƒ¨åˆ† */
 .ft-bold{
 font-weight: 700;
 
@@ -554,7 +544,7 @@ body .layui-layer-dir .layui-layer-content {
 }
 
 
-/* æ–‡æ¡£ */
+
 
 .site-tree {
     border-right: 1px solid #eee;
@@ -1085,9 +1075,6 @@ body .site-demo-nav .layui-nav-item {
     display: block;
     color: #fff;
 }
-
-
-/* é€‚é…å¤šè®¾å¤‡ */
 
 @media screen and (max-width: 750px) {
     .layui-main {
