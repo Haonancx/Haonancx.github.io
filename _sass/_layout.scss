@@ -86,6 +86,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -161,6 +162,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -202,6 +204,12 @@
     height: auto;
     zoom: 1;
     display: block;
+}
+
+.fsux-col-xs-four {
+    float: left;
+    width: 25%;
+    margin: 0 0 60px 4.16666667%;
 }
 
 
@@ -444,6 +452,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -478,6 +487,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -649,6 +659,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
