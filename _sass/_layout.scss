@@ -684,20 +684,20 @@ blockquote:before {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 2em 0;
+    margin: 2em 0 0;
 }
 
 .pageBtn {
-
     width: 132px;
     height: 42px;
     line-height: 42px;
     border-radius: 21px;
     font-size: 14px;
-    display: inline-block;
+    display: block;
+    margin: 50px auto 0;
     color: #fff;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 16px rgba(157, 185, 219, .6);
+    box-shadow: 0 8px 16px rgba(157,185,219,0.6);
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
