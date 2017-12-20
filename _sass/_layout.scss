@@ -245,7 +245,7 @@
     position: relative;
 }
 
-.post-list:before {
+.post-list:before,.time-line:before{
     display: block;
     content: "";
     position: absolute;
