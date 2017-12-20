@@ -268,11 +268,11 @@
 
 
 /* article */
-.home:before{
+.post-list:before{
     display: block;
     content: "";
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 0;
     width: 0;
     height: calc(100% - 108px);
