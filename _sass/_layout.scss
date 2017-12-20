@@ -89,6 +89,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -167,6 +168,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -215,6 +217,7 @@
     width: 25%;
     margin: 0 0 60px 4.16666667%;
 }
+
 
 
 
@@ -461,6 +464,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -495,6 +499,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -680,6 +685,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -720,6 +726,10 @@ blockquote:before {
 @media screen and (max-width:1010px) {
     .header-container {
         padding: 0 20px;
+        width: calc(100% - 40px);
+    }
+    .nav ul li {
+        margin-right: 25px;
     }
     .wrapper {
         width: 88%;
