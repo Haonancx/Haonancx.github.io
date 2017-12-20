@@ -90,6 +90,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -169,6 +170,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -215,12 +217,22 @@
 
 .fsux-col-xs-four {
     float: left;
-    width: 25%;
-    margin: 0 0 60px 4.16666667%;
+    width: 31%;
+    height: 200px;
+    margin: 0 0 60px 2%;
 }
- .image-wrapper {
+
+.image-wrapper {
     border-radius: 8px;
     overflow: hidden;
+        height: 200px;
+}
+
+.image-wrapper img {
+    border: 0;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
 }
 
 
@@ -467,6 +479,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -501,6 +514,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -676,6 +690,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
