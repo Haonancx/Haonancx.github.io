@@ -32,7 +32,7 @@
     font-family: 'Microsoft YaHei', 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', SimSun;
     color: #fff;
     display: inline-block;
-    line-height: 45px;
+    line-height: 80px;
     font-weight: 800;
 }
 
@@ -44,12 +44,18 @@
     float: right;
 }
 
+.nav ul {
+    margin: 0;
+    padding0;
+}
+
 .nav ul li {
     float: right;
     padding: 0 0 0 6px;
     line-height: 80px;
     height: 80px;
     text-align: center;
+    margin-right: 40px;
 }
 
 .nav ul li a {
@@ -58,16 +64,15 @@
     transition: all 0.5s ease;
     cursor: pointer;
     color: #fff;
-    margin-right: 40px;
 }
-.nav>ul>li>a:last-child {
+
+.nav>ul>li:last-child {
     margin-right: 0px;
 }
+
 .nav ul li a:hover {
     color: #f3f3f3;
 }
-
-
 
 /* banner */
 
@@ -102,6 +107,8 @@
     background: -webkit-linear-gradient(315deg, #0d44bc, #168cf6);
     background: linear-gradient(135deg, #0d44bc, #168cf6);
 }
+
+
 
 
 
@@ -328,6 +335,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -362,6 +371,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 /* travel */
@@ -519,7 +530,11 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
+
+
 /* footer */
+
 .footer {
     font-size: 12px;
     margin: 0 auto;
@@ -527,7 +542,6 @@ blockquote:before {
     text-align: center;
     letter-spacing: 1px;
     background: #0d1a26;
-
 }
 
 .error-404 {
