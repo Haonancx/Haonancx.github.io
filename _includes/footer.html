@@ -30,17 +30,14 @@ if (paramOffset > 0) {
         isDisplayTopic = false;
     }
 }
-
-if (travelOffset > 0) {
-    $("#titleOne").html("Photo");
-
-} else {
-    $("#titleOne").html("精选文章");
-}
 if (isDisplayTopic) {
     $("#topic").css("display", "block");
 } else {
     $("#topic").css("display", "none");
+}
+if (travelOffset > 0) {
+    $("#titleOne").html("Photo");
+
 }
 
 function addLink(msg) {
