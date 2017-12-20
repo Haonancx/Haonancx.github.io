@@ -97,6 +97,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -185,6 +186,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -267,22 +269,24 @@
 
 
 
+
 /* article */
-.home{
+
+.home {
     position: relative;
 }
-.post-list:before{
+
+.post-list:before {
     display: block;
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -15px;
+    top: 60px;
     bottom: 0;
     width: 0;
     height: calc(100% - 100px);
     margin: 34px 0;
     border-left: 2px dashed #ebedf0;
-
 }
 
 .post-meta {
@@ -309,10 +313,12 @@
     margin: 10px auto;
 }
 
+.content>h4 {
+    font-size: 15px;
+}
+
 .artcle-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #1f1f1f;
+    font-size: 1.2rem;
 }
 
 .post-content {
@@ -508,6 +514,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -542,6 +549,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -703,6 +711,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
