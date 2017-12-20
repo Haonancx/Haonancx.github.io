@@ -240,12 +240,11 @@
 
 
 /* article */
-
-.home {
+.home,.wrappe,.submenu{
     position: relative;
 }
 
-.post-list:before,.time-line:before{
+.post-list:before{
     display: block;
     content: "";
     position: absolute;
@@ -256,7 +255,17 @@
     margin: 34px 0;
     border-left: 2px dashed #ebedf0;
 }
-
+.time-line:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    bottom: 0;
+    width: 0;
+    margin: 34px 0;
+    border-left: 2px dashed #ebedf0;
+}
 .post-meta {
     font-size: 12px;
     margin: 1em 0;
@@ -290,7 +299,7 @@
     position: relative;
 }
 
-.artcle-title:before,.category:before{
+.artcle-title:before{
     display: block;
     content: "";
     position: absolute;
@@ -300,7 +309,20 @@
     height: 20px;
     background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
+.category:before,.submenu li:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: 43px;
+    width: 20px;
+    height: 20px;
+    background: url(../fonts/icon.svg) #fff no-repeat 50%;
+}
+.submenu li:before{
 
+    background-position: 2px 3px;
+}
 .post-content {
     margin: 30px auto;
     padding: 0 0 10px;
