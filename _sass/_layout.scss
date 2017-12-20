@@ -44,7 +44,7 @@
     float: right;
 }
 
-.nav li {
+.nav ul li {
     float: right;
     padding: 0 0 0 6px;
     line-height: 80px;
@@ -52,7 +52,7 @@
     text-align: center;
 }
 
-.nav li a {
+.nav ul li a {
     position: relative;
     display: inline-block;
     transition: all 0.5s ease;
@@ -60,10 +60,10 @@
     color: #fff;
     margin-right: 40px;
 }
-.nav>li>a:last-child {
+.nav>ul>li>a:last-child {
     margin-right: 0px;
 }
-.nav li a:hover {
+.nav ul li a:hover {
     color: #f3f3f3;
 }
 
