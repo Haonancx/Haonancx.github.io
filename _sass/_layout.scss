@@ -91,6 +91,10 @@
 
 
 
+
+
+
+
 /* banner */
 
 .banner {
@@ -158,18 +162,22 @@
 }
 
 
+.home-button {
+    margin: 72px auto 27px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.home-button a {
+    width: 132px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 14px;
+    background: #034365;
+    background: -webkit-linear-gradient(left, #034365, #001b33);
+    background: linear-gradient(90deg, #034365 0, #001b33);
+    box-shadow: 0 8px 16px #0a52ab;
+    border: none;
+}
 
 /* popular-topics */
 
@@ -225,7 +233,7 @@
 .image-wrapper {
     border-radius: 8px;
     overflow: hidden;
-        height: 200px;
+    height: 200px;
 }
 
 .image-wrapper img {
@@ -234,6 +242,10 @@
     width: inherit;
     height: inherit;
 }
+
+
+
+
 
 
 
@@ -462,24 +474,6 @@ blockquote:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* travel */
 
 .travel-description {
@@ -514,23 +508,6 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -692,17 +669,6 @@ blockquote:before {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
 .footer {
@@ -759,8 +725,17 @@ blockquote:before {
     .banner {
         height: 100vh;
     }
+    .popular-content {
+        padding: 0;
+    }
     .popular-topics {
         width: 100%;
         border-radius: 0px;
+        margin: auto;
+    }
+    .fsux-col-xs-four {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
     }
 }
