@@ -107,6 +107,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -205,6 +206,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -275,6 +277,7 @@
     height: inherit;
     border-radius: 8px;
 }
+
 
 
 
@@ -527,6 +530,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -561,6 +565,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -646,19 +651,6 @@ blockquote:before {
     border-bottom-color: #666;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
 .footer {
@@ -669,6 +661,21 @@ blockquote:before {
     letter-spacing: 1px;
     background: #0d1a26;
     color: #eee;
+}
+
+.footer-nav {}
+
+.footer-nav ul li {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    font-size: 14px;
 }
 
 .error-404 {
