@@ -77,7 +77,7 @@
 .banner {
 
     position: relative;
-    height: 872px;
+    height: 100vh;
     text-align: center;
     display: -webkit-box!important;
     display: -webkit-flex!important;
@@ -684,10 +684,6 @@ blockquote:before {
     }
     .banner-content h1 {
         font-size: 20px;
-    }
-
-    .banner {
-        height: 100vh;
     }
     .popular-content {
         padding: 0;
