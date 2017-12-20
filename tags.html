@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div class="well time-line">
+<div class="well">
 <div class="tags">
 <p class="tags-cloud">标签云</p>
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" class="octicon octicon-tag" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 {% endfor %}
 </div>
+<div class="time-line">
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
@@ -19,4 +20,5 @@ layout: default
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
+</div>
 </div>
