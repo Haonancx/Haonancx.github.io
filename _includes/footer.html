@@ -10,7 +10,6 @@
                 <!-- <a href="javascript:;">关于</a> -->
                 <a href="mailto:fsux@outlook.com" title="联系">联系</a>
             </li>
-            
         </ul>
     </div>
     <p><span>Written by FSUX, all right reserved.</span></p>
@@ -19,21 +18,25 @@
 <script>
 var url = document.location.href;
 var isDisplayTopic = false;
-
 var url = document.URL.toString();
 var paramOffset = url.search('page');
-
+var travelOffset = url.search('travel');
 if (paramOffset > 0) {
     isDisplayTopic = true;
 } else {
-    if (url == "http://fsux.me/#" || url == "http://fsux.me/")
-
-    { isDisplayTopic = true; } else {
+    if (url == "http://fsux.me/#" || url == "http://fsux.me/") {
+        isDisplayTopic = true;
+    } else {
         isDisplayTopic = false;
     }
-
 }
 
+if (travelOffset > 0) {
+    $("#titleOne").html("Photo");
+
+} else {
+    $("#titleOne").html("精选文章");
+}
 if (isDisplayTopic) {
     $("#topic").css("display", "block");
 } else {
