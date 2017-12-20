@@ -54,8 +54,8 @@
     padding: 0 0 0 6px;
     line-height: 80px;
     height: 80px;
+    padding: 0 25px;
     text-align: center;
-    margin-right: 40px;
 }
 
 .nav ul li a {
@@ -66,13 +66,12 @@
     color: #fff;
 }
 
-.nav>ul>li:last-child {
-    margin-right: 0px;
-}
 
 .nav ul li a:hover {
     color: #f3f3f3;
 }
+
+
 
 
 
@@ -196,17 +195,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* popular-topics */
 
 .popular-topics {
@@ -277,6 +265,8 @@
     height: inherit;
     border-radius: 8px;
 }
+
+
 
 
 
@@ -531,6 +521,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -565,6 +557,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -651,6 +645,8 @@ blockquote:before {
     border-bottom-color: #666;
 }
 
+
+
 /* footer */
 
 .footer {
@@ -663,8 +659,8 @@ blockquote:before {
     color: #eee;
 }
 
-.footer-nav ul{
-margin: 0 0 100px;
+.footer-nav ul {
+    margin: 0 0 100px;
 }
 
 .footer-nav ul li {
@@ -677,7 +673,11 @@ margin: 0 0 100px;
 
 .footer-nav ul li a {
     color: #fff;
-    font-size: 14px;
+    font-size: 1rem;
+}
+
+.footer p {
+    margin: 0;
 }
 
 .error-404 {
@@ -731,6 +731,7 @@ margin: 0 0 100px;
         width: 100%;
         border-radius: 0px;
         margin: auto;
+        box-shadow: none;
     }
     .fsux-col-xs-four {
         margin: 0 auto;
