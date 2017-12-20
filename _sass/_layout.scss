@@ -261,15 +261,15 @@
 }
 
 .image-wrapper {
-    border-radius: 8px;
     overflow: hidden;
-    height: 200px;
+    padding: 0 20px;
 }
 
 .image-wrapper img {
     border: 0;
     width: inherit;
     height: inherit;
+    border-radius: 8px;
 }
 
 
