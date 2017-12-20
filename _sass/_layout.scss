@@ -290,7 +290,7 @@
     position: relative;
 }
 
-.artcle-title:before {
+.artcle-title:before,.category:before{
     display: block;
     content: "";
     position: absolute;
@@ -412,7 +412,7 @@
 
 .black {
     font-size: 1.5rem;
-    margin: 15px 0 40px 0;
+    margin: 40px 0;
     color: #0d1a26;
 }
 
@@ -476,7 +476,7 @@ blockquote:before {
 }
 
 .post-tags {
-    padding: 1em 0 2em;
+    padding: 3em 0;
 }
 
 .category {
