@@ -74,6 +74,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -164,6 +165,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -221,12 +223,16 @@
 .fsux-col-xs-four {
     float: left;
     width: 31%;
-    margin: 0 0 0 2%;
+    margin: 0 0 15px 2%;
+    position: relative;
 }
 
 .image-wrapper {
+    border-radius: 8px;
+    display: block;
+    width: 280px;
+    height: 210px;
     overflow: hidden;
-    padding: 0 20px;
 }
 
 .image-wrapper img {
@@ -234,7 +240,10 @@
     width: inherit;
     height: inherit;
     border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
 }
+
 
 
 
@@ -525,6 +534,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -563,6 +573,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -659,6 +670,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -745,6 +757,11 @@ blockquote:before {
         margin: 0 auto;
         display: block;
         width: 100%;
+    }
+    .image-wrapper {
+
+        width: 100%;
+        height: auto;
     }
     .popular-wrapper h2 {
         margin: 35px auto;
