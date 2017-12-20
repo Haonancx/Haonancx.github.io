@@ -6,15 +6,13 @@ layout: default
         {% for post in paginator.posts %}
         <li>
             <div class="post-link">
+                <p class="post-meta">
+                    <span class="host-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                </p>
                 <a class="artcle-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <div class="content">
                     {{ post.excerpt }}
                 </div>
-                <p class="post-meta"><i class="iconfont icon-date"></i><span class="host-date">{{ post.date | date: "%Y.%m.%d" }}</span><i class="iconfont icon-tags-item"></i>
-                    <span>{% for tag in post.tags %}
-    <a class="host-tag" href="/tags.html#{{ tag }}">{{ tag }}</a>
-    {% endfor %}</span>
-                </p>
             </div>
         </li>
         {% endfor %}
