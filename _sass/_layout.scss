@@ -7,13 +7,14 @@
 }
 
 .header-container {
-margin: 0 auto;
+    margin: 0 auto;
     padding: 0 40px;
     position: absolute;
     top: 0;
     background: transparent;
     height: 80px;
     line-height: 80px;
+    z-index: 99;
     width: calc(100% - 80px);
 }
 
@@ -29,7 +30,7 @@ margin: 0 auto;
 
 .MainIndex a {
     font-family: 'Microsoft YaHei', 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', SimSun;
-    color: #000;
+    color: #fff;
     display: inline-block;
     line-height: 45px;
     font-weight: 800;
