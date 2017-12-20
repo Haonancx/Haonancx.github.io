@@ -77,6 +77,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -111,13 +112,11 @@
     background: linear-gradient(135deg, #0d44bc, #168cf6);
 }
 
-.banner-content{
+.banner-content {
 
-
-
-
-    
+    z-index: 999;
 }
+
 .banner-content h1 {
     color: #fff;
     font-size: 68px;
@@ -127,6 +126,7 @@
     margin: 26px auto 38px;
     overflow: hidden;
 }
+
 .banner-content .en-name {
     display: block;
     font-size: 14px;
@@ -134,6 +134,7 @@
     color: #fff;
     font-weight: 400;
 }
+
 
 
 /* popular-topics */
@@ -155,6 +156,7 @@
     margin-top: -220px;
     overflow: hidden;
 }
+
 
 
 /* article */
@@ -385,6 +387,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -419,6 +422,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -581,6 +585,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
