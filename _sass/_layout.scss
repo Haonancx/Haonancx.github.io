@@ -287,15 +287,15 @@
     content: "";
     position: absolute;
     left: -15px;
-    top: 105px;
-    bottom: 35px;
+    top: 100px;
+    bottom: 105px;
     width: 0;
     margin: 34px 0;
     border-left: 2px dashed #ebedf0;
 }
 
 .post-meta {
-    font-size: 11px;
+    font-size: 12px;
     margin: 1em 0;
     letter-spacing: 0.7px;
     color: #b2bac2;
@@ -324,19 +324,18 @@
 
 .artcle-title {
     font-size: 1.2rem;
+        position: relative;
 }
 
 .artcle-title:before {
     display: block;
     content: "";
     position: absolute;
-    left: -15px;
-    top: 105px;
-    bottom: 35px;
+    left: -24px;
+    top: 0;
     width: 20px;
     height: 20px;
-    margin: 34px 0;
-    background: url(../fonts/icon.svg) no-repeat 50%;
+    background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
 
 .post-content {
