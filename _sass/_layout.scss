@@ -268,17 +268,21 @@
 
 
 /* article */
+.home{
+    position: relative;
+}
 .post-list:before{
     display: block;
     content: "";
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
     width: 0;
-    height: calc(100% - 108px);
+    height: calc(100% - 100px);
     margin: 34px 0;
     border-left: 2px dashed #ebedf0;
-    
+
 }
 
 .post-meta {
@@ -411,7 +415,6 @@
     padding: 0;
     margin-top: 40px;
     width: 100%;
-    border-bottom: 1px solid #f7f7f7;
 }
 
 .post-link {
