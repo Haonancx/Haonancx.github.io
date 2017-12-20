@@ -2,7 +2,17 @@
     <div class="gotop"></div>
 </div>
 <footer class="footer">
-    <span>Written by FSUX, all right reserved.</span>
+    <div>
+        <ul>
+            <li><a href="/travel.html#">旅行</a></li>
+            <li>
+                <!-- <a href="javascript:;">关于</a> -->
+                <a href="mailto:fsux@outlook.com" title="联系">联系</a>
+            </li>
+            <li><a href="javascript:;">开源</a></li>
+        </ul>
+    </div>
+    <p><span>Written by FSUX, all right reserved.</span></p>
 </footer>
 <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script>
@@ -28,6 +38,7 @@ if (isDisplayTopic) {
 } else {
     $("#topic").css("display", "none");
 }
+
 function addLink(msg) {
     var body_element = document.getElementsByTagName("body")[0];
     var selection;
