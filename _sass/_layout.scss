@@ -719,15 +719,17 @@ blockquote:before {
     font-size: 5em
 }
 .error-404 a {
-    box-shadow: 0 8px 16px rgba(157,185,219,.6);
-    background: -webkit-linear-gradient(left,#05cbff,#1e5aff);
-    background: linear-gradient(90deg,#05cbff,#1e5aff);
+    box-shadow: 0 8px 16px rgba(157,185,219,0.6);
+    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
+    background: linear-gradient(90deg, #05cbff, #1e5aff);
     height: 42px;
     line-height: 42px;
     font-size: 14px;
     border: 0;
+    padding: 0 25px;
     border-radius: 21px;
     color: #fff;
+    display: inline-block;
 }
 
 @media screen and (max-width:1000px) {
