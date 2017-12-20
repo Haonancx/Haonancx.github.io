@@ -175,6 +175,7 @@
     position: relative;
     z-index: 998;
     margin: -220px auto 0;
+    display: none;
 }
 
 
@@ -240,7 +241,7 @@
 
 
 /* article */
-.home,.wrappe,.submenu{
+.home,.wrapper,.submenu{
     position: relative;
 }
 
