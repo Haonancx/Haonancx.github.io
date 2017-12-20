@@ -83,6 +83,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -140,7 +141,7 @@
     font-weight: 400;
 }
 
-.popular-content>i {
+.title-icon {
     margin-top: 64px;
     background: url(../fonts/icon.svg) no-repeat 50%;
     background-size: contain;
@@ -148,6 +149,7 @@
     display: block;
     margin-bottom: 12px;
 }
+
 
 
 
@@ -178,6 +180,7 @@
     margin: auto;
     overflow: hidden;
 }
+
 
 
 
@@ -420,6 +423,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -454,6 +458,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -622,6 +627,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
