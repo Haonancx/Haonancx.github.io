@@ -110,7 +110,14 @@
 
 
 
-
+/* popular-topics */
+.popular-topics{
+    width: calc(100% - 112px);
+    margin: 0 56px;
+    border-radius: 4px;
+    box-shadow: 0 32px 32px rgba(34,94,222,.08);
+    background: #fff;
+}
 
 /* article */
 
