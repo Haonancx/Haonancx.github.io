@@ -111,9 +111,29 @@
     background: linear-gradient(135deg, #0d44bc, #168cf6);
 }
 
+.banner-content{
 
 
 
+
+    
+}
+.banner-content h1 {
+    color: #fff;
+    font-size: 68px;
+    line-height: 80px;
+    text-indent: 2px;
+    font-weight: 600;
+    margin: 26px auto 38px;
+    overflow: hidden;
+}
+.banner-content .en-name {
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+}
 
 
 /* popular-topics */
