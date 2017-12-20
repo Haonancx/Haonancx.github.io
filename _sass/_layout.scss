@@ -611,7 +611,17 @@ blockquote:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-github:before { content: "\e719"; }
 
+.icon-about:before { content: "\e611"; }
+
+.icon-email:before { content: "\e61c"; }
+
+.icon-travel:before { content: "\e677"; }
+
+.icon-pre:before { content: "\e600"; }
+
+.icon-next:before { content: "\e601"; }
 
 .octicon-tag {
     display: inline-block !important;
@@ -651,11 +661,11 @@ blockquote:before {
     transition: all 0.3s ease;
 }
 
-.pageBtn-pre {
+.pre-Btn {
     left: 0;
 }
 
-.pageBtn-next {
+.next-Btn {
     right: 0;
 }
 
