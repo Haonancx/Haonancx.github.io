@@ -103,6 +103,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -197,6 +198,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -269,6 +271,7 @@
     width: inherit;
     height: inherit;
 }
+
 
 
 
@@ -542,6 +545,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -588,6 +592,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 @font-face {
@@ -611,17 +616,35 @@ blockquote:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-github:before { content: "\e719"; }
+.icon-github:before {
+    content: "\e719";
+}
 
-.icon-about:before { content: "\e611"; }
+.icon-about:before {
+    content: "\e611";
+}
 
-.icon-email:before { content: "\e61c"; }
+.icon-email:before {
+    content: "\e61c";
+}
 
-.icon-travel:before { content: "\e677"; }
+.icon-travel:before {
+    content: "\e677";
+}
 
-.icon-pre:before { content: "\e600"; }
+.icon-pre:before {
+    content: "\e600";
+}
 
-.icon-next:before { content: "\e601"; }
+.icon-next:before {
+    content: "\e601";
+}
+
+.icon-pre,
+.icon-next {
+    color: #aaa;
+    font-size: 2.5em;
+}
 
 .octicon-tag {
     display: inline-block !important;
@@ -648,7 +671,7 @@ blockquote:before {
     display: inline-block;
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 80px;
     margin: 2em 0 0;
 }
 
@@ -661,11 +684,11 @@ blockquote:before {
     transition: all 0.3s ease;
 }
 
-.pre-Btn {
+.pre-btn {
     left: 0;
 }
 
-.next-Btn {
+.next-btn {
     right: 0;
 }
 
@@ -696,6 +719,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
