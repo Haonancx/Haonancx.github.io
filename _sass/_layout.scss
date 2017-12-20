@@ -2,14 +2,15 @@
 /* header */
 .header {
     width: 100%;
-    padding: 0 0 3em 0;
+    padding: 0;
     margin: 0 auto;
 }
 
 .header-container {
-    margin: 0 auto;
+margin: 0 auto;
     padding: 0 40px;
     position: absolute;
+    top: 0;
     background: transparent;
     height: 80px;
     line-height: 80px;
@@ -44,9 +45,8 @@
 .nav li {
     float: right;
     padding: 0 0 0 6px;
-    line-height: 20px;
-    height: 20px;
-    width: 20px;
+    line-height: 80px;
+    height: 80px;
     text-align: center;
 }
 
