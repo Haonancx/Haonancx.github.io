@@ -170,6 +170,7 @@
 
 .home-button a {
     display: inline-block;
+    color: #fff;
     width: 132px;
     height: 42px;
     line-height: 42px;
@@ -267,6 +268,18 @@
 
 
 /* article */
+.home:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: calc(100% - 108px);
+    margin: 34px 0;
+    border-left: 2px dashed #ebedf0;
+    
+}
 
 .post-meta {
     font-size: 11px;
