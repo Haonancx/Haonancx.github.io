@@ -310,7 +310,7 @@
     height: 20px;
     background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
-.category:before,.submenu li:before{
+.category:before{
     display: block;
     content: "";
     position: absolute;
