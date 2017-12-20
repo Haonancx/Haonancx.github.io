@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="well time-line">
+<div class="well">
+<div class="time-line">
 {%for post in site.posts %}
 {% unless post.next %}
 <h2 class="category">{{ post.date | date: '%Y' }}</h2>
@@ -22,4 +23,5 @@ layout: default
 </li>
 {% endfor %}
 </ul>
+</div>
 </div>
