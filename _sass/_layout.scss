@@ -6,8 +6,12 @@
 
 .header-container {
     margin: 0 auto;
+    padding: 0 40px;
+    position: absolute;
+    background: transparent;
     height: 80px;
-    position: relative;
+    line-height: 80px;
+    width: calc(100% - 80px);
 }
 
 .MainIndex {
@@ -15,8 +19,8 @@
     text-align: left;
     letter-spacing: 1px;
     float: left;
-    height: 45px;
-    line-height: 45px;
+    height: 80px;
+    line-height: 80px;
     position: relative;
 }
 
