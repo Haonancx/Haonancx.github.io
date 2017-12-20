@@ -95,6 +95,8 @@
 
 
 
+
+
 /* banner */
 
 .banner {
@@ -167,6 +169,7 @@
 }
 
 .home-button a {
+    display: inline-block;
     width: 132px;
     height: 42px;
     line-height: 42px;
@@ -178,6 +181,8 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
+
 
 /* popular-topics */
 
@@ -207,7 +212,7 @@
 
 
 .section-title {
-
+    color: #0d1a26;
     font-size: 32px;
     font-weight: 400;
     text-align: center;
@@ -221,6 +226,15 @@
     zoom: 1;
     display: block;
     margin-top: 72px;
+}
+
+.popular-wrapper h2 {
+    font-size: 20px;
+    color: #0d1a26;
+    font-weight: 400;
+    margin: 24px auto 8px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .fsux-col-xs-four {
@@ -242,6 +256,8 @@
     width: inherit;
     height: inherit;
 }
+
+
 
 
 
@@ -474,6 +490,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -508,6 +526,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -667,6 +687,8 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
+
 
 
 /* footer */
