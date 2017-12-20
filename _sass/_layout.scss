@@ -310,7 +310,7 @@
     height: 20px;
     background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
-.category:before,.submenu li:before{
+.category:before{
     display: block;
     content: "";
     position: absolute;
@@ -319,10 +319,6 @@
     width: 20px;
     height: 20px;
     background: url(../fonts/icon.svg) #fff no-repeat 50%;
-}
-.submenu li:before{
-    top: 20px;
-    background-position: 2px 3px;
 }
 .post-content {
     margin: 30px auto;
@@ -502,7 +498,7 @@ blockquote:before {
     padding: 3em 0;
 }
 
-.category {
+.category,.tags-cloud{
     font-size: 24px;
     position: relative;
     font-weight: bold;
@@ -581,7 +577,9 @@ blockquote:before {
 
 .octicon-tag:hover,
 .post-tags a:hover {
-    color: #000;
+    color: #fff;
+    background: -webkit-linear-gradient(left,#05cbff,#1e5aff);
+    background: linear-gradient(90deg,#05cbff,#1e5aff);
 }
 
 .paginateBox {
