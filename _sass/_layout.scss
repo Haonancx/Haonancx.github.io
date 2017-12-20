@@ -60,7 +60,9 @@
     color: #fff;
     margin-right: 40px;
 }
-
+.nav>li>a:last-child {
+    margin-right: 0px;
+}
 .nav li a:hover {
     color: #f3f3f3;
 }
