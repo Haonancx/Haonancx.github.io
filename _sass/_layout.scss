@@ -101,6 +101,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -193,6 +194,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -265,6 +267,7 @@
     width: inherit;
     height: inherit;
 }
+
 
 
 
@@ -534,6 +537,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -568,6 +572,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -699,8 +704,7 @@ blockquote:before {
 
 .pageBtn:hover,
 .pageBtn:focus {
-    color: #1F1F1F;
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(157, 185, 219, .8);
 }
 
 #gotopBox {
@@ -730,6 +734,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
