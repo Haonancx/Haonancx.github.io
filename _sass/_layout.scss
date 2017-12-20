@@ -76,6 +76,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -114,6 +115,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -124,6 +126,15 @@
     background: #fff;
 }
 
+
+.popular-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: auto;
+    margin-top: -220px;
+    overflow: hidden;
+}
 
 
 /* article */
@@ -353,6 +364,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -387,6 +399,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -548,6 +561,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
