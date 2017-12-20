@@ -517,14 +517,15 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
-
+/* footer */
 .footer {
     font-size: 12px;
     margin: 0 auto;
     padding: 3em 0 2em 0;
     text-align: center;
     letter-spacing: 1px;
-    color: #bbb;
+    background: #0d1a26;
+
 }
 
 .error-404 {
