@@ -100,6 +100,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -191,6 +192,7 @@
 
 
 
+
 /* popular-topics */
 
 .popular-topics {
@@ -276,6 +278,7 @@
 
 
 
+
 /* article */
 
 .home {
@@ -324,7 +327,7 @@
 
 .artcle-title {
     font-size: 1.2rem;
-        position: relative;
+    position: relative;
 }
 
 .artcle-title:before {
@@ -530,6 +533,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -564,6 +568,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -671,7 +676,6 @@ blockquote:before {
 
 .paginateBox {
     position: relative;
-    height: 30px;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -679,20 +683,18 @@ blockquote:before {
 }
 
 .pageBtn {
-    position: absolute;
-    padding: 0;
-    font-weight: 700;
-    font-size: 15px;
-    color: #777;
+
+    width: 132px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
     transition: all 0.3s ease;
-}
-
-.pageBtn-pre {
-    left: 0;
-}
-
-.pageBtn-next {
-    right: 0;
+    box-shadow: 0 8px 16px rgba(157, 185, 219, .6);
+    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
+    background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
 
 .pageBtn:hover,
@@ -728,6 +730,7 @@ blockquote:before {
     border-top-width: 0;
     border-bottom-color: #666;
 }
+
 
 
 
