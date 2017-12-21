@@ -79,6 +79,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -166,6 +167,7 @@
 }
 
 
+
 /* article */
 
 .home,
@@ -173,6 +175,12 @@
 .submenu,
 .time-line {
     position: relative;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px 0;
+    color: #222;
 }
 
 .post-list:before {
@@ -453,6 +461,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -496,6 +505,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -602,6 +612,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -674,5 +685,4 @@ blockquote:before {
     .banner-content h1 {
         font-size: 20px;
     }
-
 }
