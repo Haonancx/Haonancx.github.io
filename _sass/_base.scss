@@ -122,19 +122,22 @@ pre {
 /*Wrapper*/
 .page-content{
     width: 880px;
-    margin:50px auto 0;
+    margin: -90px auto 85px;
     height: 100%;
     min-height: 100%;
     padding: 60px;
     position: relative;
     z-index: 998;
-    background:#fff;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 32px 32px rgba(34,94,222,.08);
     @extend %clearfix;
 
     @include media-query($on-laptop) {
         padding: 0 0 25px;
         width: 95%;
-        margin-top: 20px;
+        margin: 20px auto 0;
+        box-shadow:none;
     }
 }
 
