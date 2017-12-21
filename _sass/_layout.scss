@@ -79,6 +79,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -108,9 +109,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    background: #0d44bc;
-    background: -webkit-linear-gradient(315deg, #0d44bc, #168cf6);
-    background: linear-gradient(135deg, #0d44bc, #168cf6);
+    background: #0d1a26;
 }
 
 .banner-content {
@@ -164,6 +163,7 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
 
 
 
@@ -464,6 +464,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -510,6 +511,7 @@ blockquote:before {
 
 
 
+
 /* iconfont */
 
 @font-face {
@@ -531,6 +533,7 @@ blockquote:before {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s ease;
 }
 
 .icon-github:before {
@@ -549,9 +552,10 @@ blockquote:before {
     content: "\e677";
 }
 
-.iconfont:hover{
-    color:#fff;
+.iconfont:hover {
+    color: #fff;
 }
+
 
 /* travel */
 
@@ -607,6 +611,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
