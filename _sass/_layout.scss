@@ -676,16 +676,16 @@ blockquote:before {
     letter-spacing: 1px;
     background: #0d1a26;
     color: #eee;
-    height: 100px;
-    line-height: 100px;
+    height: 130px;
+    line-height: 130px;
 }
 
 .footer-container {
     margin: 0 auto;
     padding: 0;
     background: transparent;
-    height: 100px;
-    line-height: 100px;
+    height: 130px;
+    line-height: 130px;
     z-index: 99;
     width: 1000px;
     position: relative;
@@ -700,9 +700,9 @@ blockquote:before {
 }
 
 .footer-nav-left ul li {
-    height: 100px;
+    height: 130px;
     padding: 0 20px 0 0;
-    line-height: 100px;
+    line-height: 130px;
     margin: 0 auto;
     display: inline-block;
 }
@@ -719,10 +719,6 @@ blockquote:before {
 .footer-nav-right span {
     position: relative;
 }
-
-
-
-
 
 .error-404 {
     text-align: center;
