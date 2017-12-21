@@ -84,6 +84,73 @@
 }
 
 
+/**
+* Components
+*/
+.counter {
+  margin-bottom:1rem;
+  border-bottom:.1875em dashed #d2d6dd;
+}
+
+.tagline {
+  font-size:1.125em;
+  margin:2rem 1.5rem;
+}
+
+.calories {
+  color:#8b919b;
+  font-size:.875em;
+}
+
+.splash {
+  position: relative;
+  height:100vh;
+    width: 100%;
+  text-align:center;
+}
+
+.splash {
+  box-sizing:border-box;
+    width: 100%;
+  margin:0 auto;
+  padding:1.5em;
+}
+
+
+/**
+* Header animation
+*/
+
+
+.dish {
+  color:#e89c2b;
+  position:absolute;
+  width:1em;
+  height:1em;
+  margin-top:-.75em;
+  margin-left:-.5em;
+  font-size:1rem;
+  top:0;
+  transform:translateY(-3em);
+  transition-duration:.75s;
+  transition-timing-function:ease-in;
+  transition-property:transform;
+  z-index:1;
+}
+
+.dish.drop {
+  transform:translateY(30vh);
+}
+
+.nommer {
+  position:absolute;
+  bottom:2em;
+  margin-left:-1em;
+  color:rgba(0,0,0,.5);
+  font-size:1.5rem;
+  transform-origin:bottom center;
+}
+
 
 
 
