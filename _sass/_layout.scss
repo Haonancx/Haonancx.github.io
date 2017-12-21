@@ -578,13 +578,13 @@ blockquote:before {
 .footer-container {
     margin: 0 auto;
     padding: 0 40px;
-    position: absolute;
-    top: 0;
     background: transparent;
     height: 100px;
     line-height: 100px;
     z-index: 99;
-    width: calc(100% - 80px);
+    width: 880px;
+    position: relative;
+
 }
 
 .footer-nav-left {
