@@ -72,6 +72,8 @@
 }
 
 
+
+
 /* banner */
 
 .banner {
@@ -157,6 +159,8 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
+
 
 
 
@@ -443,6 +447,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -486,6 +492,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 /* travel */
@@ -546,6 +554,8 @@ blockquote:before {
 
 
 
+
+
 /* footer */
 
 .footer {
@@ -558,6 +568,18 @@ blockquote:before {
     color: #eee;
     height: 100px;
     line-height: 100px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0 40px;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    height: 100px;
+    line-height: 100px;
+    z-index: 99;
+    width: calc(100% - 80px);
 }
 
 .footer-nav-left {
@@ -616,6 +638,10 @@ blockquote:before {
 
 @media screen and (max-width:1000px) {
     .header-container {
+        padding: 0 20px;
+        width: calc(100% - 40px);
+    }
+    .footer-container {
         padding: 0 20px;
         width: calc(100% - 40px);
     }
