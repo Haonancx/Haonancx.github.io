@@ -1,3 +1,84 @@
+
+/**
+* Components
+*/
+<style>
+.counter {
+  margin-bottom:1rem;
+  border-bottom:.1875em dashed #d2d6dd;
+}
+
+.tagline {
+  font-size:1.125em;
+  margin:2rem 1.5rem;
+}
+
+.calories {
+  color:#8b919b;
+  font-size:.875em;
+}
+
+.splash {
+  position: relative;
+  height:100vh;
+    width: 100%;
+  text-align:center;
+}
+
+.splash {
+  box-sizing:border-box;
+    width: 100%;
+  margin:0 auto;
+  padding:1.5em;
+}
+
+
+/**
+* Header animation
+*/
+.counter {
+  position:relative;
+  padding-top:30vh;
+}
+
+.counter h1 {
+  position:relative;
+  text-align:center;
+  margin:0;
+  line-height: .625;
+  z-index:2;
+  transform-origin: bottom center;
+}
+
+.dish {
+  color:#e89c2b;
+  position:absolute;
+  width:1em;
+  height:1em;
+  margin-top:-.75em;
+  margin-left:-.5em;
+  font-size:1rem;
+  top:0;
+  transform:translateY(-3em);
+  transition-duration:.75s;
+  transition-timing-function:ease-in;
+  transition-property:transform;
+  z-index:1;
+}
+
+.dish.drop {
+  transform:translateY(30vh);
+}
+
+.nommer {
+  position:absolute;
+  bottom:2em;
+  margin-left:-1em;
+  color:rgba(0,0,0,.5);
+  font-size:1.5rem;
+  transform-origin:bottom center;
+}
+</style>
 <footer class="footer">
     <div class="footer-container">
     <div class="footer-nav-left">
@@ -71,4 +152,125 @@ var _hmt = _hmt || [];
 })();
 
 console.log("商务合作 : %c fsux@outlook.com", "color:red");
+</script>
+<script type="text/javascript">
+// let it rain
+(function(){
+  var diner = $("#font-anim");
+  var menu = ['main', 'function', '1', '0','$','def'];
+  var noms = ['组件化', '工程化','HTML', 'CSS', 'JS', '模块化', '交互','UX','架构'];
+  var finished = 0;
+
+  // animation to play when finished dining
+  function jelly(e) {
+    diner.removeEventListener('fit', jelly);
+    diner.animate(
+      [
+        { transform: 'scale(' + 1 / e.detail.scaleFactor + ')' },
+        { transform: 'scale(1.1)' },
+        { transform: 'scale(.9)' },
+        { transform: 'scale(1.05)' },
+        { transform: 'scale(.98)' },
+        { transform: 'scale(1)' }
+      ],
+      {
+        duration:500
+      }
+    );
+  }
+
+  // eat animation
+  function nom(index) {
+
+    var nommer = document.getElementById('nommer-' + index);
+    var rotation = -20 + (Math.random() * 40);
+    var scale = .75 + (Math.random() * .5);
+
+    nommer.animate(
+      [
+        { opacity:0, transform: 'scale(' + .25 * scale + ') rotateZ(' + rotation + 'deg) translateY(0) ' },
+        { opacity:1, transform: 'scale(' + scale + ') rotateZ(' + rotation + 'deg) translateY(-.5em) ' }
+      ],
+      {
+        duration:300
+      }
+    );
+
+    diner.animate(
+      [
+        { transform: 'scaleY(1)' },
+        { transform: 'scaleY(' + (.7 + (Math.random() * .2)) + ')' },
+        { transform: 'scaleY(1)' }
+      ],
+      {
+        duration:400
+      }
+    );
+  }
+
+  // only when animation api is supported
+  if ('animate' in diner) {
+    diner.addEventListener('fit', jelly);
+  }
+
+  // create food items
+  var dishes = menu
+  .concat(menu) // duplicate icons
+  .sort(function() { return .5 - Math.random(); })
+  .concat(['??']) // unfortunately there's no fly emoji
+  .map(function(menuItem, i) {
+
+    var offset = 33.33 + (Math.random() * 33.33);
+
+    var dish = document.createElement('div');
+    dish.textContent = menuItem;
+    dish.setAttribute('aria-hidden', 'true');
+    dish.setAttribute('data-nommer', i);
+    dish.className = 'dish';
+    dish.style.cssText = 'left:' + offset + '%; transition-delay: ' + ((i * 200) + Math.random() * 100) + 'ms';
+
+    var nommer = document.createElement('div');
+    nommer.id = 'nommer-' + i;
+    nommer.textContent = noms[Math.floor(Math.random() * noms.length)];
+    nommer.setAttribute('aria-hidden', 'true');
+    nommer.className = 'nommer';
+    nommer.style.cssText = 'left:' + offset + '%; opacity:0;';
+
+    counter.appendChild(dish);
+    counter.appendChild(nommer);
+
+    return dish;
+  });
+
+  // animate into view
+  setTimeout(function() {
+    requestAnimationFrame(function() {
+      dishes.forEach(function (dish) {
+        dish.classList.add('drop');
+        dish.addEventListener('transitionend', burb);
+      })
+    });
+  }, 500);
+
+  // burb after eating dish
+  function burb(e) {
+    e.target.removeEventListener('transitionend', burb);
+    e.target.style.opacity = 0;
+
+    finished++;
+    if (finished === dishes.length) {
+      full();
+    }
+    else if ('animate' in diner) {
+      nom(e.target.getAttribute('data-nommer'));
+    }
+  }
+
+  // so full!
+  function full() {
+    fitty(diner, {
+      minSize:64
+    });
+  }
+}());
 </script>
