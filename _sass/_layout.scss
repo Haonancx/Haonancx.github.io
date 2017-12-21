@@ -19,7 +19,6 @@
 }
 
 .MainIndex {
-    font-size: 25px;
     text-align: left;
     letter-spacing: 1px;
     float: left;
@@ -33,14 +32,19 @@
     color: #fff;
     display: inline-block;
     line-height: 80px;
+    height: 80px;
     font-weight: 800;
+    float: left;
+    font-size: 20px;
+}
+
+.fsux-name {
+    padding: 0 5px;
 }
 
 .fsux-logo {
     background: url(../fonts/fsux_logo.svg) no-repeat 50%;
     background-size: contain;
-    height: 80px;
-    display: block;
 }
 
 .MainIndex a:hover {
@@ -77,6 +81,8 @@
 .nav ul li a:hover {
     color: #f3f3f3;
 }
+
+
 
 
 
@@ -171,6 +177,8 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
+
 
 
 
@@ -475,6 +483,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -523,6 +533,8 @@ blockquote:before {
 
 
 
+
+
 /* iconfont */
 
 @font-face {
@@ -566,6 +578,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -623,6 +637,8 @@ blockquote:before {
 
     color: #111;
 }
+
+
 
 
 
