@@ -130,7 +130,7 @@ pre {
     z-index: 998;
     border-radius: 4px;
     background: #fff;
-    box-shadow: 0 32px 32px rgba(34,94,222,.08);
+    box-shadow: 0 32px 32px rgba(34,94,222,.1);
     @extend %clearfix;
 
     @include media-query($on-laptop) {
