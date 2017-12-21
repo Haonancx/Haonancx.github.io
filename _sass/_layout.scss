@@ -74,6 +74,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -159,6 +160,7 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
 
 
 
@@ -449,6 +451,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -492,6 +495,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -556,6 +560,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -592,10 +597,10 @@ blockquote:before {
 
 .footer-nav-left ul li {
     height: 100px;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     line-height: 100px;
     margin: 0 auto;
-    display: inline;
+    display: inline-block;
 }
 
 .footer-nav-left ul li a {
