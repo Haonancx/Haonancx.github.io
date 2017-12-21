@@ -56,6 +56,27 @@ function addLink(msg) {
         0)
 }
 document.body.oncopy = addLink;
+
+/**
+ *
+ 二级标题替换功能
+ *
+ @method switchSectionTitle
+ *
+ @return {void}  无返回值
+ */
+
+function switchSectionTitle(url) {
+    console.log(url);
+    var urlString = url.toString();
+    var isTravel = false;
+    var offset = urlString.search("travel"); //检索当前页面是否为 travel.html;
+    if (offset > 0) {
+        var titleOneId = document.getElementById("titleOne");
+        titleOneId.innerHTML = "Photos";
+    }
+}
+
 /**
  *
  百度统计功能,统计PV与UV
@@ -247,5 +268,5 @@ function draw() {
     window.requestAnimationFrame(draw);
 }
 
-init();//初始化首屏渲染动画
+init(); //初始化首屏渲染动画
 </script>
