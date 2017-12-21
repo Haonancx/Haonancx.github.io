@@ -538,7 +538,7 @@ blockquote:before {
     text-align: center;
     width: 100%;
     height: 80px;
-    margin: 3em 0 1em;
+    margin: 4em 0 1em;
 }
 
 .pageBtn {
@@ -620,7 +620,9 @@ blockquote:before {
 .footer-nav-right {
     float: right;
 }
-
+.footer-nav-right span{
+    position: relative;
+}
 
 
 
