@@ -573,17 +573,19 @@ blockquote:before {
 .footer {
     font-size: 12px;
     margin: 0 auto;
-    padding: 3em 0;
     text-align: center;
     letter-spacing: 1px;
     background: #0d1a26;
     color: #eee;
+    height: 80px;
+    line-height: 80px;
+}
 }
 .footer-nav-left{
     float: left;
 }
 .footer-nav-left ul {
-    margin: 0 0 100px;
+    margin: 0;
 }
 
 .footer-nav-left ul li {
@@ -596,7 +598,7 @@ blockquote:before {
 
 .footer-nav-left ul li a {
     color: #fff;
-    font-size: 1rem;
+        font-size: 13px;
 }
 .footer-nav-right{
     float: right;
