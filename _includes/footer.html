@@ -2,7 +2,7 @@
     <div class="gotop"></div>
 </div>
 <footer class="footer">
-    <div class="footer-nav">
+    <div class="footer-nav-left">
         <ul>
             <li><a href="/travel.html#">旅行</a></li>
             <li><a href="javascript:;">开源</a></li>
@@ -12,11 +12,14 @@
             </li>
         </ul>
     </div>
-    <p><span>Written by FSUX, all right reserved.</span></p>
+    <div class="footer-nav-right">
+        <span>Copyright © FSUX</span>
+    </div>
 </footer>
 <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script>
 var url = document.location.href;
+
 function addLink(msg) {
     var body_element = document.getElementsByTagName("body")[0];
     var selection;

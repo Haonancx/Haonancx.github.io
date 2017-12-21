@@ -579,12 +579,14 @@ blockquote:before {
     background: #0d1a26;
     color: #eee;
 }
-
-.footer-nav ul {
+.footer-nav-left{
+    float: left;
+}
+.footer-nav-left ul {
     margin: 0 0 100px;
 }
 
-.footer-nav ul li {
+.footer-nav-left ul li {
     height: 50px;
     padding: 0 20px;
     line-height: 50px;
@@ -592,14 +594,18 @@ blockquote:before {
     display: inline;
 }
 
-.footer-nav ul li a {
+.footer-nav-left ul li a {
     color: #fff;
     font-size: 1rem;
 }
-
-.footer p {
-    margin: 0;
+.footer-nav-right{
+    float: right;
 }
+
+
+
+
+
 
 .error-404 {
     text-align: center;
