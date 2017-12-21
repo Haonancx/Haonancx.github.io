@@ -85,6 +85,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -150,23 +151,25 @@
 
 
 .home-button {
-    margin: 72px auto 27px;
+    margin: 40px auto 0;
 }
 
 .home-button a {
     display: inline-block;
     color: #fff;
     width: 132px;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 21px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
     font-size: 14px;
-    background: #034365;
-    background: -webkit-linear-gradient(left, #034365, #001b33);
-    background: linear-gradient(90deg, #034365 0, #001b33);
-    box-shadow: 0 8px 16px #0a52ab;
+    letter-spacing: 0.5px;
+    background: #1e5aff;
+    box-shadow: 0 8px 16px #1c2f46;
     border: none;
+    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
+    background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
+
 
 
 
@@ -469,6 +472,7 @@ blockquote:before {
 }
 
 
+
 /* travel */
 
 .travel-description {
@@ -507,6 +511,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -574,6 +579,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .octicon-tag {
@@ -628,6 +634,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
