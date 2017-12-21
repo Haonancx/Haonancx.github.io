@@ -217,8 +217,6 @@ function draw() {
 
     ctxfr.save();
     ctxfr.translate(canvas.width / 2, canvas.height / 2);
-    //ctxbg.save();
-    //ctxbg.translate(canvas.width / 2, canvas.height / 2);
 
     //function to render each single circle, its connections and to manage its out of boundaries replacement
     function renderPoints(ctx, arr) {
@@ -229,7 +227,6 @@ function draw() {
             var xEscape = canvas.width / 2 + circle.radius,
                 yEscape = canvas.height / 2 + circle.radius;
             if (circle.ttl < -20) arr[i].init(arr[i].background);
-            //if (Math.abs(circle.y) > yEscape || Math.abs(circle.x) > xEscape) arr[i].init(arr[i].background);
             drawCircle(ctx, circle);
         }
         for (var i = 0; i < arr.length - 1; i++) {
