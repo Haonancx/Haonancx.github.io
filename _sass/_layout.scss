@@ -84,18 +84,12 @@
 }
 
 
+
 /* animation */
 
-.tagline {
-    font-size: 1.125em;
-    margin: 2rem 1.5rem;
+.animation-box {
+    position: relative;
 }
-
-.calories {
-    color: #8b919b;
-    font-size: .875em;
-}
-
 
 .splash {
     position: relative;
@@ -137,6 +131,7 @@
     font-size: 1.5rem;
     transform-origin: bottom center;
 }
+
 
 
 /* banner */
@@ -222,6 +217,7 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
 
 
 
@@ -536,6 +532,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -589,6 +586,7 @@ blockquote:before {
 
 
 
+
 /* iconfont */
 
 @font-face {
@@ -632,6 +630,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -694,6 +693,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
