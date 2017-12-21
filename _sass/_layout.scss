@@ -71,6 +71,7 @@
     color: #f3f3f3;
 }
 
+
 /* banner */
 
 .banner {
@@ -156,6 +157,7 @@
     box-shadow: 0 8px 16px #0a52ab;
     border: none;
 }
+
 
 
 
@@ -440,6 +442,7 @@ blockquote:before {
 }
 
 
+
 /* travel */
 
 .travel-description {
@@ -483,6 +486,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 /* travel */
 
@@ -539,33 +543,7 @@ blockquote:before {
     color: #111;
 }
 
-#gotopBox {
-    height: 45px;
-    width: 45px;
-    z-index: 998;
-    cursor: pointer;
-    position: fixed;
-    right: 15px;
-    bottom: 25px;
-    opacity: 0;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 1px 2px 1px rgba(181, 181, 181, 0.2);
-}
 
-.gotop:before {
-    content: '';
-    position: absolute;
-    left: 14px;
-    top: 17px;
-    height: 0;
-    width: 0;
-    display: block;
-    border: 9px transparent solid;
-    border-top-width: 0;
-    border-bottom-color: #666;
-}
 
 
 /* footer */
@@ -578,30 +556,32 @@ blockquote:before {
     letter-spacing: 1px;
     background: #0d1a26;
     color: #eee;
-    height: 80px;
-    line-height: 80px;
+    height: 100px;
+    line-height: 100px;
 }
 
-.footer-nav-left{
+.footer-nav-left {
     float: left;
 }
+
 .footer-nav-left ul {
     margin: 0;
 }
 
 .footer-nav-left ul li {
-    height: 50px;
+    height: 100px;
     padding: 0 20px;
-    line-height: 50px;
+    line-height: 100px;
     margin: 0 auto;
     display: inline;
 }
 
 .footer-nav-left ul li a {
     color: #fff;
-        font-size: 13px;
+    font-size: 13px;
 }
-.footer-nav-right{
+
+.footer-nav-right {
     float: right;
 }
 
