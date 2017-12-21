@@ -68,7 +68,6 @@ document.body.oncopy = addLink;
 
 function switchSectionTitle() {
     var urlString = url.toString();
-    var isTravel = false;
     var offset = urlString.search("travel"); //检索当前页面是否为 travel.html;
     if (offset > 0) {
         var titleOneId = document.getElementById("titleOne");
