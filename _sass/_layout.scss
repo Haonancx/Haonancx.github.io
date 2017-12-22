@@ -165,7 +165,7 @@
 }
 
 #font-anim span.active {
-    animation: fadeFont 0.2s ease-out;
+    animation: fadeFont 0.1s ease-out;
 }
 
 @keyframes fadeFont {
@@ -176,11 +176,11 @@
 
     20% {
         transform: translate(0px, 32px);
-        opacity: 0.2;
+        opacity: 0.6;
     }
     40% {
         transform: translate(0px, 24px);
-        opacity: 0.4;
+        opacity: 0.6;
     }
     60% {
         transform: translate(0px, 16px);
@@ -188,7 +188,7 @@
     }
     80% {
         transform: translate(0px, 8px);
-        opacity: 0.8;
+        opacity: 1;
     }
     100% {
         transform: translate(0px, 0px);
