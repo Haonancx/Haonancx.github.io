@@ -67,18 +67,12 @@ document.body.oncopy = addLink;
 function scrollSecondScreen() {
 
     var deviceScreenHeight = window.screen.availHeight;
-    timer = setInterval(function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if (scrollTop > deviceScreenHeight) {
-            clearInterval(timer);
-        } else {
-            var scrollDistance = Math.abs(scrollTop - deviceScreenHeight);
-            var scrollStep = scrollDistance / 6;
-            var ispeed = Math.floor(scrollStep);
-            document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
-        }
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop < deviceScreenHeight) {
+        document.documentElement.scrollTop = document.body.scrollTop = deviceScreenHeight;
+    }
 
-    }, 50)
+
 }
 
 /**
