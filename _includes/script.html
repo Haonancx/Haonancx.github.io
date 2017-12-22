@@ -292,7 +292,6 @@ var spanLength = $("#font-anim span").length;
 for (var i = 0; i < spanLength; i++) {
     var LoopAddClass = setTimeout(function() {
         $(".idea span").eq(i).addClass("active");
-        span.classList.add('active');
     }, 80 * (i + 1));
     if (i == spanLength - 1) {
         clearInterval(LoopAddClass);
