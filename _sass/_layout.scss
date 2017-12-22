@@ -92,6 +92,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -138,10 +139,6 @@
     overflow: hidden;
     text-align: center;
     z-index: 9999;
-}
-
-#font-anim span {
-    display: inline-block;
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -154,6 +151,10 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+#font-anim span {
+    display: inline-block;
 }
 
 .banner-content .en-name {
@@ -200,6 +201,7 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
 
 
 
@@ -492,6 +494,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -530,6 +533,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -611,6 +615,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .octicon-tag {
@@ -665,6 +670,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
