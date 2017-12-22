@@ -163,7 +163,7 @@
 }
 
 #font-anim span.active {
-    animation: fadeFont 1s ease-out;
+    animation: fadeFont 0.5s ease-out;
 }
 
 @keyframes fadeFont {
