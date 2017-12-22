@@ -285,13 +285,25 @@ var _hmt = _hmt || [];
  FSUX 理念动画
  *
  */
+if (!Array.prototype.forEach) {
+    Array.prototype.forEach = function(fun /*, thisp*/ ) {
+        var len = this.length;
+        if (typeof fun != "function")
+            throw new TypeError();
+
+        var thisp = arguments[1];
+        for (var i = 0; i < len; i++) {
+            if (i in this)
+                fun.call(thisp, this[i], i, this);
+        }
+    };
+}
 var spans = document.querySelectorAll('.idea span');
- spans.forEach(function (span, idx) {
+spans.forEach(function(span, idx) {
 
     // Initial animation
-    setTimeout(function () {
+    setTimeout(function() {
         span.classList.add('active');
     }, 80 * (idx + 1));
 });
-
 </script>
