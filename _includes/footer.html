@@ -16,6 +16,7 @@
     </div>
 </footer>
 <script>
+var url = document.location.href; // 获取当前浏览器路径
 /**
  *
  二级标题替换功能
@@ -73,7 +74,7 @@ switchSectionTitle(); // 执行标题切换方法
  @return {void}  无返回值
  */
 
-var url = document.location.href; // 获取当前浏览器路径
+
 function addLink(msg) {
     var body_element = document.getElementsByTagName("body")[0];
     var selection;
