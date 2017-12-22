@@ -290,7 +290,7 @@ var spans = document.querySelectorAll('.idea span');
 for (var idx in spans) {
     var span = spans[idx];
     setTimeout(function() {
-        span.classList.add('active');
+        span.add('active');
     }, 80 * (idx + 1));
 }
 </script>
