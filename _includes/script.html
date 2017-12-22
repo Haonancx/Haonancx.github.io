@@ -287,18 +287,10 @@ var _hmt = _hmt || [];
  */
 var spans = document.querySelectorAll('.idea span');
 
-
-for(var i in spans){
-
-   var item = spans[i];
-   console.log(item)
-}
-
-spans.forEach(function(span, idx) {
-
-    // Initial animation
+for (var idx in spans) {
+    var span = spans[idx];
     setTimeout(function() {
         span.classList.add('active');
     }, 80 * (idx + 1));
-});
+}
 </script>
