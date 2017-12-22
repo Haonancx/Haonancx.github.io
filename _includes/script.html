@@ -286,11 +286,9 @@ var _hmt = _hmt || [];
  *
  */
 var spans = document.querySelectorAll('.idea span');
-
-for (var idx in spans) {
-    var span = spans[idx];
+spans.forEach(function(span, idx) {
     setTimeout(function() {
-        span.className="active";
+        span.classList.add('active');
     }, 80 * (idx + 1));
-}
+});
 </script>
