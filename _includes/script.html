@@ -1,3 +1,4 @@
+<script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script>
 var url = document.location.href; // 获取当前浏览器路径
 
@@ -285,10 +286,11 @@ var _hmt = _hmt || [];
  FSUX 理念动画
  *
  */
-var spans = document.querySelectorAll('.idea span');
-spans.forEach(function(span, idx) {
-    setTimeout(function() {
-        span.classList.add('active');
-    }, 80 * (idx + 1));
-});
+
+var spanLength = $("#font-anim span").length;
+
+for (var i in spanLength) {
+    $(".idea span").eq(i).addClass("active");
+
+}
 </script>
