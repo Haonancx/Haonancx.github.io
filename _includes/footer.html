@@ -72,8 +72,9 @@ function scrollSecondScreen() {
         if (scrollTop > deviceScreenHeight) {
             clearInterval(timer);
         } else {
-            var ispeed = Math.floor(+scrollTop / 6);
             var scrollDistance = scrollTop - deviceScreenHeight;
+            var scrollStep = scrollDistance / 6;
+            var ispeed = Math.floor(scrollStep);
             document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
         }
 
@@ -90,20 +91,46 @@ function scrollSecondScreen() {
  */
 
 function switchSectionTitle() {
+
+    var urlString = url.toString();
+    var titleOneId = document.getElementById("titleOne");
     var homePageUrlOne = "http://fsux.me/";
     var homePageUrlTwo = "http://fsux.me/#";
-    var urlString = url.toString();
-    var offset = urlString.search("travel"); //检索当前页面是否为 travel.html;
-    if (offset > 0) {
-        var titleOneId = document.getElementById("titleOne");
-        titleOneId.innerHTML = "Photos";
+    var archivePageUrlOne = "http://fsux.me/archive.html";
+    var archivePageUrlTwo = "http://fsux.me/archive.html#";
+    var tagsPageUrlOne = "http://fsux.me/tags.html";
+    var tagsPageUrlTwo = "http://fsux.me/tags.html#";
+    var travelPageUrlOne = "http://fsux.me/travel.html";
+    var travelPageUrlTwo = "http://fsux.me/travel.html#";
+
+    otherUrlFunction() {
+        if (urlString != homePageUrlOne && urlString != homePageUrlTwo) {
+            scrollSecondScreen(); //滚动至第二屏
+        }
+
     }
 
-    if (urlString != homePageUrlOne && urlString != homePageUrlTwo) {
-        scrollSecondScreen(); //滚动至第二屏
+    switch (filterType) {
+        case archivePageUrlOne:
+        case archivePageUrlTwo:
+            titleOneId.innerHTML = "年度精选";
+            break;
+        case archivePageUrlOne:
+        case archivePageUrlTwo:
+            titleOneId.innerHTML = "标签云";
+            break;
+        case travelPageUrlOne:
+        case travelPageUrlTwo:
+            titleOneId.innerHTML = "Photos";
+            break;
+        default:
+            otherUrlFunction();
     }
+
+
 }
-switchSectionTitle();
+
+switchSectionTitle();// 执行标题切换方法
 /**
  *
  百度统计功能,统计PV与UV

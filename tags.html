@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="well">
 <div class="tags">
-<p class="tags-cloud">标签云</p>
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" class="octicon octicon-tag" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 {% endfor %}
