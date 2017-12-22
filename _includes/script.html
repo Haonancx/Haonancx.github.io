@@ -1,0 +1,283 @@
+<script>
+var url = document.location.href; // 获取当前浏览器路径
+/**
+ *
+ 二级标题替换功能
+ *
+ @method switchSectionTitle
+ *
+ @return {void}  无返回值
+ */
+
+function switchSectionTitle() {
+
+    var urlString = url.toString();
+    var titleOneId = document.getElementById("titleOne");
+    var errorPageId = document.getElementById("error-page");
+    var archivePageUrlOne = "http://fsux.me/archive.html";
+    var archivePageUrlTwo = "http://fsux.me/archive.html#";
+    var tagsPageUrlOne = "http://fsux.me/tags.html";
+    var tagsPageUrlTwo = "http://fsux.me/tags.html#";
+    var travelPageUrlOne = "http://fsux.me/travel.html";
+    var travelPageUrlTwo = "http://fsux.me/travel.html#";
+
+    function otherUrlFunction() {
+        if (errorPageId !== null) {
+            titleOneId.innerHTML = "";
+        }
+
+    }
+
+    switch (url) {
+        case archivePageUrlOne:
+        case archivePageUrlTwo:
+            titleOneId.innerHTML = "年度精选";
+            break;
+        case tagsPageUrlOne:
+        case tagsPageUrlTwo:
+            titleOneId.innerHTML = "标签云";
+            break;
+        case travelPageUrlOne:
+        case travelPageUrlTwo:
+            titleOneId.innerHTML = "Photos";
+            break;
+        default:
+            otherUrlFunction();
+
+    }
+}
+
+switchSectionTitle(); // 执行标题切换方法    
+/**
+ *
+ 复制粘贴功能(版权)
+ *
+ @method addLink
+ *
+ @return {void}  无返回值
+ */
+
+
+function addLink(msg) {
+    var body_element = document.getElementsByTagName("body")[0];
+    var selection;
+    if (window.getSelection) {
+        selection = window.getSelection()
+    } else {
+        if (document.getSelection) {
+            selection = document.getSelection()
+        } else {
+            if (document.selection) {
+                selection = document.selection.createRange().text
+            } else {
+                selection = ""
+            }
+        }
+    }
+    var pagelink = "<br /><br />作者: RenChao Guan<br />链接: <a href='" + url + "'>" + url + "</a>" + "<br />来源:FSUX.ME<br />著作权归 FSUX 网站所有,商业转载请联系作者获得授权,非商业转载请注明出处。";
+    var copy_text = selection + pagelink;
+    var new_div = document.createElement("div");
+    new_div.style.left = "-99999px";
+    new_div.style.position = "absolute";
+    body_element.appendChild(new_div);
+    new_div.innerHTML = copy_text;
+    selection.selectAllChildren(new_div);
+    window.setTimeout(function() {
+            body_element.removeChild(new_div)
+        },
+        0)
+}
+document.body.oncopy = addLink;
+
+
+/**
+ *
+ 百度统计功能,统计PV与UV
+*
+ */
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?002f6ffa5129d9ed6ae4b02cd3ca7585";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+/**
+ *
+ 文章爬虫功能
+ *
+ */
+(function() {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+
+/**
+ *
+ 首屏动画渲染方法
+ *
+ @method addLink
+ *
+ @return {void}  无返回值
+ */
+// min and max radius, radius threshold and percentage of filled circles
+var radMin = 5,
+    radMax = 125,
+    filledCircle = 60, //percentage of filled circles
+    concentricCircle = 30, //percentage of concentric circles
+    radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
+
+//min and max speed to move
+var speedMin = 0.3,
+    speedMax = 2.5;
+
+//max reachable opacity for every circle and blur effect
+var maxOpacity = 0.6;
+
+//default palette choice
+var colors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
+    bgColors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
+    circleBorder = 10,
+    backgroundLine = bgColors[0];
+var backgroundMlt = 0.85;
+
+//most importantly: number of overall circles and arrays containing them
+var maxCircles = 5,
+    points = [],
+    pointsBack = [];
+
+//populating the screen
+for (var i = 0; i < maxCircles * 2; i++) points.push(new Circle());
+for (var i = 0; i < maxCircles; i++) pointsBack.push(new Circle(true));
+
+//experimental vars
+var circleExp = 1,
+    circleExpMax = 1.003,
+    circleExpMin = 0.997,
+    circleExpSp = 0.00004,
+    circlePulse = false;
+
+//circle class
+function Circle(background) {
+    //if background, it has different rules
+    this.background = (background || false);
+    this.x = randRange(-canvas.width / 2, canvas.width / 2);
+    this.y = randRange(-canvas.height / 2, canvas.height / 2);
+    this.radius = background ? hyperRange(radMin, radMax) * backgroundMlt : hyperRange(radMin, radMax);
+    this.filled = this.radius < radThreshold ? (randint(0, 100) > filledCircle ? false : 'full') : (randint(0, 100) > concentricCircle ? false : 'concentric');
+    this.color = background ? bgColors[randint(0, bgColors.length - 1)] : colors[randint(0, colors.length - 1)];
+    this.borderColor = background ? bgColors[randint(0, bgColors.length - 1)] : colors[randint(0, colors.length - 1)];
+    this.opacity = 0.05;
+    this.speed = (background ? randRange(speedMin, speedMax) / backgroundMlt : randRange(speedMin, speedMax)); // * (radMin / this.radius);
+    this.speedAngle = Math.random() * 2 * Math.PI;
+    this.speedx = Math.cos(this.speedAngle) * this.speed;
+    this.speedy = Math.sin(this.speedAngle) * this.speed;
+    var spacex = Math.abs((this.x - (this.speedx < 0 ? -1 : 1) * (canvas.width / 2 + this.radius)) / this.speedx),
+        spacey = Math.abs((this.y - (this.speedy < 0 ? -1 : 1) * (canvas.height / 2 + this.radius)) / this.speedy);
+    this.ttl = Math.min(spacex, spacey);
+};
+
+Circle.prototype.init = function() {
+    Circle.call(this, this.background);
+}
+
+//support functions
+//generate random int a<=x<=b
+function randint(a, b) {
+    return Math.floor(Math.random() * (b - a + 1) + a);
+}
+//generate random float
+function randRange(a, b) {
+    return Math.random() * (b - a) + a;
+}
+//generate random float more likely to be close to a
+function hyperRange(a, b) {
+    return Math.random() * Math.random() * Math.random() * (b - a) + a;
+}
+
+//rendering function
+function drawCircle(ctx, circle) {
+    //circle.radius *= circleExp;
+    var radius = circle.background ? circle.radius *= circleExp : circle.radius /= circleExp;
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, radius * circleExp, 0, 2 * Math.PI, false);
+    ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
+    ctx.strokeStyle = ['rgba(', circle.borderColor, ',', circle.opacity, ')'].join('');
+    if (circle.filled == 'full') {
+        ctx.fillStyle = ['rgba(', circle.borderColor, ',', circle.background ? circle.opacity * 0.8 : circle.opacity, ')'].join('');
+        ctx.fill();
+        ctx.lineWidth = 0;
+        ctx.strokeStyle = ['rgba(', circle.borderColor, ',', 0, ')'].join('');
+    }
+    ctx.stroke();
+    if (circle.filled == 'concentric') {
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, radius / 2, 0, 2 * Math.PI, false);
+        ctx.lineWidth = Math.max(1, circleBorder * (radMin - circle.radius) / (radMin - radMax));
+        ctx.strokeStyle = ['rgba(', circle.color, ',', circle.opacity, ')'].join('');
+        ctx.stroke();
+    }
+    circle.x += circle.speedx;
+    circle.y += circle.speedy;
+    if (circle.opacity < (circle.background ? maxOpacity : 1)) circle.opacity += 0.01;
+    circle.ttl--;
+}
+
+//initializing function
+function init() {
+    window.requestAnimationFrame(draw);
+}
+
+//rendering function
+function draw() {
+
+    if (circlePulse) {
+        if (circleExp < circleExpMin || circleExp > circleExpMax) circleExpSp *= -1;
+        circleExp += circleExpSp;
+    }
+    var ctxfr = document.getElementById('canvas').getContext('2d');
+
+    ctxfr.globalCompositeOperation = 'destination-over';
+    ctxfr.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctxfr.save();
+    ctxfr.translate(canvas.width / 2, canvas.height / 2);
+
+    //function to render each single circle, its connections and to manage its out of boundaries replacement
+    function renderPoints(ctx, arr) {
+        for (var i = 0; i < arr.length; i++) {
+            var circle = arr[i];
+            //checking if out of boundaries
+            if (circle.ttl < 0) {}
+            var xEscape = canvas.width / 2 + circle.radius,
+                yEscape = canvas.height / 2 + circle.radius;
+            if (circle.ttl < -20) arr[i].init(arr[i].background);
+            drawCircle(ctx, circle);
+        }
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                var deltax = arr[i].x - arr[j].x;
+                var deltay = arr[i].y - arr[j].y;
+                var dist = Math.pow(Math.pow(deltax, 2) + Math.pow(deltay, 2), 0.5);
+            }
+        }
+    }
+
+    var startTime = Date.now();
+    renderPoints(ctxfr, points);
+    deltaT = Date.now() - startTime;
+
+    ctxfr.restore();
+
+    window.requestAnimationFrame(draw);
+}
+
+init(); //初始化首屏渲染动画
+</script>
