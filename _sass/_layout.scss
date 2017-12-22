@@ -260,9 +260,11 @@
 .home-button a{
     display: none;
 }
-.home-button a,
 .error-404 a {
     display: inline-block;
+}
+.home-button a,
+.error-404 a {
     color: #fff;
     height: 42px;
     line-height: 42px;
