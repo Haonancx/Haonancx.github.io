@@ -56,6 +56,26 @@ function addLink(msg) {
         0)
 }
 document.body.oncopy = addLink;
+/**
+ *
+ 切换至第二屏函数
+ *
+ @method scrollSecondScreen
+ *
+ @return {void}  无返回值
+ */
+function scrollSecondScreen() {
+
+    var deviceScreenHeight = window.screen.height;
+    timer = setInterval(function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var ispeed = Math.floor(+scrollTop / 6);
+        if (scrollTop == deviceScreenHeight) {
+            clearInterval(timer);
+        }
+        document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
+    }, 30)
+}
 
 /**
  *
@@ -67,11 +87,17 @@ document.body.oncopy = addLink;
  */
 
 function switchSectionTitle() {
+    var homePageUrlOne = "http://fsux.me/";
+    var homePageUrlTwo = "http://fsux.me/#";
     var urlString = url.toString();
     var offset = urlString.search("travel"); //检索当前页面是否为 travel.html;
     if (offset > 0) {
         var titleOneId = document.getElementById("titleOne");
         titleOneId.innerHTML = "Photos";
+    }
+
+    if (urlString == homePageUrlOne || urlString == homePageUrlTwo) {
+        scrollSecondScreen(); //滚动至第二屏
     }
 }
 switchSectionTitle();
