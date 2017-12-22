@@ -75,12 +75,16 @@
     transition: all 0.5s ease;
     cursor: pointer;
     color: #fff;
+    letter-spacing: 1px;
 }
 
 
 .nav ul li a:hover {
     color: #f3f3f3;
 }
+
+
+
 
 
 
@@ -138,7 +142,7 @@
     margin: 40px auto;
     overflow: hidden;
     text-align: center;
-    z-index: 9999;
+    letter-spacing: 2px;
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -151,10 +155,35 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 9999;
 }
 
 #font-anim span {
     display: inline-block;
+}
+
+#font-anim span.active {
+    animation: fadeFont 1s ease-out;
+}
+
+@keyframes fadeFont {
+    0% {
+        transform: translate(0px, 20px);
+    }
+
+    20% {
+        transform: translate(0px, 15px);
+    }
+    40% {
+        transform: translate(0px, 10px);
+    }
+    60% {
+        transform: translate(0px, 5px);
+    }
+    80%,
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
 .banner-content .en-name {
@@ -201,6 +230,9 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
+
+
 
 
 
@@ -495,6 +527,9 @@ blockquote:before {
 
 
 
+
+
+
 /* travel */
 
 .travel-description {
@@ -533,6 +568,9 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
+
 
 
 
@@ -616,6 +654,9 @@ blockquote:before {
 
 
 
+
+
+
 /* travel */
 
 .octicon-tag {
@@ -670,6 +711,9 @@ blockquote:before {
 
     color: #111;
 }
+
+
+
 
 
 

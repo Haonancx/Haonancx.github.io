@@ -1,123 +1,5 @@
 <script>
 var url = document.location.href; // 获取当前浏览器路径
-/**
- *
- 二级标题替换功能
- *
- @method switchSectionTitle
- *
- @return {void}  无返回值
- */
-
-function switchSectionTitle() {
-
-    var urlString = url.toString();
-    var titleOneId = document.getElementById("titleOne");
-    var errorPageId = document.getElementById("error-page");
-    var archivePageUrlOne = "http://fsux.me/archive.html";
-    var archivePageUrlTwo = "http://fsux.me/archive.html#";
-    var tagsPageUrlOne = "http://fsux.me/tags.html";
-    var tagsPageUrlTwo = "http://fsux.me/tags.html#";
-    var travelPageUrlOne = "http://fsux.me/travel.html";
-    var travelPageUrlTwo = "http://fsux.me/travel.html#";
-
-    function otherUrlFunction() {
-        if (errorPageId !== null) {
-            titleOneId.innerHTML = "";
-        }
-
-    }
-
-    switch (url) {
-        case archivePageUrlOne:
-        case archivePageUrlTwo:
-            titleOneId.innerHTML = "年度精选";
-            break;
-        case tagsPageUrlOne:
-        case tagsPageUrlTwo:
-            titleOneId.innerHTML = "标签云";
-            break;
-        case travelPageUrlOne:
-        case travelPageUrlTwo:
-            titleOneId.innerHTML = "Photos";
-            break;
-        default:
-            otherUrlFunction();
-
-    }
-}
-
-switchSectionTitle(); // 执行标题切换方法    
-/**
- *
- 复制粘贴功能(版权)
- *
- @method addLink
- *
- @return {void}  无返回值
- */
-
-
-function addLink(msg) {
-    var body_element = document.getElementsByTagName("body")[0];
-    var selection;
-    if (window.getSelection) {
-        selection = window.getSelection()
-    } else {
-        if (document.getSelection) {
-            selection = document.getSelection()
-        } else {
-            if (document.selection) {
-                selection = document.selection.createRange().text
-            } else {
-                selection = ""
-            }
-        }
-    }
-    var pagelink = "<br /><br />作者: RenChao Guan<br />链接: <a href='" + url + "'>" + url + "</a>" + "<br />来源:FSUX.ME<br />著作权归 FSUX 网站所有,商业转载请联系作者获得授权,非商业转载请注明出处。";
-    var copy_text = selection + pagelink;
-    var new_div = document.createElement("div");
-    new_div.style.left = "-99999px";
-    new_div.style.position = "absolute";
-    body_element.appendChild(new_div);
-    new_div.innerHTML = copy_text;
-    selection.selectAllChildren(new_div);
-    window.setTimeout(function() {
-            body_element.removeChild(new_div)
-        },
-        0)
-}
-document.body.oncopy = addLink;
-
-
-/**
- *
- 百度统计功能,统计PV与UV
-*
- */
-var _hmt = _hmt || [];
-(function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?002f6ffa5129d9ed6ae4b02cd3ca7585";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
-/**
- *
- 文章爬虫功能
- *
- */
-(function() {
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
 
 /**
  *
@@ -127,7 +9,6 @@ var _hmt = _hmt || [];
  *
  @return {void}  无返回值
  */
-// min and max radius, radius threshold and percentage of filled circles
 var radMin = 5,
     radMax = 125,
     filledCircle = 60, //percentage of filled circles
@@ -280,4 +161,137 @@ function draw() {
 }
 
 init(); //初始化首屏渲染动画
+/**
+ *
+ 二级标题替换功能
+ *
+ @method switchSectionTitle
+ *
+ @return {void}  无返回值
+ */
+
+function switchSectionTitle() {
+
+    var urlString = url.toString();
+    var titleOneId = document.getElementById("titleOne");
+    var errorPageId = document.getElementById("error-page");
+    var archivePageUrlOne = "http://fsux.me/archive.html";
+    var archivePageUrlTwo = "http://fsux.me/archive.html#";
+    var tagsPageUrlOne = "http://fsux.me/tags.html";
+    var tagsPageUrlTwo = "http://fsux.me/tags.html#";
+    var travelPageUrlOne = "http://fsux.me/travel.html";
+    var travelPageUrlTwo = "http://fsux.me/travel.html#";
+
+    function otherUrlFunction() {
+        if (errorPageId !== null) {
+            titleOneId.innerHTML = "";
+        }
+
+    }
+
+    switch (url) {
+        case archivePageUrlOne:
+        case archivePageUrlTwo:
+            titleOneId.innerHTML = "年度精选";
+            break;
+        case tagsPageUrlOne:
+        case tagsPageUrlTwo:
+            titleOneId.innerHTML = "标签云";
+            break;
+        case travelPageUrlOne:
+        case travelPageUrlTwo:
+            titleOneId.innerHTML = "Photos";
+            break;
+        default:
+            otherUrlFunction();
+
+    }
+}
+
+switchSectionTitle(); // 执行标题切换方法    
+/**
+ *
+ 复制粘贴功能(版权)
+ *
+ @method addLink
+ *
+ @return {void}  无返回值
+ */
+
+
+function addLink(msg) {
+    var body_element = document.getElementsByTagName("body")[0];
+    var selection;
+    if (window.getSelection) {
+        selection = window.getSelection()
+    } else {
+        if (document.getSelection) {
+            selection = document.getSelection()
+        } else {
+            if (document.selection) {
+                selection = document.selection.createRange().text
+            } else {
+                selection = ""
+            }
+        }
+    }
+    var pagelink = "<br /><br />作者: RenChao Guan<br />链接: <a href='" + url + "'>" + url + "</a>" + "<br />来源:FSUX.ME<br />著作权归 FSUX 网站所有,商业转载请联系作者获得授权,非商业转载请注明出处。";
+    var copy_text = selection + pagelink;
+    var new_div = document.createElement("div");
+    new_div.style.left = "-99999px";
+    new_div.style.position = "absolute";
+    body_element.appendChild(new_div);
+    new_div.innerHTML = copy_text;
+    selection.selectAllChildren(new_div);
+    window.setTimeout(function() {
+            body_element.removeChild(new_div)
+        },
+        0)
+}
+document.body.oncopy = addLink;
+
+
+/**
+ *
+ 百度统计功能,统计PV与UV
+*
+ */
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?002f6ffa5129d9ed6ae4b02cd3ca7585";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+/**
+ *
+ 文章爬虫功能
+ *
+ */
+(function() {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+
+/**
+ *
+ FSUX 理念动画
+ *
+ */
+let spans = document.querySelectorAll('.idea span');
+ spans.forEach(function (span, idx) {
+
+    // Initial animation
+    setTimeout(function () {
+        span.classList.add('active');
+    }, 750 * (idx + 1));
+});
+
 </script>
