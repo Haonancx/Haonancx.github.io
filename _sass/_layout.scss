@@ -168,7 +168,7 @@
     transform: translate(0px, 60px);
 }
 
-#font-anim span.active,.home-button.active{
+#font-anim span.active,.home-button a.active{
     -webkit-animation: fadeFont 0.2s ease-out;
     -moz-animation: fadeFont 0.2s ease-out;
     -moz-animation: fadeFont 0.2s ease-out;
