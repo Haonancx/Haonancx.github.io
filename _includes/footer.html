@@ -96,7 +96,7 @@ function switchSectionTitle() {
         titleOneId.innerHTML = "Photos";
     }
 
-    if (urlString == homePageUrlOne || urlString == homePageUrlTwo) {
+    if (urlString != homePageUrlOne && urlString != homePageUrlTwo) {
         scrollSecondScreen(); //滚动至第二屏
     }
 }
