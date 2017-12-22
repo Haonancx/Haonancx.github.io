@@ -287,9 +287,11 @@ var _hmt = _hmt || [];
  *
  */
 
-$("#font-anim span").each(function(index, element) {
-    setTimeout(function() {
-        element.className = "active";
-    }, 80 * (index + 1));
-});
+setTimeout(function() {
+    $("#font-anim span").each(function(index, element) {
+        setTimeout(function() {
+            element.className = "active";
+        }, 80 * (index + 1));
+    });
+}, 1000);
 </script>
