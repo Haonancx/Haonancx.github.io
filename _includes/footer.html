@@ -72,7 +72,7 @@ function scrollSecondScreen() {
         if (scrollTop > deviceScreenHeight) {
             clearInterval(timer);
         } else {
-            var scrollDistance = scrollTop - deviceScreenHeight;
+            var scrollDistance =Math.abs(scrollTop - deviceScreenHeight);
             var scrollStep = scrollDistance / 6;
             var ispeed = Math.floor(scrollStep);
             document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
@@ -94,6 +94,7 @@ function switchSectionTitle() {
 
     var urlString = url.toString();
     var titleOneId = document.getElementById("titleOne");
+    var errorPageId = document.getElementById("error-page");
     var homePageUrlOne = "http://fsux.me/";
     var homePageUrlTwo = "http://fsux.me/#";
     var archivePageUrlOne = "http://fsux.me/archive.html";
@@ -104,9 +105,11 @@ function switchSectionTitle() {
     var travelPageUrlTwo = "http://fsux.me/travel.html#";
 
     function otherUrlFunction() {
+
         if (urlString != homePageUrlOne && urlString != homePageUrlTwo) {
             scrollSecondScreen(); //滚动至第二屏
         }
+        console.log(errorPageId)
 
     }
 
@@ -115,8 +118,8 @@ function switchSectionTitle() {
         case archivePageUrlTwo:
             titleOneId.innerHTML = "年度精选";
             break;
-        case archivePageUrlOne:
-        case archivePageUrlTwo:
+        case tagsPageUrlOne:
+        case tagsPageUrlTwo:
             titleOneId.innerHTML = "标签云";
             break;
         case travelPageUrlOne:
