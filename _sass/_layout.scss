@@ -162,6 +162,7 @@
 
 #font-anim span {
     display: inline-block;
+        transform: translate(0px, 60px);
 }
 
 #font-anim span.active {
@@ -170,24 +171,24 @@
 
 @keyframes fadeFont {
     0% {
-        transform: translate(0px, 40px);
+        transform: translate(0px, 50px);
         opacity: 0;
     }
 
     20% {
-        transform: translate(0px, 32px);
+        transform: translate(0px, 40px);
         opacity: 0.6;
     }
     40% {
-        transform: translate(0px, 24px);
+        transform: translate(0px, 30px);
         opacity: 0.6;
     }
     60% {
-        transform: translate(0px, 16px);
+        transform: translate(0px, 20px);
         opacity: 0.6;
     }
     80% {
-        transform: translate(0px, 8px);
+        transform: translate(0px, 10px);
         opacity: 1;
     }
     100% {
