@@ -98,6 +98,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -162,40 +163,46 @@
 
 #font-anim span {
     display: inline-block;
-        transform: translate(0px, 60px);
+    transform: translate(0px, 60px);
 }
 
 #font-anim span.active {
+    -webkit-animation: fadeFont 0.1s ease-out;
     animation: fadeFont 0.1s ease-out;
     transform: translate(0px, 0px);
-     opacity: 1;
-
+    opacity: 1;
 }
 
 @keyframes fadeFont {
     0% {
         transform: translate(0px, 50px);
+        -webkit-transform: translate(0px, 50px);
         opacity: 0;
     }
 
     20% {
         transform: translate(0px, 40px);
+        -webkit-transform: translate(0px, 40px);
         opacity: 0.6;
     }
     40% {
         transform: translate(0px, 30px);
+        -webkit-transform: translate(0px, 30px);
         opacity: 0.6;
     }
     60% {
         transform: translate(0px, 20px);
+        -webkit-transform: translate(0px, 20px);
         opacity: 0.6;
     }
     80% {
         transform: translate(0px, 10px);
+        -webkit-transform: translate(0px, 10px);
         opacity: 1;
     }
     100% {
         transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
         opacity: 1;
     }
 }
@@ -244,6 +251,7 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
 
 
 
@@ -546,6 +554,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -584,6 +593,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -675,6 +685,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .octicon-tag {
@@ -729,6 +740,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
