@@ -166,7 +166,10 @@
 }
 
 #font-anim span.active {
-    animation: fadeFont 0.15s ease-out;
+    animation: fadeFont 0.1s ease-out;
+    transform: translate(0px, 0px);
+     opacity: 1;
+
 }
 
 @keyframes fadeFont {
