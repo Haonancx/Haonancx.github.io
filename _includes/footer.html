@@ -72,7 +72,7 @@ function scrollSecondScreen() {
         if (scrollTop > deviceScreenHeight) {
             clearInterval(timer);
         } else {
-            var scrollDistance =Math.abs(scrollTop - deviceScreenHeight);
+            var scrollDistance = Math.abs(scrollTop - deviceScreenHeight);
             var scrollStep = scrollDistance / 6;
             var ispeed = Math.floor(scrollStep);
             document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
@@ -107,9 +107,11 @@ function switchSectionTitle() {
     function otherUrlFunction() {
 
         if (urlString != homePageUrlOne && urlString != homePageUrlTwo) {
-            scrollSecondScreen(); //滚动至第二屏
+            scrollSecondScreen(); //滚动至第二屏方法
         }
-        console.log(errorPageId)
+        if (errorPageId !== null) {
+            titleOneId.innerHTML = "";
+        }
 
     }
 
@@ -126,14 +128,13 @@ function switchSectionTitle() {
         case travelPageUrlTwo:
             titleOneId.innerHTML = "Photos";
             break;
-        default:
-            otherUrlFunction();
-    }
 
+    }
+    otherUrlFunction(); //判断是否执行滚动第二屏方法
 
 }
 
-switchSectionTitle();// 执行标题切换方法
+switchSectionTitle(); // 执行标题切换方法
 /**
  *
  百度统计功能,统计PV与UV
