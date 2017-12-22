@@ -257,14 +257,10 @@
 .home-button {
     margin: 5em auto 0;
 }
-.home-button a{
-    display: none;
-}
-.error-404 a {
-    display: inline-block;
-}
+
 .home-button a,
 .error-404 a {
+    display: inline-block;
     color: #fff;
     height: 42px;
     line-height: 42px;
