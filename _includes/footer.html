@@ -69,12 +69,15 @@ function scrollSecondScreen() {
     var deviceScreenHeight = window.screen.availHeight;
     timer = setInterval(function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var ispeed = Math.floor(+scrollTop / 6);
-        if (scrollTop == deviceScreenHeight) {
+        if (scrollTop > deviceScreenHeight) {
             clearInterval(timer);
+        } else {
+            var ispeed = Math.floor(+scrollTop / 6);
+            var scrollDistance = scrollTop - deviceScreenHeight;
+            document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
         }
-        document.documentElement.scrollTop = document.body.scrollTop = scrollTop + ispeed;
-    }, 30)
+
+    }, 50)
 }
 
 /**
