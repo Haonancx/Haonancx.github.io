@@ -101,6 +101,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -168,7 +169,8 @@
     transform: translate(0px, 60px);
 }
 
-#font-anim span.active,.home-button a.active{
+#font-anim span.active,
+.home-button a.active {
     -webkit-animation: fadeFont 0.2s ease-out;
     -moz-animation: fadeFont 0.2s ease-out;
     -moz-animation: fadeFont 0.2s ease-out;
@@ -241,7 +243,7 @@
     line-height: 32px;
     color: #fff;
     font-weight: 400;
-    margin: 4em 0;
+    margin: 0 0 4em;
 }
 
 .title-icon {
@@ -259,6 +261,7 @@
     bottom: 20%;
     left: 50%;
     margin: 5em 0 0 -60px;
+    opacity: 0;
 }
 
 .home-button a,
@@ -279,10 +282,9 @@
 }
 
 
-.home-button a{
+.home-button a {
     padding: 0;
     width: 120px;
-
 }
 
 
@@ -290,6 +292,7 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
 
 
 
@@ -584,6 +587,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -622,6 +626,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -669,6 +674,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -726,6 +732,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
