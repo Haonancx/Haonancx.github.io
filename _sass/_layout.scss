@@ -235,8 +235,8 @@
     }
 }
 
-.banner-content .en-name {
-    display: block;
+.en-name {
+    display: none;
     font-size: 15px;
     line-height: 32px;
     color: #fff;
@@ -257,7 +257,9 @@
 .home-button {
     margin: 5em auto 0;
 }
-
+.home-button a{
+    display: none;
+}
 .home-button a,
 .error-404 a {
     display: inline-block;

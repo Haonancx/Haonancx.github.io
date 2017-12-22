@@ -288,10 +288,13 @@ var _hmt = _hmt || [];
  */
 
 setTimeout(function() {
+    //文字依次显示
     $("#font-anim span").each(function(index, element) {
         setTimeout(function() {
             element.className = "active";
         }, 80 * (index + 1));
     });
-}, 1000);
+    //缓慢显示
+    $(".en-name,.home-button a").fadeIn();
+}, 800);
 </script>
