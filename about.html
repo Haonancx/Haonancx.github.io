@@ -79,10 +79,10 @@
 
     .animation-element-blues {
         position: absolute;
-        width: 30%;
-        padding-top: 30%;
+        width: 10%;
+        padding-top: 10%;
         border-radius: 50%;
-        bottom: 5%;
+        top: 5%;
         background: rgba(56, 141, 237, 0.8);
         box-shadow: -16px 25px 14px rgba(56, 141, 237, 0.15);
     }
@@ -162,8 +162,8 @@
     var greensCircleId = document.getElementById("greensCircle");
     var bluesCircleId = document.getElementById("bluesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
-    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 3) + "px";
-    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2) + "px";
+    var orangesCircleTop = parseInt(orangesCircleHeight / 2) + "px";
+    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 3) + "px";
     orangesCircleId.style.top = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
 
