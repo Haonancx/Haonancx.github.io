@@ -24,7 +24,7 @@
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
         font-size: 16px;
         line-height: 2;
-        color: #343434;
+        color: #444;
         margin: 0;
         padding: 0;
         -webkit-text-size-adjust: 100%;
@@ -76,13 +76,13 @@
         box-shadow: 32px 32px 32px rgba(143, 309, 90, 0.2);
     }
 
-    .animation-element-yellows {
-        position: absolute;
-        width: 30%;
-        padding-top: 30%;
-        border-radius: 50%;
-        background: rgba(255, 161, 78, 0.8);
-        box-shadow: 17px -10px 13px rgba(255, 161, 78, 0.15);
+    .animation-element-blues {
+    position: absolute;
+    width: 30%;
+    padding-top: 30%;
+    border-radius: 50%;
+    background: rgba(56, 141, 237,0.8);
+    box-shadow: 17px -10px 13px rgba(56, 141, 237, 0.15);
     }
 
     .circle-rotate {
@@ -152,13 +152,13 @@
         </div>
         <div class="animation-element-greens" id="greensCircle">
         </div>
-        <div class="animation-element-yellows" id="yellowsCircle">
+        <div class="animation-element-blues" id="yellowsCircle">
         </div>
     </div>
     <script>
     var orangesCircleId = document.getElementById("orangesCircle");
     var greensCircleId = document.getElementById("greensCircle");
-    var yellowsCircleId = document.getElementById("yellowsCircle");
+    var bluesCircleId = document.getElementById("yellowsCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
     var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 3) + "px";
     var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2) + "px";
@@ -166,16 +166,16 @@
     orangesCircleId.style.right = orangesCircleRight;
 
     var greensCircleHeight = greensCircleId.offsetHeight;
-    var greensCircleTop ="-" + parseInt(greensCircleHeight / 4) + "px";
+    var greensCircleTop ="-" + parseInt(greensCircleHeight / 2) + "px";
     var greensCircleLeft = "-" + parseInt(greensCircleHeight / 2) + "px";
     greensCircleId.style.marginTop = greensCircleTop;
     greensCircleId.style.left = greensCircleLeft;
 
-    var yellowsCircleHeight = yellowsCircleId.offsetHeight;
-    var yellowsCircleBottom = "-" + parseInt(yellowsCircleHeight / 2) + "px";
-    var yellowsCircleRight = parseInt(yellowsCircleHeight / 2) + "px";
-    yellowsCircleId.style.bottom = yellowsCircleBottom;
-    yellowsCircleId.style.left = yellowsCircleRight;
+    var bluesCircleHeight = bluesCircleId.offsetHeight;
+    var bluesCircleBottom = "-" + parseInt(bluesCircleHeight / 2) + "px";
+    var bluesCircleRight = parseInt(bluesCircleHeight / 2) + "px";
+    bluesCircleId.style.bottom = bluesCircleBottom;
+    bluesCircleId.style.right = bluesCircleRight;
     </script>
 </body>
 
