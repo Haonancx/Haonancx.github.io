@@ -24,7 +24,7 @@
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
         font-size: 16px;
         line-height: 2;
-        color: #333;
+        color: #343434;
         margin: 0;
         padding: 0;
         -webkit-text-size-adjust: 100%;
@@ -70,6 +70,7 @@
         position: absolute;
         width: 25%;
         padding-top: 25%;
+            top: 50%;
         border-radius: 50%;
         background: #8fd15a;
         box-shadow: 32px 32px 32px rgba(143, 309, 90, 0.2);
@@ -165,9 +166,9 @@
     orangesCircleId.style.right = orangesCircleRight;
 
     var greensCircleHeight = greensCircleId.offsetHeight;
-    var greensCircleTop = parseInt(greensCircleHeight / 4) + "px";
+    var greensCircleTop ="-" + parseInt(greensCircleHeight / 4) + "px";
     var greensCircleLeft = "-" + parseInt(greensCircleHeight / 2) + "px";
-    greensCircleId.style.top = greensCircleTop;
+    greensCircleId.style.marginTop = greensCircleTop;
     greensCircleId.style.left = greensCircleLeft;
 
     var yellowsCircleHeight = yellowsCircleId.offsetHeight;
