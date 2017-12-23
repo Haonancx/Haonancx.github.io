@@ -125,7 +125,11 @@ function draw() {
         circleExp += circleExpSp;
     }
     var ctxfr = document.getElementById('canvas').getContext('2d');
+    var screenWidth = document.documentElement.clientWidth;
+    var screenHeight = document.documentElement.clientHeight;
 
+    ctxfr.width = screenWidth; //显示屏幕的像素
+    ctxfr.height = screenHeight; //显示屏幕的高度
     ctxfr.globalCompositeOperation = 'destination-over';
     ctxfr.clearRect(0, 0, canvas.width, canvas.height);
 
