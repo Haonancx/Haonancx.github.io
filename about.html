@@ -61,8 +61,6 @@
         position: absolute;
         width: 50%;
         padding-top: 50%;
-        right: -25%;
-        top: -25%;
         border-radius: 50%;
         background: #ff5447;
         box-shadow: 0 32px 32px rgba(255, 84, 71, 0.2);
@@ -81,11 +79,10 @@
 
     .animation-element-yellows {
         position: absolute;
-        left: 10%;
-        bottom: -34%;
-        width: 34%;
-        padding-top: 34%;
-        border-radius: 100% 100% 0 0;
+        bottom: 0px;
+        width: 30%;
+        padding-top: 30%;
+        border-radius: 50%;
         background: rgba(255, 161, 78, 0.8);
         box-shadow: 17px -10px 13px rgba(255, 161, 78, 0.15);
     }
@@ -153,13 +150,35 @@
         <div class="page-one-content">
             <h1 class="about-title">你好</h1>
         </div>
-        <div class="animation-element-oranges circle-rotate">
+        <div class="animation-element-oranges circle-rotate" id="orangesCircle">
         </div>
         <div class="animation-element-greens">
         </div>
         <div class="animation-element-yellows">
         </div>
     </div>
+    <script>
+    var orangesCircleId = document.getElementById("orangesCircle");
+    var greensCircleId = document.getElementById("greensCircle");
+    var yellowsCircleId = document.getElementById("yellowsCircle");
+    var orangesCircleHeight = orangesCircleId.offsetHeight;
+    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 3) + "px";
+    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2) + "px";
+    orangesCircleId.style.top = orangesCircleTop;
+    orangesCircleId.style.right = orangesCircleRight;
+
+    var greensCircleHeight = greensCircleId.offsetHeight;
+    var greensCircleTop = parseInt(greensCircleHeight / 4) + "px";
+    var greensCircleRight = "-" + parseInt(greensCircleHeight / 2) + "px";
+    greensCircleId.style.top = greensCircleTop;
+    greensCircleId.style.right = greensCircleRight;
+
+    var yellowsCircleHeight = yellowsCircleId.offsetHeight;
+    var yellowsCircleBottom = "-" + parseInt(yellowsCircleHeight / 2) + "px";
+    var yellowsCircleRight = parseInt(yellowsCircleHeight / 2) + "px";
+    yellowsCircleId.style.bottom = yellowsCircleBottom;
+    yellowsCircleId.style.left = yellowsCircleRight;
+    </script>
 </body>
 
 </html>

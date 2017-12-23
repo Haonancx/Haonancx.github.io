@@ -83,6 +83,7 @@
     color: #ccc;
 }
 
+
 /* banner */
 
 .banner {
@@ -102,7 +103,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .banner-bg {
@@ -273,6 +275,7 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
 
 /* article */
 
@@ -556,6 +559,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -594,6 +598,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -642,6 +647,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -700,6 +706,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
