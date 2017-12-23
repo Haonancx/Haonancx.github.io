@@ -82,6 +82,7 @@
         padding-top: 10%;
         border-radius: 50%;
         top: 5%;
+        right: 20%;
         background: rgba(56, 141, 237, 0.8);
         box-shadow: -16px 25px 14px rgba(56, 141, 237, 0.15);
     }
@@ -153,26 +154,21 @@
         </div>
         <div class="animation-element-greens circle-rotate" id="greensCircle">
         </div>
-        <div class="animation-element-blues" id="bluesCircle">
+        <div class="animation-element-blues">
         </div>
     </div>
     <script>
     var orangesCircleId = document.getElementById("orangesCircle");
     var greensCircleId = document.getElementById("greensCircle");
-    var bluesCircleId = document.getElementById("bluesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
     var orangesCircleTop = parseInt(orangesCircleHeight / 2) + "px";
-    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 3) + "px";
+    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2) + "px";
     orangesCircleId.style.top = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
 
     var greensCircleHeight = greensCircleId.offsetHeight;
     var greensCircleLeft = "-" + parseInt(greensCircleHeight / 2) + "px";
     greensCircleId.style.left = greensCircleLeft;
-
-    var bluesCircleHeight = bluesCircleId.offsetHeight;
-    var bluesCircleRight = "-" + parseInt(bluesCircleHeight / 2) + "px";
-    bluesCircleId.style.right = bluesCircleRight;
     </script>
 </body>
 
