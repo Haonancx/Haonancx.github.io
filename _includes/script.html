@@ -291,7 +291,8 @@ var _hmt = _hmt || [];
  *
  */
 
-setTimeout(function() {
+
+window.onload = function() {
     //文字依次显示
     $("#font-anim span").each(function(index, element) {
         setTimeout(function() {
@@ -301,5 +302,7 @@ setTimeout(function() {
     //缓慢显示
     $(".en-name").fadeIn(1200);
     $(".home-button a").addClass("active");
-}, 1000);
+
+};
+
 </script>
