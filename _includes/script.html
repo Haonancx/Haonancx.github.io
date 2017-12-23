@@ -124,13 +124,12 @@ function draw() {
         if (circleExp < circleExpMin || circleExp > circleExpMax) circleExpSp *= -1;
         circleExp += circleExpSp;
     }
-    var canvasConfig = document.getElementById('canvas');
-    var ctxfr = canvasConfig.getContext('2d');
+    var ctxfr = document.getElementById('canvas').getContext('2d');
     var screenWidth = document.documentElement.clientWidth;
     var screenHeight = document.documentElement.clientHeight;
 
-    canvasConfig.width = screenWidth; //显示屏幕的像素
-    canvasConfig.height = screenHeight; //显示屏幕的高度
+    ctxfr.width = screenWidth; //显示屏幕的像素
+    ctxfr.height = screenHeight; //显示屏幕的高度
     ctxfr.globalCompositeOperation = 'destination-over';
     ctxfr.clearRect(0, 0, canvas.width, canvas.height);
 
