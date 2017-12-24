@@ -46,6 +46,17 @@
         width: 100%;
     }
 
+    .section-title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0 auto 3rem;
+        overflow: hidden;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1;
+        text-indent: -10%;
+    }
+
     .about-title {
         font-size: 60px;
         font-weight: 600;
@@ -67,11 +78,15 @@
         padding-top: 55%;
         border-radius: 50%;
         box-shadow: -31px 7px 18px rgba(255, 84, 71, 0.1);
-        background-image: -ms-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -moz-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -webkit-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -o-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
+        background-image: -ms-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
+        background-image: -moz-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
+        ;
+        background-image: -webkit-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
+        ;
+        background-image: -o-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
+        ;
+        background-image: linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
+        ;
     }
 
     .animation-element-greens {
@@ -154,7 +169,58 @@
             -webkit-transform: translate(0px, 0px);
         }
     }
+
+    @-webkit-keyframes rotate {
+        0% {
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+        }
+        10% {
+            transform: translate(-4px, 4px);
+            -webkit-transform: translate(-4px, 4px);
+        }
+        20% {
+            transform: translate(-8px, 4px);
+            -webkit-transform: translate(-8px, 4px);
+        }
+        30% {
+            transform: translate(-12px, 8px);
+            -webkit-transform: translate(-12px, 8px);
+        }
+        40% {
+            transform: translate(-16px, 12px);
+            -webkit-transform: translate(-16px, 12px);
+        }
+        50% {
+            transform: translate(-20px, 12px);
+            -webkit-transform: translate(-20px, 12px);
+        }
+        60% {
+            transform: translate(-16px, 12px);
+            -webkit-transform: translate(-16px, 12px);
+        }
+        70% {
+            transform: translate(-12px, 12px);
+            -webkit-transform: translate(-12px, 12px);
+        }
+        80% {
+            transform: translate(-8px, 8px);
+            -webkit-transform: translate(-8px, 8px);
+        }
+        90% {
+            transform: translate(-4px, 4px);
+            -webkit-transform: translate(-4px, 4px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+        }
+    }
     /* pages-one */
+
+    .about-page-two {
+        position: relative;
+    }
 
     .animation-element-blues {
         position: absolute;
@@ -171,7 +237,7 @@
     }
 
     .secondary-title {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 600;
         padding: 30px 0 0;
         overflow: hidden;
@@ -297,9 +363,9 @@
         <div class="animation-element-yellows">
         </div>
     </div>
-    <div class="about-page-two screen-page">
+    <div class="about-page-two">
         <div class="page-one-content">
-            <h1 class="about-title">软件工程师</h1>
+            <h1 class="section-title">软件工程师</h1>
             <div>
                 <h1 class="secondary-title"><span class="localtio-icon"></span>海南.海口</h1>
             </div>
@@ -307,12 +373,12 @@
         <div class="animation-element-blues circle-rotate" id="bluesCircle">
         </div>
     </div>
-    <div class="about-page-two screen-page">
+    <!--     <div class="about-page-two screen-page">
         <div class="page-one-content">
         </div>
         <div class="animation-element-lemons circle-rotate" id="lemonsCircle">
         </div>
-    </div>
+    </div> -->
     <script>
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
