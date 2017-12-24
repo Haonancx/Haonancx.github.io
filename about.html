@@ -371,17 +371,9 @@
     //body-css
     var screenWidth = window.screen.availWidth;
     var screenHeight = window.screen.availHeight;
-    var bodyElement = document.getElementsByTagName("body")[0];
-  //  bodyElement.style.width = screenWidth + "px";
-
-
-
     //page-one
     var pageOneId = document.getElementById("page-one");
     pageOneId.style.height = screenHeight + "px";
-
-
-
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
@@ -401,6 +393,7 @@
     var bluesCircleHeight = bluesCircleId.offsetHeight;
     var bluesCircleLeft = parseInt(bluesCircleHeight / 8) + "px";
     bluesCircleId.style.left = bluesCircleLeft;
+     bluesCircleId.style.top = bluesCircleHeight;
     </script>
 </body>
 
