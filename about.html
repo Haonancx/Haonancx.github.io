@@ -53,9 +53,7 @@
         overflow: hidden;
         text-align: center;
         letter-spacing: 2px;
-        line-height: 1;
-        text-indent: -5%;
-    }
+        line-height: 1;    }
 
     .text-indent-ahead {
         text-indent: -10%!important;
@@ -221,6 +219,13 @@
         }
     }
     /* pages-one */
+        .about-page-two {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        min-height: 700px;
+        max-height: 900px;
+    }
     .animation-element-blues {
         position: absolute;
         width: 18%;
@@ -347,10 +352,8 @@
         </div>
         <div class="animation-element-yellows">
         </div>
-                <div class="animation-element-blues circle-rotate" id="bluesCircle">
-        </div>
     </div>
-    <div class="about-page-two screen-page">
+    <div class="about-page-two">
         <div class="page-two-content">
             <h1 class="section-title">软件工程师</h1>
             <h1 class="secondary-title">
@@ -372,13 +375,6 @@
     var greensCircleHeight = greensCircleId.offsetHeight;
     var greensCircleLeft = "-" + parseInt(greensCircleHeight / 3) + "px";
     greensCircleId.style.left = greensCircleLeft;
-    //greens-circle-offset
-    var bluesCircleId = document.getElementById("bluesCircle");
-
-    var bluesCircleHeight = bluesCircleId.offsetHeight;
-    var bluesCircleLeft = parseInt(bluesCircleHeight / 8) + "px";
-    bluesCircleId.style.left = bluesCircleLeft;
-     bluesCircleId.style.bottom = "-" + bluesCircleHeight+ "px";
     </script>
 </body>
 
