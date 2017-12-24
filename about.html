@@ -88,8 +88,8 @@
 
     .animation-element-greens {
         position: absolute;
-        width: 30%;
-        padding-top: 30%;
+        width: 40%;
+        padding-top: 40%;
         bottom: 5%;
         border-radius: 50%;
         background-image: -ms-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
@@ -100,7 +100,7 @@
         box-shadow: 32px 32px 32px rgba(143, 309, 90, 0.2);
     }
 
-    .animation-element-yellows {
+    .animation-element-blues {
         position: absolute;
         width: 50%;
         padding-top: 50%;
@@ -224,18 +224,6 @@
         text-align: center;
     }
 
-    .animation-element-blues {
-        position: absolute;
-        width: 18%;
-        padding-top: 18%;
-        border-radius: 50%;
-        background-image: -ms-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
-        background-image: -moz-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
-        background-image: -webkit-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
-        background-image: -o-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
-        background-image: linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
-        box-shadow: 15px -10px 5px rgba(76, 131, 255, 0.08);
-    }
 
     .secondary-title {
         font-size: 2rem;
@@ -352,7 +340,7 @@
             <h1 class="section-title">软件工程师</h1>
             <h1 class="secondary-title">
                 <span class="localtio-icon"></span>海南.海口</h1>
-            <div class="animation-element-yellows circle-rotate">
+            <div class="animation-element-blues circle-rotate">
             </div>
         </div>
     </div>
@@ -360,8 +348,8 @@
     //oranges-circle-offset
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
-    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 3) + "px";
-    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 5) + "px";
+    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 2.5) + "px";
+    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 4) + "px";
     orangesCircleId.style.top = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
     //greens-circle-offset
