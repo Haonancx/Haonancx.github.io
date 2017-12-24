@@ -69,7 +69,7 @@
     }
 
     .text-indent-ahead {
-        text-indent: 10%;
+        text-indent: 5%!important;
     }
 
     .animation-element-oranges {
@@ -245,6 +245,7 @@
         letter-spacing: 2px;
         line-height: 1;
         text-indent: -10%;
+        color: #555;
     }
 
     .localtio-icon {
@@ -264,7 +265,7 @@
         border: 5px solid #869af1;
         display: block;
         position: absolute;
-        top: 2px;
+        top: 9px;
         left: 0px;
         z-index: 1;
         line-height: 26px;
@@ -281,7 +282,7 @@
         width: 0px;
         display: block;
         position: absolute;
-        bottom: 2px;
+        bottom: -5px;
         left: 3px;
         border: 10px transparent solid;
         border-top-color: #869af1;
@@ -297,16 +298,16 @@
             transform: translateY(0)
         }
         15% {
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px)
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px)
         }
         30% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px)
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px)
         }
         40% {
-            -webkit-transform: translateY(-7px);
-            transform: translateY(-7px)
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px)
         }
     }
 
@@ -319,16 +320,16 @@
             transform: translateY(0)
         }
         15% {
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px)
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px)
         }
         30% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px)
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px)
         }
         40% {
-            -webkit-transform: translateY(-7px);
-            transform: translateY(-7px)
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px)
         }
     }
     /* pages-two */
@@ -363,11 +364,12 @@
         <div class="animation-element-yellows">
         </div>
     </div>
-    <div class="about-page-two">
+    <div class="about-page-two screen-page">
         <div class="page-one-content">
             <h1 class="section-title">软件工程师</h1>
             <div>
-                <h1 class="secondary-title"><span class="localtio-icon"></span>海南.海口</h1>
+                <h1 class="secondary-title">
+                <span class="localtio-icon"></span>海南.海口</h1>
             </div>
         </div>
         <div class="animation-element-blues circle-rotate" id="bluesCircle">
@@ -398,7 +400,7 @@
     var bluesCircleId = document.getElementById("bluesCircle");
 
     var bluesCircleHeight = bluesCircleId.offsetHeight;
-    var bluesCircleLeft = parseInt(bluesCircleHeight / 6) + "px";
+    var bluesCircleLeft = parseInt(bluesCircleHeight / 8) + "px";
     bluesCircleId.style.left = bluesCircleLeft;
 
     //lemons-circle-offset
