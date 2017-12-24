@@ -220,22 +220,11 @@
         }
     }
     /* pages-one */
-
-    .about-page-two {
-
-        position: relative;
-        height: 100vh;
-        text-align: center;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .animation-element-blues {
         position: absolute;
         width: 18%;
         padding-top: 18%;
         border-radius: 50%;
-        top: 10%;
         background-image: -ms-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
         background-image: -moz-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
         background-image: -webkit-linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%);
@@ -357,15 +346,16 @@
         </div>
         <div class="animation-element-yellows">
         </div>
+                <div class="animation-element-blues circle-rotate" id="bluesCircle">
+        </div>
     </div>
-    <div class="about-page-two">
+    <div class="about-page-two screen-page">
         <div class="page-two-content">
             <h1 class="section-title">软件工程师</h1>
             <h1 class="secondary-title">
                 <span class="localtio-icon"></span>海南.海口</h1>
         </div>
-        <div class="animation-element-blues circle-rotate" id="bluesCircle">
-        </div>
+
     </div>
     <script>
     //body-css
@@ -393,7 +383,7 @@
     var bluesCircleHeight = bluesCircleId.offsetHeight;
     var bluesCircleLeft = parseInt(bluesCircleHeight / 8) + "px";
     bluesCircleId.style.left = bluesCircleLeft;
-     bluesCircleId.style.top = bluesCircleHeight+ "px";
+     bluesCircleId.style.bottom = "-" + bluesCircleHeight+ "px";
     </script>
 </body>
 
