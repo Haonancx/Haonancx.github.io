@@ -37,7 +37,6 @@
         height: 100vh;
         text-align: center;
         width: 100%;
-        overflow-x: hidden;
     }
 
     .page-one-content {
@@ -223,6 +222,15 @@
     }
     /* pages-one */
 
+    .about-page-two {
+
+        position: relative;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .animation-element-blues {
         position: absolute;
         width: 18%;
@@ -245,7 +253,6 @@
         text-align: center;
         letter-spacing: 2px;
         line-height: 1;
-        text-indent: -10%;
         color: #555;
     }
 
@@ -365,7 +372,7 @@
         <div class="animation-element-yellows">
         </div>
     </div>
-    <div class="about-page-two screen-page">
+    <div class="about-page-two">
         <div class="page-one-content">
             <h1 class="section-title">软件工程师</h1>
             <div>
@@ -383,9 +390,12 @@
         </div>
     </div> -->
     <script>
+    //body-css
+    var screenWidth = window.screen.availWidth;
+    var bodyElement = document.getElementsByTagName("body")[0];
+    bodyElement.style.width = screenWidth+"px";
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
-
     var orangesCircleHeight = orangesCircleId.offsetHeight;
     var orangesCircleTop = parseInt(orangesCircleHeight / 1.5) + "px";
     var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2) + "px";
@@ -405,10 +415,10 @@
     bluesCircleId.style.left = bluesCircleLeft;
 
     //lemons-circle-offset
-    var lemonsCircleId = document.getElementById("lemonsCircle");
+/*    var lemonsCircleId = document.getElementById("lemonsCircle");
     var lemonsCircleHeight = lemonsCircleId.offsetHeight;
     var lemonsCircleLeft = "-" + parseInt(lemonsCircleHeight / 2) + "px";;
-    lemonsCircleId.style.left = lemonsCircleLeft;
+    lemonsCircleId.style.left = lemonsCircleLeft;*/
     </script>
 </body>
 
