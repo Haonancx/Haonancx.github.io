@@ -34,7 +34,6 @@
 
     .screen-page {
         position: relative;
-        height: 100vh;
         text-align: center;
         width: 100%;
     }
@@ -361,9 +360,9 @@
 </head>
 
 <body>
-    <div class="about-page-one screen-page">
+    <div class="about-page-one screen-page" id="page-one">
         <div class="page-one-content">
-            <h1 class="about-title text-indent-ahead">你好</h1>
+            <h1 class="about-title">你好</h1>
         </div>
         <div class="animation-element-oranges circle-rotate" id="orangesCircle">
         </div>
@@ -392,8 +391,18 @@
     <script>
     //body-css
     var screenWidth = window.screen.availWidth;
+    var screenHeight = window.screen.availHeight;
     var bodyElement = document.getElementsByTagName("body")[0];
     bodyElement.style.width = screenWidth+"px";
+
+
+
+    //page-one
+    var pageOneId = document.getElementById("page-one");
+    pageOneId.style.height = screenHeight+"px";
+
+
+
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
