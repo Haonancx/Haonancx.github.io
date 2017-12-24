@@ -349,7 +349,7 @@
         </div>
         <div class="animation-element-greens circle-rotate" id="greensCircle">
         </div>
-        <div class="animation-element-yellows">
+        <div class="animation-element-yellows circle-rotate">
         </div>
     </div>
     <div class="about-page-two">
@@ -360,16 +360,15 @@
         </div>
     </div>
     <script>
-    //get-circle-id
+    //oranges-circle-offset
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
     var orangesCircleTop = parseInt(orangesCircleHeight / 1.5) + "px";
     var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2.5) + "px";
     orangesCircleId.style.top = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
-    //oranges-circle-offset
+    //greens-circle-offset
     var greensCircleId = document.getElementById("greensCircle");
-
     var greensCircleHeight = greensCircleId.offsetHeight;
     var greensCircleLeft = "-" + parseInt(greensCircleHeight / 3) + "px";
     greensCircleId.style.left = greensCircleLeft;
