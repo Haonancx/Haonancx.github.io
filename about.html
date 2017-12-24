@@ -90,7 +90,7 @@
         position: absolute;
         width: 25%;
         padding-top: 25%;
-        top: 10%;
+        bottom: : 10%;
         border-radius: 50%;
         background-image: -ms-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         background-image: -moz-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
@@ -107,7 +107,7 @@
         padding-top: 10%;
         border-radius: 50%;
         top: 8%;
-        right: 25%;
+        left: 20%;
         background: rgba(255, 118, 75, 0.8);
         box-shadow: -16px 25px 14px rgba(255, 118, 75, 0.1);
     }
@@ -225,7 +225,8 @@
 
     .page-two-content {
         margin: 4rem auto 0;
-        width: 80%;
+        width: 100%;
+        text-align: center;
     }
 
     .animation-element-blues {
@@ -364,8 +365,8 @@
     //oranges-circle-offset
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
-    var orangesCircleTop = parseInt(orangesCircleHeight / 1.5) + "px";
-    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2.5) + "px";
+    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 3) + "px";
+    var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 5) + "px";
     orangesCircleId.style.top = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
     //greens-circle-offset
