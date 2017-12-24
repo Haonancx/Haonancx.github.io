@@ -382,6 +382,10 @@
     left: 50%;
     margin: 5em 0 0 -60px;
 }
+.home-button a{
+opacity: 0;
+}
+
 
 .home-button a,
 .error-404 a {
@@ -398,13 +402,6 @@
     border: none;
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
-}
-
-
-.home-button a {
-    padding: 0;
-    width: 120px;
-    opacity: 0;
 }
 
 
