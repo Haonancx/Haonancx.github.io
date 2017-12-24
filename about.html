@@ -37,7 +37,7 @@
         height: 100vh;
         text-align: center;
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .page-one-content {
@@ -55,7 +55,11 @@
         text-align: center;
         letter-spacing: 2px;
         line-height: 1;
-        text-indent: -10%;
+        text-indent: 0;
+    }
+
+    .text-indent-ahead {
+        text-indent: -10%!important;
     }
 
     .about-title {
@@ -352,7 +356,7 @@
 <body>
     <div class="about-page-one screen-page">
         <div class="page-one-content">
-            <h1 class="about-title">你好</h1>
+            <h1 class="about-title text-indent-ahead">你好</h1>
         </div>
         <div class="animation-element-oranges circle-rotate" id="orangesCircle">
         </div>
