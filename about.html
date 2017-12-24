@@ -36,6 +36,7 @@
         position: relative;
         text-align: center;
         width: 100%;
+        height: 100vh;
     }
 
     .page-one-content {
@@ -53,7 +54,7 @@
         text-align: center;
         letter-spacing: 2px;
         line-height: 1;
-        text-indent: 0;
+        text-indent: -5%;
     }
 
     .text-indent-ahead {
@@ -358,12 +359,6 @@
 
     </div>
     <script>
-    //body-css
-    var screenWidth = window.screen.availWidth;
-    var screenHeight = window.screen.availHeight;
-    //page-one
-    var pageOneId = document.getElementById("page-one");
-    pageOneId.style.height = screenHeight + "px";
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
