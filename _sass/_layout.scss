@@ -84,6 +84,8 @@
 }
 
 
+
+
 /* banner */
 
 .banner {
@@ -150,6 +152,10 @@
 #font-anim span {
     display: inline-block;
     transform: translate(0px, 60px);
+    -ms-transform: translate(0px, 60px);
+    -moz-transform: translate(0px, 60px);
+    -webkit-transform: translate(0px, 60px);
+    -o-transform: translate(0px, 60px);
 }
 
 #font-anim span.active,
@@ -166,116 +172,190 @@
     0% {
         transform: translate(0px, 50px);
         -webkit-transform: translate(0px, 50px);
+
+
+        -ms-transform: translate(0px, 50px);
+        -moz-transform: translate(0px, 50px);
+        -o-transform: translate(0px, 50px);
+
+
         opacity: 0;
     }
     10% {
         transform: translate(0px, 45px);
         -webkit-transform: translate(0px, 45px);
+        -ms-transform: translate(0px, 45px);
+        -moz-transform: translate(0px, 45px);
+        -o-transform: translate(0px, 45px);
         opacity: 0.1;
     }
     20% {
         transform: translate(0px, 40px);
         -webkit-transform: translate(0px, 40px);
+        -ms-transform: translate(0px, 40px);
+        -moz-transform: translate(0px, 40px);
+        -o-transform: translate(0px, 40px);
         opacity: 0.2;
     }
     30% {
         transform: translate(0px, 35px);
         -webkit-transform: translate(0px, 35px);
+        -ms-transform: translate(0px, 35px);
+        -moz-transform: translate(0px, 35px);
+        -o-transform: translate(0px, 35px);
         opacity: 0.3;
     }
     40% {
         transform: translate(0px, 30px);
         -webkit-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
         opacity: 0.4;
     }
     50% {
         transform: translate(0px, 25px);
         -webkit-transform: translate(0px, 25px);
+        -ms-transform: translate(0px, 25px);
+        -moz-transform: translate(0px, 25px);
+        -o-transform: translate(0px, 25px);
         opacity: 0.5;
     }
     60% {
         transform: translate(0px, 20px);
         -webkit-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
         opacity: 0.6;
     }
     70% {
         transform: translate(0px, 15px);
         -webkit-transform: translate(0px, 15px);
+        -ms-transform: translate(0px, 15px);
+        -moz-transform: translate(0px, 15px);
+        -o-transform: translate(0px, 15px);
         opacity: 0.7;
     }
     80% {
         transform: translate(0px, 10px);
         -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
         opacity: 0.8;
     }
     90% {
         transform: translate(0px, 5px);
         -webkit-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
         opacity: 0.9;
     }
     100% {
         transform: translate(0px, 0px);
         -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
         opacity: 1;
     }
 }
+
 @-webkit-keyframes fadeFont {
     0% {
         transform: translate(0px, 50px);
         -webkit-transform: translate(0px, 50px);
+        -ms-transform: translate(0px, 50px);
+        -moz-transform: translate(0px, 50px);
+        -o-transform: translate(0px, 50px);
+
+
         opacity: 0;
     }
     10% {
         transform: translate(0px, 45px);
         -webkit-transform: translate(0px, 45px);
+        -ms-transform: translate(0px, 45px);
+        -moz-transform: translate(0px, 45px);
+        -o-transform: translate(0px, 45px);
         opacity: 0.1;
     }
     20% {
         transform: translate(0px, 40px);
         -webkit-transform: translate(0px, 40px);
+        -ms-transform: translate(0px, 40px);
+        -moz-transform: translate(0px, 40px);
+        -o-transform: translate(0px, 40px);
         opacity: 0.2;
     }
     30% {
         transform: translate(0px, 35px);
         -webkit-transform: translate(0px, 35px);
+        -ms-transform: translate(0px, 35px);
+        -moz-transform: translate(0px, 35px);
+        -o-transform: translate(0px, 35px);
         opacity: 0.3;
     }
     40% {
         transform: translate(0px, 30px);
         -webkit-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
         opacity: 0.4;
     }
     50% {
         transform: translate(0px, 25px);
         -webkit-transform: translate(0px, 25px);
+        -ms-transform: translate(0px, 25px);
+        -moz-transform: translate(0px, 25px);
+        -o-transform: translate(0px, 25px);
         opacity: 0.5;
     }
     60% {
         transform: translate(0px, 20px);
         -webkit-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
         opacity: 0.6;
     }
     70% {
         transform: translate(0px, 15px);
         -webkit-transform: translate(0px, 15px);
+        -ms-transform: translate(0px, 15px);
+        -moz-transform: translate(0px, 15px);
+        -o-transform: translate(0px, 15px);
         opacity: 0.7;
     }
     80% {
         transform: translate(0px, 10px);
         -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
         opacity: 0.8;
     }
     90% {
         transform: translate(0px, 5px);
         -webkit-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
         opacity: 0.9;
     }
     100% {
         transform: translate(0px, 0px);
         -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
         opacity: 1;
     }
 }
+
 .en-name {
     display: none;
     font-size: 15px;
@@ -331,6 +411,8 @@
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
+
 
 
 /* article */
@@ -616,6 +698,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -654,6 +738,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -703,6 +789,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -762,6 +850,8 @@ blockquote:before {
 
     color: #111;
 }
+
+
 
 
 
