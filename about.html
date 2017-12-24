@@ -385,9 +385,9 @@
     //get-circle-id
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
-    var orangesCircleBottom = "-"+parseInt(orangesCircleHeight / 2.5) + "px";
+    var orangesCircleTop = parseInt(orangesCircleHeight / 2) + "px";
     var orangesCircleRight = "-" + parseInt(orangesCircleHeight / 2.5) + "px";
-    orangesCircleId.style.bottom = orangesCircleBottom;
+    orangesCircleId.style.bottom = orangesCircleTop;
     orangesCircleId.style.right = orangesCircleRight;
     //oranges-circle-offset
     var greensCircleId = document.getElementById("greensCircle");
@@ -404,4 +404,4 @@
     </script>
 </body>
 
-</html>2.5
+</html>
