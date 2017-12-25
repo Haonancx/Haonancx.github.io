@@ -1,7 +1,72 @@
-<script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script>
 var url = document.location.href; // 获取当前浏览器路径
+/**
+ *
+ 原生JS实现 Jquery each 方法
+ *
+ @method jqEach
+ *
+ @return {object或array，index}  返回数组或对象,索引值
+ */
+var jqEach = function(object, callback) {
+    var type = (function() {
+        switch (object.constructor) {
+            case Object:
+                return 'Object';
+                break;
+            case Array:
+                return 'Array';
+                break;
+            case NodeList:
+                return 'NodeList';
+                break;
+            default:
+                return 'null';
+                break;
+        }
+    })();
+    // 为数组或类数组时, 返回: index, value  
+    if (type === 'Array' || type === 'NodeList') {
+        // 由于存在类数组NodeList, 所以不能直接调用every方法  
+        [].every.call(object, function(v, i) {
+            return callback.call(v, i, v) === false ? false : true;
+        });
+    }
+    // 为对象格式时,返回:key, value  
+    else if (type === 'Object') {
+        for (var i in object) {
+            if (callback.call(object[i], i, object[i]) === false) {
+                break;
+            }
+        }
+    }
+}
 
+/**
+ *
+ 原生JS实现 Jquery fadeIn 方法
+ *
+ @method JqfadeIn
+ *
+ @return {void}  无返回值
+ */
+
+function JqfadeIn(el, time) {
+    if (el.style.opacity === "") {
+        el.style.opacity = 0;
+    }
+    if (el.style.display === "" || el.style.display === 'none') {
+        el.style.display = 'block';
+    }
+
+    var t = setInterval(function() {
+        if (el.style.opacity < 1) {
+            el.style.opacity = parseFloat(el.style.opacity) + 0.01;
+        } else {
+            clearInterval(t);
+        }
+    }, time / 100);
+}
 /**
  *
  首屏动画渲染方法
@@ -290,16 +355,21 @@ var _hmt = _hmt || [];
  FSUX 理念动画
  *
  */
+var fontAnim = document.querySelectorAll("#font-anim span");
+var homeButton = document.querySelectorAll(".home-button a");
+var homeMotto = document.querySelectorAll("#home-motto");
+
+
 
 setTimeout(function() {
     //文字依次显示
-    $("#font-anim span").each(function(index, element) {
+    jqEach(fontAnim, function(index, element) {
         setTimeout(function() {
             element.className = "active";
         }, 50 * (index + 1));
     });
     //缓慢显示
-    $(".en-name").fadeIn(1500);
-    $(".home-button a").addClass("active");
+    JqfadeIn(homeMotto, 1500)
+    homeButton.className = "active";
 }, 1300);
 </script>
