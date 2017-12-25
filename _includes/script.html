@@ -357,10 +357,7 @@ var _hmt = _hmt || [];
  */
 var fontAnim = document.querySelectorAll("#font-anim span");
 var homeButton = document.querySelectorAll(".home-button a");
-var homeMotto = document.querySelectorAll("#home-motto");
-
-
-
+var orangesCircleId = document.getElementById("home-motto");
 setTimeout(function() {
     //文字依次显示
     jqEach(fontAnim, function(index, element) {
@@ -369,7 +366,7 @@ setTimeout(function() {
         }, 50 * (index + 1));
     });
     //缓慢显示
-    JqfadeIn(homeMotto, 1500)
+    JqfadeIn(homeMotto,1500)
     homeButton.className = "active";
 }, 1300);
 </script>
