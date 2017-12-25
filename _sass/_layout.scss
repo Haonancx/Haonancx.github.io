@@ -823,13 +823,14 @@ blockquote:before {
     transition: all 0.3s ease;
 }
 
-.octicon-tag:hover,
-.post-tags a:hover {
+.octicon-tag:hover {
     color: #fff;
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
-
+.post-tags a:hover {
+    color: #222;
+}
 .paginateBox {
     position: relative;
     display: inline-block;
