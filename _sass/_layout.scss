@@ -87,6 +87,8 @@
 
 
 
+
+
 /* banner */
 
 .banner {
@@ -173,13 +175,9 @@
     0% {
         transform: translate(0px, 50px);
         -webkit-transform: translate(0px, 50px);
-
-
         -ms-transform: translate(0px, 50px);
         -moz-transform: translate(0px, 50px);
         -o-transform: translate(0px, 50px);
-
-
         opacity: 0;
     }
     10% {
@@ -382,8 +380,9 @@
     left: 50%;
     margin: 5em 0 0 -60px;
 }
-.home-button a{
-opacity: 0;
+
+.home-button a {
+    opacity: 0;
 }
 
 
@@ -391,11 +390,12 @@ opacity: 0;
 .error-404 a {
     display: inline-block;
     color: #fff;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 45px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 42px;
+    width: 132px;
     font-size: 1rem;
-    padding: 0 20px;
+    padding: 0;
     letter-spacing: 0.5px;
     background: #1e5aff;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
@@ -409,6 +409,8 @@ opacity: 0;
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
+
 
 
 
@@ -700,6 +702,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -738,6 +742,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -790,6 +796,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -852,6 +860,8 @@ blockquote:before {
 
     color: #111;
 }
+
+
 
 
 
