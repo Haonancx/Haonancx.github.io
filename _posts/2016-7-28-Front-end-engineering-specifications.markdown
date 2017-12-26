@@ -43,8 +43,8 @@ tags: 随笔 规范 架构
 
 只要开发者们能够保证源代码源文件都严格遵循规范，那接下去所使用的混淆、压缩和编译工具则可投其所好不尽相同。
 
-- gitbooks 地址：[前端工程规范](https://haonancx.gitbooks.io/fe-spec-book/ "前端工程规范")
-- github 地址：[前端工程化规范](https://github.com/Haonancx/fe-spec "前端工程化规范")
+- gitbooks 地址：[前端工程规范](https://haonancx.gitbooks.io/fees/ "前端工程规范")
+- github 地址：[前端工程化规范](https://github.com/Haonancx/fees "前端工程化规范")
 
 ##### 欢迎 Star，欢迎交流。
 
