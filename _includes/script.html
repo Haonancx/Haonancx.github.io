@@ -231,6 +231,23 @@ function draw() {
 }
 
 init(); //初始化首屏渲染动画
+
+
+
+/**
+ *
+调整到标题位置
+ *
+ @method gotoArtcleOffset
+ *
+ @return {void}  无返回值
+ */
+
+function gotoArtcleOffset() {
+    var screenHeight = window.screen.availHeight;
+    document.body.scrollTop = document.documentElement.scrollTop = screenHeight;
+
+}
 /**
  *
  二级标题替换功能
@@ -255,22 +272,25 @@ function switchSectionTitle() {
     function otherUrlFunction() {
         if (errorPageId !== null) {
             titleOneId.innerHTML = "";
+            gotoArtcleOffset();
         }
 
     }
-
     switch (url) {
         case archivePageUrlOne:
         case archivePageUrlTwo:
             titleOneId.innerHTML = "年度精选";
+            gotoArtcleOffset();
             break;
         case tagsPageUrlOne:
         case tagsPageUrlTwo:
             titleOneId.innerHTML = "标签云";
+            gotoArtcleOffset();
             break;
         case travelPageUrlOne:
         case travelPageUrlTwo:
             titleOneId.innerHTML = "Photos";
+            gotoArtcleOffset();
             break;
         default:
             otherUrlFunction();
@@ -366,7 +386,7 @@ setTimeout(function() {
         }, 50 * (index + 1));
     });
     //缓慢显示
-    JqfadeIn(homeMotto,1500)
+    JqfadeIn(homeMotto, 1500)
     homeButton.className = "active";
 }, 1300);
 </script>
