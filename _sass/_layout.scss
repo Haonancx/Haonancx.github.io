@@ -89,6 +89,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -416,6 +417,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -704,6 +706,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -742,6 +745,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -793,16 +797,13 @@ blockquote:before {
     content: "\e677";
 }
 
+.icon-subscribe:before {
+    content: "\e62d";
+}
+
 .iconfont:hover {
     color: #fff;
 }
-
-
-
-
-
-
-
 
 
 
@@ -828,9 +829,11 @@ blockquote:before {
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
+
 .post-tags a:hover {
     color: #222;
 }
+
 .paginateBox {
     position: relative;
     display: inline-block;
@@ -861,6 +864,7 @@ blockquote:before {
 
     color: #111;
 }
+
 
 
 
