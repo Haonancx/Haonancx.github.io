@@ -36,12 +36,35 @@
         text-decoration: none;
     }
 
-    .screen-page {
+    .page-screen {
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: 100vw 100vh;
         position: relative;
         text-align: center;
-        width: 100%;
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    .content {
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
+        position: relative;
+        border: 0px solid #000000;
     }
 
     .page-one-content {
@@ -54,7 +77,7 @@
     .section-title {
         font-size: 3rem;
         font-weight: 600;
-        margin: 0 auto 3rem;
+        margin: 0 auto 2rem;
         letter-spacing: 2px;
         line-height: 1;
     }
@@ -75,8 +98,8 @@
 
     .animation-element-oranges {
         position: absolute;
-        width: 55%;
-        padding-top: 55%;
+        width: 50%;
+        padding-top: 50%;
         border-radius: 50%;
         right: -20%;
         box-shadow: -31px 7px 18px rgba(255, 84, 71, 0.1);
@@ -93,10 +116,9 @@
 
     .animation-element-greens {
         position: absolute;
-        width: 40%;
-        padding-top: 40%;
-        left: -20%;
-        bottom: 5%;
+        width: 50%;
+        padding-top: 50%;
+        left: -19%;
         border-radius: 50%;
         background-image: -ms-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         background-image: -moz-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
@@ -111,9 +133,7 @@
         width: 50%;
         padding-top: 50%;
         border-radius: 50%;
-        bottom: 8%;
-        right: -25%;
-        background: rgba(255, 118, 75, 0.8);
+        right: -22%;
         background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
         background-image: -moz-linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
         background-image: -webkit-linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
@@ -235,7 +255,7 @@
     .secondary-title {
         font-size: 2rem;
         font-weight: 600;
-        padding: 30px 0 0;
+        padding: 20px 0;
         overflow: hidden;
         letter-spacing: 2px;
         line-height: 1;
@@ -327,20 +347,12 @@
         }
     }
 
-    .about-page-contact {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 450px;
-        overflow: hidden;
-    }
-
     .animation-element-purples {
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 50%;
+        padding-top: 50%;
         border-radius: 50%;
-        left: -125px;
+        left: -19%;
         bottom: 5%;
         background-image: -moz-linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
         background-image: -webkit-linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
@@ -372,42 +384,236 @@
         background-image: -webkitlinear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
     }
     </style>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 </head>
-<body>
-    <div class="about-page-one screen-page" id="page-one">
-        <div class="page-one-content">
-            <h1 class="about-title">你好</h1>
-        </div>
-        <div class="animation-element-oranges circle-rotate" id="orangesCircle">
-        </div>
-        <div class="animation-element-greens circle-rotate">
-        </div>
-    </div>
-    <div class="about-page-two screen-page">
-        <div class="page-two-content">
-            <h1 class="section-title">软件工程师</h1>
-            <h1 class="secondary-title">
+
+<body id="touchHandle">
+    <div class="content">
+        <div style="position:relative;" id="content">
+            <div class="page-screen">
+                <div class="page-one-content">
+                    <h1 class="about-title"><span>你好</span></h1>
+                </div>
+                <div class="animation-element-oranges circle-rotate" id="orangesCircle">
+                </div>
+                <div class="animation-element-greens circle-rotate" id="greensCircleOne">
+                </div>
+            </div>
+            <div class="page-screen">
+                <div class="page-two-content">
+                    <h1 class="section-title">软件工程师</h1>
+                    <h1 class="secondary-title">
                 <span class="localtio-icon"></span>海南.海口</h1>
-            <div class="animation-element-blues circle-rotate">
+                    <div class="animation-element-greens circle-rotate" id="greensCircleTwo">
+                    </div>
+                    <div class="animation-element-blues circle-rotate" id="bluesCircleOne">
+                    </div>
+                </div>
+            </div>
+            <div class="page-screen">
+                <div class="page-three-content">
+                    <div class="page-contact-content">
+                        <div class="animation-element-blues circle-rotate" id="bluesCircleTwo">
+                        </div>
+                        <div class="animation-element-purples circle-rotate" id="purplesCircle">
+                        </div>
+                        <div class="contact-me">
+                            <a href="mailto:fsux@outlook.com">联系我</a>
+                            <a href="http://fsux.me">fsux.me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="about-page-contact">
-        <div class="page-contact-content">
-            <div class="animation-element-purples circle-rotate">
-            </div>
-            <div class="contact-me">
-                <a href="mailto:fsux@outlook.com">联系我</a>
-                <a href="http://fsux.me">fsux.me</a>
-            </div>
-        </div>
-    </div>
-    <script>
+    <script type="text/javascript">
+    ;
+    (function($) {
+        $.fn.touch = function(v, fn) {
+            if (typeof fn == 'function') {
+                var t = $(this),
+                    i = 0,
+                    x, x1, x2, y1, y2;
+                t[0].addEventListener('touchstart', s, false);
+                t[0].addEventListener('touchmove', m, false);
+
+                function s(e) {
+                    var e = e || window.event;
+                    x1 = e.changedTouches[0].clientX;
+                    y1 = e.changedTouches[0].clientY;
+                }
+
+                function m(e) {
+                    var e = e || window.event;
+                    x2 = e.changedTouches[0].clientX;
+                    y2 = e.changedTouches[0].clientY;
+                    e.preventDefault();
+                    e.stopPropagation();
+                    clearTimeout(x);
+                    x = setTimeout(function() {
+                        if (
+                            (
+                                Math.abs(y2 - y1) < Math.abs(x2 - x1) / 2 &&
+                                (((x2 - x1) > 140 && v == "right") || ((x1 - x2) > 140 && v == "left"))
+                            ) ||
+                            (
+                                Math.abs(x2 - x1) < Math.abs(y2 - y1) / 2 &&
+                                (((y2 - y1) > 140 && v == "bottom") || ((y1 - y2) > 140 && v == "top"))
+                            )
+                        )
+                            fn();
+                    }, 200);
+                }
+            }
+        }
+    })(jQuery);
     //oranges-circle-offset
     var orangesCircleId = document.getElementById("orangesCircle");
     var orangesCircleHeight = orangesCircleId.offsetHeight;
     var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 2) + "px";
     orangesCircleId.style.top = orangesCircleTop;
+
+    //greensCircleTop
+    var greensCircleOneId = document.getElementById("greensCircleOne");
+    var greensCircleOneWidth = greensCircleOneId.offsetHeight;
+    var greensCircleOneBottom = "-" + parseInt(greensCircleOneWidth / 2) + "px";
+    greensCircleOneId.style.bottom = greensCircleOneBottom;
+
+    //greensCircleBottom
+    var greensCircleTwoId = document.getElementById("greensCircleTwo");
+    var greensCircleTwoWidth = greensCircleTwoId.offsetHeight;
+    var greensCircleTwoTop = "-" + parseInt(greensCircleTwoWidth / 2) + "px";
+    greensCircleTwoId.style.top = greensCircleTwoTop;
+
+    //bluesCircleOne
+    var bluesCircleOneId = document.getElementById("bluesCircleOne");
+    var bluesCircleOneWidth = bluesCircleOneId.offsetHeight;
+    var bluesCircleOneBoottom = "-" + parseInt(bluesCircleOneWidth / 2) + "px";
+    bluesCircleOneId.style.bottom = bluesCircleOneBoottom;
+    //bluesCircleTwo
+    var bluesCircleTwoId = document.getElementById("bluesCircleTwo");
+    var bluesCircleTwoWidth = bluesCircleOneId.offsetHeight;
+    var bluesCircleTwoTop = "-" + parseInt(bluesCircleTwoWidth / 2) + "px";
+    bluesCircleTwoId.style.top = bluesCircleTwoTop;
+
+    //purplesCircle
+    var purplesCircleId = document.getElementById("purplesCircle");
+    var purplesCircleWidth = purplesCircleId.offsetHeight;
+    var purplesCircleBottom = "-" + parseInt(purplesCircleWidth / 2) + "px";
+    purplesCircleId.style.bottom = purplesCircleBottom;
+
+
+
+
+
+
+    (function() {
+        var a = 0;
+        var b = 0;
+        var u = function(h) {
+            if (a == 0) {
+                return
+            }
+            if ($("#content").is(":animated")) {
+                return
+            }
+            a--;
+            $("#content").animate({
+                top: h
+            }, 500);
+            $("#ul li").removeClass("ckeck-li");
+            $("#ul li").eq(a).addClass("ckeck-li")
+        };
+        var d = function(h) {
+            if (a == b - 1) {
+                return
+            }
+            if ($("#content").is(":animated")) {
+                return
+            }
+            a++;
+            $("#content").animate({
+                top: h
+            }, 500);
+            $("#ul li").removeClass("ckeck-li");
+            $("#ul li").eq(a).addClass("ckeck-li")
+        };
+        var scrollFunc = function(e) {
+            b = $(".page-screen").length;
+            e = e || window.event;
+            if (e.wheelDelta) {
+                var div = document.getElementById("content");
+                if (e.wheelDelta > 0) {
+                    new u("+=100vh")
+                }
+                if (e.wheelDelta < 0) {
+                    new d("-=100vh")
+                }
+            }
+            if (e.detail) {
+                if (e.detail < 0) {
+                    new u("+=100vh")
+                }
+                if (e.detail > 0) {
+                    new d("-=100vh")
+                }
+            }
+        };
+        window.onmousewheel = document.onmousewheel = scrollFunc;
+        if (document.addEventListener) {
+            document.addEventListener("DOMMouseScroll", scrollFunc, false)
+        }
+
+
+    }());
+
+    //手势操作
+    var availHeight = window.screen.availHeight;
+    $("body").touch("top", function(e) {
+
+        var screenSlideTop = $('#content').css('top');
+        var twoScreen = -availHeight + "px";
+
+        if (screenSlideTop === "0px") {
+            var slideHeight = -availHeight;
+
+            $("#content").animate({
+                top: slideHeight
+            }, 500);
+
+        } else if (screenSlideTop === twoScreen) {
+            var slideHeight = -availHeight * 2;
+            $("#content").animate({
+                top: slideHeight
+            }, 500);
+        }
+
+
+
+    })
+
+    //向下滑动事件
+    $("body").touch("bottom", function(e) {
+        var screenSlideTop = $('#content').css('top');
+
+        var twoScreen = -availHeight + "px";
+        var threeScreen = -availHeight * 2 + "px";
+
+        if (screenSlideTop === "0px") {
+            return;
+
+        } else if (screenSlideTop === twoScreen) {
+            var slideHeight = "0";
+            $("#content").animate({
+                top: slideHeight
+            }, 500);
+        } else if (screenSlideTop === threeScreen) {
+            var slideHeight = -availHeight + "px";
+            $("#content").animate({
+                top: slideHeight
+            }, 500);
+        }
+    })
     </script>
 </body>
 
