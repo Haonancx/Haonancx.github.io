@@ -39,16 +39,22 @@
     .screen-page {
         position: relative;
         text-align: center;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        text-align: center;
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         overflow: hidden;
-    }
-
-    .page-one-content {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
     }
 
     .section-title {
@@ -96,7 +102,7 @@
         width: 40%;
         padding-top: 40%;
         left: -20%;
-        bottom: 5%;
+        bottom: -5%;
         border-radius: 50%;
         background-image: -ms-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         background-image: -moz-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
@@ -104,22 +110,6 @@
         background-image: -o-linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         box-shadow: 25px -8px 26px rgba(143, 255, 90, 0.2);
-    }
-
-    .animation-element-blues {
-        position: absolute;
-        width: 50%;
-        padding-top: 50%;
-        border-radius: 50%;
-        bottom: 8%;
-        right: -25%;
-        background: rgba(255, 118, 75, 0.8);
-        background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-        background-image: -moz-linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-        background-image: -webkit-linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-        background-image: -o-linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-        background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-        box-shadow: -16px 25px 14px rgba(171, 220, 225, 0.1);
     }
 
 
@@ -225,13 +215,6 @@
     }
     /* pages-one */
 
-    .page-two-content {
-        margin: 5rem auto 0;
-        width: 100%;
-        text-align: center;
-    }
-
-
     .secondary-title {
         font-size: 2rem;
         font-weight: 600;
@@ -242,7 +225,7 @@
         color: #555;
     }
 
-    .localtio-icon {
+    .localtion-icon {
         height: 40px;
         width: 50px;
         display: inline-block;
@@ -252,7 +235,7 @@
     }
 
 
-    .localtio-icon:before {
+    .localtion-icon:before {
         content: '';
         height: 16px;
         width: 16px;
@@ -270,7 +253,7 @@
         text-align: center;
     }
 
-    .localtio-icon:after {
+    .localtion-icon:after {
         content: '';
         height: 0px;
         width: 0px;
@@ -327,29 +310,6 @@
         }
     }
 
-    .about-page-contact {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 450px;
-        overflow: hidden;
-    }
-
-    .animation-element-purples {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        left: -125px;
-        bottom: 5%;
-        background-image: -moz-linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
-        background-image: -webkit-linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
-        background-image: -o-linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
-        background-image: linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
-        background-image: -webkit-linear-gradient(135deg, #F6CEEC 10%, #D939CD 100%);
-        box-shadow: 25px -8px 26px rgba(246, 206, 236, 0.1);
-    }
-
     .contact-me {
         margin: 2rem auto 0;
     }
@@ -373,33 +333,22 @@
     }
     </style>
 </head>
+
 <body>
-    <div class="about-page-one screen-page" id="page-one">
+    <div class="screen-page">
         <div class="page-one-content">
             <h1 class="about-title">你好</h1>
-        </div>
-        <div class="animation-element-oranges circle-rotate" id="orangesCircle">
-        </div>
-        <div class="animation-element-greens circle-rotate">
-        </div>
-    </div>
-    <div class="about-page-two screen-page">
-        <div class="page-two-content">
             <h1 class="section-title">软件工程师</h1>
             <h1 class="secondary-title">
-                <span class="localtio-icon"></span>海南.海口</h1>
-            <div class="animation-element-blues circle-rotate">
-            </div>
-        </div>
-    </div>
-    <div class="about-page-contact">
-        <div class="page-contact-content">
-            <div class="animation-element-purples circle-rotate">
-            </div>
+                <span class="localtion-icon"></span>海南.海口</h1>
             <div class="contact-me">
                 <a href="mailto:fsux@outlook.com">联系我</a>
                 <a href="http://fsux.me">fsux.me</a>
             </div>
+        </div>
+        <div class="animation-element-oranges circle-rotate" id="orangesCircle">
+        </div>
+        <div class="animation-element-greens circle-rotate">
         </div>
     </div>
     <script>
