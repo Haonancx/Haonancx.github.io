@@ -231,6 +231,7 @@ function draw() {
 }
 
 init(); //初始化首屏渲染动画
+
 /**
  *
  二级标题替换功能
@@ -258,19 +259,21 @@ function switchSectionTitle() {
         }
 
     }
-
     switch (url) {
         case archivePageUrlOne:
         case archivePageUrlTwo:
             titleOneId.innerHTML = "年度精选";
+
             break;
         case tagsPageUrlOne:
         case tagsPageUrlTwo:
             titleOneId.innerHTML = "标签云";
+
             break;
         case travelPageUrlOne:
         case travelPageUrlTwo:
             titleOneId.innerHTML = "Photos";
+
             break;
         default:
             otherUrlFunction();
@@ -366,7 +369,7 @@ setTimeout(function() {
         }, 50 * (index + 1));
     });
     //缓慢显示
-    JqfadeIn(homeMotto,1500)
+    JqfadeIn(homeMotto, 1500)
     homeButton.className = "active";
 }, 1300);
 </script>
