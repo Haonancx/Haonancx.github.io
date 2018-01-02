@@ -8,7 +8,7 @@ description: "关人潮,FSUX,无笙,个人博客,前端技术专家,旨在探索
 baseurl: "" # the subpath of your site, e.g. /blog/
 keyword: "关人潮,无笙,关人潮的技术博客,前端工程师,前端架构,架构,FSUX,FSUX Blog,设计,数据可视化,机器学习,大数据"
 url: "https://fsux.me" # the base hostname & protocol for your site
-
+author: "关人潮,无笙,FSUX"
 pygments: true
 # Outputting
 
