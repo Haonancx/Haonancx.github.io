@@ -1,5 +1,7 @@
 <script>
 var url = document.location.href; // 获取当前浏览器路径
+var screenWidth = document.documentElement.clientWidth; // 获取当前设备的宽度
+var screenHeight = document.documentElement.clientHeight; // 获取当前设备的高度
 /**
  *
  原生JS实现 Jquery each 方法
@@ -190,8 +192,7 @@ function draw() {
         circleExp += circleExpSp;
     }
     var ctxfr = document.getElementById('canvas').getContext('2d');
-    var screenWidth = document.documentElement.clientWidth;
-    var screenHeight = document.documentElement.clientHeight;
+
 
     ctxfr.width = screenWidth; //显示屏幕的像素
     ctxfr.height = screenHeight; //显示屏幕的高度
@@ -256,6 +257,14 @@ function switchSectionTitle() {
     function otherUrlFunction() {
         if (errorPageId !== null) {
             titleOneId.innerHTML = "";
+        } else {
+            //阅读文章时，滚动到文章指定标题
+
+            setTimeout(function() {
+                document.body.scrollTop = screenHeight + "px";
+            }, 1000)
+
+
         }
 
     }
