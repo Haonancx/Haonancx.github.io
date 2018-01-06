@@ -93,6 +93,8 @@
 
 
 
+
+
 /* banner */
 
 .banner {
@@ -424,6 +426,8 @@
 
 
 
+
+
 /* article */
 
 .home,
@@ -716,6 +720,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -754,6 +760,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -822,6 +830,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .octicon-tag {
@@ -855,7 +865,7 @@ blockquote:before {
     height: 80px;
     padding: 3em 0 0;
     margin: 4em 0 0;
-    border-top: 1px solid #ebedf0;
+    border-top: 1px solid #eef0f3;
 }
 
 .pageBtn {
@@ -866,6 +876,14 @@ blockquote:before {
     transition: all 0.3s ease;
 }
 
+.pageBtn span {
+    position: absolute;
+    width: 50px;
+    margin-left: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+
 .pre-btn {
     left: 0;
 }
@@ -874,24 +892,40 @@ blockquote:before {
     right: 0;
 }
 
-.pre-btn:hover{
+.pre-btn:hover {
 
     color: #1890ff;
+}
+
+.pre-btn:hover .icon-pre {
+
+    left: -8px;
+}
+
+.next-btn:hover .icon-next {
+
+    right: -8px;
 }
 
 .icon-pre,
 .icon-next {
     color: #222;
-    font-size: 13px;
-    margin: 0 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .icon-pre {
-    margin-right: 5px;
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    left: 0px;
 }
 
 .icon-next {
-    margin-left: 5px;
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    right: 0px;
 }
 
 .icon-pre:hover,
@@ -906,6 +940,8 @@ blockquote:before {
 .icon-next:before {
     content: "\e64a";
 }
+
+
 
 
 
