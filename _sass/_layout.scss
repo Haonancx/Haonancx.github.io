@@ -884,7 +884,7 @@ blockquote:before {
 .pre-btn span {
     position: absolute;
     width: 50px;
-    margin-left: 20px;
+    left: 15px;
     height: 25px;
     line-height: 25px;
 }
@@ -892,8 +892,7 @@ blockquote:before {
 .next-btn span {
     position: absolute;
     width: 70px;
-    right: 20px;
-    margin-left: 20px;
+    right: 15px;
     height: 25px;
     line-height: 25px;
 }
@@ -924,7 +923,7 @@ blockquote:before {
 
 .icon-pre,
 .icon-next {
-    color: #222;
+    color: #888;
     font-size: 14px;
     transition: all 0.3s ease;
 }
