@@ -768,23 +768,6 @@ blockquote:before {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* iconfont */
 
 @font-face {
@@ -882,6 +865,8 @@ blockquote:before {
     position: absolute;
     padding: 0;
     font-size: 14px;
+    width: 80px;
+    height: 25px;
     color: #1890ff;
     transition: all 0.3s ease;
 }
