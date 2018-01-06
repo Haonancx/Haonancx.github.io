@@ -97,6 +97,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -432,6 +433,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -604,8 +606,9 @@
 .post-link {
     display: block;
     position: relative;
-    padding: 15px 0;
-    margin: 5px 0;
+    padding: 30px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .post-link h4 {
@@ -705,6 +708,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -743,6 +747,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 /* iconfont */
@@ -802,6 +807,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .octicon-tag {
@@ -833,9 +839,8 @@ blockquote:before {
     text-align: center;
     width: 100%;
     height: 80px;
-    padding: 3em 0 0;
-    margin: 4em 0 0;
-    border-top: 1px solid #eef0f3;
+    padding: 2em 0 0;
+    margin: 0;
 }
 
 .pageBtn {
@@ -922,6 +927,7 @@ blockquote:before {
 .icon-next:before {
     content: "\e64a";
 }
+
 
 
 
