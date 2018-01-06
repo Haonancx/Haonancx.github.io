@@ -95,6 +95,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -428,6 +429,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -722,6 +724,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -760,6 +763,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -832,6 +836,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .octicon-tag {
@@ -876,13 +881,23 @@ blockquote:before {
     transition: all 0.3s ease;
 }
 
-.pageBtn span {
+.pre-btn span {
     position: absolute;
     width: 50px;
     margin-left: 20px;
     height: 25px;
     line-height: 25px;
 }
+
+.next-btn span {
+    position: absolute;
+    width: 70px;
+    right: 20px;
+    margin-left: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+
 
 .pre-btn {
     left: 0;
@@ -940,6 +955,7 @@ blockquote:before {
 .icon-next:before {
     content: "\e64a";
 }
+
 
 
 
