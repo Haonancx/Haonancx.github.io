@@ -447,18 +447,6 @@
     color: #101010;
 }
 
-.post-list:before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 100px;
-    bottom: 105px;
-    width: 0;
-    margin: 34px 0;
-    border-left: 2px dashed #ebedf0;
-}
-
 .time-line:before {
     display: block;
     content: "";
@@ -502,17 +490,6 @@
 .artcle-title {
     font-size: 1.2rem;
     position: relative;
-}
-
-.artcle-title:before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: -24px;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
 
 .category:before {
