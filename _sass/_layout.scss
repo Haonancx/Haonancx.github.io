@@ -374,12 +374,11 @@
 }
 
 .title-icon {
-    margin-top: 64px;
     background: url(../fonts/icon.svg) no-repeat 50%;
     background-size: contain;
     height: 12px;
     display: block;
-    margin-bottom: 12px;
+    margin: 0 0 4em 0;
 }
 
 
@@ -444,8 +443,8 @@
 }
 
 .section-title {
-    text-align: center;
-    margin: 60px 0;
+text-align: center;
+    margin: 40px 0 25px;
     color: #101010;
 }
 
