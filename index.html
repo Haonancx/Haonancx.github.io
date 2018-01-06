@@ -22,7 +22,7 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="paginateBox">
     {% if paginator.previous_page %}
-    <a class="pageBtn pre-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>上一页</span><i class="iconfont icon-pre"></i>
+    <a class="pageBtn pre-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="iconfont icon-pre"></i><span>上一页</span>
     </a> {% endif %} {% if paginator.next_page %}
     <a class="pageBtn next-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>更多文章</span><i class="iconfont icon-next"></i>
     </a> 
