@@ -98,6 +98,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -378,7 +379,7 @@
     background-size: contain;
     height: 12px;
     display: block;
-    margin: 0 0 4em 0;
+    margin: 0;
 }
 
 
@@ -433,6 +434,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -442,9 +444,13 @@
     position: relative;
 }
 
+.wrapper {
+    margin: 4em auto 0;
+}
+
 .section-title {
-text-align: center;
-    margin: 40px 0 25px;
+    text-align: center;
+    margin: 50px 0 25px;
     color: #101010;
 }
 
@@ -708,6 +714,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -746,6 +753,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -796,6 +804,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -936,6 +945,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -1023,7 +1033,6 @@ blockquote:before {
     }
     .wrapper {
         width: 85%;
-        margin: 0 auto;
     }
     #font-anim {
         font-size: 20px;
