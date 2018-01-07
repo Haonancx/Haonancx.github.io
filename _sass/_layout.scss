@@ -84,6 +84,8 @@
 }
 
 
+
+
 /* banner */
 
 .banner {
@@ -360,11 +362,13 @@
 }
 
 .title-icon {
-    background: url(../fonts/icon.svg) no-repeat 50%;
-    background-size: contain;
-    height: 12px;
+    height: 2px;
     display: block;
-    margin: 0;
+    margin: 0 auto;
+    width: 55px;
+    background: #1e5aff;
+    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
+    background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
 
 
@@ -384,25 +388,22 @@
 .error-404 a {
     display: inline-block;
     color: #fff;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 42px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 38px;
     width: 132px;
-    font-size: 1rem;
+    font-size: 15px;
     padding: 0;
-    letter-spacing: 0.5px;
-    background: #1e5aff;
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
     border: none;
-    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
-    background: linear-gradient(90deg, #05cbff, #1e5aff);
+    background: #2f54eb;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
 }
 
-
-.home-button a:hover,
 .error-404 a:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+
 
 
 /* article */
@@ -681,6 +682,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -719,6 +722,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -770,6 +775,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -901,6 +908,8 @@ blockquote:before {
 .icon-next:before {
     content: "\e64a";
 }
+
+
 
 
 
