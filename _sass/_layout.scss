@@ -86,6 +86,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -384,8 +385,7 @@
 }
 
 
-.home-button a,
-.error-404 a {
+.home-button a {
     display: inline-block;
     color: #fff;
     height: 38px;
@@ -397,12 +397,9 @@
     letter-spacing: 1px;
     border: none;
     background: #2f54eb;
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.1);
 }
 
-.error-404 a:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
 
 
 
@@ -684,6 +681,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -722,6 +720,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -775,6 +774,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -921,6 +921,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -981,7 +982,7 @@ blockquote:before {
 }
 
 .error-404 h1 {
-    font-size: 5em
+    font-size: 6em
 }
 
 @media screen and (max-width:1000px) {
