@@ -86,6 +86,8 @@
 
 
 
+
+
 /* banner */
 
 .banner {
@@ -384,25 +386,21 @@
 }
 
 
-.home-button a,
-.error-404 a {
+.home-button a {
     display: inline-block;
     color: #fff;
     height: 38px;
     line-height: 38px;
     border-radius: 38px;
-    width: 130px;
+    width: 120px;
     font-size: 15px;
     padding: 0;
     letter-spacing: 1px;
     border: none;
     background: #2f54eb;
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.1);
 }
 
-.error-404 a:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
 
 
 
@@ -684,6 +682,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -722,6 +722,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -775,6 +777,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -921,6 +925,8 @@ blockquote:before {
 
 
 
+
+
 /* footer */
 
 .footer {
@@ -977,11 +983,19 @@ blockquote:before {
 
 .error-404 {
     text-align: center;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 
 .error-404 h1 {
-    font-size: 5em
+    font-size: 7em;
+    color: #1e5aff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -ms-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
+    background-image: -moz-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
+    background-image: -webkit-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
+    background-image: -o-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
+    background-image: linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
 }
 
 @media screen and (max-width:1000px) {
