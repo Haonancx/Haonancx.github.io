@@ -19,7 +19,12 @@
 }
 
 .MainIndex {
-    text-align: center;
+    text-align: left;
+    letter-spacing: 1px;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
 }
 
 .MainIndex a {
@@ -29,12 +34,10 @@
     line-height: 80px;
     height: 80px;
     font-weight: 800;
+    float: left;
     font-size: 18px;
 }
-.logo-content{
-    margin: 0;
-    padding: 0;
-}
+
 .fsux-name {
     padding: 0 0 0 8px;
 }
@@ -50,7 +53,7 @@
 }
 
 .nav {
-    text-align: center;
+    float: right;
 }
 
 .nav ul {
@@ -59,9 +62,11 @@
 }
 
 .nav ul li {
+    float: left;
+    line-height: 80px;
     height: 80px;
-    padding: 0 20px;
-    display: inline-block;
+    padding: 0 0 0 50px;
+    text-align: center;
 }
 
 .nav ul li a {
@@ -81,16 +86,25 @@
 
 
 
-
-
-
-
 /* banner */
 
 .banner {
 
     position: relative;
-    height: 450px;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
 }
@@ -112,10 +126,27 @@
 }
 
 #font-anim {
-    position: relative;
-    text-align: center;
-    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 60px auto 0;
     overflow: hidden;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 9999;
 }
 
 #font-anim span {
@@ -127,7 +158,8 @@
     -o-transform: translate(0px, 60px);
 }
 
-#font-anim span.active {
+#font-anim span.active,
+.home-button a.active {
     -webkit-animation: fadeFont 0.18s ease-out;
     -moz-animation: fadeFont 0.18s ease-out;
     -moz-animation: fadeFont 0.18s ease-out;
@@ -326,17 +358,50 @@
     line-height: 32px;
     color: #fff;
     font-weight: 400;
-    margin: 0;
+    margin: -4em 0 4em;
 }
 
 .title-icon {
     height: 2px;
     display: block;
     margin: 0 auto;
-    width: 50px;
+    width: 55px;
     background: #1e5aff;
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
+}
+
+
+.home-button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    margin: 5em 0 0 -60px;
+}
+
+.home-button a {
+    opacity: 0;
+}
+
+
+.home-button a,
+.error-404 a {
+    display: inline-block;
+    color: #fff;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 38px;
+    width: 132px;
+    font-size: 15px;
+    padding: 0;
+    letter-spacing: 1px;
+    border: none;
+    background: #2f54eb;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.error-404 a:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -619,10 +684,6 @@ blockquote:before {
 
 
 
-
-
-
-
 /* travel */
 
 .travel-description {
@@ -661,10 +722,6 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
-
-
-
-
 
 
 
@@ -718,10 +775,6 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
-
-
-
-
 
 
 
@@ -868,10 +921,6 @@ blockquote:before {
 
 
 
-
-
-
-
 /* footer */
 
 .footer {
@@ -928,12 +977,11 @@ blockquote:before {
 
 .error-404 {
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 5px
 }
 
 .error-404 h1 {
-    font-size: 7em;
-    color: rgba(47, 84, 235, 0.8);
+    font-size: 5em
 }
 
 @media screen and (max-width:1000px) {
