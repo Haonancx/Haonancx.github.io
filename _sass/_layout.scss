@@ -91,19 +91,6 @@
 
     position: relative;
     height: 400px;
-    text-align: center;
-    display: -webkit-box!important;
-    display: -webkit-flex!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
     width: 100%;
     overflow: hidden;
 }
@@ -126,10 +113,10 @@
 
 #font-anim {
     position: relative;
-    height: 400px;
     text-align: center;
     width: 100%;
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 #font-anim span {
     display: inline-block;
