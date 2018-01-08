@@ -988,14 +988,7 @@ blockquote:before {
 
 .error-404 h1 {
     font-size: 7em;
-    color: #1e5aff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -ms-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
-    background-image: -moz-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
-    background-image: -webkit-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
-    background-image: -o-linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
-    background-image: linear-gradient(linear, 0 0, 0 bottom, from(#05cbff), to(#1e5aff));
+    color: rgba(47, 84, 235, 0.8);
 }
 
 @media screen and (max-width:1000px) {
