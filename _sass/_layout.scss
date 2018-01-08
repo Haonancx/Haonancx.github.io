@@ -19,12 +19,7 @@
 }
 
 .MainIndex {
-    text-align: left;
-    letter-spacing: 1px;
-    float: left;
-    height: 80px;
-    line-height: 80px;
-    position: relative;
+    text-align: center;
 }
 
 .MainIndex a {
@@ -34,7 +29,6 @@
     line-height: 80px;
     height: 80px;
     font-weight: 800;
-    float: left;
     font-size: 18px;
 }
 
@@ -53,7 +47,7 @@
 }
 
 .nav {
-    float: right;
+    text-align: center;
 }
 
 .nav ul {
@@ -62,11 +56,9 @@
 }
 
 .nav ul li {
-    float: left;
-    line-height: 80px;
     height: 80px;
-    padding: 0 0 0 50px;
-    text-align: center;
+    padding: 0 20px;
+    display: inline-block;
 }
 
 .nav ul li a {
@@ -88,12 +80,14 @@
 
 
 
+
+
 /* banner */
 
 .banner {
 
     position: relative;
-    height: 100vh;
+    height: 400px;
     text-align: center;
     display: -webkit-box!important;
     display: -webkit-flex!important;
@@ -160,8 +154,7 @@
     -o-transform: translate(0px, 60px);
 }
 
-#font-anim span.active,
-.home-button a.active {
+#font-anim span.active {
     -webkit-animation: fadeFont 0.18s ease-out;
     -moz-animation: fadeFont 0.18s ease-out;
     -moz-animation: fadeFont 0.18s ease-out;
@@ -372,35 +365,6 @@
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
     background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
-
-
-.home-button {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    margin: 5em 0 0 -60px;
-}
-
-.home-button a {
-    opacity: 0;
-}
-
-
-.home-button a {
-    display: inline-block;
-    color: #fff;
-    height: 38px;
-    line-height: 38px;
-    border-radius: 38px;
-    width: 120px;
-    font-size: 15px;
-    padding: 0;
-    letter-spacing: 1px;
-    border: none;
-    background: #2f54eb;
-    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.1);
-}
-
 
 
 
@@ -684,6 +648,8 @@ blockquote:before {
 
 
 
+
+
 /* travel */
 
 .travel-description {
@@ -722,6 +688,8 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
+
 
 
 
@@ -777,6 +745,8 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
+
 
 
 
@@ -912,6 +882,8 @@ blockquote:before {
 .icon-next:before {
     content: "\e64a";
 }
+
+
 
 
 
