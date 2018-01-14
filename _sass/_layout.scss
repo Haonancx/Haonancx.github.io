@@ -65,7 +65,6 @@
     float: left;
     line-height: 80px;
     height: 80px;
-    padding: 0 0 0 50px;
     text-align: center;
 }
 
@@ -74,6 +73,7 @@
     display: inline-block;
     transition: all 0.5s ease;
     cursor: pointer;
+    padding: 0 0 0 50px;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -82,6 +82,7 @@
 .nav ul li a:hover {
     color: #ccc;
 }
+
 
 
 
@@ -403,6 +404,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -683,6 +685,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -721,6 +724,7 @@ blockquote:before {
     color: #101010;
     font-size: 24px;
 }
+
 
 
 
@@ -775,6 +779,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -923,6 +928,7 @@ blockquote:before {
 
 
 
+
 /* footer */
 
 .footer {
@@ -991,6 +997,9 @@ blockquote:before {
         padding: 0 20px;
         width: calc(100% - 40px);
     }
+    .nav ul li a{
+        padding: 0 0 0 22px;
+    }
     .footer-nav-right span:before {
         content: "";
         position: absolute;
@@ -1005,9 +1014,7 @@ blockquote:before {
         padding: 0 20px;
         width: calc(100% - 40px);
     }
-    .nav ul li {
-        padding: 0 0 0 22px;
-    }
+
     .wrapper {
         width: 85%;
     }
