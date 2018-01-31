@@ -83,7 +83,7 @@
 
     #orangesCircleTwo {
 
-        right: -20%;
+        right: -19%;
         opacity: 0.7;
         background-image: -ms-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
         background-image: -moz-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
@@ -199,7 +199,7 @@
         overflow: hidden;
         letter-spacing: 2px;
         line-height: 35px;
-        color: #777;
+        color: #555;
     }
 
     .localtion-icon {
@@ -292,11 +292,8 @@
 <body>
     <div class="screen-page">
         <div class="page-one-content">
-            <h1 class="section-title">
-            <a href="http://fsux.me">软件工程师</a>
-        </h1>
-            <h1 class="secondary-title">
-                <span class="localtion-icon"></span>海南.海口</h1>
+            <h1 class="section-title"><a class="fsux-site" href="http://fsux.me">软件工程师</a></h1>
+            <h1 class="secondary-title"><span class="localtion-icon"></span>海南.海口</h1>
         </div>
         <div class="animation-element-oranges circle-rotate" id="orangesCircleOne"></div>
         <div class="animation-element-oranges circle-rotate" id="orangesCircleTwo"></div>
@@ -311,7 +308,7 @@
     //orangesTwo-circle-offset
     var orangesCircleTwoId = document.getElementById("orangesCircleTwo");
     var orangesCircleHeight = orangesCircleTwoId.offsetHeight;
-    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 1.9) + "px";
+    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 1.85) + "px";
     orangesCircleTwoId.style.top = orangesCircleTop;
     </script>
 </body>
