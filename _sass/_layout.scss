@@ -112,18 +112,9 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
+    background: url(../images/home_bg.jpg) 100% no-repeat;
 }
 
-.banner-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    background: url(../images/home_bg.jpg) 100% no-repeat;
-    z-index: -1;
-}
 
 .banner-content {
 
