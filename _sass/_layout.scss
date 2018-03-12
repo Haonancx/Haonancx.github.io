@@ -422,10 +422,8 @@
 
 #about-me
 {
-    position: absolute;
-    bottom:2rem;
-    left:50%;
-    margin:0 0 0 -60px;
+    position: relative;
+    margin:30px 0 0;
     font-size: 15px;
     line-height: 40px;
     display: inline-block;
@@ -804,28 +802,6 @@ blockquote:before
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* travel */
 
 .travel-description
@@ -875,13 +851,6 @@ blockquote:before
 
     color: #101010;
 }
-
-
-
-
-
-
-
 
 
 
@@ -944,22 +913,6 @@ blockquote:before
 {
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* travel */
@@ -1233,14 +1186,10 @@ blockquote:before
         position: absolute;
         top: 1px;
         left: -20px;
-
         display: inline-block;
-
         width: 1px;
         height: 14px;
-
         content: '';
-
         background: rgba(255, 255, 255, .4);
     }
     .footer-container
