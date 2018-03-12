@@ -420,8 +420,10 @@
     background:         linear-gradient(90deg, #05cbff, #1e5aff);
 }
 
-
-#about-me
+.home-button{
+    position: relative;
+}
+.home-button a
 {
     position: absolute;
     bottom:20px;
