@@ -160,7 +160,7 @@
 }
 
 #font-anim span.active,
-.home-button a.active
+#about-me.active
 {
     transform: translate(0px, 0px);
     -webkit-animation: fadeFont .18s ease-out;
@@ -401,7 +401,7 @@
 
 .en-name
 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     display: none;
@@ -435,6 +435,7 @@
     border: none;
     border-radius: 4px;
     background: #5b87ff;
+    opacity:0;
 }
 
 
