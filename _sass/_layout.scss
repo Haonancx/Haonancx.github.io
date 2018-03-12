@@ -132,7 +132,7 @@
 {
     position: absolute;
     z-index: 999;
-    top: 38%;
+    top: 35%;
     width: 100%;
     text-align: center;
 }
@@ -420,13 +420,10 @@
     background:         linear-gradient(90deg, #05cbff, #1e5aff);
 }
 
-.home-button{
-    position: relative;
-}
-.home-button a
+#about-me
 {
     position: absolute;
-    bottom:20px;
+    bottom:2rem;
     left:50%;
     margin:0 0 0 -60px;
     font-size: 15px;
@@ -440,7 +437,6 @@
     border: none;
     border-radius: 4px;
     background: #5b87ff;
-    opacity: 0;
 }
 
 
@@ -1259,6 +1255,6 @@ blockquote:before
     }
     #font-anim
     {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
