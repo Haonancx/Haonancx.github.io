@@ -1,14 +1,12 @@
 /* header */
 
-.header
-{
+.header {
     width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
-.header-container
-{
+.header-container {
     line-height: 80px;
 
     position: absolute;
@@ -23,8 +21,7 @@
     background: transparent;
 }
 
-.MainIndex
-{
+.MainIndex {
     line-height: 80px;
 
     position: relative;
@@ -37,8 +34,7 @@
     letter-spacing: 1px;
 }
 
-.MainIndex a
-{
+.MainIndex a {
     font-family: 'Microsoft YaHei', 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', SimSun;
     font-size: 18px;
     font-weight: 800;
@@ -52,37 +48,31 @@
     color: #fff;
 }
 
-.fsux-name
-{
+.fsux-name {
     padding: 0 0 0 8px;
 }
 
-.fsux-logo
-{
+.fsux-logo {
     width: 45px;
 
     background: url(../fonts/fsux_logo.svg) no-repeat 50%;
     background-size: contain;
 }
 
-.MainIndex a:hover
-{
+.MainIndex a:hover {
     border: 0;
 }
 
-.nav
-{
+.nav {
     float: right;
 }
 
-.nav ul
-{
+.nav ul {
     margin: 0;
     padding: 0;
 }
 
-.nav ul li
-{
+.nav ul li {
     line-height: 80px;
 
     float: left;
@@ -93,8 +83,7 @@
     text-align: center;
 }
 
-.nav ul li a
-{
+.nav ul li a {
     font-size: 15px;
 
     position: relative;
@@ -109,334 +98,323 @@
 }
 
 
-.nav ul li a:hover
-{
-    color: #ccc;
+.nav ul li a:hover {
+    color: #eee;
 }
+
 
 
 /* banner */
 
-.banner
-{
+.banner {
     position: relative;
+
     overflow: hidden;
+
     width: 100%;
     height: 100vh;
+
     text-align: center;
+
     background: url(../images/home_bg.jpg) top no-repeat;
 }
 
 
-.banner-content
-{
+.banner-content {
     position: absolute;
     z-index: 999;
     top: 35%;
+
     width: 100%;
+
     text-align: center;
 }
 
-#font-anim
-{
+#font-anim {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1;
+
     z-index: 9999;
+
     overflow: hidden;
+
     margin: 5rem auto;
+
     color: #fff;
 }
 
-#font-anim span
-{
+#font-anim span {
     display: inline-block;
 
     -webkit-transform: translate(0px, 60px);
-       -moz-transform: translate(0px, 60px);
-        -ms-transform: translate(0px, 60px);
-         -o-transform: translate(0px, 60px);
-            transform: translate(0px, 60px);
+    -moz-transform: translate(0px, 60px);
+    -ms-transform: translate(0px, 60px);
+    -o-transform: translate(0px, 60px);
+    transform: translate(0px, 60px);
 }
 
 #font-anim span.active,
-#about-me.active
-{
+#about-me.active {
     transform: translate(0px, 0px);
     -webkit-animation: fadeFont .18s ease-out;
-       -moz-animation: fadeFont .18s ease-out;
-       -moz-animation: fadeFont .18s ease-out;
-         -o-animation: fadeFont .18s ease-out;
+    -moz-animation: fadeFont .18s ease-out;
+    -moz-animation: fadeFont .18s ease-out;
+    -o-animation: fadeFont .18s ease-out;
 
     opacity: 1;
 }
 
-@keyframes fadeFont
-{
-    0%
-    {
+@keyframes fadeFont {
+    0% {
         -webkit-transform: translate(0px, 50px);
-           -moz-transform: translate(0px, 50px);
-            -ms-transform: translate(0px, 50px);
-             -o-transform: translate(0px, 50px);
-                transform: translate(0px, 50px);
+        -moz-transform: translate(0px, 50px);
+        -ms-transform: translate(0px, 50px);
+        -o-transform: translate(0px, 50px);
+        transform: translate(0px, 50px);
 
         opacity: 0;
     }
-    10%
-    {
+    10% {
         -webkit-transform: translate(0px, 45px);
-           -moz-transform: translate(0px, 45px);
-            -ms-transform: translate(0px, 45px);
-             -o-transform: translate(0px, 45px);
-                transform: translate(0px, 45px);
+        -moz-transform: translate(0px, 45px);
+        -ms-transform: translate(0px, 45px);
+        -o-transform: translate(0px, 45px);
+        transform: translate(0px, 45px);
 
         opacity: .1;
     }
-    20%
-    {
+    20% {
         -webkit-transform: translate(0px, 40px);
-           -moz-transform: translate(0px, 40px);
-            -ms-transform: translate(0px, 40px);
-             -o-transform: translate(0px, 40px);
-                transform: translate(0px, 40px);
+        -moz-transform: translate(0px, 40px);
+        -ms-transform: translate(0px, 40px);
+        -o-transform: translate(0px, 40px);
+        transform: translate(0px, 40px);
 
         opacity: .2;
     }
-    30%
-    {
+    30% {
         -webkit-transform: translate(0px, 35px);
-           -moz-transform: translate(0px, 35px);
-            -ms-transform: translate(0px, 35px);
-             -o-transform: translate(0px, 35px);
-                transform: translate(0px, 35px);
+        -moz-transform: translate(0px, 35px);
+        -ms-transform: translate(0px, 35px);
+        -o-transform: translate(0px, 35px);
+        transform: translate(0px, 35px);
 
         opacity: .3;
     }
-    40%
-    {
+    40% {
         -webkit-transform: translate(0px, 30px);
-           -moz-transform: translate(0px, 30px);
-            -ms-transform: translate(0px, 30px);
-             -o-transform: translate(0px, 30px);
-                transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
+        transform: translate(0px, 30px);
 
         opacity: .4;
     }
-    50%
-    {
+    50% {
         -webkit-transform: translate(0px, 25px);
-           -moz-transform: translate(0px, 25px);
-            -ms-transform: translate(0px, 25px);
-             -o-transform: translate(0px, 25px);
-                transform: translate(0px, 25px);
+        -moz-transform: translate(0px, 25px);
+        -ms-transform: translate(0px, 25px);
+        -o-transform: translate(0px, 25px);
+        transform: translate(0px, 25px);
 
         opacity: .5;
     }
-    60%
-    {
+    60% {
         -webkit-transform: translate(0px, 20px);
-           -moz-transform: translate(0px, 20px);
-            -ms-transform: translate(0px, 20px);
-             -o-transform: translate(0px, 20px);
-                transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
 
         opacity: .6;
     }
-    70%
-    {
+    70% {
         -webkit-transform: translate(0px, 15px);
-           -moz-transform: translate(0px, 15px);
-            -ms-transform: translate(0px, 15px);
-             -o-transform: translate(0px, 15px);
-                transform: translate(0px, 15px);
+        -moz-transform: translate(0px, 15px);
+        -ms-transform: translate(0px, 15px);
+        -o-transform: translate(0px, 15px);
+        transform: translate(0px, 15px);
 
         opacity: .7;
     }
-    80%
-    {
+    80% {
         -webkit-transform: translate(0px, 10px);
-           -moz-transform: translate(0px, 10px);
-            -ms-transform: translate(0px, 10px);
-             -o-transform: translate(0px, 10px);
-                transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+        transform: translate(0px, 10px);
 
         opacity: .8;
     }
-    90%
-    {
+    90% {
         -webkit-transform: translate(0px, 5px);
-           -moz-transform: translate(0px, 5px);
-            -ms-transform: translate(0px, 5px);
-             -o-transform: translate(0px, 5px);
-                transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
+        transform: translate(0px, 5px);
 
         opacity: .9;
     }
-    100%
-    {
+    100% {
         -webkit-transform: translate(0px, 0px);
-           -moz-transform: translate(0px, 0px);
-            -ms-transform: translate(0px, 0px);
-             -o-transform: translate(0px, 0px);
-                transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
 
         opacity: 1;
     }
 }
 
-@-webkit-keyframes fadeFont
-{
-    0%
-    {
+@-webkit-keyframes fadeFont {
+    0% {
         -webkit-transform: translate(0px, 50px);
-           -moz-transform: translate(0px, 50px);
-            -ms-transform: translate(0px, 50px);
-             -o-transform: translate(0px, 50px);
-                transform: translate(0px, 50px);
+        -moz-transform: translate(0px, 50px);
+        -ms-transform: translate(0px, 50px);
+        -o-transform: translate(0px, 50px);
+        transform: translate(0px, 50px);
 
         opacity: 0;
     }
-    10%
-    {
+    10% {
         -webkit-transform: translate(0px, 45px);
-           -moz-transform: translate(0px, 45px);
-            -ms-transform: translate(0px, 45px);
-             -o-transform: translate(0px, 45px);
-                transform: translate(0px, 45px);
+        -moz-transform: translate(0px, 45px);
+        -ms-transform: translate(0px, 45px);
+        -o-transform: translate(0px, 45px);
+        transform: translate(0px, 45px);
 
         opacity: .1;
     }
-    20%
-    {
+    20% {
         -webkit-transform: translate(0px, 40px);
-           -moz-transform: translate(0px, 40px);
-            -ms-transform: translate(0px, 40px);
-             -o-transform: translate(0px, 40px);
-                transform: translate(0px, 40px);
+        -moz-transform: translate(0px, 40px);
+        -ms-transform: translate(0px, 40px);
+        -o-transform: translate(0px, 40px);
+        transform: translate(0px, 40px);
 
         opacity: .2;
     }
-    30%
-    {
+    30% {
         -webkit-transform: translate(0px, 35px);
-           -moz-transform: translate(0px, 35px);
-            -ms-transform: translate(0px, 35px);
-             -o-transform: translate(0px, 35px);
-                transform: translate(0px, 35px);
+        -moz-transform: translate(0px, 35px);
+        -ms-transform: translate(0px, 35px);
+        -o-transform: translate(0px, 35px);
+        transform: translate(0px, 35px);
 
         opacity: .3;
     }
-    40%
-    {
+    40% {
         -webkit-transform: translate(0px, 30px);
-           -moz-transform: translate(0px, 30px);
-            -ms-transform: translate(0px, 30px);
-             -o-transform: translate(0px, 30px);
-                transform: translate(0px, 30px);
+        -moz-transform: translate(0px, 30px);
+        -ms-transform: translate(0px, 30px);
+        -o-transform: translate(0px, 30px);
+        transform: translate(0px, 30px);
 
         opacity: .4;
     }
-    50%
-    {
+    50% {
         -webkit-transform: translate(0px, 25px);
-           -moz-transform: translate(0px, 25px);
-            -ms-transform: translate(0px, 25px);
-             -o-transform: translate(0px, 25px);
-                transform: translate(0px, 25px);
+        -moz-transform: translate(0px, 25px);
+        -ms-transform: translate(0px, 25px);
+        -o-transform: translate(0px, 25px);
+        transform: translate(0px, 25px);
 
         opacity: .5;
     }
-    60%
-    {
+    60% {
         -webkit-transform: translate(0px, 20px);
-           -moz-transform: translate(0px, 20px);
-            -ms-transform: translate(0px, 20px);
-             -o-transform: translate(0px, 20px);
-                transform: translate(0px, 20px);
+        -moz-transform: translate(0px, 20px);
+        -ms-transform: translate(0px, 20px);
+        -o-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
 
         opacity: .6;
     }
-    70%
-    {
+    70% {
         -webkit-transform: translate(0px, 15px);
-           -moz-transform: translate(0px, 15px);
-            -ms-transform: translate(0px, 15px);
-             -o-transform: translate(0px, 15px);
-                transform: translate(0px, 15px);
+        -moz-transform: translate(0px, 15px);
+        -ms-transform: translate(0px, 15px);
+        -o-transform: translate(0px, 15px);
+        transform: translate(0px, 15px);
 
         opacity: .7;
     }
-    80%
-    {
+    80% {
         -webkit-transform: translate(0px, 10px);
-           -moz-transform: translate(0px, 10px);
-            -ms-transform: translate(0px, 10px);
-             -o-transform: translate(0px, 10px);
-                transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+        transform: translate(0px, 10px);
 
         opacity: .8;
     }
-    90%
-    {
+    90% {
         -webkit-transform: translate(0px, 5px);
-           -moz-transform: translate(0px, 5px);
-            -ms-transform: translate(0px, 5px);
-             -o-transform: translate(0px, 5px);
-                transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
+        transform: translate(0px, 5px);
 
         opacity: .9;
     }
-    100%
-    {
+    100% {
         -webkit-transform: translate(0px, 0px);
-           -moz-transform: translate(0px, 0px);
-            -ms-transform: translate(0px, 0px);
-             -o-transform: translate(0px, 0px);
-                transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
 
         opacity: 1;
     }
 }
 
-.en-name
-{
+.en-name {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+
     display: none;
+
     margin: 0;
+
     color: #fff;
 }
 
-.title-icon
-{
+.title-icon {
     display: block;
+
     width: 55px;
     height: 2px;
     margin: 0 auto;
+
     background: #1e5aff;
     background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
-    background:         linear-gradient(90deg, #05cbff, #1e5aff);
+    background: linear-gradient(90deg, #05cbff, #1e5aff);
 }
 
-#about-me
-{
-    position: relative;
-    margin:30px 0 0;
+#about-me {
     font-size: 15px;
     line-height: 40px;
+
+    position: relative;
+
     display: inline-block;
+
     width: 120px;
     height: 40px;
+    margin: 30px 0 0;
     padding: 0;
+
     letter-spacing: 1px;
+
+    opacity: 0;
     color: #fff;
     border: none;
     border-radius: 4px;
     background: #5b87ff;
-    opacity:0;
 }
+
 
 
 
@@ -449,18 +427,15 @@
 .home,
 .wrapper,
 .submenu,
-.time-line
-{
+.time-line {
     position: relative;
 }
 
-.wrapper
-{
+.wrapper {
     margin: 5em auto 0;
 }
 
-.section-title
-{
+.section-title {
     font-size: 1.6rem;
 
     margin: 50px 0 25px;
@@ -470,8 +445,7 @@
     color: #101010;
 }
 
-.time-line:before
-{
+.time-line:before {
     position: absolute;
     top: 20px;
     bottom: 0;
@@ -487,8 +461,7 @@
     border-left: 2px dashed #ebedf0;
 }
 
-.post-meta
-{
+.post-meta {
     font-size: 12px;
 
     margin: 1em 0;
@@ -498,8 +471,7 @@
     color: #b2bac2;
 }
 
-.host-tag
-{
+.host-tag {
     padding-left: 6px;
 
     transition: all .5s ease;
@@ -507,13 +479,11 @@
     color: #b2bac2;
 }
 
-.host-tag:hover
-{
+.host-tag:hover {
     color: #000;
 }
 
-.content
-{
+.content {
     line-height: 2em;
 
     position: relative;
@@ -523,20 +493,17 @@
     letter-spacing: .2px;
 }
 
-.content > h4
-{
+.content>h4 {
     font-size: 15px;
 }
 
-.artcle-title
-{
+.artcle-title {
     font-size: 1.2rem;
 
     position: relative;
 }
 
-.category:before
-{
+.category:before {
     position: absolute;
     top: 43px;
     left: -24px;
@@ -551,36 +518,31 @@
     background: url(../fonts/icon.svg) #fff no-repeat 50%;
 }
 
-.post-content
-{
+.post-content {
     margin: 30px auto;
     padding: 0 0 10px;
 }
 
 .post-content h2,
 .post-content h3,
-.post-content h4
-{
+.post-content h4 {
     font-weight: bold;
 
     color: #000;
 }
 
-.post-content h3
-{
+.post-content h3 {
     font-size: 1.3rem;
     line-height: 40px;
 
     margin: 60px 0;
 }
 
-.post-content h4:nth-child(1)
-{
+.post-content h4:nth-child(1) {
     font-size: 17px;
 }
 
-.post-content h5
-{
+.post-content h5 {
     font-size: 15px;
 
     position: relative;
@@ -594,8 +556,7 @@
     background-color: #f8f8f8;
 }
 
-.post-content h5:before
-{
+.post-content h5:before {
     font-weight: 700;
     line-height: 20px;
 
@@ -614,16 +575,14 @@
     background-color: #24d9ec;
 }
 
-.post-content h6
-{
+.post-content h6 {
     font-size: 16px;
 
     text-indent: 20px;
 }
 
 .post-date,
-.location
-{
+.location {
     font-size: 13px;
 
     letter-spacing: .3px;
@@ -631,25 +590,21 @@
     color: #b2bac2;
 }
 
-.post-content blockquote p
-{
+.post-content blockquote p {
     line-height: 1.8em;
 
     color: #999;
 }
 
-.post-content a
-{
+.post-content a {
     color: #1dacf5;
 }
 
-.post-content a:hover
-{
+.post-content a:hover {
     border-bottom: 2px solid #1dacf5;
 }
 
-.post-content ul li
-{
+.post-content ul li {
     position: relative;
 
     padding: 10px 0;
@@ -657,8 +612,7 @@
     list-style: inside;
 }
 
-.post-list
-{
+.post-list {
     display: inline-block;
 
     width: 100%;
@@ -668,8 +622,7 @@
     list-style: none;
 }
 
-.post-list li
-{
+.post-list li {
     position: relative;
 
     width: 100%;
@@ -677,8 +630,7 @@
     padding: 0;
 }
 
-.post-link
-{
+.post-link {
     position: relative;
 
     display: block;
@@ -689,13 +641,11 @@
     border-bottom: 1px solid #f8f8f8;
 }
 
-.post-link h4
-{
+.post-link h4 {
     color: #b2bac2;
 }
 
-.black
-{
+.black {
     font-size: 1.5rem;
 
     margin: 40px 0;
@@ -703,8 +653,7 @@
     color: #0d1a26;
 }
 
-blockquote:before
-{
+blockquote:before {
     position: absolute;
     top: 5px;
     bottom: 5px;
@@ -717,15 +666,13 @@ blockquote:before
     background-color: #bfdfff;
 }
 
-.well ul
-{
+.well ul {
     list-style: none;
 
     color: #b2bac2;
 }
 
-.well ul li
-{
+.well ul li {
     line-height: 1em;
 
     position: relative;
@@ -733,8 +680,7 @@ blockquote:before
     padding: 1px 0;
 }
 
-.well ul li span
-{
+.well ul li span {
     font-size: 14px;
     line-height: 60px;
 
@@ -745,8 +691,7 @@ blockquote:before
     height: 60px;
 }
 
-.well ul li h3 a
-{
+.well ul li h3 a {
     font-size: 17px;
 
     display: inline-block;
@@ -756,42 +701,35 @@ blockquote:before
     color: #222;
 }
 
-.well ul li p
-{
+.well ul li p {
     font-size: 14px;
 
     margin: 10px 0;
 }
 
-.well ul li h3 a:hover
-{
+.well ul li h3 a:hover {
     color: #000;
 }
 
-.post
-{
+.post {
     padding: 50px 0 10px;
 
     text-align: justify;
 }
 
-.line
-{
+.line {
     border-bottom: 1px dashed #eee;
 }
 
-.tags
-{
+.tags {
     padding-bottom: 20px;
 }
 
-.post-tags
-{
+.post-tags {
     padding: 0 0 2em;
 }
 
-.category
-{
+.category {
     font-size: 24px;
     font-weight: bold;
 
@@ -803,51 +741,44 @@ blockquote:before
 
 
 
+
 /* travel */
 
-.travel-description
-{
+.travel-description {
     padding-bottom: 1em;
 }
 
-.columns
-{
+.columns {
     position: relative;
 
     width: 100%;
 }
 
-.travel-motto
-{
+.travel-motto {
     text-align: center;
 }
 
-.row
-{
+.row {
     position: relative;
 
     width: 100%;
     margin: 2em 0;
 }
 
-.img-one
-{
+.img-one {
     width: 100%;
 }
 
-.title
-{
+.title {
     width: 85%;
     margin: 4em auto;
 }
 
-.title p
-{
+.title p {
     margin: 5px 0;
 }
 
-.p_title p
-{
+.p_title p {
     font-size: 24px;
 
     color: #101010;
@@ -855,10 +786,10 @@ blockquote:before
 
 
 
+
 /* iconfont */
 
-@font-face
-{
+@font-face {
     font-family: 'iconfont';
 
     src: url('../fonts/iconfont.eot?t=1515207305350');
@@ -871,8 +802,7 @@ blockquote:before
 }
 
 
-.iconfont
-{
+.iconfont {
     font-family: 'iconfont' !important;
     font-size: 1.2rem;
     font-style: normal;
@@ -885,41 +815,35 @@ blockquote:before
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-github:before
-{
+.icon-github:before {
     content: '\e719';
 }
 
-.icon-about:before
-{
+.icon-about:before {
     content: '\e611';
 }
 
-.icon-email:before
-{
+.icon-email:before {
     content: '\e61c';
 }
 
-.icon-travel:before
-{
+.icon-travel:before {
     content: '\e677';
 }
 
-.icon-subscribe:before
-{
+.icon-subscribe:before {
     content: '\e62d';
 }
 
-.iconfont:hover
-{
+.iconfont:hover {
     color: #fff;
 }
 
 
+
 /* travel */
 
-.octicon-tag
-{
+.octicon-tag {
     font-size: 14px;
     line-height: 30px;
 
@@ -938,18 +862,15 @@ blockquote:before
     background: rgba(0, 0, 0, .05);
 }
 
-.octicon-tag:hover
-{
+.octicon-tag:hover {
     color: #111;
 }
 
-.post-tags a:hover
-{
+.post-tags a:hover {
     color: #222;
 }
 
-.paginateBox
-{
+.paginateBox {
     position: relative;
 
     display: inline-block;
@@ -962,8 +883,7 @@ blockquote:before
     text-align: center;
 }
 
-.pageBtn
-{
+.pageBtn {
     font-size: 14px;
 
     position: absolute;
@@ -977,8 +897,7 @@ blockquote:before
     color: #1890ff;
 }
 
-.pre-btn span
-{
+.pre-btn span {
     line-height: 25px;
 
     position: absolute;
@@ -988,8 +907,7 @@ blockquote:before
     height: 25px;
 }
 
-.next-btn span
-{
+.next-btn span {
     line-height: 25px;
 
     position: absolute;
@@ -1000,34 +918,28 @@ blockquote:before
 }
 
 
-.pre-btn
-{
+.pre-btn {
     left: 0;
 }
 
-.next-btn
-{
+.next-btn {
     right: 0;
 }
 
-.pre-btn:hover
-{
+.pre-btn:hover {
     color: #1890ff;
 }
 
-.pre-btn:hover .icon-pre
-{
+.pre-btn:hover .icon-pre {
     left: -8px;
 }
 
-.next-btn:hover .icon-next
-{
+.next-btn:hover .icon-next {
     right: -8px;
 }
 
 .icon-pre,
-.icon-next
-{
+.icon-next {
     font-size: 14px;
     font-weight: 700;
 
@@ -1036,8 +948,7 @@ blockquote:before
     color: #888;
 }
 
-.icon-pre
-{
+.icon-pre {
     line-height: 25px;
 
     position: absolute;
@@ -1046,8 +957,7 @@ blockquote:before
     height: 25px;
 }
 
-.icon-next
-{
+.icon-next {
     line-height: 25px;
 
     position: absolute;
@@ -1057,18 +967,15 @@ blockquote:before
 }
 
 .icon-pre:hover,
-.icon-next:hover
-{
+.icon-next:hover {
     color: #222;
 }
 
-.icon-pre:before
-{
+.icon-pre:before {
     content: '\e65b';
 }
 
-.icon-next:before
-{
+.icon-next:before {
     content: '\e64a';
 }
 
@@ -1088,10 +995,10 @@ blockquote:before
 
 
 
+
 /* footer */
 
-.footer
-{
+.footer {
     font-size: 12px;
     line-height: 100px;
 
@@ -1107,8 +1014,7 @@ blockquote:before
     background: #090723;
 }
 
-.footer-container
-{
+.footer-container {
     line-height: 100px;
 
     position: relative;
@@ -1122,18 +1028,15 @@ blockquote:before
     background: transparent;
 }
 
-.footer-nav-left
-{
+.footer-nav-left {
     float: left;
 }
 
-.footer-nav-left ul
-{
+.footer-nav-left ul {
     margin: 0;
 }
 
-.footer-nav-left ul li
-{
+.footer-nav-left ul li {
     line-height: 100px;
 
     display: inline-block;
@@ -1143,68 +1046,60 @@ blockquote:before
     padding: 0 20px 0 0;
 }
 
-.footer-nav-left ul li a
-{
+.footer-nav-left ul li a {
     font-size: 13px;
 
     color: #fff;
 }
 
-.footer-nav-right
-{
+.footer-nav-right {
     float: right;
 }
 
-.footer-nav-right span
-{
+.footer-nav-right span {
     position: relative;
 }
 
-.error-404
-{
+.error-404 {
     text-align: center;
     letter-spacing: 5px;
 }
 
-.error-404 h1
-{
+.error-404 h1 {
     font-size: 6em;
 }
 
-@media screen and (max-width:1000px)
-{
-    .header-container
-    {
+@media screen and (max-width:1000px) {
+    .header-container {
         width: calc(100% - 40px);
         padding: 0 20px;
     }
-    .nav ul li
-    {
+    .nav ul li {
         padding: 0 0 0 22px;
     }
-    .footer-nav-right span:before
-    {
+    .footer-nav-right span:before {
         position: absolute;
         top: 1px;
         left: -20px;
+
         display: inline-block;
+
         width: 1px;
         height: 14px;
+
         content: '';
+
         background: rgba(255, 255, 255, .4);
     }
-    .footer-container
-    {
+    .footer-container {
         width: calc(100% - 40px);
         padding: 0 20px;
     }
 
-    .wrapper
-    {
+    .wrapper {
         width: 85%;
     }
-    #font-anim
-    {
+    #font-anim {
         font-size: 18px;
     }
 }
