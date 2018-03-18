@@ -155,7 +155,7 @@
 
     overflow: hidden;
 
-    margin: 5rem auto;
+    margin: 50px auto;
 
     color: #fff;
 }
@@ -1171,9 +1171,15 @@ blockquote:before
 
 @media screen and (max-width:1000px)
 {
+
+
     .banner
     {
         height: 50vh;
+    }
+        .banner-content{
+
+        top: 30%;
     }
     .header-container
     {
