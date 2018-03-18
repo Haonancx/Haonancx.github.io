@@ -450,7 +450,7 @@
 
 .wrapper
 {
-    margin: 4em auto 0;
+    margin: 3em auto 0;
 }
 
 .section-title
@@ -691,6 +691,7 @@
 .black
 {
     font-size: 1.5rem;
+    font-weight: 700;
 
     margin: 40px 0;
 
@@ -1171,14 +1172,12 @@ blockquote:before
 
 @media screen and (max-width:1000px)
 {
-
-
     .banner
     {
-        height: 50vh;
+        height: 55vh;
     }
-        .banner-content{
-
+    .banner-content
+    {
         top: 30%;
     }
     .header-container
