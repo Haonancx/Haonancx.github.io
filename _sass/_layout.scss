@@ -155,7 +155,7 @@
 
     overflow: hidden;
 
-    margin: 50px auto;
+    margin: 0 auto;
 
     color: #fff;
 }
@@ -410,18 +410,6 @@
     }
 }
 
-.en-name
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-
-    display: none;
-
-    margin: 0;
-
-    color: #fff;
-}
 
 .title-icon
 {
@@ -1175,10 +1163,6 @@ blockquote:before
     .banner
     {
         height: 50vh;
-    }
-    .banner-content
-    {
-        top: 30%;
     }
     .header-container
     {

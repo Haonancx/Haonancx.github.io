@@ -46,32 +46,6 @@ var jqEach = function(object, callback) {
 
 /**
  *
- 原生JS实现 Jquery fadeIn 方法
- *
- @method JqfadeIn
- *
- @return {void}  无返回值
- */
-
-function JqfadeIn(el, time) {
-    if (el.style.opacity === "") {
-        el.style.opacity = 0;
-    }
-    if (el.style.display === "" || el.style.display === 'none') {
-        el.style.display = 'block';
-    }
-
-    var t = setInterval(function() {
-        if (el.style.opacity < 1) {
-            el.style.opacity = parseFloat(el.style.opacity) + 0.01;
-        } else {
-            clearInterval(t);
-        }
-    }, time / 100);
-}
-
-/**
- *
  二级标题替换功能
  *
  @method switchSectionTitle
@@ -197,7 +171,6 @@ var _hmt = _hmt || [];
  *
  */
 var fontAnim = document.querySelectorAll("#font-anim span");
-var homeMotto = document.getElementById("home-motto");
 setTimeout(function() {
     //文字依次显示
     jqEach(fontAnim, function(index, element) {
@@ -205,7 +178,5 @@ setTimeout(function() {
             element.className = "active";
         }, 50 * (index + 1));
     });
-    //缓慢显示
-    JqfadeIn(homeMotto, 1500)
 }, 1300);
 </script>
