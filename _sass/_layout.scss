@@ -109,15 +109,11 @@
 
 .banner {
     position: relative;
-
     overflow: hidden;
-
     width: 100%;
-    height: 100vh;
-
+    height: 60vh;
     text-align: center;
-
-    background: url(../images/home_bg.jpg) top no-repeat;
+    background: url(../images/home_bg.jpg) center no-repeat;
     background-size: 100%;
 }
 
@@ -371,20 +367,6 @@
 }
 
 
-.title-icon {
-    display: block;
-
-    width: 55px;
-    height: 2px;
-    margin: 0 auto;
-
-    background: #1e5aff;
-    background: -webkit-linear-gradient(left, #05cbff, #1e5aff);
-    background: linear-gradient(90deg, #05cbff, #1e5aff);
-}
-
-
-
 
 /* article */
 
@@ -397,16 +379,6 @@
 
 .wrapper {
     margin: 3em auto 0;
-}
-
-.section-title {
-    font-size: 1.6rem;
-
-    margin: 20px 0;
-
-    text-align: center;
-
-    color: #101010;
 }
 
 .time-line:before {
@@ -1039,9 +1011,7 @@ blockquote:before {
 }
 
 @media screen and (max-width:1000px) {
-    .banner {
-        height: 50vh;
-    }
+
     .header-container {
         width: calc(100% - 40px);
         padding: 0 20px;

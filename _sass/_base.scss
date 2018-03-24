@@ -133,7 +133,6 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        margin: 20px auto 30px;
         padding: 0 0 25px;
         width: 95%;
         box-shadow:none;

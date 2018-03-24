@@ -44,56 +44,6 @@ var jqEach = function(object, callback) {
     }
 }
 
-/**
- *
- 二级标题替换功能
- *
- @method switchSectionTitle
- *
- @return {void}  无返回值
- */
-
-function switchSectionTitle() {
-
-    var urlString = url.toString();
-    var titleOneId = document.getElementById("titleOne");
-    var errorPageId = document.getElementById("error-page");
-    var archivePageUrlOne = "http://fsux.me/archive.html";
-    var archivePageUrlTwo = "http://fsux.me/archive.html#";
-    var tagsPageUrlOne = "http://fsux.me/tags.html";
-    var tagsPageUrlTwo = "http://fsux.me/tags.html#";
-    var travelPageUrlOne = "http://fsux.me/travel.html";
-    var travelPageUrlTwo = "http://fsux.me/travel.html#";
-
-    function otherUrlFunction() {
-        if (errorPageId !== null) {
-            titleOneId.innerHTML = "";
-        }
-
-    }
-    switch (url) {
-        case archivePageUrlOne:
-        case archivePageUrlTwo:
-            titleOneId.innerHTML = "年度精选";
-
-            break;
-        case tagsPageUrlOne:
-        case tagsPageUrlTwo:
-            titleOneId.innerHTML = "标签云";
-
-            break;
-        case travelPageUrlOne:
-        case travelPageUrlTwo:
-            titleOneId.innerHTML = "Photos";
-
-            break;
-        default:
-            otherUrlFunction();
-
-    }
-}
-
-switchSectionTitle(); // 执行标题切换方法
 
 /**
  *
