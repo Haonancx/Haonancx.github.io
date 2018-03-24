@@ -5,7 +5,7 @@ date:   2018-2-18 01:36:42
 categories: 随笔 架构
 tags: 随笔 架构
 ---
-#### 对生活、对软件工程的系统的认知与。
+#### 对生活、对软件工程的系统的认知与感悟。
 
 !["archive-and-life"](https://i.imgur.com/EW3zcJj.jpg)
 
