@@ -3,161 +3,229 @@
  */
 
 /* Basic styling*/
-body {
+body
+{
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    color: $text-color;
-    margin:  0;
+
+    margin: 0;
     padding: 0;
+
+    color: $text-color;
+
     -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4, h5, h6,
-blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure
+{
     margin: 20px 0;
     padding: 0;
 }
-ol li{
+ol li
+{
     line-height: 35px;
 }
-ol,li {
+ol,
+li
+{
     list-style: none;
 }
-p {
+p
+{
     margin: 30px 0;
-    letter-spacing: 0.5px;
+
+    letter-spacing: .5px;
 }
-p em {
+p em
+{
     font-style: inherit;
-    background: #efefef;
+
     padding: 3px;
+
+    background: #efefef;
 }
 
-p strong {
+p strong
+{
     font-size: 1rem;
-    color:#1f1f1f;
+
+    color: #1f1f1f;
 }
 
 
 /* Images*/
-img {
+img
+{
     max-width: 100%;
+
     vertical-align: middle;
 }
 
 /* Figures */
-figure > img {
+figure > img
+{
     display: block;
 }
 
-figcaption {
+figcaption
+{
     font-size: $small-font-size;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
+li
+{
+     > ul,
+     > ol
+    {
+        margin-bottom: 0;
     }
 }
 
 /* Headings*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
     font-weight: 300;
 }
 
 /* Links*/
-a {
-    color: $brand-color;
+a
+{
     text-decoration: none;
 
-    &:hover {
-    text-decoration: none;
+    color: $brand-color;
+
+    &:hover
+    {
+        text-decoration: none;
     }
 }
 
 /* Blockquotes*/
-blockquote {
-    padding-left: 25px;
-    letter-spacing: 0.2px;
-    position:relative;
-    color:#999;
+blockquote
+{
+    position: relative;
 
-    > :last-child {
+    padding-left: 25px;
+
+    letter-spacing: .2px;
+
+    color: #999;
+
+     > :last-child
+    {
         margin-bottom: 0;
     }
 }
-blockquote ol li{
+blockquote ol li
+{
     margin: 15px 0;
 }
 /* Code formatting */
 pre,
-code {
-    position: relative;
-    margin: 1em 0;
-    font-family: Menlo, Monaco, Consolas, "Andale Mono", "lucida console", "Courier New", monospace;
+code
+{
+    font-family: Menlo, Monaco, Consolas, 'Andale Mono', 'lucida console', 'Courier New', monospace;
     font-size: 14px;
-    background: #ebeef5;
+
+    position: relative;
+
+    margin: 1em 0;
+
     border-radius: 4px;
+    background: #ebeef5;
 }
 
-code {
+code
+{
     padding: 1px 5px;
 }
 
-pre {
-    padding: 8px 12px;
+pre
+{
     overflow-x: scroll;
 
-    > code {
-        border: 0;
+    padding: 8px 12px;
+
+     > code
+    {
         padding-right: 0;
         padding-left: 0;
+
+        border: 0;
     }
 }
 
 
 /*Wrapper*/
-.page-content{
-    width: 880px;
-    margin: 30px auto;
-    height: 100%;
-    min-height: 100%;
-    padding: 60px;
+.page-content
+{
     position: relative;
     z-index: 998;
+
+    width: 880px;
+    height: 100%;
+    min-height: 100%;
+    margin: 30px auto;
+    padding: 60px;
+
     border-radius: 4px;
     background: #fff;
-    @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        padding: 0 0 25px;
+    @extend %clearfix;
+    @include media-query($on-laptop)
+    {
         width: 95%;
-        box-shadow:none;
+        margin: -10vh auto 30px;
+        padding: 0 0 25px;
+
+        box-shadow: none;
     }
 }
 
 /* Clearfix*/
-%clearfix {
-
-    &:after {
-        content: "";
+%clearfix
+{
+    &:after
+    {
         display: table;
         clear: both;
+
+        content: '';
     }
 }
 /* Icons*/
-.icon {
-
-    > svg {
+.icon
+{
+     > svg
+    {
         display: inline-block;
+
         width: 16px;
         height: 16px;
+
         vertical-align: middle;
 
-        path {
+        path
+        {
             fill: $grey-color;
         }
     }
