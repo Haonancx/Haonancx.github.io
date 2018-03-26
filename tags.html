@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="well">
+<p class="octicon-title">文章标签</p>
 <div class="tags">
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" class="octicon octicon-tag" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
