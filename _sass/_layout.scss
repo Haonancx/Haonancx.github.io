@@ -2,7 +2,7 @@
 
 .header {
     width: 100%;
-    height:80px;
+    height: 80px;
     margin: 0 auto;
     padding: 0;
 }
@@ -106,17 +106,18 @@
 
 
 
+
 /* banner */
 
 .banner {
     position: relative;
-    overflow: hidden;
     width: 100%;
     height: 500px;
     margin: -80px 0 0 0;
     text-align: center;
-    background: url(../images/home_bg.jpg) center no-repeat;
-    background-size: 100%;
+    background: url(../images/home_bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -370,6 +371,7 @@
 
 
 
+
 /* article */
 
 .home,
@@ -380,7 +382,7 @@
 }
 
 .wrapper {
-    margin: 3em auto 0;
+    margin: 0 auto;
 }
 
 .time-line:before {
@@ -682,6 +684,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .travel-description {
@@ -723,6 +726,7 @@ blockquote:before {
 
     color: #101010;
 }
+
 
 
 
@@ -779,6 +783,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -920,6 +925,7 @@ blockquote:before {
 .icon-next:before {
     content: '\e64a';
 }
+
 
 
 
