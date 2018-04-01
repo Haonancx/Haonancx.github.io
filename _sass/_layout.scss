@@ -573,8 +573,8 @@
     display: inline-block;
 
     width: 100%;
-    margin-bottom: 0;
-    padding: 0 0 20px 0;
+    margin: 0;
+    padding: 0;
 
     list-style: none;
 }
@@ -854,7 +854,7 @@ blockquote:before {
     width: 100%;
     height: 80px;
     margin: 0;
-    padding: 2em 0 0;
+    padding: 4em 0 0;
 
     text-align: center;
 }
@@ -908,10 +908,12 @@ blockquote:before {
 
 .pre-btn:hover .icon-pre {
     left: -8px;
+    color: #1890ff;
 }
 
 .next-btn:hover .icon-next {
     right: -8px;
+    color: #1890ff;
 }
 
 .icon-pre,
@@ -987,7 +989,7 @@ blockquote:before {
     position: relative;
 
     height: 100px;
-    margin: 2em auto 0;
+    margin: 0 auto;
 
     text-align: center;
     letter-spacing: 1px;
