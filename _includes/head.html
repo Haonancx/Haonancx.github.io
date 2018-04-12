@@ -1,18 +1,26 @@
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keyword }}">
+    <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
+    <meta name="author" content="{{ site.author }}">
+    <meta name="baidu-site-verification" content="LYz2PxGWB8" />
+    <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="short icon" href="{{ site.baseurl }}/images/fsux.jpg">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/fsux.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/fsux.jpg">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117401294-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
-  <meta name="description" content="{{ site.description }}">
-  <meta name="keywords" content="{{ site.keyword }}">
-  <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
-  <meta name="author" content="{{ site.author }}">
-  <meta name="baidu-site-verification" content="LYz2PxGWB8" />
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="short icon" href="{{ site.baseurl }}/images/fsux.jpg">
-  <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/fsux.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/fsux.jpg">
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-117401294-1');
+    </script>
 </head>
