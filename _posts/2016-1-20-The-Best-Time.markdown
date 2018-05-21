@@ -9,9 +9,6 @@ tags: 随笔 旅行
 #### 不想改变，这样就是最好的时光。
 
 
-![the-best-time](http://i.imgur.com/4v78gsY.jpg)
-
-
 最简单的行囊，衬衫牛仔裤，带上离奇的幻想。
 
 
