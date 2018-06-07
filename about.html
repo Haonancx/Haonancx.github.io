@@ -10,11 +10,13 @@
     <title>关于 - 关人潮【前端技术专家】</title>
     <meta name="author" content="关人潮,无笙,FSUX">
     <meta name="baidu-site-verification" content="LYz2PxGWB8">
+    <link rel="short icon" href="css/main.css">
     <link rel="alternate" type="application/atom+xml" title="Life Designer | FSUX" href="feed.xml">
     <link rel="short icon" href="images/fsux.jpg">
     <link rel="apple-touch-icon" href="images/fsux.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fsux.jpg">
     <style>
+
     * {
         margin: 0;
         padding: 0;
@@ -24,7 +26,8 @@
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
         font-size: 16px;
         line-height: 2;
-        color: #666;
+        background: #000;
+        color: #55b5db;
         margin: 0;
         padding: 0;
         -webkit-text-size-adjust: 100%;
@@ -32,283 +35,60 @@
         overflow: hidden;
     }
 
-    a {
-        color: #555;
-        text-decoration: none;
-    }
-
     .screen-page {
-        text-align: center;
         width: 100%;
         height: 100%;
         position: fixed;
-        text-align: center;
         overflow: hidden;
     }
-    .page-one-content{
+
+    .description {
         position: absolute;
-        width: 250px;
-        height: 200px;
+        width: 80%;
+        top: 30%;
         left: 50%;
-        top: 50%;
-        margin: -100px 0 0 -125px;
+        margin: 0 0 0 -40%;
+        word-break: break-all;
     }
 
-    .section-title {
-        font-size: 2.8rem;
-        font-weight: 600;
-        margin: 0;
-        letter-spacing: 1px;
-        line-height: 1;
+    .description a {
+        color: #cd3f45;
+        text-decoration: none;
     }
 
-    .animation-element-oranges {
-        position: absolute;
-        width: 50%;
-        padding-top: 50%;
-        border-radius: 50%;
-        right: -23%;
-        opacity: 0.9;
-        box-shadow: -31px 7px 18px rgba(255, 84, 71, 0.1);
-        background: rgb(246, 65, 108);
-        background-image: -ms-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
-        background-image: -moz-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
-        background-image: -webkit-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
-        background-image: -o-linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
-        background-image: linear-gradient(135deg, rgb(246, 65, 108) 10%, rgb(255, 246, 183) 100%);
-    }
+    .description a:hover {
 
-    #orangesCircleTwo {
-
-        right: -19%;
-        opacity: 0.7;
-        background: rgb(246, 65, 108);
-        background-image: -ms-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -moz-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -webkit-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: -o-linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-        background-image: linear-gradient(135deg, rgb(255, 246, 183) 10%, rgb(246, 65, 108) 100%);
-    }
-
-    .circle-rotate {
-        animation: rotate 6s linear infinite;
-        -webkit-animation: rotate 6s linear infinite;
-    }
-
-
-    @keyframes rotate {
-        0% {
-            transform: translate(0px, 0px);
-            -webkit-transform: translate(0px, 0px);
-        }
-        10% {
-            transform: translate(-4px, 4px);
-            -webkit-transform: translate(-4px, 4px);
-        }
-        20% {
-            transform: translate(-8px, 4px);
-            -webkit-transform: translate(-8px, 4px);
-        }
-        30% {
-            transform: translate(-12px, 8px);
-            -webkit-transform: translate(-12px, 8px);
-        }
-        40% {
-            transform: translate(-16px, 12px);
-            -webkit-transform: translate(-16px, 12px);
-        }
-        50% {
-            transform: translate(-20px, 12px);
-            -webkit-transform: translate(-20px, 12px);
-        }
-        60% {
-            transform: translate(-16px, 12px);
-            -webkit-transform: translate(-16px, 12px);
-        }
-        70% {
-            transform: translate(-12px, 12px);
-            -webkit-transform: translate(-12px, 12px);
-        }
-        80% {
-            transform: translate(-8px, 8px);
-            -webkit-transform: translate(-8px, 8px);
-        }
-        90% {
-            transform: translate(-4px, 4px);
-            -webkit-transform: translate(-4px, 4px);
-        }
-        100% {
-            transform: translate(0px, 0px);
-            -webkit-transform: translate(0px, 0px);
-        }
-    }
-
-    @-webkit-keyframes rotate {
-        0% {
-            transform: translate(0px, 0px);
-            -webkit-transform: translate(0px, 0px);
-        }
-        10% {
-            transform: translate(-4px, 4px);
-            -webkit-transform: translate(-4px, 4px);
-        }
-        20% {
-            transform: translate(-8px, 4px);
-            -webkit-transform: translate(-8px, 4px);
-        }
-        30% {
-            transform: translate(-12px, 8px);
-            -webkit-transform: translate(-12px, 8px);
-        }
-        40% {
-            transform: translate(-16px, 12px);
-            -webkit-transform: translate(-16px, 12px);
-        }
-        50% {
-            transform: translate(-20px, 12px);
-            -webkit-transform: translate(-20px, 12px);
-        }
-        60% {
-            transform: translate(-16px, 12px);
-            -webkit-transform: translate(-16px, 12px);
-        }
-        70% {
-            transform: translate(-12px, 12px);
-            -webkit-transform: translate(-12px, 12px);
-        }
-        80% {
-            transform: translate(-8px, 8px);
-            -webkit-transform: translate(-8px, 8px);
-        }
-        90% {
-            transform: translate(-4px, 4px);
-            -webkit-transform: translate(-4px, 4px);
-        }
-        100% {
-            transform: translate(0px, 0px);
-            -webkit-transform: translate(0px, 0px);
-        }
-    }
-
-    .secondary-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 7rem 0 0;
-        overflow: hidden;
-        letter-spacing: 2px;
-        line-height: 35px;
-        color: #555;
-    }
-
-    .localtion-icon {
-        height: 35px;
-        width: 45px;
-        display: inline-block;
-        position: relative;
-        -webkit-animation: BeatAnim 2s ease-in-out infinite;
-        animation: BeatAnim 2s ease-in-out infinite
-    }
-
-
-    .localtion-icon:before {
-        content: '';
-        height: 10px;
-        width: 10px;
-        border: 5px solid #869af1;
-        display: block;
-        position: absolute;
-        top: 13px;
-        left: 0px;
-        z-index: 1;
-        line-height: 26px;
-        border-radius: 40px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        color: #fff;
-        text-align: center;
-    }
-
-    .localtion-icon:after {
-        content: '';
-        height: 0px;
-        width: 0px;
-        display: block;
-        position: absolute;
-        bottom: -1px;
-        left: 4px;
-        border: 10px transparent solid;
-        border-top-color: #869af1;
-        border-width: 5px 6px 0px 6px;
-    }
-
-    @-webkit-keyframes BeatAnim {
-        0%,
-        25%,
-        35%,
-        45% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0)
-        }
-        15% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px)
-        }
-        30% {
-            -webkit-transform: translateY(-10px);
-            transform: translateY(-10px)
-        }
-        40% {
-            -webkit-transform: translateY(-5px);
-            transform: translateY(-5px)
-        }
-    }
-
-    @keyframes BeatAnim {
-        0%,
-        25%,
-        35%,
-        45% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0)
-        }
-        15% {
-            -webkit-transform: translateY(-20px);
-            transform: translateY(-20px)
-        }
-        30% {
-            -webkit-transform: translateY(-10px);
-            transform: translateY(-10px)
-        }
-        40% {
-            -webkit-transform: translateY(-5px);
-            transform: translateY(-5px)
-        }
+        text-decoration: underline;
     }
     </style>
 </head>
 
 <body>
     <div class="screen-page">
-        <div class="page-one-content">
-            <h1 class="section-title"><a class="fsux-site" href="http://fsux.me">软件工程师</a></h1>
-            <h1 class="secondary-title"><span class="localtion-icon"></span>海南.海口</h1>
+        <header class="header">
+            <div class="header-container">
+                <a class="MainIndex" href="http://fsux.me/#">
+            <span class="fsux-logo"></span>
+            <span class="fsux-name ">FSUX</span>
+        </a>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="/archive.html#">年度精选</a>
+                        </li>
+                        <li>
+                            <a id="about-me" href="mailto:fsux@outlook.com">联系我</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="description">
+            <p>I 'm Rushan, Chinese, a Senior Software Engineer/Visual Interaction Expert; We created a team dedicated to building great user experience products and best engineering practices in 2015, and we committed to product prototypes and UX design; Every time our thinking and design, debate and persistence, we are looking for a goal: to create better products and better experiences on the updated screen. </p>
+            <p>Welcome to exchange and feedback !!!</p>
+            <p><a href="fsux@outlook.com">Email：fsux@outlook.com</a></p>
         </div>
-        <div class="animation-element-oranges circle-rotate" id="orangesCircleOne"></div>
-        <div class="animation-element-oranges circle-rotate" id="orangesCircleTwo"></div>
     </div>
-    <script>
-    //orangesOne-circle-offset
-    var orangesCircleOneId = document.getElementById("orangesCircleOne");
-    var orangesCircleHeight = orangesCircleOneId.offsetHeight;
-    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 2) + "px";
-    orangesCircleOneId.style.top = orangesCircleTop;
-
-    //orangesTwo-circle-offset
-    var orangesCircleTwoId = document.getElementById("orangesCircleTwo");
-    var orangesCircleHeight = orangesCircleTwoId.offsetHeight;
-    var orangesCircleTop = "-" + parseInt(orangesCircleHeight / 1.85) + "px";
-    orangesCircleTwoId.style.top = orangesCircleTop;
-    </script>
 </body>
 
 </html>
