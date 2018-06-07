@@ -16,10 +16,19 @@
     <link rel="apple-touch-icon" href="images/fsux.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fsux.jpg">
     <style>
-
     * {
         margin: 0;
         padding: 0;
+    }
+
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+
+        text-decoration: none;
     }
 
     body {
@@ -41,24 +50,138 @@
         position: fixed;
         overflow: hidden;
     }
+    /* header */
+
+    .header {
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header-container {
+        line-height: 80px;
+
+        position: absolute;
+        z-index: 99;
+        top: 0;
+
+        width: calc(100% - 80px);
+        height: 80px;
+        margin: 0 auto;
+        padding: 0 40px;
+
+        background: transparent;
+    }
+
+    .MainIndex {
+        line-height: 80px;
+
+        position: relative;
+
+        float: left;
+
+        height: 80px;
+
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    .MainIndex span {
+        font-family: 'Microsoft YaHei', 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', SimSun;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 80px;
+
+        display: inline-block;
+        float: left;
+
+        height: 80px;
+
+        color: #fff;
+    }
+
+    .fsux-name {
+        padding: 0 0 0 8px;
+    }
+
+    .fsux-logo {
+        width: 45px;
+
+        background: url(../fonts/fsux_logo.svg) no-repeat 50%;
+        background-size: contain;
+    }
+
+    .MainIndex a:hover {
+        border: 0;
+    }
+
+    .nav {
+        float: right;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav ul li {
+        line-height: 80px;
+
+        float: left;
+
+        height: 80px;
+        padding: 0 0 0 50px;
+
+        text-align: center;
+    }
+
+    .nav ul li a {
+        font-size: 15px;
+
+        position: relative;
+
+        display: inline;
+
+        cursor: pointer;
+        transition: all .5s ease;
+        letter-spacing: 1px;
+
+        color: #fff;
+    }
+
+
+    .nav ul li a:hover {
+        color: #eee;
+    }
 
     .description {
-        position: absolute;
         width: 80%;
-        top: 30%;
-        left: 50%;
-        margin: 0 0 0 -40%;
+        margin: 50px auto 0;
+        padding: 0 40px;
+        background: transparent;
         word-break: break-all;
     }
 
     .description a {
         color: #cd3f45;
-        text-decoration: none;
     }
 
     .description a:hover {
 
         text-decoration: underline;
+    }
+
+    .motto,
+    .contact-me {
+        padding: 10px 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .header-container {
+            width: calc(100% - 40px);
+            padding: 0 20px;
+        }
     }
     </style>
 </head>
@@ -77,7 +200,7 @@
                             <a href="/archive.html#">年度精选</a>
                         </li>
                         <li>
-                            <a id="about-me" href="mailto:fsux@outlook.com">联系我</a>
+                            <a id="about-me" href="mailto:fsux@outlook.com">关于我</a>
                         </li>
                     </ul>
                 </div>
@@ -85,8 +208,8 @@
         </header>
         <div class="description">
             <p>I 'm Rushan, Chinese, a Senior Software Engineer/Visual Interaction Expert; We created a team dedicated to building great user experience products and best engineering practices in 2015, and we committed to product prototypes and UX design; Every time our thinking and design, debate and persistence, we are looking for a goal: to create better products and better experiences on the updated screen. </p>
-            <p>Welcome to exchange and feedback !!!</p>
-            <p><a href="fsux@outlook.com">Email：fsux@outlook.com</a></p>
+            <p class="motto">Welcome to exchange and feedback !!!</p>
+            <p class="contact-me"><a href="mailto:fsux@outlook.com">Email：fsux@outlook.com</a></p>
         </div>
     </div>
 </body>
