@@ -114,6 +114,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -379,6 +380,7 @@
         opacity: 1;
     }
 }
+
 
 
 
@@ -691,6 +693,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .columns {
@@ -733,6 +736,7 @@ blockquote:before {
 
 
 
+
 /* iconfont */
 
 @font-face {
@@ -759,6 +763,10 @@ blockquote:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-behance {
+    font-size: 22px;
+}
+
 .icon-github:before {
     content: '\e719';
 }
@@ -778,6 +786,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -927,6 +936,7 @@ blockquote:before {
 .icon-next:before {
     content: '\e64a';
 }
+
 
 
 
