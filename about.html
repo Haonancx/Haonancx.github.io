@@ -160,7 +160,7 @@
         width: 85%;
         margin: 150px auto 0;
         padding: 0 40px;
-        word-break: break-all;
+        word-wrap: break-word;
     }
 
     .description a {
@@ -222,12 +222,13 @@
         font-size: 23px;
     }
 
+    .icon-photo:before {
+        content: '\e623';
+    }
+
     .iconfont:hover {
         color: #fff;
     }
-
-
-    .related-links {}
 
     .related-links ul li {
         line-height: 100px;
@@ -292,6 +293,11 @@
                     <li>
                         <a href="https://github.com/Haonancx" target="_blank" title="开源">
                         <i class="iconfont icon-github"></i>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="http://fsux.me/travel.html" title="记录">
+                        <i class="iconfont icon-photo"></i>
                     </a>
                     </li>
                 </ul>
