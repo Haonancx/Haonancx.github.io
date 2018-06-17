@@ -113,6 +113,7 @@
 
 
 
+
 /* banner */
 
 .banner {
@@ -378,6 +379,7 @@
         opacity: 1;
     }
 }
+
 
 
 
@@ -688,6 +690,7 @@ blockquote:before {
 
 
 
+
 /* travel */
 
 .columns {
@@ -729,6 +732,7 @@ blockquote:before {
 }
 
 
+
 /* iconfont */
 
 @font-face {
@@ -759,6 +763,10 @@ blockquote:before {
     content: '\e719';
 }
 
+.icon-behance:before {
+    content: '\e62b';
+}
+
 .icon-date:before {
     content: '\e6d3';
 }
@@ -770,6 +778,7 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
+
 
 
 
@@ -918,6 +927,7 @@ blockquote:before {
 .icon-next:before {
     content: '\e64a';
 }
+
 
 
 

@@ -30,6 +30,10 @@
         text-decoration: none;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
     body {
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif;
         font-size: 16px;
@@ -164,7 +168,7 @@
         font-weight: 700;
     }
 
-    .description a:hover {
+    .contact-me a:hover {
 
         text-decoration: underline;
     }
@@ -175,6 +179,66 @@
 
     .contact-me {
         padding: 35px 0;
+    }
+    /* iconfont */
+
+    @font-face {
+        font-family: "iconfont";
+        src: url('../fonts/iconfont.eot?t=1529205441782');
+        /* IE9*/
+        src: url('../fonts/iconfont.eot?t=1529205441782#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+        url('../fonts/iconfont.ttf?t=1529205441782') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('../fonts/iconfont.svg?t=1529205441782#iconfont') format('svg');
+        /* iOS 4.1- */
+    }
+
+    .iconfont {
+        font-family: 'iconfont' !important;
+        font-size: 1.2rem;
+        font-style: normal;
+
+        transition: all .3s ease;
+
+        color: rgba(255, 255, 255, .5);
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-github:before {
+        content: '\e719';
+    }
+
+    .icon-behance:before {
+        content: '\e62b';
+    }
+
+    .icon-github {
+        font-size: 20px;
+    }
+
+    .icon-behance {
+        font-size: 23px;
+    }
+
+    .iconfont:hover {
+        color: #fff;
+    }
+
+
+    .related-links {}
+
+    .related-links ul li {
+        line-height: 100px;
+        display: inline-block;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0 20px 0 0;
+    }
+
+    .related-links ul li a {
+        color: #fff;
     }
 
     @media screen and (max-width: 1000px) {
@@ -218,6 +282,20 @@
             <p>I 'm Rushan, Chinese, a Senior Software Engineer/Visual Interaction Expert; We created a team dedicated to building great user experience products and best engineering practices in 2015, and we committed to product prototypes and UX design; Every time our thinking and design, debate and persistence, we are looking for a goal: to create better products and better experiences on the updated screen. </p>
             <p class="motto">Welcome to exchange and feedback !!!</p>
             <p class="contact-me"><a href="mailto:fsux@outlook.com">Email：fsux@outlook.com</a></p>
+            <div class="related-links">
+                <ul>
+                    <li>
+                        <a href="https://www.behance.net/fsuxad45" title="behance">
+                        <i class="iconfont icon-behance"></i>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Haonancx" target="_blank" title="开源">
+                        <i class="iconfont icon-github"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
