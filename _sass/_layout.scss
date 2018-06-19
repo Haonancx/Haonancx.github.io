@@ -85,7 +85,7 @@
 }
 
 .nav ul li a {
-    font-size: 15px;
+    font-size: 14px;
 
     position: relative;
 
@@ -144,17 +144,13 @@
 }
 
 #font-anim {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
-
     z-index: 9999;
-
     overflow: hidden;
-
     margin: 0 auto;
-
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255,255,255,0.6);
 }
 
 /* article */
