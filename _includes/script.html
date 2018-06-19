@@ -4,49 +4,6 @@ var url = document.location.href; // 获取当前浏览器路径
 
 /**
  *
- 原生JS实现 Jquery each 方法
- *
- @method jqEach
- *
- @return {object或array，index}  返回数组或对象,索引值
- */
-var jqEach = function(object, callback) {
-    var type = (function() {
-        switch (object.constructor) {
-            case Object:
-                return 'Object';
-                break;
-            case Array:
-                return 'Array';
-                break;
-            case NodeList:
-                return 'NodeList';
-                break;
-            default:
-                return 'null';
-                break;
-        }
-    })();
-    // 为数组或类数组时, 返回: index, value  
-    if (type === 'Array' || type === 'NodeList') {
-        // 由于存在类数组NodeList, 所以不能直接调用every方法  
-        [].every.call(object, function(v, i) {
-            return callback.call(v, i, v) === false ? false : true;
-        });
-    }
-    // 为对象格式时,返回:key, value  
-    else if (type === 'Object') {
-        for (var i in object) {
-            if (callback.call(object[i], i, object[i]) === false) {
-                break;
-            }
-        }
-    }
-}
-
-
-/**
- *
  复制粘贴功能(版权)
  *
  @method addLink
@@ -82,8 +39,8 @@ function addLink(msg) {
         },
         0)
 }
-document.body.oncopy = addLink;
 
+document.body.oncopy = addLink;
 
 /**
  *
@@ -115,18 +72,4 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(bp, s);
 })();
 
-/**
- *
- FSUX 理念动画
- *
- */
-var fontAnim = document.querySelectorAll("#font-anim span");
-setTimeout(function() {
-    //文字依次显示
-    jqEach(fontAnim, function(index, element) {
-        setTimeout(function() {
-            element.className = "active";
-        }, 50 * (index + 1));
-    });
-}, 1300);
 </script>
