@@ -6,7 +6,7 @@
 ### FSUX-BlogTheme is a theme for me. Here is [my blog](http://fsux.me) which use this theme.
 
 
-![About-me](https://i.imgur.com/dfUjGyL.jpg)
+![About-me](https://i.imgur.com/tm9AYFj.jpg)
 
 
 - 添加了对文章标签、年度的分类
