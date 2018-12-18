@@ -5,7 +5,7 @@ date:   2018-12-18 21:16:33
 categories: 随笔
 tags: 随笔
 ---
-#### 对生活、对软件工程的系统的认知与感悟。
+#### 高山低谷才是真正完整的人生
 
 ![high-mountain-and-low-valley](https://i.imgur.com/QDrCK7T.jpg)
 
