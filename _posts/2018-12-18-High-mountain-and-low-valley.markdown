@@ -1,11 +1,11 @@
----
+s---
 layout: post
 title:  "高山低谷"
 date:   2018-12-18 21:16:33
 categories: 随笔
 tags: 随笔
 ---
-#### 高山低谷才是真正完整的人生
+#### 高山低谷才是完整的人生
 
 ![high-mountain-and-low-valley](https://i.imgur.com/QDrCK7T.jpg)
 
