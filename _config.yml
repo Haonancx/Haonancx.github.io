@@ -1,14 +1,14 @@
 # Site settings
 
-title: 如山 | FSUX 
+title: 如山 | GUANRENCHAO 
 SEOTitle: 关人潮【如山】软件工程师
-SUBSTitle: FSUX
+SUBSTitle: GUANRENCHAO
 email: fsux@outlook.com
-description: "关人潮,FSUX,如山,个人博客,软件工程师,设计师,旨在探索极致用户体验与最佳工程实践"
+description: "关人潮,GUANRENCHAO,如山,个人博客,软件工程师,设计师,旨在探索极致用户体验与最佳工程实践"
 baseurl: "" # the subpath of your site, e.g. /blog/
-keyword: "关人潮,如山,关人潮的技术博客,软件工程师,架构,FSUX,UI,UX,FSUX Blog,设计,数据可视化,数据挖掘,大数据"
-url: "https://fsux.me" # the base hostname & protocol for your site
-author: "关人潮,如山,FSUX"
+keyword: "关人潮,如山,关人潮的技术博客,软件工程师,架构,GUANRENCHAO,UI,UX,GUANRENCHAO Blog,设计,数据可视化,数据挖掘,大数据"
+url: "https://GUANRENCHAO.com" # the base hostname & protocol for your site
+author: "关人潮,如山,GUANRENCHAO"
 pygments: true
 # Outputting
 

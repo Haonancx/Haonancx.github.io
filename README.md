@@ -3,7 +3,7 @@
 > Explore the ultimate user experience and best engineering practices
 
 
-### FSUX-BlogTheme is a theme for me. Here is [my blog](http://fsux.me) which use this theme.
+### GUANRENCHAO-BlogTheme is a theme for me. Here is [my blog](http://guanrenchao.com) which use this theme.
 
 
 ![About-me](https://i.imgur.com/tm9AYFj.jpg)
