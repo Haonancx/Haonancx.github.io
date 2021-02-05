@@ -104,17 +104,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* banner */
 
 .banner {
@@ -150,7 +139,7 @@
     z-index: 9999;
     overflow: hidden;
     margin: 0 auto;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
 }
 
 /* article */
@@ -374,36 +363,28 @@ blockquote:before {
 
 .well ul li {
     line-height: 1em;
-
     position: relative;
-
     padding: 1px 0;
 }
 
 .well ul li span {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 60px;
-
     position: absolute;
     top: 0;
     right: 0;
-
     height: 60px;
 }
 
 .well ul li h3 a {
     font-size: 17px;
-
     display: inline-block;
-
     letter-spacing: .2px;
-
     color: #222;
 }
 
 .well ul li p {
     font-size: 14px;
-
     margin: 10px 0;
 }
 
@@ -432,9 +413,8 @@ blockquote:before {
 .category {
     font-size: 25px;
     font-weight: bold;
-
     position: relative;
-
+    color: #444;
     padding: 30px 0 10px;
 }
 
@@ -532,16 +512,6 @@ blockquote:before {
 .iconfont:hover {
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -682,30 +652,6 @@ blockquote:before {
 .icon-next:before {
     content: '\e64a';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
