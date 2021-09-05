@@ -6,7 +6,7 @@
 ### GUANRENCHAO-BlogTheme is a theme for me. Here is [my blog](http://guanrenchao.com) which use this theme.
 
 
-![About-me](https://i.imgur.com/tm9AYFj.jpg)
+![About-me](https://github.com/Haonancx/Haonancx.github.io/blob/master/images/readme.png)
 
 
 - 添加了对文章标签、年度的分类
