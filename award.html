@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+      name="viewport"
+    />
+    <meta
+      name="description"
+      content="关人潮,guanrenchao,如山,个人博客,软件工程师,设计师,旨在探索极致用户体验与最佳工程实践"
+    />
+    <meta
+      name="keywords"
+      content="关人潮,如山,关人潮的技术博客,软件工程师,架构,guanrenchao,UI,UX,设计,数据可视化,数据挖掘,大数据"
+    />
+    <title>中奖 - 关人潮【软件工程师】</title>
+    <meta name="author" content="关人潮,如山,guanrenchao" />
+    <meta name="baidu-site-verification" content="LYz2PxGWB8" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Life Designer | guanrenchao"
+      href="https://guanrenchao.com/feed.xml"
+    />
+    <link
+      rel="short icon"
+      href="https://guanrenchao.com/images/guanrenchao.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://guanrenchao.com/images/guanrenchao.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://guanrenchao.com/images/guanrenchao.jpg"
+    />
+    <style>
+      body {
+        font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: calc(10px + 0.33vw);
+        -webkit-font-smoothing: antialiased;
+        padding: 1.3vh 7.5vw;
+        color: #121314;
+        height: 100%;
+        margin: 0;
+      }
+      h1 {
+        font-size: 3em;
+        font-weight: 500;
+        margin: 60px 0;
+        text-align: center;
+      }
+      input {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 6px 12px;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+          helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+          segoe ui emoji, segoe ui symbol, noto color emoji;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        min-width: 0;
+        background-color: #fff;
+        background-image: none;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d9d9d9;
+        border-radius: 6px;
+        transition: all 0.2s;
+      }
+      input:focus {
+        border-color: #1677ff;
+        box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+        outline: 0;
+      }
+      button {
+        background-color: rgb(22, 93, 255);
+        color: #fff;
+        border: 1px solid transparent;
+        padding: 0 15px;
+        font-size: 14px;
+        height: 36px;
+        border-radius: 4px;
+        display: inline-block;
+        position: relative;
+        outline: none;
+        font-weight: 400;
+        appearance: none;
+        user-select: none;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.1s linear;
+        box-sizing: border-box;
+        line-height: 1.5715;
+      }
+      button:hover {
+        border-color: transparent;
+        color: #fff;
+        background-color: rgb(64, 128, 255);
+      }
+      button :active {
+        border-color: transparent;
+        color: #fff;
+        background-color: rgb(14, 66, 210);
+      }
+      ul,
+      li {
+        list-style: none;
+        height: 38px;
+        line-height: 38px;
+        margin: 0;
+        padding: 0 0 0 6px;
+      }
+      .clear-both {
+        clear: both;
+      }
+      .award-input {
+        float: left;
+        width: 60%;
+      }
+      .award-button,
+      .clear-button {
+        float: left;
+        width: 18%;
+        margin: 0 0 0 2%;
+      }
+      #award-tip {
+        height: 38px;
+        line-height: 38px;
+        font-size: 18px;
+        text-align: center;
+      }
+      .award-list {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>中奖</h1>
+    <div class="award-content">
+      <input
+        type="text"
+        placeholder="请输入中奖号码"
+        class="award-input"
+        id="award-input-id"
+      />
+      <button class="award-button" onclick="generateAwardList()">生成</button>
+      <button class="clear-button" onclick="clearAwardInput()">清空</button>
+      <div class="clear-both"></div>
+    </div>
+    <div class="award-list">
+      <p id="award-tip"></p>
+      <ul id="award-list"></ul>
+    </div>
+    <script>
+      //获取输入框内的内容并生成中奖号码列表方法
+      function generateAwardList() {
+        let awardInputId = document.getElementById("award-input-id");
+
+        let awardTipId = document.getElementById("award-tip");
+
+        let awardListId = document.getElementById("award-list");
+
+        let awardInputValue = awardInputId.value;
+
+        let awardInputArray = [];
+
+        let awardString = "";
+
+        if (awardInputValue === "") {
+          awardTipId.innerText = "请输入中奖号码!";
+          awardTipId.style.display = "block";
+        } else {
+          awardTipId.innerText = "";
+          awardTipId.style.display = "none";
+
+          awardInputArray = awardInputValue.split("；");
+
+          awardString = generateAwardItem(awardInputArray);
+
+          awardListId.innerHTML = awardString;
+
+          console.log(awardString);
+        }
+      }
+
+      //清空输入框内的内容方法
+      function clearAwardInput() {
+        let awardInputId = document.getElementById("award-input-id");
+
+        let awardListId = document.getElementById("award-list");
+
+        awardListId.innerHTML = "";
+
+        awardInputId.value = "";
+      }
+
+      //生成单项中奖号码内容方法
+      function generateAwardItem(awardArray) {
+        let generateAwardString = "";
+
+        let awardKeyString = "";
+
+        if (awardArray.length === 1) {
+          awardKeyString = "";
+
+          generateAwardString = "<li>" + awardArray[0] + "；" + "</li>";
+
+          awardKeyString =
+            "<li>" +
+            awardArray[0] +
+            "现；" +
+            awardArray[0].substr(0, 0) +
+            "X" +
+            awardArray[0].substr(1) +
+            "；" +
+            awardArray[0].substr(0, 1) +
+            "X" +
+            awardArray[0].substr(2) +
+            "</li><li>" +
+            awardArray[0].substr(0, 2) +
+            "X" +
+            awardArray[0].substr(3) +
+            "；" +
+            awardArray[0].substr(0, 3) +
+            "X" +
+            awardArray[0].substr(4) +
+            "</li>";
+
+          generateAwardString = generateAwardString + awardKeyString;
+        } else {
+          for (let index in awardArray) {
+            awardKeyString =
+              awardKeyString + "<li>" + awardArray[index] + "；" + "</li>";
+          }
+
+          awardKeyString =
+            awardKeyString +
+            "<li>" +
+            awardArray[0] +
+            "现；" +
+            awardArray[1] +
+            "现" +
+            "</li>";
+
+          awardKeyString =
+            awardKeyString +
+            "<li>" +
+            awardArray[0].substr(0, 0) +
+            "X" +
+            awardArray[0].substr(1) +
+            "；" +
+            awardArray[0].substr(0, 3) +
+            "X" +
+            awardArray[0].substr(4) +
+            "；" +
+            awardArray[1].substr(0, 3) +
+            "X" +
+            awardArray[1].substr(4) +
+            "</li>";
+
+          generateAwardString = awardKeyString;
+        }
+
+        return generateAwardString;
+      }
+    </script>
+  </body>
+</html>
