@@ -178,7 +178,9 @@
     <div class="award-list">
       <p id="award-tip"></p>
       <textarea id="award-textarea" cols="18" rows="8" disabled></textarea>
-      <button id="copy-button" onclick="copyAwardContent()">复制</button>
+      <button id="copy-button" onclick="copyAwardContent()">
+        复制中奖号码
+      </button>
     </div>
     <script>
       // 禁用双指放大
@@ -267,7 +269,7 @@
         if (awardArray.length === 1) {
           awardKeyString = "";
 
-          generateAwardString = +awardArray[0] + "；\n\n";
+          generateAwardString = awardArray[0] + "；\n\n";
 
           awardKeyString =
             awardArray[0] +
