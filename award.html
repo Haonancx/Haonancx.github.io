@@ -55,7 +55,8 @@
         margin: 60px 0;
         text-align: center;
       }
-      input {
+      input,
+      textarea {
         box-sizing: border-box;
         margin: 0;
         padding: 6px 12px;
@@ -78,7 +79,11 @@
         border-radius: 6px;
         transition: all 0.2s;
       }
-      input:focus {
+      textarea {
+        resize: none;
+      }
+      input:focus,
+      textarea:focus {
         border-color: #1677ff;
         box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
         outline: 0;
@@ -140,15 +145,19 @@
         line-height: 38px;
         font-size: 18px;
         text-align: center;
+        display: none;
       }
       .award-list {
         height: 100%;
         margin: 20px 0 0;
       }
-      #award-list li {
-        font-size: 20px;
-        height: 66px;
-        line-height: 66px;
+      #award-textarea {
+        display: none;
+      }
+      #copy-button {
+        width: 100%;
+        display: none;
+        margin: 20px 0 0;
       }
     </style>
   </head>
@@ -167,7 +176,8 @@
     </div>
     <div class="award-list">
       <p id="award-tip"></p>
-      <ul id="award-list"></ul>
+      <textarea id="award-textarea" cols="18" rows="8" disabled></textarea>
+      <button id="copy-button" onclick="copyAwardContent()">复制</button>
     </div>
     <script>
       //获取输入框内的内容并生成中奖号码列表方法
@@ -176,7 +186,9 @@
 
         let awardTipId = document.getElementById("award-tip");
 
-        let awardListId = document.getElementById("award-list");
+        let awardTextareaId = document.getElementById("award-textarea");
+
+        let copyAwardId = document.getElementById("copy-button");
 
         let awardInputValue = awardInputId.value;
 
@@ -187,17 +199,19 @@
         if (awardInputValue === "") {
           awardTipId.innerText = "请输入中奖号码!";
           awardTipId.style.display = "block";
+          awardTextareaId.style.display = "none";
+          copyAwardId.style.display = "none";
         } else {
           awardTipId.innerText = "";
           awardTipId.style.display = "none";
+          awardTextareaId.style.display = "block";
+          copyAwardId.style.display = "block";
 
           awardInputArray = awardInputValue.split("；");
 
           awardString = generateAwardItem(awardInputArray);
 
-          awardListId.innerHTML = awardString;
-
-          console.log(awardString);
+          awardTextareaId.value = awardString;
         }
       }
 
@@ -205,9 +219,9 @@
       function clearAwardInput() {
         let awardInputId = document.getElementById("award-input-id");
 
-        let awardListId = document.getElementById("award-list");
+        let awardTextareaId = document.getElementById("award-textarea");
 
-        awardListId.innerHTML = "";
+        awardTextareaId.value = "";
 
         awardInputId.value = "";
       }
@@ -221,10 +235,9 @@
         if (awardArray.length === 1) {
           awardKeyString = "";
 
-          generateAwardString = "<li>" + awardArray[0] + "；" + "</li>";
+          generateAwardString = +awardArray[0] + "；\n\n";
 
           awardKeyString =
-            "<li>" +
             awardArray[0] +
             "现；" +
             awardArray[0].substr(0, 0) +
@@ -234,7 +247,7 @@
             awardArray[0].substr(0, 1) +
             "X" +
             awardArray[0].substr(2) +
-            "</li><li>" +
+            "\n\n" +
             awardArray[0].substr(0, 2) +
             "X" +
             awardArray[0].substr(3) +
@@ -242,27 +255,20 @@
             awardArray[0].substr(0, 3) +
             "X" +
             awardArray[0].substr(4) +
-            "</li>";
+            "\n";
 
           generateAwardString = generateAwardString + awardKeyString;
         } else {
           for (let index in awardArray) {
             awardKeyString =
-              awardKeyString + "<li>" + awardArray[index] + "；" + "</li>";
+              awardKeyString + "\n" + awardArray[index] + "；" + "\n";
           }
 
-          awardKeyString =
-            awardKeyString +
-            "<li>" +
-            awardArray[0] +
-            "现；" +
-            awardArray[1] +
-            "现" +
-            "</li>";
+          let awardKeyRandom =
+            "\n" + awardArray[0] + "现；" + awardArray[1] + "现" + "\n";
 
-          awardKeyString =
-            awardKeyString +
-            "<li>" +
+          let awardKeyNumFix =
+            "\n" +
             awardArray[0].substr(0, 0) +
             "X" +
             awardArray[0].substr(1) +
@@ -273,13 +279,32 @@
             "；" +
             awardArray[1].substr(0, 3) +
             "X" +
-            awardArray[1].substr(4) +
-            "</li>";
+            awardArray[1].substr(4);
 
-          generateAwardString = awardKeyString;
+          generateAwardString =
+            awardKeyString + awardKeyRandom + awardKeyNumFix;
         }
 
         return generateAwardString;
+      }
+      //复制生成的中奖密码方法
+      function copyAwardContent() {
+        let awardTextareaId = document.getElementById("award-textarea");
+
+        // 动态创建 textarea 标签
+        const textarea = document.createElement("textarea");
+        // 将该 textarea 设为 readonly 防止 iOS 下自动唤起键盘，同时将 textarea 移出可视区域
+        textarea.readOnly = "readonly";
+        textarea.style.position = "absolute";
+        textarea.style.left = "-9999px";
+        // 将要 copy 的值赋给 textarea 标签的 value 属性
+        textarea.value = awardTextareaId.value;
+        // 将 textarea 插入到 body 中
+        document.body.appendChild(textarea);
+        // 选中值并复制
+        textarea.select();
+        const result = document.execCommand("Copy");
+        document.body.removeChild(textarea);
       }
     </script>
   </body>
