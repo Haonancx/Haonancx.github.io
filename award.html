@@ -44,17 +44,20 @@
           sans-serif;
         font-size: calc(10px + 0.33vw);
         -webkit-font-smoothing: antialiased;
-        padding: 1.3vh 7.5vw;
         color: #121314;
         height: 100%;
-        margin: 0;
+        max-width: 888px;
+        background: url(./images/award.jpg) no-repeat;
+        background-size: 100%;
+        margin: 0 auto;
         overflow: hidden;
       }
       h1 {
         font-size: 3em;
         font-weight: 500;
-        margin: 60px 0;
+        margin: 38px 0 0;
         text-align: center;
+        color: #faad14;
       }
       input,
       textarea {
@@ -90,7 +93,7 @@
         outline: 0;
       }
       button {
-        background-color: rgb(22, 93, 255);
+        background-color: #1677ff;
         color: #fff;
         border: 1px solid transparent;
         padding: 0 15px;
@@ -117,7 +120,7 @@
       button :active {
         border-color: transparent;
         color: #fff;
-        background-color: rgb(14, 66, 210);
+        background-color: #1677ff;
       }
       ul,
       li {
@@ -127,26 +130,77 @@
         margin: 0;
         padding: 0 0 0 8px;
       }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .award-container {
+        padding: 1.3vh 5vw;
+        background-color: rgba(255, 255, 255, 0.88);
+      }
+      .radio-group {
+        margin: 28px 0 0;
+        height: 28px;
+      }
+      .radio {
+        margin: 0 10px 0 0;
+        width: 88px;
+        float: left;
+      }
+      .radio input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+      }
+      .radio input[type="radio"] + .radio-label:before {
+        content: "";
+        background: #fff;
+        border-radius: 100%;
+        border: 1px solid #ccc;
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        position: relative;
+        top: -0.2em;
+        margin-right: 1em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+      .radio input[type="radio"]:checked + .radio-label:before {
+        background-color: #1677ff;
+        box-shadow: inset 0 0 0 4px #fff;
+      }
+      .radio input[type="radio"]:focus + .radio-label:before {
+        outline: none;
+        border-color: #1677ff;
+      }
+      .radio input[type="radio"]:disabled + .radio-label:before {
+        box-shadow: inset 0 0 0 4px #fff;
+        border-color: #b4b4b4;
+        background: #b4b4b4;
+      }
+      .radio input[type="radio"] + .radio-label:empty:before {
+        margin-right: 0;
+      }
+
       .clear-both {
         clear: both;
       }
 
       .award-input {
-        float: left;
-        width: 60%;
+        width: 100%;
       }
       .award-button,
       .clear-button {
-        float: left;
-        width: 18%;
-        margin: 0 0 0 2%;
+        width: 100%;
+        margin: 18px 0 0;
       }
       #award-tip {
-        height: 38px;
-        line-height: 38px;
+        height: 58px;
+        line-height: 58px;
         font-size: 18px;
         text-align: center;
-        display: none;
       }
       .award-list {
         height: 100%;
@@ -160,27 +214,55 @@
         display: none;
         margin: 20px 0 0;
       }
+      .award-item-type {
+        float: left;
+        color: #999;
+      }
     </style>
   </head>
   <body>
-    <h1>中奖</h1>
-    <div class="award-content">
-      <input
-        type="text"
-        placeholder="请输入中奖号码"
-        class="award-input"
-        id="award-input-id"
-      />
-      <button class="award-button" onclick="generateAwardList()">生成</button>
-      <button class="clear-button" onclick="clearAwardInput()">清空</button>
-      <div class="clear-both"></div>
-    </div>
-    <div class="award-list">
-      <p id="award-tip"></p>
-      <textarea id="award-textarea" cols="18" rows="8" disabled></textarea>
-      <button id="copy-button" onclick="copyAwardContent()">
-        复制中奖号码
-      </button>
+    <div class="award-container">
+      <h1>中奖</h1>
+      <div class="award-content">
+        <p id="award-tip"></p>
+        <input
+          type="text"
+          placeholder="请输入中奖号码"
+          class="award-input"
+          id="award-input-id"
+        />
+      </div>
+      <div class="radio-group">
+        <div class="radio">
+          <input
+            id="radio-1"
+            name="award-type"
+            type="radio"
+            value="fix"
+            checked
+          />
+          <label for="radio-1" class="radio-label">定位</label>
+        </div>
+        <div class="radio">
+          <input id="radio-2" name="award-type" type="radio" value="appear" />
+          <label for="radio-2" class="radio-label">三字现</label>
+        </div>
+        <div class="clear-both"></div>
+      </div>
+      <div class="award-button-group">
+        <button class="award-button" onclick="generateAwardList()">
+          生成中奖号码
+        </button>
+        <button class="clear-button" onclick="clearAwardInput()">
+          清空中奖号码
+        </button>
+      </div>
+      <div class="award-list">
+        <textarea id="award-textarea" cols="18" rows="8" disabled></textarea>
+        <button id="copy-button" onclick="copyAwardContent()">
+          复制中奖号码
+        </button>
+      </div>
     </div>
     <script>
       // 禁用双指放大
@@ -218,26 +300,43 @@
 
         let copyAwardId = document.getElementById("copy-button");
 
-        let awardInputValue = awardInputId.value;
+        let radios = document.getElementsByName("award-type");
+
+        let selectedRadio = "";
+
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            selectedRadio = radios[i].value;
+            break;
+          }
+        }
 
         let awardInputArray = [];
 
         let awardString = "";
 
+        let awardInputValue = awardInputId.value;
+
         if (awardInputValue === "") {
           awardTipId.innerText = "请输入中奖号码!";
-          awardTipId.style.display = "block";
+
           awardTextareaId.style.display = "none";
           copyAwardId.style.display = "none";
         } else {
           awardTipId.innerText = "";
-          awardTipId.style.display = "none";
+
           awardTextareaId.style.display = "block";
           copyAwardId.style.display = "block";
 
-          awardInputArray = awardInputValue.split("；");
+          //生成类型为定位时
+          if (selectedRadio === "fix") {
+            awardInputArray = awardInputValue.split("；");
 
-          awardString = generateAwardItem(awardInputArray);
+            awardString = generateAwardItem(awardInputArray);
+          } else {
+            //生成类型为三字现时
+            awardString = generateAppearItem(awardInputValue);
+          }
 
           awardTextareaId.value = awardString;
         }
@@ -254,8 +353,6 @@
         let awardTipId = document.getElementById("award-tip");
 
         awardTipId.innerText = "";
-        
-        awardTipId.style.display = "none";
 
         awardTextareaId.value = "";
 
@@ -304,8 +401,10 @@
               awardKeyString + "\n" + awardArray[index] + "；" + "\n";
           }
 
+          awardKeyString = awardKeyString.slice(1, awardKeyString.length);
+
           let awardKeyRandom =
-            "\n" + awardArray[0] + "现；" + awardArray[1] + "现" + "\n";
+            "\n" + awardArray[0] + "现；" + awardArray[1] + "\n";
 
           let awardKeyNumFix =
             "\n" +
@@ -327,6 +426,184 @@
 
         return generateAwardString;
       }
+
+      function generateAppearItem(awardInputValue) {
+        let generateAwardString = "";
+
+        let awardInputArray = [];
+
+        let awardStringArray = [];
+
+        let appearArray = [];
+
+        let appearIntArray = [];
+
+        let appearList = [];
+
+        let appearSortArray = [];
+
+        let appearNotArray = [];
+
+        //四位数拆分
+        for (let index in awardInputValue) {
+          awardInputArray.push(parseInt(awardInputValue[index]));
+        }
+
+        //排序
+        awardInputArray = awardInputArray.sort();
+
+        //转成字符形式
+        for (let index in awardInputValue) {
+          awardStringArray.push(awardInputValue[index] + "");
+        }
+
+        //三字现数组
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[1] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[1] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[2] + awardStringArray[1]
+        );
+
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[2] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[3] + awardStringArray[1]
+        );
+
+        appearArray.push(
+          awardStringArray[0] + awardStringArray[3] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[0] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[0] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[2] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[2] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[3] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[1] + awardStringArray[3] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[0] + awardStringArray[1]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[0] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[1] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[1] + awardStringArray[3]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[3] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[2] + awardStringArray[3] + awardStringArray[1]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[0] + awardStringArray[1]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[0] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[1] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[1] + awardStringArray[2]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[2] + awardStringArray[0]
+        );
+
+        appearArray.push(
+          awardStringArray[3] + awardStringArray[2] + awardStringArray[1]
+        );
+
+        //转成数字形式
+        for (let index in appearArray) {
+          let item = appearArray[index];
+          appearList[index] = [];
+
+          for (let itemIndex in item) {
+            appearList[index].push(parseInt(item[itemIndex]));
+          }
+        }
+
+        //子项排序
+        for (index in appearList) {
+          appearList[index] = appearList[index].sort();
+        }
+
+        //子项合并
+        for (let index in appearList) {
+          let item = appearList[index];
+
+          let appearSortString = "";
+
+          for (let itemIndex in item) {
+            appearSortString = appearSortString + item[itemIndex];
+          }
+
+          appearSortArray.push(appearSortString);
+        }
+
+        //转成数字形式
+        for (let index in appearSortArray) {
+          appearSortArray[index] = parseInt(appearSortArray[index]);
+        }
+
+        //数组去重
+        appearNotArray = Array.from(new Set(appearSortArray));
+
+        //字符串拼接
+        for (let index in appearNotArray) {
+          if (parseInt(index) === 3) {
+            generateAwardString =
+              generateAwardString + "\n\n" + appearNotArray[index] + "现；";
+          } else {
+            generateAwardString =
+              generateAwardString + appearNotArray[index] + "现；";
+          }
+        }
+
+        return generateAwardString;
+      }
+
       //复制生成的中奖密码方法
       function copyAwardContent() {
         let awardTextareaId = document.getElementById("award-textarea");
