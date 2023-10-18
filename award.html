@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!-- saved from url=(0034)https://guanrenchao.com/award.html -->
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
@@ -239,7 +241,7 @@
             name="award-type"
             type="radio"
             value="fix"
-            checked
+            checked=""
           />
           <label for="radio-1" class="radio-label">定位</label>
         </div>
@@ -258,7 +260,7 @@
         </button>
       </div>
       <div class="award-list">
-        <textarea id="award-textarea" cols="18" rows="8" disabled></textarea>
+        <textarea id="award-textarea" cols="18" rows="8" disabled=""></textarea>
         <button id="copy-button" onclick="copyAwardContent()">
           复制中奖号码
         </button>
@@ -565,7 +567,7 @@
         }
 
         //子项排序
-        for (index in appearList) {
+        for (let index in appearList) {
           appearList[index] = appearList[index].sort();
         }
 
@@ -582,13 +584,13 @@
           appearSortArray.push(appearSortString);
         }
 
+        //数组去重
+        appearNotArray = Array.from(new Set(appearSortArray));
+
         //转成数字形式
         for (let index in appearSortArray) {
           appearSortArray[index] = parseInt(appearSortArray[index]);
         }
-
-        //数组去重
-        appearNotArray = Array.from(new Set(appearSortArray));
 
         //字符串拼接
         for (let index in appearNotArray) {
