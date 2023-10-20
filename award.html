@@ -16,7 +16,7 @@
       name="keywords"
       content="关人潮,如山,关人潮的技术博客,软件工程师,架构,guanrenchao,UI,UX,设计,数据可视化,数据挖掘,大数据"
     />
-    <title>中奖 - 关人潮【软件工程师】</title>
+    <title>中头奖 - 关人潮【软件工程师】</title>
     <meta name="author" content="关人潮,如山,guanrenchao" />
     <meta name="baidu-site-verification" content="LYz2PxGWB8" />
     <link
@@ -58,14 +58,14 @@
         font-weight: 500;
         margin: 0;
         text-align: center;
-        color: #fafd00;
+        color: #e20516;
       }
       input,
       textarea {
         box-sizing: border-box;
         margin: 0;
         padding: 6px 12px;
-        color: #fafd00;
+        color: #e20516;
         font-size: 16px;
         line-height: 1.5714285714285714;
         list-style: none;
@@ -200,18 +200,15 @@
         height: 28px;
         line-height: 28px;
         text-align: center;
-        color: #fafd00;
+        color: #e20516;
       }
-      .award-list {
+      #award-list {
         height: 100%;
         margin: 28px 0 0;
-      }
-      #award-textarea {
         display: none;
       }
       #copy-button {
         width: 100%;
-        display: none;
         margin: 28px 0 0;
       }
       .award-item-type {
@@ -257,8 +254,8 @@
           清空中奖号码
         </button>
       </div>
-      <div class="award-list">
-        <textarea id="award-textarea" cols="18" rows="8" readonly></textarea>
+      <div id="award-list">
+        <textarea id="award-textarea" cols="18" rows="8" readonly=""></textarea>
         <button id="copy-button" onclick="copyAwardContent()">
           复制中奖号码
         </button>
@@ -296,9 +293,9 @@
 
         let awardTipId = document.getElementById("award-tip");
 
-        let awardTextareaId = document.getElementById("award-textarea");
+        let awardListId = document.getElementById("award-list");
 
-        let copyAwardId = document.getElementById("copy-button");
+        let awardTextareaId = document.getElementById("award-textarea");
 
         let radios = document.getElementsByName("award-type");
 
@@ -319,14 +316,10 @@
 
         if (awardInputValue === "") {
           awardTipId.innerText = "请输入中奖号码!";
-
-          awardTextareaId.style.display = "none";
-          copyAwardId.style.display = "none";
+          awardListId.style.display = "none";
         } else {
           awardTipId.innerText = "";
-
-          awardTextareaId.style.display = "block";
-          copyAwardId.style.display = "block";
+          awardListId.style.display = "block";
 
           //生成类型为定位时
           if (selectedRadio === "fix") {
@@ -348,7 +341,7 @@
 
         let awardTextareaId = document.getElementById("award-textarea");
 
-        let copyAwardId = document.getElementById("copy-button");
+        let awardListId = document.getElementById("award-list");
 
         let awardTipId = document.getElementById("award-tip");
 
@@ -358,9 +351,7 @@
 
         awardInputId.value = "";
 
-        awardTextareaId.style.display = "none";
-
-        copyAwardId.style.display = "none";
+        awardListId.style.display = "none";
       }
 
       //生成单项中奖号码内容方法
