@@ -67,7 +67,7 @@
         margin: 0;
         padding: 6px 12px;
         color: #faad14;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5714285714285714;
         list-style: none;
         font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
@@ -100,7 +100,8 @@
         border: 1px solid transparent;
         padding: 0 15px;
         font-size: 15px;
-        height: 38px;
+        height: 40px;
+        line-height: 40px;
         border-radius: 4px;
         display: inline-block;
         position: relative;
@@ -112,7 +113,6 @@
         white-space: nowrap;
         transition: all 0.1s linear;
         box-sizing: border-box;
-        line-height: 1.5715;
       }
       button:hover {
         border-color: transparent;
@@ -137,8 +137,8 @@
         padding: 0;
       }
       .award-container {
-        padding: 1.6vh 6vw;
-        background-color: rgba(255, 255, 255, 0.88);
+        padding: 1.8vh 8vw;
+        background-color: rgba(255, 255, 255, 0.66);
       }
       .radio-group {
         margin: 28px 0 0;
@@ -196,7 +196,7 @@
       .award-button,
       .clear-button {
         width: 100%;
-        margin: 18px 0 0;
+        margin: 28px 0 0;
       }
       #award-tip {
         height: 28px;
@@ -206,7 +206,7 @@
       }
       .award-list {
         height: 100%;
-        margin: 18px 0 0;
+        margin: 28px 0 0;
       }
       #award-textarea {
         display: none;
@@ -214,7 +214,7 @@
       #copy-button {
         width: 100%;
         display: none;
-        margin: 18px 0 0;
+        margin: 28px 0 0;
       }
       .award-item-type {
         float: left;
@@ -224,12 +224,12 @@
   </head>
   <body>
     <div class="award-container">
-      <h1>中奖</h1>
+      <h1>中头奖</h1>
       <div class="award-content">
         <p id="award-tip"></p>
         <input
           type="text"
-          placeholder="请输入中奖号码"
+          placeholder="请输入中奖号码，必中奖"
           class="award-input"
           id="award-input-id"
         />
