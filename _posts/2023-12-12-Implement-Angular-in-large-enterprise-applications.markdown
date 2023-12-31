@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular在大型企业级应用中实践"
+title:  "Angular 在大型企业级应用中实践"
 date:   2023-12-12 10:00:00
 categories: 前端 架构 Angular
 tags: 前端 架构 Angular
