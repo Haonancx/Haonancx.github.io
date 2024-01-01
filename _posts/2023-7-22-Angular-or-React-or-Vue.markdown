@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Angular or React or Vue"
-date:   2024-1-1 10:40:00
+date:   2023-7-22 10:40:00
 categories: 前端架构 技术选型
 tags: 前端架构 技术选型
 ---
