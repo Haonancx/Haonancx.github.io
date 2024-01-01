@@ -12,7 +12,7 @@ author: "关人潮,如山,GUANRENCHAO"
 pygments: true
 # Outputting
 
-paginate: 5
+paginate: 6
 paginate_path: /page/:num
 
 # Build settings
