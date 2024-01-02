@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "医院信息化产品漫谈"
+title:  "漫谈医院信息化进程"
 date:   2019-5-3 21:00:32
 categories: 随笔 产品
 tags: 随笔 产品
