@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "从0到1谈前端架构"
+title:  "从 0 到 1 谈前端架构"
 date:   2022-11-20 21:40:00
 categories: 前端架构 架构 架构方案
 tags: 前端架构 架构 架构方案
