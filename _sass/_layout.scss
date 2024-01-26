@@ -668,7 +668,8 @@ blockquote:before {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.7;
-  max-width: 26em;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .about a {
