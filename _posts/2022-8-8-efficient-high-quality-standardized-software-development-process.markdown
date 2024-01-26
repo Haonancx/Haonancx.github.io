@@ -9,7 +9,7 @@ tags: 架构 软件开发 项目管理
 
 一个清晰、标准化的开发流程不仅有助于提高团队的协作效率，还能保证软件产品的质量，降低风险，并确保项目按时交付。本文将介绍一套通用的项目开发流程规范，帮助团队建立和维护一个高效、可靠的软件开发环境。
 
-[高效、高质量的规范软件开发流程](post-images/project_development_process_specification.png)
+![高效、高质量的规范软件开发流程图](post-images/project_development_process_specification.png)
 
 ### 一、项目启动阶段
 
