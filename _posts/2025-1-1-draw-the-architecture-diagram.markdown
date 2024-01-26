@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "画好架构图"
-date:   2024-1-1 10:40:00
+date:   2025-1-1 10:40:00
 categories: 前端架构 架构
 tags: 前端架构 架构
 ---
