@@ -3,19 +3,18 @@
  */
 
 /* Basic styling*/
-body
-{
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    color: $text-color;
+  color: $text-color;
 
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1,
 h2,
@@ -30,68 +29,56 @@ dl,
 dd,
 ol,
 ul,
-figure
-{
-    margin: 20px 0;
-    padding: 0;
+figure {
+  margin: 20px 0;
+  padding: 0;
 }
-ol li
-{
-    line-height: 35px;
+ol li {
+  line-height: 35px;
 }
 ol,
-li
-{
-    list-style: none;
+li {
+  list-style: none;
 }
-p
-{
-    margin: 25px 0;
-    letter-spacing: .5px;
+p {
+  margin: 25px 0;
+  letter-spacing: 0.5px;
 }
-p em
-{
-    font-style: inherit;
+p em {
+  font-style: inherit;
 
-    padding: 3px;
+  padding: 3px;
 
-    background: #efefef;
+  background: #efefef;
 }
 
-p strong
-{
-    font-size: 1rem;
+p strong {
+  font-size: 1rem;
 
-    color: #1f1f1f;
+  color: #1f1f1f;
 }
-
 
 /* Images*/
-img
-{
-    max-width: 100%;
+img {
+  max-width: 100%;
 
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Figures */
-figure > img
-{
-    display: block;
+figure > img {
+  display: block;
 }
 
-figcaption
-{
-    font-size: $small-font-size;
+figcaption {
+  font-size: $small-font-size;
 }
 
-li
-{
-     > ul,
-     > ol
-    {
-        margin-bottom: 0;
-    }
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
 
 /* Headings*/
@@ -100,131 +87,114 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-    font-weight: 300;
+h6 {
+  font-weight: 300;
 }
 
 /* Links*/
-a
-{
+a {
+  text-decoration: none;
+
+  color: $brand-color;
+
+  &:hover {
     text-decoration: none;
-
-    color: $brand-color;
-
-    &:hover
-    {
-        text-decoration: none;
-    }
+  }
 }
 
 /* Blockquotes*/
-blockquote
-{
-    position: relative;
+blockquote {
+  position: relative;
 
-    padding-left: 25px;
+  padding-left: 25px;
 
-    letter-spacing: .2px;
+  letter-spacing: 0.2px;
 
-    color: #999;
+  color: #999;
 
-     > :last-child
-    {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
-blockquote ol li
-{
-    margin: 15px 0;
+blockquote ol li {
+  margin: 15px 0;
 }
 /* Code formatting */
 pre,
-code
-{
-    font-family: Menlo, Monaco, Consolas, 'Andale Mono', 'lucida console', 'Courier New', monospace;
-    font-size: 14px;
+code {
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "lucida console",
+    "Courier New", monospace;
+  font-size: 14px;
 
-    position: relative;
+  position: relative;
 
-    margin: 1em 0;
+  margin: 1em 0;
 
-    border-radius: 4px;
-    background: #ebeef5;
+  border-radius: 4px;
+  background: #ebeef5;
 }
 
-code
-{
-    padding: 1px 5px;
+code {
+  padding: 1px 5px;
 }
 
-pre
-{
-    overflow-x: scroll;
+pre {
+  overflow-x: scroll;
 
-    padding: 8px 12px;
+  padding: 8px 12px;
 
-     > code
-    {
-        padding-right: 0;
-        padding-left: 0;
+  > code {
+    padding-right: 0;
+    padding-left: 0;
 
-        border: 0;
-    }
+    border: 0;
+  }
 }
-
 
 /*Wrapper*/
-.page-content
-{
-    position: relative;
-    z-index: 998;
+.page-content {
+  position: relative;
+  z-index: 998;
 
-    width: 880px;
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 60px;
+  width: 880px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 60px;
 
-    border-radius: 4px;
-    background: #fff;
+  border-radius: 4px;
+  background: #fff;
 
-    @extend %clearfix;
-    @include media-query($on-laptop)
-    {
-        width: 95%;
-        padding: 0 0 25px;
+  @extend %clearfix;
+  @include media-query($on-laptop) {
+    width: 95%;
+    padding: 0 0 25px;
 
-        box-shadow: none;
-    }
+    box-shadow: none;
+  }
 }
 
 /* Clearfix*/
-%clearfix
-{
-    &:after
-    {
-        display: table;
-        clear: both;
+%clearfix {
+  &:after {
+    display: table;
+    clear: both;
 
-        content: '';
-    }
+    content: "";
+  }
 }
 /* Icons*/
-.icon
-{
-     > svg
-    {
-        display: inline-block;
+.icon {
+  > svg {
+    display: inline-block;
 
-        width: 16px;
-        height: 16px;
+    width: 16px;
+    height: 16px;
 
-        vertical-align: middle;
+    vertical-align: middle;
 
-        path
-        {
-            fill: $grey-color;
-        }
+    path {
+      fill: $grey-color;
     }
+  }
 }
