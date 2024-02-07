@@ -1,27 +1,27 @@
 .header {
   width: 100%;
-  height: 80px;
+  height: 68px;
   margin: 0 auto;
   padding: 0;
 }
 
 .header-container {
-  line-height: 80px;
+  line-height: 68px;
   position: absolute;
   z-index: 99;
   top: 0;
   width: calc(100% - 80px);
-  height: 80px;
+  height: 68px;
   margin: 0 auto;
   padding: 0 40px;
   background: transparent;
 }
 
 .MainIndex {
-  line-height: 80px;
+  line-height: 68px;
   position: relative;
   float: left;
-  height: 80px;
+  height: 68px;
   text-align: left;
   letter-spacing: 1px;
 }
@@ -32,10 +32,10 @@
     "Work Sans", SimSun;
   font-size: 18px;
   font-weight: 800;
-  line-height: 80px;
+  line-height: 68px;
   display: inline-block;
   float: left;
-  height: 80px;
+  height: 68px;
   color: #fff;
 }
 
@@ -63,9 +63,9 @@
 }
 
 .nav ul li {
-  line-height: 80px;
+  line-height: 68px;
   float: left;
-  height: 80px;
+  height: 68px;
   padding: 0 0 0 50px;
   text-align: center;
 }
