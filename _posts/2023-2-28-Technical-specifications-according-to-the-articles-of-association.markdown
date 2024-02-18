@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "技术规范：按“章程”办事"
-date:   2024-02-28 18:08:08
+date:   2023-02-28 18:08:08
 categories: 管理 规范
 tags: 管理 规范
 ---
