@@ -194,7 +194,8 @@
         width: 100%;
       }
       .award-button,
-      .clear-button {
+      .clear-button,
+      .letter-to-number {
         width: 100%;
         margin: 28px 0 0;
       }
@@ -207,6 +208,16 @@
       #award-list {
         height: 100%;
         margin: 28px 0 0;
+        display: none;
+      }
+      #letter-to-number-list {
+        height: 380px;
+        margin: 28px 0 0;
+        background-color: #fff;
+        padding: 10px 0;
+        border-radius: 6px;
+        color: #e20516;
+        font-size: 18px;
         display: none;
       }
       #copy-button {
@@ -255,12 +266,29 @@
         <button class="clear-button" onclick="clearAwardInput()">
           清空中奖号码
         </button>
+        <button class="letter-to-number" onclick="showLettersToNumber()">
+          英文对应字母列表
+        </button>
       </div>
       <div id="award-list">
         <button id="copy-button" onclick="copyAwardContent()">
           复制中奖号码
         </button>
         <textarea id="award-textarea" cols="18" rows="8" readonly=""></textarea>
+      </div>
+      <div id="letter-to-number-list">
+        <ul>
+          <li>1 - A、K、U</li>
+          <li>2 - B、L、V</li>
+          <li>3 - C、M、W</li>
+          <li>4 - D、N、X</li>
+          <li>5 - E、O、Y</li>
+          <li>6 - F、P、Z</li>
+          <li>7 - G、Q</li>
+          <li>8 - H、R</li>
+          <li>9 - I、S</li>
+          <li>0 - J、T</li>
+        </ul>
       </div>
     </div>
 
@@ -290,6 +318,34 @@
         { passive: false }
       );
 
+      //判断字符串中是否存在字母并返回转换后的数字
+      function findLettersPositionInAlphabet(string) {
+        var pattern = /[a-zA-Z]/g;
+        var match;
+        let letterToNumber = "";
+        if ((match = pattern.exec(string))) {
+          letterToNumber = match[0].toLowerCase().charCodeAt(0) - 96;
+          if (letterToNumber > 9) {
+            letterToNumber = letterToNumber + "";
+            letterToNumber = letterToNumber.substr(1, 2);
+          }
+        }
+        return letterToNumber;
+      }
+
+      //显示英文字母对应数字列表
+      function showLettersToNumber() {
+        let awardListId = document.getElementById("award-list");
+
+        let letterToNumberListId = document.getElementById(
+          "letter-to-number-list"
+        );
+
+        letterToNumberListId.style.display = "block";
+
+        awardListId.style.display = "none";
+      }
+
       //获取输入框内的内容并生成中奖号码列表方法
       function generateAwardList() {
         let awardInputId = document.getElementById("award-input-id");
@@ -301,6 +357,10 @@
         let awardTextareaId = document.getElementById("award-textarea");
 
         let radios = document.getElementsByName("award-type");
+
+        let letterToNumberListId = document.getElementById(
+          "letter-to-number-list"
+        );
 
         let selectedRadio = "";
 
@@ -324,9 +384,37 @@
           awardTipId.innerText = "";
           awardListId.style.display = "block";
 
+          //先循环判断是否存在字母
+          for (let index in awardInputValue) {
+            let awardInputItem = awardInputValue[index];
+            let findLetters = findLettersPositionInAlphabet(awardInputItem);
+            if (findLetters !== "") {
+              awardInputValue =
+                awardInputValue.slice(0, parseInt(index)) +
+                findLetters +
+                awardInputValue.slice(parseInt(index) + 1);
+            }
+          }
+
           //生成类型为定位时
           if (selectedRadio === "fix") {
-            awardInputArray = awardInputValue.split("；");
+            let splitKey = "";
+
+            if (awardInputValue.indexOf("；") != -1) {
+              splitKey = "；";
+            } else if (awardInputValue.indexOf(";") != -1) {
+              splitKey = ";";
+            } else if (awardInputValue.indexOf(",") != -1) {
+              splitKey = ",";
+            } else if (awardInputValue.indexOf("，") != -1) {
+              splitKey = "，";
+            }
+
+            if (splitKey === "") {
+              awardInputArray = [awardInputValue];
+            } else {
+              awardInputArray = awardInputValue.split(splitKey);
+            }
 
             awardString = generateAwardItem(awardInputArray);
           } else {
@@ -335,6 +423,8 @@
           }
 
           awardTextareaId.value = awardString;
+
+          letterToNumberListId.style.display = "none";
         }
       }
 
@@ -348,6 +438,10 @@
 
         let awardTipId = document.getElementById("award-tip");
 
+        let letterToNumberListId = document.getElementById(
+          "letter-to-number-list"
+        );
+
         awardTipId.innerText = "";
 
         awardTextareaId.value = "";
@@ -355,6 +449,8 @@
         awardInputId.value = "";
 
         awardListId.style.display = "none";
+
+        letterToNumberListId.style.display = "none";
       }
 
       //生成单项中奖号码内容方法
@@ -398,7 +494,7 @@
           awardKeyString = awardKeyString.slice(1, awardKeyString.length);
 
           let awardKeyRandom =
-            "\n" + awardArray[0] + "现；" + awardArray[1] + "现；\n";
+            "\n" + awardArray[0] + "现；" + awardArray[1] + "现\n";
 
           let awardKeyNumFix =
             "\n" +
