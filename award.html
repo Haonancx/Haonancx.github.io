@@ -41,27 +41,25 @@
       sizes="180x180"
       href="https://guanrenchao.com/fonts/fsux_logo.svg"
     />
+    <script src="./中大奖 - 关人潮【软件工程师】_files/hm.js"></script>
     <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?1d63006b21d597d16ad6d96f7df2a126";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1d63006b21d597d16ad6d96f7df2a126";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YXQ57M9RWG"
-    ></script>
+    <script async="" src="./中大奖 - 关人潮【软件工程师】_files/js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-  
+
       gtag("config", "G-YXQ57M9RWG");
     </script>
     <style>
@@ -292,13 +290,13 @@
           英文对应数字列表
         </button>
       </div>
-      <div id="award-list">
+      <div id="award-list" style="display: block">
         <button id="copy-button" onclick="copyAwardContent()">
           复制中奖号码
         </button>
         <textarea id="award-textarea" cols="18" rows="8" readonly=""></textarea>
       </div>
-      <div id="letter-to-number-list">
+      <div id="letter-to-number-list" style="display: none">
         <ul>
           <li>1 - A、K、U</li>
           <li>2 - B、L、V</li>
@@ -484,28 +482,48 @@
         if (awardArray.length === 1) {
           awardKeyString = "";
 
-          generateAwardString = awardArray[0] + "；\n\n";
+          //如果输入三位数
+          if (awardArray[0].length === 3) {
+            awardKeyString =
+              awardArray[0] +
+              "现；" +
+              awardArray[0] +
+              "X；" +
+              "X" +
+              awardArray[0] +
+              "\n\n" +
+              awardArray[0].slice(1, "X") +
+              awardArray[0].slice(0, 1) +
+              "X" +
+              awardArray[0].slice(1) +
+              "；" +
+              awardArray[0].slice(2, "X") +
+              awardArray[0].slice(0, 2) +
+              "X" +
+              awardArray[0].slice(2);
+          } else {
+            generateAwardString = awardArray[0] + "；\n\n";
 
-          awardKeyString =
-            awardArray[0] +
-            "现；" +
-            awardArray[0].substr(0, 0) +
-            "X" +
-            awardArray[0].substr(1) +
-            "；" +
-            awardArray[0].substr(0, 1) +
-            "X" +
-            awardArray[0].substr(2) +
-            "\n\n" +
-            awardArray[0].substr(0, 2) +
-            "X" +
-            awardArray[0].substr(3) +
-            "；" +
-            awardArray[0].substr(0, 3) +
-            "X" +
-            awardArray[0].substr(4) +
-            "\n";
-
+            awardKeyString =
+              awardArray[0] +
+              "现；" +
+              awardArray[0].substr(0, 0) +
+              "X" +
+              awardArray[0].substr(1) +
+              "；" +
+              awardArray[0].substr(0, 1) +
+              "X" +
+              awardArray[0].substr(2) +
+              "\n\n" +
+              awardArray[0].substr(0, 2) +
+              "X" +
+              awardArray[0].substr(3) +
+              "；" +
+              awardArray[0].substr(0, 3) +
+              "X" +
+              awardArray[0].substr(4) +
+              "\n";
+          }
           generateAwardString = generateAwardString + awardKeyString;
         } else {
           for (let index in awardArray) {
@@ -540,6 +558,7 @@
       }
 
       function generateAppearItem(awardInputValue) {
+        console.log(awardInputValue);
         let generateAwardString = "";
 
         let awardInputArray = [];
@@ -556,160 +575,165 @@
 
         let appearNotArray = [];
 
-        //四位数拆分
-        for (let index in awardInputValue) {
-          awardInputArray.push(parseInt(awardInputValue[index]));
-        }
-
-        //排序
-        awardInputArray = awardInputArray.sort();
-
-        //转成字符形式
-        for (let index in awardInputValue) {
-          awardStringArray.push(awardInputValue[index] + "");
-        }
-
-        //三字现数组
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[1] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[1] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[2] + awardStringArray[1]
-        );
-
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[2] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[3] + awardStringArray[1]
-        );
-
-        appearArray.push(
-          awardStringArray[0] + awardStringArray[3] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[0] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[0] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[2] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[2] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[3] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[1] + awardStringArray[3] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[0] + awardStringArray[1]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[0] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[1] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[1] + awardStringArray[3]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[3] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[2] + awardStringArray[3] + awardStringArray[1]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[0] + awardStringArray[1]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[0] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[1] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[1] + awardStringArray[2]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[2] + awardStringArray[0]
-        );
-
-        appearArray.push(
-          awardStringArray[3] + awardStringArray[2] + awardStringArray[1]
-        );
-
-        //转成数字形式
-        for (let index in appearArray) {
-          let item = appearArray[index];
-          appearList[index] = [];
-
-          for (let itemIndex in item) {
-            appearList[index].push(parseInt(item[itemIndex]));
-          }
-        }
-
-        //子项排序
-        for (let index in appearList) {
-          appearList[index] = appearList[index].sort();
-        }
-
-        //子项合并
-        for (let index in appearList) {
-          let item = appearList[index];
-
-          let appearSortString = "";
-
-          for (let itemIndex in item) {
-            appearSortString = appearSortString + item[itemIndex];
+        if (awardInputValue.length === 3) {
+          //三位数
+          generateAwardString = awardInputValue + "现；";
+        } else {
+          //四位数拆分
+          for (let index in awardInputValue) {
+            awardInputArray.push(parseInt(awardInputValue[index]));
           }
 
-          appearSortArray.push(appearSortString);
-        }
+          //排序
+          awardInputArray = awardInputArray.sort();
 
-        //数组去重
-        appearNotArray = Array.from(new Set(appearSortArray));
+          //转成字符形式
+          for (let index in awardInputValue) {
+            awardStringArray.push(awardInputValue[index] + "");
+          }
 
-        //转成数字形式
-        for (let index in appearSortArray) {
-          appearSortArray[index] = parseInt(appearSortArray[index]);
-        }
+          //三字现数组
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[1] + awardStringArray[2]
+          );
 
-        //字符串拼接
-        for (let index in appearNotArray) {
-          if (parseInt(index) === 3) {
-            generateAwardString =
-              generateAwardString + "\n\n" + appearNotArray[index] + "现；";
-          } else {
-            generateAwardString =
-              generateAwardString + appearNotArray[index] + "现；";
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[1] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[2] + awardStringArray[1]
+          );
+
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[2] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[3] + awardStringArray[1]
+          );
+
+          appearArray.push(
+            awardStringArray[0] + awardStringArray[3] + awardStringArray[2]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[0] + awardStringArray[2]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[0] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[2] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[2] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[3] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[1] + awardStringArray[3] + awardStringArray[2]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[0] + awardStringArray[1]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[0] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[1] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[1] + awardStringArray[3]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[3] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[2] + awardStringArray[3] + awardStringArray[1]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[0] + awardStringArray[1]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[0] + awardStringArray[2]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[1] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[1] + awardStringArray[2]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[2] + awardStringArray[0]
+          );
+
+          appearArray.push(
+            awardStringArray[3] + awardStringArray[2] + awardStringArray[1]
+          );
+
+          //转成数字形式
+          for (let index in appearArray) {
+            let item = appearArray[index];
+            appearList[index] = [];
+
+            for (let itemIndex in item) {
+              appearList[index].push(parseInt(item[itemIndex]));
+            }
+          }
+
+          //子项排序
+          for (let index in appearList) {
+            appearList[index] = appearList[index].sort();
+          }
+
+          //子项合并
+          for (let index in appearList) {
+            let item = appearList[index];
+
+            let appearSortString = "";
+
+            for (let itemIndex in item) {
+              appearSortString = appearSortString + item[itemIndex];
+            }
+
+            appearSortArray.push(appearSortString);
+          }
+
+          //数组去重
+          appearNotArray = Array.from(new Set(appearSortArray));
+
+          //转成数字形式
+          for (let index in appearSortArray) {
+            appearSortArray[index] = parseInt(appearSortArray[index]);
+          }
+
+          //字符串拼接
+          for (let index in appearNotArray) {
+            if (parseInt(index) === 3) {
+              generateAwardString =
+                generateAwardString + "\n\n" + appearNotArray[index] + "现；";
+            } else {
+              generateAwardString =
+                generateAwardString + appearNotArray[index] + "现；";
+            }
           }
         }
 
