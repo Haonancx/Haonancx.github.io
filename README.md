@@ -3,7 +3,7 @@
 > Explore the ultimate user experience and best engineering practices
 
 
-### GUANRENCHAO-BlogTheme is a theme for me. Here is [my blog](http://guanrenchao.com) which use this theme.
+### Here is [my blog](http://guanrenchao.com) my blog.
 
 
 ![About-me](https://github.com/Haonancx/Haonancx.github.io/blob/master/images/readme.png)
