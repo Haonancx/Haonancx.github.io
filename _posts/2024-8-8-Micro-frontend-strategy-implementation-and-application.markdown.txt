@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "微前端策略的应用与实施"
-date:   2024-05-08 10:08:08
+date:   2024-08-08 10:08:08
 categories: 微前端 架构 Angular React
 tags: 微前端 架构 Angular React
 ---
