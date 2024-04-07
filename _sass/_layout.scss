@@ -591,6 +591,8 @@ blockquote:before {
 
 .about-introduction ul{
   padding: 10px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .about-introduction ul li{
