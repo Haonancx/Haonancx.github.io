@@ -585,12 +585,8 @@ blockquote:before {
 }
 
 .about-title {
- font-weight: 700;
- font-size: 1.5em;
- line-height: 1.7;
- width: 100%;
- padding: 0 10px;
- color: #1890ff;
+ padding: 10px;
+ border-bottom: 1px solid #1890ff;
 }
 
 .about-introduction ul{
