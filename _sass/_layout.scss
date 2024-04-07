@@ -584,9 +584,13 @@ blockquote:before {
   margin: 0;
 }
 
+.about{
+  padding: 10px;
+}
+
 .about-title {
- padding: 10px;
- border-bottom: 1px solid #1890ff;
+ padding: 10px 0;
+ border-bottom: 2px solid #1890ff;
  color: #1890ff;
 }
 
@@ -607,6 +611,7 @@ blockquote:before {
 
 .about-detail ul li{
   list-style: disc;
+  padding: 5px 0 0;
 }
 
 .about p {
