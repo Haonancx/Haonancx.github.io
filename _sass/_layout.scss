@@ -591,16 +591,17 @@ blockquote:before {
 .about-title {
  color: #1890ff;
  position: relative;
+ text-indent: 10px;
 }
 
-.about-title:before{
+.about-title:before {
  content: "";
  position: absolute;
  padding: 10px 0;
  background: #1890ff;
  width: 3px;
  height：100%;
- text-indent: 10px;
+ display: block;
 }
 
 .about-introduction ul{
