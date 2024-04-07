@@ -599,8 +599,10 @@ blockquote:before {
 }
 
 .about-introduction ul li{
-  padding: 10px 0;
-  float: left;
+  padding: 0;
+  margin: 0;
+  display: block;
+  clear: both;
 }
 
 .about-detail ul {
@@ -614,7 +616,7 @@ blockquote:before {
 
 .about p {
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.7;
   width: 100%;
   padding: 0;
