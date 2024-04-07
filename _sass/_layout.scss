@@ -595,13 +595,14 @@ blockquote:before {
 }
 
 .about-title:before {
- content: "";
- position: absolute;
- padding: 10px 0;
- background: #1890ff;
- width: 3px;
- height：100%;
- display: block;
+  content: "";
+  position: absolute;
+  padding: 10px 0;
+  background: #1890ff;
+  width: 5px;
+  display: block;
+  top: 7px;
+  left: -6px;
 }
 
 .about-introduction ul{
@@ -632,6 +633,8 @@ blockquote:before {
   padding: 0;
   margin: 20px 0;
   clear: both;
+  position: relative;
+  text-indent: 10px;
 }
 
 .about a {
