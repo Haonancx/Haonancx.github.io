@@ -584,12 +584,23 @@ blockquote:before {
   margin: 0;
 }
 
-.about-title{
- font-weight: 500;
+.about-title {
+ font-weight: 700;
  font-size: 1.5em;
  line-height: 1.7;
  width: 100%;
  padding: 0 10px;
+ background: #1890ff;
+}
+
+.about-introduction ul{
+  padding: 10px 0;
+}
+
+.about-introduction ul li{
+  padding: 10px 0;
+  list-style: disc;
+  float: left;
 }
 
 .about p {
@@ -604,7 +615,7 @@ blockquote:before {
   text-decoration: none;
   color: #121314;
   position: relative;
-  margin: 0 5px 0 0;
+  margin: 0 5px 0 2px;
 }
 
 .about a:after {
