@@ -602,12 +602,12 @@ blockquote:before {
   float: left;
 }
 
-.about-detail{
-  list-style: disc;
-}
-
 .about-detail ul {
   padding: 10px 0;
+}
+
+.about-detail ul li{
+  list-style: disc;
 }
 
 .about p {
@@ -641,11 +641,13 @@ blockquote:before {
   top: 0%;
 }
 
+.clear-both {
+  clear: both;
+}
+
 .footer-nav-left ul li {
   line-height: 100px;
-
   display: inline-block;
-
   height: 100px;
   margin: 0 auto;
   padding: 0 25px 0 0;
