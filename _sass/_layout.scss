@@ -27,16 +27,14 @@
 }
 
 .MainIndex span {
-  font-family: "Microsoft YaHei", "source-han-sans-simplified-c", "PingFang SC",
-    "Hiragino Sans GB", "PingHei", "Open Sans", sans-serif, Helvetica Neue,
-    "Work Sans", SimSun;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 68px;
   display: inline-block;
   float: left;
   height: 68px;
   color: #fff;
+  letter-spacing: 2px;
 }
 
 .site-name {
@@ -71,7 +69,6 @@
 }
 
 .nav ul li a {
-  font-size: 15px;
   position: relative;
   display: inline;
   cursor: pointer;
