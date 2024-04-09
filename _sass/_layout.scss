@@ -27,7 +27,7 @@
 }
 
 .MainIndex span {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 68px;
   display: inline-block;
@@ -69,6 +69,7 @@
 }
 
 .nav ul li a {
+  font-size: 15px;
   position: relative;
   display: inline;
   cursor: pointer;
@@ -85,7 +86,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 600px;
   margin: -80px 0 0 0;
   text-align: center;
   background: url(../images/home_bg.jpg) center no-repeat;
@@ -687,7 +688,7 @@ blockquote:before {
     padding: 0 20px;
   }
   .banner {
-    height: 330px;
+    height: 380px;
   }
   .nav ul li {
     padding: 0 0 0 22px;
