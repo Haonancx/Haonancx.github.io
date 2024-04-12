@@ -599,7 +599,7 @@ blockquote:before {
   background: #1890ff;
   width: 5px;
   display: block;
-  top: 8.5px;
+  top: 8px;
   left: -6px;
 }
 
@@ -625,7 +625,7 @@ blockquote:before {
 }
 
 .about-education-item {
-  font-size: 1.3em;
+  font-size: 1.08em;
   font-weight: 700;
 }
 
@@ -649,8 +649,24 @@ blockquote:before {
   border-bottom: 2px solid rgba(24, 144, 255, 0.68);
 }
 
-.career-title{
-  font-size: 1.08em!important;
+.career-title {
+  font-size: 1.08em !important;
+  height: 30px;
+}
+
+.career-title span:nth-child(1) {
+  float: left;
+  color: #1890ff;
+}
+
+.career-title span:nth-child(2) {
+  float: left;
+  font-size: 14px;
+}
+
+.career-title span:nth-child(3) {
+  float: right;
+  font-size: 14px;
 }
 
 .education-title{
