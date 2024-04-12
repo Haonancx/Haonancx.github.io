@@ -652,7 +652,7 @@ blockquote:before {
 .career-title {
   font-size: 1.06em !important;
   height: 30px;
-  line-height: 30px;
+  
 }
 
 .career-title span:nth-child(1) {
@@ -663,6 +663,7 @@ blockquote:before {
 .career-title span:nth-child(2) {
   float: left;
   font-size: 14px;
+  line-height: 30px !important;
 }
 
 .career-title span:nth-child(3) {
