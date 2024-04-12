@@ -659,6 +659,11 @@ blockquote:before {
   
 }
 
+.career-title span { 
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
 .career-title span:nth-child(1) {
   float: left;
   color: #1890ff;
@@ -667,7 +672,7 @@ blockquote:before {
 .career-title span:nth-child(2) {
   float: left;
   font-size: 14px;
-  line-height: 30px !important;
+  
 }
 
 .career-title span:nth-child(3) {
