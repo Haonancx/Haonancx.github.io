@@ -505,13 +505,11 @@ blockquote:before {
 
 .pre-btn:hover .icon-pre {
   left: -8px;
-
   color: #1890ff;
 }
 
 .next-btn:hover .icon-next {
   right: -8px;
-
   color: #1890ff;
 }
 
@@ -677,7 +675,7 @@ blockquote:before {
   font-size: 14px;
   height: 30px !important;
   line-height: 30px !important;
-  color: #666;
+  color: #555;
 }
 
 .career-title span:nth-child(3) {
@@ -686,7 +684,7 @@ blockquote:before {
   right: 0;
   height: 30px !important;
   line-height: 30px !important;
-  color: #666;
+  color: #555;
 }
 
 .education-title{
@@ -750,6 +748,11 @@ blockquote:before {
   
   .oction-title {
     margin: 50px auto 0;
+  }
+
+  .career-title span:nth-child(2),
+  .career-title span:nth-child(3) {
+    font-size: 13px;
   }
 
   .career-title {
