@@ -652,32 +652,34 @@ blockquote:before {
 }
 
 .career-title {
-  font-size: 1.06em !important;
-  height: 30px;
-  
+  font-size: 1.16em !important;
+  height: 60px;
+  text-indent: 0 !important;
 }
 
 .career-title span { 
+  position: absolute;
+}
+
+.career-title span:nth-child(1) {
+  color: #1890ff;
+  left: 0;
+}
+
+.career-title span:nth-child(2) {
+  right: 0;
+  top: 0;
+  font-size: 15px;
   height: 30px !important;
   line-height: 30px !important;
 }
 
-.career-title span:nth-child(1) {
-  float: left;
-  color: #1890ff;
-}
-
-.career-title span:nth-child(2) {
-  float: left;
-  font-size: 14px;
-  
-}
-
 .career-title span:nth-child(3) {
-  font-size: 14px;
-  position: absolute;
-  font-size: 13px;
+  font-size: 15px;
+  top: 30px;
   right: 0;
+  height: 30px !important;
+  line-height: 30px !important;
 }
 
 .education-title{
@@ -741,10 +743,6 @@ blockquote:before {
   
   .oction-title {
     margin: 50px auto 0;
-  }
-  
-  .career-title span:nth-child(3) {
-    top: 28px;
   }
   
   .footer-nav-right span:before {
