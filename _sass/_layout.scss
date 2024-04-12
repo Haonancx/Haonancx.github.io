@@ -652,7 +652,6 @@ blockquote:before {
 }
 
 .career-title {
-  font-size: 16px !important;
   height: 60px;
   text-indent: 0 !important;
 }
@@ -751,6 +750,10 @@ blockquote:before {
   
   .oction-title {
     margin: 50px auto 0;
+  }
+
+  .career-title {
+    font-size: 16px !important;
   }
   
   .footer-nav-right span:before {
