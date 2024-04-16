@@ -652,6 +652,7 @@ blockquote:before {
 
 .career-title {
   height: 50px;
+  margin: 20px 0 !important;
   text-indent: 0 !important;
 }
 
@@ -677,14 +678,14 @@ blockquote:before {
 .career-title span:nth-child(2) {
   right: 0;
   top: 0;
-  font-size: 14px;
+  font-size: 15px;
   height: 25px !important;
   line-height: 25px !important;
   color: #555;
 }
 
 .career-title span:nth-child(3) {
-  font-size: 14px;
+  font-size: 15px;
   top: 25px;
   right: 0;
   height: 25px !important;
