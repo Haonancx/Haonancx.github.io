@@ -650,6 +650,11 @@ blockquote:before {
   border-bottom: 3px solid rgba(24, 144, 255, 0.88);
 }
 
+.about-career ul li ul li {
+  list-style: disc;
+  padding: 4px 0;
+}
+
 .career-title {
   height: 50px;
   margin: 30px 0 !important;
@@ -658,14 +663,6 @@ blockquote:before {
 
 .career-title span { 
   position: absolute;
-}
-
-.career-desc-title {
-  margin: 30px 0 !important;
-}
-
-.career-desc-title {
-  font-size: 15px !important;
 }
 
 .career-title span:nth-child(1) {
