@@ -592,16 +592,12 @@ blockquote:before {
 .about-title:before {
   content: "";
   position: absolute;
-  padding: 10px 0;
+  padding: 12px 0;
   background: #1890ff;
   width: 5px;
   display: block;
   top: 8px;
   left: -6px;
-}
-
-.about-detail {
-  font-size: 16px;
 }
 
 .about-introduction ul{
@@ -622,6 +618,7 @@ blockquote:before {
 .about-detail ul li{
   list-style: disc;
   padding: 4px 0;
+  letter-spacing: 1px;
 }
 
 .about-education-item {
@@ -630,7 +627,7 @@ blockquote:before {
 }
 
 .about p {
-  font-size: 1.3em;
+  font-size: 1.38em;
   font-weight: 700;
   line-height: 1.7;
   width: 100%;
