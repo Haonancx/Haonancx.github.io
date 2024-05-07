@@ -87,7 +87,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 380px;
+  height: 450px;
   margin: -1px 0 0 0;
   text-align: center;
   background: #1890ff url(../images/home_bg.svg) center no-repeat;
@@ -99,8 +99,8 @@
   width: 100%;
   background-color: #1890ff;
   text-align: center;
-  height: 80px;
-  line-height: 80px;
+  height: 120px;
+  line-height: 120px;
   margin: -1px 0 0 0;
 }
 
@@ -110,7 +110,7 @@
   z-index: 9999;
   overflow: hidden;
   margin: 0 auto;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.68);
   letter-spacing: 5px;
 }
 
@@ -598,7 +598,7 @@ blockquote:before {
   background: #1890ff;
   width: 5px;
   display: block;
-  top: 10px;
+  top: 9px;
   left: -6px;
 }
 
@@ -742,6 +742,15 @@ blockquote:before {
   }
   .nav ul li {
     padding: 0 0 0 22px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner-content {
+    height: 80px;
+    line-height: 80px;
   }
 
   #font-anim {
