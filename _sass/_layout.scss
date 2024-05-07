@@ -90,15 +90,12 @@
   margin: -80px 0 0 0;
   text-align: center;
   background: #1890ff url(../images/home_bg.svg) center no-repeat;
-  background-size: 50%;
-  background-position: 90% 70%;
+  background-size: contain;
 }
 
 .banner-content {
-  position: absolute;
   z-index: 999;
-  top: 46%;
-  left: 5%;
+  width: 100%;
 }
 
 #font-anim {
@@ -748,11 +745,6 @@ blockquote:before {
   
   #font-anim {
     font-size: 20px;
-  }
-
-  .banner {
-    background-size: 80%;
-    background-position: 50% 50%;
   }
     
   .oction-title {
