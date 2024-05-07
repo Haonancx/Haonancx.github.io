@@ -102,7 +102,7 @@
 }
 
 #font-anim {
-  font-size: 1.8rem;
+  font-size: 2.6em;
   font-weight: 600;
   line-height: 1.5;
   z-index: 9999;
@@ -749,7 +749,12 @@ blockquote:before {
   #font-anim {
     font-size: 20px;
   }
-  
+
+  .banner {
+    background-size: 80%;
+    background-position: 50% 50%;
+  }
+    
   .oction-title {
     margin: 50px auto 0;
   }
