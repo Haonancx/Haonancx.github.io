@@ -3,6 +3,7 @@
   height: 68px;
   margin: 0 auto;
   padding: 0;
+  background-color: #1890ff;
 }
 
 .header-container {
@@ -87,7 +88,7 @@
   overflow: hidden;
   width: 100%;
   height: 400px;
-  margin: -80px 0 0 0;
+  margin: -1px 0 0 0;
   text-align: center;
   background: #1890ff url(../images/home_bg.svg) center no-repeat;
   background-size: contain;
@@ -100,6 +101,7 @@
   text-align: center;
   height: 180px;
   line-height: 180px;
+  margin: -1px 0 0 0;
 }
 
 #font-anim {
