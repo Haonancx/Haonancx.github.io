@@ -112,6 +112,8 @@
   left: -200px;
   top: -250px;
   background: #fdb853;
+  z-index: 9;
+  border-radius: 100%;
   background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);
   background: linear-gradient(to right, #e3d76c, #fdb853);
 }
@@ -121,7 +123,9 @@
   width: 400px;
   position: absolute;
   right: -180px;
-  bottom: -180px;
+  bottom: 180px;
+  z-index: 9;
+  border-radius: 100%;
   background: #B2FEFA;
   background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
   background: linear-gradient(to right, #0ED2F7, #B2FEFA);
