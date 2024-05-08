@@ -102,7 +102,6 @@
   text-align: center;
   height: 100px;
   line-height: 100px;
-  margin: -1px 0 0 0;
 }
 
 .banner-circle-top {
@@ -119,11 +118,11 @@
 }
 
 .banner-circle-bottom {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   position: absolute;
-  right: -180px;
-  bottom: 180px;
+  right: -150px;
+  bottom: -100px;
   z-index: 9;
   border-radius: 100%;
   background: #B2FEFA;
@@ -786,7 +785,7 @@ blockquote:before {
     height: 160px;
     width: 160px;
     right: -90px;
-    bottom: -60px;
+    bottom: -80px;
   }
   
   #font-anim {
