@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0;
   background-color: #1890ff;
+  z-index: 10;
 }
 
 .header-container {
@@ -87,7 +88,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 450px;
+  height: 460px;
   margin: -1px 0 0 0;
   text-align: center;
   background: #1890ff url(../images/home_bg.svg) center no-repeat;
@@ -99,9 +100,31 @@
   width: 100%;
   background-color: #1890ff;
   text-align: center;
-  height: 120px;
-  line-height: 120px;
+  height: 100px;
+  line-height: 100px;
   margin: -1px 0 0 0;
+}
+
+.banner-circle-top {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: -200px;
+  top: -250px;
+  background: #fdb853;
+  background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);
+  background: linear-gradient(to right, #e3d76c, #fdb853);
+}
+
+.banner-circle-bottom {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: -180px;
+  bottom: -180px;
+  background: #B2FEFA;
+  background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
 }
 
 #font-anim {
@@ -746,11 +769,6 @@ blockquote:before {
 
   .banner {
     height: 300px;
-  }
-
-  .banner-content {
-    height: 80px;
-    line-height: 80px;
   }
 
   #font-anim {
