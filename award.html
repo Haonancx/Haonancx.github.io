@@ -228,17 +228,6 @@
         margin: 26px 0;
         display: none;
       }
-      #letter-to-number-list {
-        height: 266px;
-        margin: 26px 0 0;
-        background-color: #fff;
-        padding: 10px 0;
-        border-radius: 6px;
-        color: #e20516;
-        font-size: 16px;
-        letter-spacing: 8px;
-        display: none;
-      }
       #copy-button {
         width: 100%;
         margin: 0 0 26px;
@@ -303,9 +292,6 @@
         <button class="clear-button" onclick="generatePredictionResult()">
           生成最新预测结果
         </button>
-        <button class="letter-to-number" onclick="showLettersToNumber()">
-          英文对应数字列表
-        </button>
       </div>
       <div id="award-list" style="display: block">
         <button id="copy-button" onclick="copyAwardContent()">
@@ -321,20 +307,6 @@
           rows="8"
           readonly=""
         ></textarea>
-      </div>
-      <div id="letter-to-number-list" style="display: none">
-        <ul>
-          <li>1 - A、K、U</li>
-          <li>2 - B、L、V</li>
-          <li>3 - C、M、W</li>
-          <li>4 - D、N、X</li>
-          <li>5 - E、O、Y</li>
-          <li>6 - F、P、Z</li>
-          <li>7 - G、Q</li>
-          <li>8 - H、R</li>
-          <li>9 - I、S</li>
-          <li>0 - J、T</li>
-        </ul>
       </div>
     </div>
 
@@ -379,19 +351,6 @@
         return letterToNumber;
       }
 
-      //显示英文字母对应数字列表
-      function showLettersToNumber() {
-        let awardListId = document.getElementById("award-list");
-
-        let letterToNumberListId = document.getElementById(
-          "letter-to-number-list"
-        );
-
-        letterToNumberListId.style.display = "block";
-
-        awardListId.style.display = "none";
-      }
-
       //获取输入框内的内容并生成中奖号码列表方法
       function generateAwardList() {
         let awardInputId = document.getElementById("award-input-id");
@@ -403,10 +362,6 @@
         let awardTextareaId = document.getElementById("award-textarea");
 
         let radios = document.getElementsByName("award-type");
-
-        let letterToNumberListId = document.getElementById(
-          "letter-to-number-list"
-        );
 
         let selectedRadio = "";
 
@@ -473,7 +428,6 @@
           }
 
           awardTextareaId.value = awardString;
-          letterToNumberListId.style.display = "none";
         }
       }
 
@@ -491,10 +445,6 @@
 
         let lotteryTextareaId = document.getElementById("lottery-textarea");
 
-        let letterToNumberListId = document.getElementById(
-          "letter-to-number-list"
-        );
-
         awardTipId.innerText = "";
 
         awardTextareaId.value = "";
@@ -504,8 +454,6 @@
         lotteryTextareaId.value = "";
 
         awardListId.style.display = "none";
-
-        letterToNumberListId.style.display = "none";
 
         lotteryListId.style.display = "none";
       }
@@ -1535,10 +1483,6 @@
       function addLotteryResult() {
         let radios = document.getElementsByName("award-type");
 
-        let letterToNumberListId = document.getElementById(
-          "letter-to-number-list"
-        );
-
         let awardTipId = document.getElementById("award-tip");
 
         let awardInputId = document.getElementById("award-input-id");
@@ -1614,13 +1558,7 @@
 
         const lotteryListId = document.getElementById("lottery-list");
 
-        const letterToNumberListId = document.getElementById(
-          "letter-to-number-list"
-        );
-
         const lotteryTextareaId = document.getElementById("lottery-textarea");
-
-        letterToNumberListId.style.display = "none";
 
         awardListId.style.display = "block";
 
