@@ -760,5 +760,765 @@
         document.body.removeChild(textarea);
       }
     </script>
+
+    <script>
+      //定义推荐包奖的位数
+      //为了提高中奖率,predictionNum数值越大越好,当然也要考虑投入成本问题
+      //predictionNum建议在 3-6范围内
+      const predictionNum = 5;
+
+      let ArrangeFiveResultsList = [];
+
+      let SevenStarLotteryResultsList = [];
+
+      let ArrangeFiveResultsListInit = localStorage.getItem(
+        "ArrangeFiveResultsList"
+      );
+
+      let SevenStarLotteryResultsListInit = localStorage.getItem(
+        "SevenStarLotteryResultsList"
+      );
+
+      if (ArrangeFiveResultsListInit) {
+        ArrangeFiveResultsList = JSON.parse(ArrangeFiveResultsListInit);
+      } else {
+        ArrangeFiveResultsList = [
+          "7586",
+          "8352",
+          "5491",
+          "9933",
+          "5005",
+          "7241",
+          "9717",
+          "2917",
+          "1110",
+          "8483",
+          "8775",
+          "1453",
+          "7346",
+          "7270",
+          "6497",
+          "2859",
+          "5355",
+          "9737",
+          "9820",
+          "4466",
+          "2416",
+          "0479",
+          "5926",
+          "1870",
+          "5152",
+          "3807",
+          "5581",
+          "5500",
+          "1056",
+          "5390",
+          "5170",
+          "0789",
+          "0061",
+          "3407",
+          "4392",
+          "6449",
+          "7932",
+          "0244",
+          "8835",
+          "3673",
+          "8849",
+          "7304",
+          "5009",
+          "2824",
+          "3239",
+          "2154",
+          "5354",
+          "6634",
+          "5798",
+          "9325",
+          "1950",
+          "1918",
+          "6588",
+          "4005",
+          "0707",
+          "0317",
+          "7593",
+          "5414",
+          "5076",
+          "4795",
+          "9329",
+          "0067",
+          "5146",
+          "3204",
+          "6494",
+          "4255",
+          "4306",
+          "6064",
+          "2113",
+          "1724",
+          "8897",
+          "9835",
+          "3895",
+          "9364",
+          "9003",
+          "1290",
+          "6761",
+          "3430",
+          "5587",
+          "9919",
+          "2057",
+          "1478",
+          "1850",
+          "4263",
+          "8043",
+          "5208",
+          "5369",
+          "9975",
+          "1287",
+          "0628",
+          "8916",
+          "6607",
+          "2812",
+          "6044",
+          "5714",
+          "1220",
+          "2787",
+          "0178",
+          "7440",
+          "3795",
+          "7068",
+          "8350",
+          "5385",
+          "2463",
+          "5184",
+          "5291",
+          "2553",
+          "7337",
+          "1858",
+          "3484",
+          "6202",
+          "5485",
+          "3450",
+          "2180",
+          "3367",
+          "6290",
+          "2436",
+          "2528",
+          "4993",
+          "5332",
+          "2101",
+          "4742",
+          "5512",
+          "2153",
+          "0307",
+          "1577",
+          "1025",
+          "2470",
+          "8637",
+          "4635",
+          "1754",
+          "2717",
+          "9353",
+          "1504",
+          "1965",
+          "2062",
+          "1170",
+          "8195",
+          "1610",
+          "2783",
+          "4936",
+          "5494",
+          "2321",
+          "5715",
+          "9285",
+          "0126",
+          "8890",
+          "1268",
+          "6268",
+          "9687",
+          "2850",
+          "6295",
+          "5904",
+          "3415",
+          "2582",
+          "8910",
+          "4110",
+          "2398",
+          "5496",
+          "8038",
+          "9037",
+          "1322",
+          "6519",
+          "7845",
+          "2507",
+          "3572",
+          "6297",
+          "0654",
+          "7658",
+          "7883",
+          "1733",
+          "2218",
+          "9582",
+          "9950",
+          "6747",
+          "4959",
+          "6310",
+          "3963",
+          "7608",
+          "7026",
+          "7578",
+          "8852",
+          "2960",
+          "3427",
+          "9055",
+          "5147",
+          "5086",
+          "5294",
+          "9107",
+          "5479",
+          "3065",
+          "0173",
+          "7393",
+          "8052",
+          "6824",
+          "9514",
+          "5754",
+          "2593",
+          "5024",
+          "7510",
+          "3149",
+          "1997",
+          "7934",
+          "1240",
+          "3707",
+          "4065",
+          "3138",
+          "8594",
+          "5555",
+          "7025",
+          "4756",
+          "1877",
+          "9857",
+          "0815",
+          "0808",
+          "2813",
+          "8150",
+          "4050",
+          "8889",
+          "2847",
+          "2594",
+          "6659",
+          "6663",
+          "5444",
+          "4033",
+          "5718",
+          "1979",
+          "9232",
+          "5971",
+          "7421",
+          "2580",
+          "6787",
+          "8017",
+          "7306",
+          "9781",
+          "3415",
+          "0899",
+          "4828",
+          "3801",
+          "8465",
+          "8216",
+          "0473",
+          "5879",
+          "9894",
+          "6672",
+          "4021",
+          "5318",
+          "2895",
+          "8821",
+          "3147",
+          "7901",
+          "7179",
+          "6024",
+          "9455",
+          "1742",
+          "2111",
+          "6977",
+          "9659",
+          "7900",
+          "3970",
+          "2341",
+          "7475",
+          "3550",
+          "4143",
+          "4426",
+          "5839",
+          "4176",
+          "3299",
+          "6195",
+          "9369",
+          "3308",
+          "6791",
+          "7284",
+          "5728",
+          "1616",
+          "0418",
+          "2965",
+          "8083",
+          "3659",
+          "7615",
+          "8074",
+          "8828",
+          "6676",
+          "4341",
+          "9688",
+          "1501",
+          "1547",
+          "9989",
+          "3142",
+          "8948",
+          "1160",
+          "7163",
+          "3826",
+          "0295",
+          "3083",
+          "3447",
+          "6013",
+          "3911",
+          "0705",
+          "0281",
+          "6062",
+          "9842",
+          "6699",
+          "1214",
+          "4190",
+          "0967",
+          "3553",
+          "2341",
+          "9753",
+        ];
+      }
+
+      localStorage.setItem(
+        "ArrangeFiveResultsList",
+        JSON.stringify(ArrangeFiveResultsList)
+      );
+
+      if (SevenStarLotteryResultsListInit) {
+        SevenStarLotteryResultsList = JSON.parse(
+          SevenStarLotteryResultsListInit
+        );
+      } else {
+        SevenStarLotteryResultsList = [
+          "2275",
+          "7690",
+          "6333",
+          "2300",
+          "3047",
+          "7611",
+          "4616",
+          "2920",
+          "5639",
+          "0117",
+          "7580",
+          "4376",
+          "1566",
+          "4662",
+          "5776",
+          "2748",
+          "4597",
+          "8320",
+          "9349",
+          "6232",
+          "2412",
+          "6598",
+          "5281",
+          "7417",
+          "5427",
+          "3992",
+          "5588",
+          "8072",
+          "6583",
+          "3464",
+          "7156",
+          "9551",
+          "8444",
+          "6315",
+          "4731",
+          "1590",
+          "2470",
+          "7085",
+          "3931",
+          "1968",
+          "8633",
+          "6527",
+          "8623",
+          "1963",
+          "1350",
+          "5655",
+          "4969",
+          "3538",
+          "5567",
+          "4276",
+          "4385",
+          "5297",
+          "1996",
+          "6723",
+          "8015",
+          "9898",
+          "6220",
+          "1553",
+          "7899",
+          "1108",
+          "1755",
+          "5079",
+          "9173",
+          "8340",
+          "7569",
+          "5686",
+          "7582",
+          "0415",
+          "7925",
+          "3143",
+          "2610",
+          "4181",
+          "2044",
+          "4020",
+          "1676",
+          "1964",
+          "1653",
+          "5827",
+          "9478",
+          "1395",
+          "5935",
+          "2117",
+          "3719",
+          "1021",
+          "1573",
+          "2192",
+          "6793",
+          "4351",
+          "5990",
+          "2099",
+          "3234",
+          "9175",
+          "3411",
+          "0514",
+          "8929",
+          "9884",
+          "3285",
+          "1612",
+          "8359",
+          "0481",
+          "7311",
+          "1298",
+          "5162",
+          "1219",
+          "1260",
+          "3386",
+          "5144",
+          "0003",
+          "6146",
+          "4672",
+          "7864",
+          "7971",
+          "4695",
+          "9906",
+          "3456",
+          "7207",
+          "4742",
+          "7568",
+          "4404",
+          "5212",
+          "7311",
+          "2819",
+          "0856",
+        ];
+      }
+
+      localStorage.setItem(
+        "SevenStarLotteryResultsList",
+        JSON.stringify(SevenStarLotteryResultsList)
+      );
+
+      //统计参数
+      let ArrangeFiveCounts = [
+        {
+          name: "千",
+          count: [
+            {
+              key: "0",
+              count: 0,
+            },
+            {
+              key: "1",
+              count: 0,
+            },
+            {
+              key: "2",
+              count: 0,
+            },
+            {
+              key: "3",
+              count: 0,
+            },
+            {
+              key: "4",
+              count: 0,
+            },
+            {
+              key: "5",
+              count: 0,
+            },
+            {
+              key: "6",
+              count: 0,
+            },
+            {
+              key: "7",
+              count: 0,
+            },
+            {
+              key: "8",
+              count: 0,
+            },
+            {
+              key: "9",
+              count: 0,
+            },
+          ],
+        },
+        {
+          name: "百",
+          count: [
+            {
+              key: "0",
+              count: 0,
+            },
+            {
+              key: "1",
+              count: 0,
+            },
+            {
+              key: "2",
+              count: 0,
+            },
+            {
+              key: "3",
+              count: 0,
+            },
+            {
+              key: "4",
+              count: 0,
+            },
+            {
+              key: "5",
+              count: 0,
+            },
+            {
+              key: "6",
+              count: 0,
+            },
+            {
+              key: "7",
+              count: 0,
+            },
+            {
+              key: "8",
+              count: 0,
+            },
+            {
+              key: "9",
+              count: 0,
+            },
+          ],
+        },
+        {
+          name: "十",
+          count: [
+            {
+              key: "0",
+              count: 0,
+            },
+            {
+              key: "1",
+              count: 0,
+            },
+            {
+              key: "2",
+              count: 0,
+            },
+            {
+              key: "3",
+              count: 0,
+            },
+            {
+              key: "4",
+              count: 0,
+            },
+            {
+              key: "5",
+              count: 0,
+            },
+            {
+              key: "6",
+              count: 0,
+            },
+            {
+              key: "7",
+              count: 0,
+            },
+            {
+              key: "8",
+              count: 0,
+            },
+            {
+              key: "9",
+              count: 0,
+            },
+          ],
+        },
+        {
+          name: "个",
+          count: [
+            {
+              key: "0",
+              count: 0,
+            },
+            {
+              key: "1",
+              count: 0,
+            },
+            {
+              key: "2",
+              count: 0,
+            },
+            {
+              key: "3",
+              count: 0,
+            },
+            {
+              key: "4",
+              count: 0,
+            },
+            {
+              key: "5",
+              count: 0,
+            },
+            {
+              key: "6",
+              count: 0,
+            },
+            {
+              key: "7",
+              count: 0,
+            },
+            {
+              key: "8",
+              count: 0,
+            },
+            {
+              key: "9",
+              count: 0,
+            },
+          ],
+        },
+      ];
+
+      let SevenStarCounts = JSON.parse(JSON.stringify(ArrangeFiveCounts));
+
+      //质数:12357
+      //合数:04689
+
+      //排列五结果循环拆分统计
+      ArrangeFiveResultsList.forEach((item, index) => {
+        for (let childIndex in item) {
+          const countItem =
+            ArrangeFiveCounts[childIndex].count[item[childIndex]];
+
+          ArrangeFiveCounts[childIndex].count[item[childIndex]].count =
+            countItem.count + 1;
+        }
+      });
+
+      //排列五出现次数从大到小排序
+      const ArrangeFiveArrangeList = JSON.parse(
+        JSON.stringify(ArrangeFiveCounts)
+      );
+
+      ArrangeFiveArrangeList.forEach((item, index) => {
+        item.count.sort((a, b) => b.count - a.count);
+      });
+
+      //排列五开奖结果前五包奖组合
+      let ArrangeFiveArrangeString = "";
+
+      ArrangeFiveArrangeList.forEach((item, index) => {
+        if (ArrangeFiveArrangeString !== "") {
+          ArrangeFiveArrangeString = ArrangeFiveArrangeString + ",";
+        }
+        item.count.forEach((childItem, childIndex) => {
+          if (childIndex < predictionNum) {
+            ArrangeFiveArrangeString = ArrangeFiveArrangeString + childItem.key;
+          }
+        });
+      });
+
+      //七星彩结果循环拆分统计
+      SevenStarLotteryResultsList.forEach((item, index) => {
+        for (let childIndex in item) {
+          const countItem = SevenStarCounts[childIndex].count[item[childIndex]];
+
+          SevenStarCounts[childIndex].count[item[childIndex]].count =
+            countItem.count + 1;
+        }
+      });
+
+      //七星彩出现次数从大到小排序
+      const SevenStarLotteryArrangeList = JSON.parse(
+        JSON.stringify(SevenStarCounts)
+      );
+
+      SevenStarLotteryArrangeList.forEach((item, index) => {
+        item.count.sort((a, b) => b.count - a.count);
+      });
+
+      //七星彩开奖结果前五包奖组合
+      let SevenStarLotteryArrangeString = "";
+
+      SevenStarLotteryArrangeList.forEach((item, index) => {
+        if (SevenStarLotteryArrangeString !== "") {
+          SevenStarLotteryArrangeString = SevenStarLotteryArrangeString + ",";
+        }
+        item.count.forEach((childItem, childIndex) => {
+          if (childIndex < predictionNum) {
+            SevenStarLotteryArrangeString =
+              SevenStarLotteryArrangeString + childItem.key;
+          }
+        });
+      });
+
+      console.log("排列五开奖结果统计");
+      console.log(ArrangeFiveCounts);
+
+      console.log("排列五开奖结果前" + predictionNum + "出现次数最多统计");
+      console.log(ArrangeFiveArrangeList);
+
+      console.log(
+        "排列五开奖结果前" +
+          predictionNum +
+          "包奖组合推荐: " +
+          ArrangeFiveArrangeString
+      );
+
+      console.log("七星彩开奖结果统计");
+      console.log(SevenStarCounts);
+
+      console.log("七星彩开奖结果前" + predictionNum + "出现次数最多统计");
+      console.log(SevenStarLotteryArrangeList);
+
+      console.log(
+        "七星彩开奖结果前" +
+          predictionNum +
+          "包奖组合推荐: " +
+          SevenStarLotteryArrangeString
+      );
+    </script>
   </body>
 </html>
