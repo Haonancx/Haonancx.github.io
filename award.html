@@ -74,8 +74,7 @@
         background: #f5222d url(./images/award.jpg) no-repeat;
         background-size: 100%;
         margin: 0 auto;
-        overflow: hidden;
-        font-size: 16px;
+        font-size: 15px;
       }
       h1 {
         font-size: 28px;
@@ -166,8 +165,8 @@
         height: 26px;
       }
       .radio {
-        margin: 0 10px 0 0;
-        width: 108px;
+        margin: 0 3px 0 0;
+        width: 85px;
         float: left;
       }
       .radio input[type="radio"] {
@@ -184,7 +183,7 @@
         height: 1.4em;
         position: relative;
         top: -0.2em;
-        margin-right: 1em;
+        margin-right: 0.38em;
         vertical-align: top;
         cursor: pointer;
         text-align: center;
@@ -226,7 +225,7 @@
       }
       #award-list {
         height: 100%;
-        margin: 26px 0 0;
+        margin: 26px 0;
         display: none;
       }
       #letter-to-number-list {
@@ -257,7 +256,7 @@
         <p id="award-tip"></p>
         <input
           type="text"
-          placeholder="请输入中大奖号码"
+          placeholder="请输入号码"
           class="award-input"
           id="award-input-id"
         />
@@ -277,14 +276,32 @@
           <input id="radio-2" name="award-type" type="radio" value="appear" />
           <label for="radio-2" class="radio-label">三字现</label>
         </div>
+
+        <div class="radio">
+          <input id="radio-3" name="award-type" type="radio" value="5" />
+          <label for="radio-3" class="radio-label">排列五</label>
+        </div>
+
+        <div class="radio">
+          <input id="radio-4" name="award-type" type="radio" value="7" />
+          <label for="radio-4" class="radio-label">七星彩</label>
+        </div>
+
         <div class="clear-both"></div>
       </div>
+
       <div class="award-button-group">
         <button class="award-button" onclick="generateAwardList()">
           生成中奖号码
         </button>
         <button class="clear-button" onclick="clearAwardInput()">
           清空中奖号码
+        </button>
+        <button class="clear-button" onclick="addLotteryResult()">
+          添加开奖结果
+        </button>
+        <button class="clear-button" onclick="generatePredictionResult()">
+          生成最新预测结果
         </button>
         <button class="letter-to-number" onclick="showLettersToNumber()">
           英文对应数字列表
@@ -295,6 +312,15 @@
           复制中奖号码
         </button>
         <textarea id="award-textarea" cols="18" rows="8" readonly=""></textarea>
+      </div>
+
+      <div id="lottery-list" style="display: none">
+        <textarea
+          id="lottery-textarea"
+          cols="18"
+          rows="8"
+          readonly=""
+        ></textarea>
       </div>
       <div id="letter-to-number-list" style="display: none">
         <ul>
@@ -437,13 +463,16 @@
             }
 
             awardString = generateAwardItem(awardInputArray);
-          } else {
+          } else if (selectedRadio === "appear") {
             //生成类型为三字现时
             awardString = generateAppearItem(awardInputValue);
+          } else {
+            awardTipId.innerText = "请点选定位或者三字现选项！";
+            awardListId.style.display = "none";
+            return false;
           }
 
           awardTextareaId.value = awardString;
-
           letterToNumberListId.style.display = "none";
         }
       }
@@ -458,6 +487,10 @@
 
         let awardTipId = document.getElementById("award-tip");
 
+        const lotteryListId = document.getElementById("lottery-list");
+
+        let lotteryTextareaId = document.getElementById("lottery-textarea");
+
         let letterToNumberListId = document.getElementById(
           "letter-to-number-list"
         );
@@ -468,9 +501,13 @@
 
         awardInputId.value = "";
 
+        lotteryTextareaId.value = "";
+
         awardListId.style.display = "none";
 
         letterToNumberListId.style.display = "none";
+
+        lotteryListId.style.display = "none";
       }
 
       //生成单项中奖号码内容方法
@@ -1451,7 +1488,7 @@
 
       ArrangeFiveArrangeList.forEach((item, index) => {
         if (ArrangeFiveArrangeString !== "") {
-          ArrangeFiveArrangeString = ArrangeFiveArrangeString + ",";
+          ArrangeFiveArrangeString = ArrangeFiveArrangeString + "，";
         }
         item.count.forEach((childItem, childIndex) => {
           if (childIndex < predictionNum) {
@@ -1484,7 +1521,7 @@
 
       SevenStarLotteryArrangeList.forEach((item, index) => {
         if (SevenStarLotteryArrangeString !== "") {
-          SevenStarLotteryArrangeString = SevenStarLotteryArrangeString + ",";
+          SevenStarLotteryArrangeString = SevenStarLotteryArrangeString + "，";
         }
         item.count.forEach((childItem, childIndex) => {
           if (childIndex < predictionNum) {
@@ -1494,31 +1531,137 @@
         });
       });
 
-      console.log("排列五开奖结果统计");
-      console.log(ArrangeFiveCounts);
+      //添加开奖结果
+      function addLotteryResult() {
+        let radios = document.getElementsByName("award-type");
 
-      console.log("排列五开奖结果前" + predictionNum + "出现次数最多统计");
-      console.log(ArrangeFiveArrangeList);
+        let letterToNumberListId = document.getElementById(
+          "letter-to-number-list"
+        );
 
-      console.log(
-        "排列五开奖结果前" +
+        let awardTipId = document.getElementById("award-tip");
+
+        let awardInputId = document.getElementById("award-input-id");
+
+        let awardListId = document.getElementById("award-list");
+
+        let awardInputValue = awardInputId.value;
+
+        console.log(awardInputValue.length);
+
+        if (awardInputValue === "") {
+          awardTipId.innerText = "请输入开奖号码!";
+          awardListId.style.display = "none";
+          return false;
+        } else if (awardInputValue.length !== 4) {
+          awardTipId.innerText = "请输入合规的四位数开奖号码!";
+          awardListId.style.display = "none";
+          return false;
+        } else {
+          awardTipId.innerText = "";
+          awardListId.style.display = "none";
+        }
+
+        let selectedRadio = "";
+
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            selectedRadio = radios[i].value;
+            break;
+          }
+        }
+
+        if (selectedRadio === "5") {
+          let ArrangeFiveResultsListInit = localStorage.getItem(
+            "ArrangeFiveResultsList"
+          );
+
+          let ArrangeFiveResults = JSON.parse(ArrangeFiveResultsListInit);
+
+          ArrangeFiveResults.unshift(awardInputValue);
+
+          localStorage.setItem(
+            "ArrangeFiveResultsList",
+            JSON.stringify(ArrangeFiveResults)
+          );
+        } else if (selectedRadio === "7") {
+          let SevenStarLotteryResultsListInit = localStorage.getItem(
+            "SevenStarLotteryResultsList"
+          );
+
+          const SevenStarLotteryResults = JSON.parse(
+            SevenStarLotteryResultsListInit
+          );
+
+          SevenStarLotteryResults.unshift(awardInputValue);
+
+          localStorage.setItem(
+            "SevenStarLotteryResultsList",
+            JSON.stringify(SevenStarLotteryResults)
+          );
+        } else {
+          awardTipId.innerText = "请点选排列五或七星彩选项！";
+          awardListId.style.display = "none";
+          return false;
+        }
+      }
+
+      //生成预测结果
+      function generatePredictionResult() {
+        const awardTextareaId = document.getElementById("award-textarea");
+
+        const awardListId = document.getElementById("award-list");
+
+        const lotteryListId = document.getElementById("lottery-list");
+
+        const letterToNumberListId = document.getElementById(
+          "letter-to-number-list"
+        );
+
+        const lotteryTextareaId = document.getElementById("lottery-textarea");
+
+        letterToNumberListId.style.display = "none";
+
+        awardListId.style.display = "block";
+
+        awardTextareaId.style.display = "block";
+
+        lotteryListId.style.display = "block";
+
+        let ArrangeFiveResultsListString = localStorage.getItem(
+          "ArrangeFiveResultsList"
+        );
+
+        let SevenStarLotteryResultsListString = localStorage.getItem(
+          "SevenStarLotteryResultsList"
+        );
+
+        const awardString =
+          "排列五开奖结果前" +
           predictionNum +
           "包奖组合推荐: " +
-          ArrangeFiveArrangeString
-      );
-
-      console.log("七星彩开奖结果统计");
-      console.log(SevenStarCounts);
-
-      console.log("七星彩开奖结果前" + predictionNum + "出现次数最多统计");
-      console.log(SevenStarLotteryArrangeList);
-
-      console.log(
-        "七星彩开奖结果前" +
+          "\n\n" +
+          ArrangeFiveArrangeString +
+          "\n\n" +
+          "七星彩开奖结果前" +
           predictionNum +
           "包奖组合推荐: " +
-          SevenStarLotteryArrangeString
-      );
+          "\n\n" +
+          SevenStarLotteryArrangeString;
+
+        const lotteryString =
+          "排列五开奖结果:" +
+          "\n\n" +
+          ArrangeFiveResultsListString +
+          "\n\n" +
+          "七星彩开奖结果:" +
+          "\n\n" +
+          SevenStarLotteryResultsListString;
+
+        lotteryTextareaId.value = lotteryString;
+
+        awardTextareaId.value = awardString;
+      }
     </script>
   </body>
 </html>
