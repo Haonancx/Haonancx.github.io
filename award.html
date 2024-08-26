@@ -158,7 +158,7 @@
         padding: 0;
       }
       .award-container {
-        padding: 18px 28px;
+        padding: 18px 38px;
         background-color: rgba(255, 255, 255, 0.66);
         z-index: 99;
       }
@@ -216,7 +216,7 @@
       .clear-button,
       .letter-to-number {
         width: 100%;
-        margin: 26px 0 0;
+        margin: 22px 0 0;
       }
       #award-tip {
         height: 38px;
@@ -226,12 +226,12 @@
       }
       #award-list {
         height: 100%;
-        margin: 26px 0;
+        margin: 22px 0;
         display: none;
       }
       #copy-button {
         width: 100%;
-        margin: 0 0 26px;
+        margin: 0 0 22px;
       }
       .award-item-type {
         float: left;
@@ -284,11 +284,11 @@
         <button class="award-button" onclick="generateAwardList()">
           生成中奖号码
         </button>
-        <button class="clear-button" onclick="clearAwardInput()">
-          清空中奖号码
-        </button>
         <button class="clear-button" onclick="addLotteryResult()">
           添加开奖结果
+        </button>
+        <button class="clear-button" onclick="clearAwardInput()">
+          清空中奖号码
         </button>
         <button class="clear-button" onclick="generatePredictionResult()">
           生成最新预测结果
@@ -1580,15 +1580,15 @@
         SevenStarLotteryResultsListString = SevenStarLotteryResultsListString.substring(0, 15) + '...';
 
         const awardString =
-          "排列五开奖结果前" +
+          "排列五开奖结果出现次数前" +
           predictionNum +
-          "包奖组合推荐: " +
+          "统计: " +
           "\n\n" +
           ArrangeFiveArrangeString +
           "\n\n" +
-          "七星彩开奖结果前" +
+          "七星彩开奖结果出现次数前" +
           predictionNum +
-          "包奖组合推荐: " +
+          "统计: " +
           "\n\n" +
           SevenStarLotteryArrangeString;
 
