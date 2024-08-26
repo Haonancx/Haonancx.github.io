@@ -150,7 +150,7 @@
         padding: 0;
       }
       .award-container {
-        padding: 10px 28px;
+        padding: 18px 28px;
         background-color: rgba(255, 255, 255, 0.66);
         z-index: 99;
         width: calc(100% - 54px);
@@ -214,8 +214,8 @@
         margin: 22px 0 0;
       }
       #award-tip {
-        height: 32px;
-        line-height: 32px;
+        height: 38px;
+        line-height: 38px;
         text-align: center;
         color: #e20516;
       }
@@ -239,7 +239,7 @@
       <div class="award-content">
         <input
           type="text"
-          placeholder="请输入号码"
+          placeholder="请输入幸运号码"
           class="award-input"
           id="award-input-id"
         />
@@ -293,14 +293,6 @@
           复制中奖号码
         </button>
         <textarea id="award-textarea" rows="6" readonly=""></textarea>
-      </div>
-
-      <div id="lottery-list" style="display: none">
-        <textarea
-          id="lottery-textarea"
-          rows="6"
-          readonly=""
-        ></textarea>
       </div>
     </div>
 
@@ -435,21 +427,13 @@
 
         let awardTipId = document.getElementById("award-tip");
 
-        const lotteryListId = document.getElementById("lottery-list");
-
-        let lotteryTextareaId = document.getElementById("lottery-textarea");
-
         awardTipId.innerText = "";
 
         awardTextareaId.value = "";
 
         awardInputId.value = "";
 
-        lotteryTextareaId.value = "";
-
         awardListId.style.display = "none";
-
-        lotteryListId.style.display = "none";
       }
 
       //生成单项中奖号码内容方法
@@ -1550,15 +1534,9 @@
 
         const awardListId = document.getElementById("award-list");
 
-        const lotteryListId = document.getElementById("lottery-list");
-
-        const lotteryTextareaId = document.getElementById("lottery-textarea");
-
         awardListId.style.display = "block";
 
         awardTextareaId.style.display = "block";
-
-        lotteryListId.style.display = "block";
 
         let ArrangeFiveResultsListString = localStorage.getItem(
           "ArrangeFiveResultsList"
@@ -1583,7 +1561,8 @@
           predictionNum +
           "统计: " +
           "\n\n" +
-          SevenStarLotteryArrangeString;
+          SevenStarLotteryArrangeString +
+          "\n\n";
 
         const lotteryString =
           "小 : 01234，大 : 56789" +
@@ -1596,9 +1575,7 @@
           "七星彩开奖结果 : " +
           SevenStarLotteryResultsListString;
 
-        lotteryTextareaId.value = lotteryString;
-
-        awardTextareaId.value = awardString;
+        awardTextareaId.value = awardString + lotteryString;
       }
     </script>
   </body>
