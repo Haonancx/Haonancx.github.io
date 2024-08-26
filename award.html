@@ -77,13 +77,6 @@
         font-size: 15px;
         overflow: hidden;
       }
-      h1 {
-        font-size: 26px;
-        font-weight: 500;
-        margin: 0;
-        text-align: center;
-        color: #e20516;
-      }
       input,
       textarea {
         box-sizing: border-box;
@@ -243,7 +236,6 @@
   </head>
   <body>
     <div class="award-container">
-      <h1>中大奖</h1>
       <div class="award-content">
         <p id="award-tip"></p>
         <input
@@ -300,14 +292,13 @@
         <button id="copy-button" onclick="copyAwardContent()">
           复制中奖号码
         </button>
-        <textarea id="award-textarea" cols="18" rows="8" readonly=""></textarea>
+        <textarea id="award-textarea" rows="6" readonly=""></textarea>
       </div>
 
       <div id="lottery-list" style="display: none">
         <textarea
           id="lottery-textarea"
-          cols="18"
-          rows="8"
+          rows="6"
           readonly=""
         ></textarea>
       </div>
