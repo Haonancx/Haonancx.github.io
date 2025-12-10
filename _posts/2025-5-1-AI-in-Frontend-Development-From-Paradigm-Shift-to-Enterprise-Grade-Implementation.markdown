@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI 在前端应用中实践：从范式变革到企业级落地方案"
+title:  "前端 × AI：范式升级到方案落地"
 date:   2025-5-1 12:12:12
 categories: AI 前端 人工智能
 tags: AI 前端 人工智能
