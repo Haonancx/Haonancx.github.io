@@ -824,3 +824,70 @@ blockquote:before {
     padding: 0 25px;
   }
 }
+
+.post-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 2em;
+  padding: 20px 0 0;
+  border-top: 1px solid #eee;
+}
+
+.post-nav-item {
+  display: block;
+  max-width: 48%;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+  color: #666;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.post-nav-item:only-child {
+  max-width: 100%;
+}
+
+.post-nav-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.post-nav-label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #1890ff;
+}
+
+.post-nav-title {
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.post-nav-item:hover {
+  border-color: #1890ff;
+}
+
+.post-nav-item:hover .post-nav-title {
+  color: #1890ff;
+}
+
+@media screen and (max-width: 600px) {
+  .post-nav-item {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .post-nav-next {
+    margin-left: 0;
+    text-align: left;
+  }
+}

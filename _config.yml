@@ -16,6 +16,7 @@ paginate: 6
 paginate_path: /page/:num
 
 # Build settings
+timezone: Asia/Shanghai # 显式指定时区；否则构建机（GitHub Pages 为 UTC）会按构建机时区解释 front matter 的 date
 markdown: redcarpet
 redcarpet:
     extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]

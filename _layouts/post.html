@@ -9,6 +9,22 @@ layout: default
     <article class="post-content">
         {{ content }}
     </article>
+    {% if page.previous or page.next %}
+    <nav class="post-nav">
+        {% if page.previous %}
+        <a class="post-nav-item post-nav-prev" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
+            <span class="post-nav-label">&laquo; 上一篇</span>
+            <span class="post-nav-title">{{ page.previous.title }}</span>
+        </a>
+        {% endif %}
+        {% if page.next %}
+        <a class="post-nav-item post-nav-next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">
+            <span class="post-nav-label">下一篇 &raquo;</span>
+            <span class="post-nav-title">{{ page.next.title }}</span>
+        </a>
+        {% endif %}
+    </nav>
+    {% endif %}
     <div class="post-tags post-meta line">
      <i class="iconfont icon-tags-item"></i>
         {% for tag in page.tags %}
