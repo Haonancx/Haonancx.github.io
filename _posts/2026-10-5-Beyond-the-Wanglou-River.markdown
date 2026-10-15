@@ -54,8 +54,6 @@ tags: 随笔 思乡
 
 轻得像一口气。
 
-![Beyond-the-Wanglou-River-2](/post-images/Beyond-the-Wanglou-River-2.jpg)
-
 奶奶常说，好好读书，读书使人明智。
 
 她讲这句话很随便，像在说今天天气不错。我那时不懂什么是明智，只应一声，她就高兴。
