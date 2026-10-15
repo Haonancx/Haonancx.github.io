@@ -14,7 +14,9 @@
   - **Jekyll 默认 `future: false`：front matter 的 `date` 若晚于构建时刻，该文不参与构建**（首页 / 分页 / feed 都看不到）。写文章时 `date` 必须早于推送时刻，否则线上「文章消失了」。
   - 本仓未配置 `permalink`，文章 URL 形如 `/:categories/:year/:month/:day/:title.html`，分类是中文。
 - 文章 `_posts/`，扩展名必须是 **`.markdown`**（不是 `.md`）；图片 `post-images/`，引用 `/post-images/xxx.jpg`。
-- `_layouts/post.html` 只渲染标题/日期/正文/tags，**无 TOC、无侧栏**。
+- `_layouts/post.html`：标题/日期/正文 → **`.post-nav` 上一篇·下一篇（2026-10-15 新增，第 12–27 行）** → tags；**无 TOC、无侧栏**。
+  - 布局宽度链条：`.page-content` 固定 `width: 880px; padding: 60px`（渲染后外框 1000px，内文 880px）；`≤1000px` 视口时变 `width: 95%`。`.wrapper` 无宽度（撑满）。
+  - `.post-nav-item` 必须**固定等宽**：`box-sizing: border-box; width: 48%; min-width: 0`。只写 `max-width: 48%` 会因 flex 项按内容定宽，导致左右两个盒子宽度随标题长短变化（实测 240px vs 315px）。
 - 拉仓库：本机 `git clone` 走代理会 502 → 用 `curl -L https://codeload.github.com/Haonancx/Haonancx.github.io/zip/refs/heads/master` 打包直下。
 
 ## 排版契约

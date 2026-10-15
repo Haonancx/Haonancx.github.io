@@ -836,7 +836,9 @@ blockquote:before {
 
 .post-nav-item {
   display: block;
-  max-width: 48%;
+  box-sizing: border-box;
+  width: 48%;
+  min-width: 0;
   padding: 10px 14px;
   transition: all 0.3s ease;
   color: #666;
@@ -846,7 +848,7 @@ blockquote:before {
 }
 
 .post-nav-item:only-child {
-  max-width: 100%;
+  width: 100%;
 }
 
 .post-nav-next {
