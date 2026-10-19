@@ -5,7 +5,7 @@ date:   2020-11-7 22:40:32
 categories: 随笔 怀乡
 tags: 随笔 怀乡
 ---
-#### 我在家住了半个月，没定过一次闹钟，也没看过一次表。
+#### 我在家住了半个月。闹钟没定过，表也没看过，醒来先听院子里有什么动静。
 
 ![Letters-of-Homesickness-1](/post-images/Letters-of-Homesickness-1.jpg)
 
