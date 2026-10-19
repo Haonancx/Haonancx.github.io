@@ -3,7 +3,7 @@ layout: post
 title:  "组件化架构漫谈"
 date:   2017-6-1 23:16:15
 categories: 随笔 架构 浅谈前端
-tags: 随笔 架构 浅谈前端
+tags: 架构 浅谈前端
 ---
 #### 架构之大，分而治之。
 
