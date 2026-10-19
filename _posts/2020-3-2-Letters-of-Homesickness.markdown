@@ -101,7 +101,9 @@ tags: 随笔 怀乡
 
 我把东西拎上车，慢慢骑回去。
 
-以前我骑车只看前面的路。
+以前我骑车，只看前面的路。
+
+现在两边的芒果、槟榔、大棚，一棵一棵都看得清。
 
 ![Letters-of-Homesickness-2](/post-images/Letters-of-Homesickness-2.jpg)
 
