@@ -136,8 +136,6 @@ tags: 随笔 家人
 
 ![He-Fell-Asleep-on-My-Arm-3](/post-images/He-Fell-Asleep-on-My-Arm-3.jpg)
 
-轮胎压过地面的声音，拖得很长。
-
 他翻了个身。
 
 我伸手接住他的头，垫在手心。
