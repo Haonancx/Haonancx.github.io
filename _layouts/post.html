@@ -9,6 +9,12 @@ layout: default
     <article class="post-content">
         {{ content }}
     </article>
+    <div class="post-tags post-meta">
+     <i class="iconfont icon-tags-item"></i>
+        {% for tag in page.tags %}
+        <span><a class="host-tag">{{ tag }}</a> 
+        </span> {% endfor %}
+    </div>
     {% if page.previous or page.next %}
     <nav class="post-nav">
         {% if page.previous %}
@@ -25,10 +31,4 @@ layout: default
         {% endif %}
     </nav>
     {% endif %}
-    <div class="post-tags post-meta line">
-     <i class="iconfont icon-tags-item"></i>
-        {% for tag in page.tags %}
-        <span><a class="host-tag">{{ tag }}</a> 
-        </span> {% endfor %}
-    </div>
 </div>
