@@ -2,8 +2,8 @@
 layout: post
 title:  "架构即生活"
 date:   2018-2-18 01:36:42
-categories: 随笔 架构
-tags: 随笔 架构
+categories: 架构
+tags: 架构
 ---
 #### 对生活、对软件工程的系统的认知与感悟。
 
