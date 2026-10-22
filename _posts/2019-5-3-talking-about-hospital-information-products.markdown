@@ -2,8 +2,8 @@
 layout: post
 title:  "漫谈医院信息化进程"
 date:   2019-5-3 21:00:32
-categories: 随笔 产品
-tags: 随笔 产品
+categories: 产品 信息化
+tags: 产品 信息化
 ---
 
 #### 中国医院全面信息化、智能化，还有很长的路要走。
